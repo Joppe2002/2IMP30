@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>110.0.1</version>
+	<lang>C++</lang>
+	<BuildNo>202408271326</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IProject type="e">
+			<_id type="a">GUID 98303639-6bdf-4c4f-922a-27dbf0e15605</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Configuration</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Environment</_Name>
+													<_Value type="a">Cygwin</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">MinGW,MSVC,MSVCDLL,MSVCStandardLibrary,VxWorks_DKM,VxWorks_RTP,WorkbenchManaged_DKM,WorkbenchManaged_RTP,WorkbenchManaged653,Cygwin,Linux,QNXNeutrinoGCC, QNXNeutrinoMomentics</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">2IMP30_V1</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">SysML</_hsubsystem>
+							<_hname type="a">SysML</_hname>
+							<_hid type="a">GUID 052b8171-a32b-4f45-a829-5585f79f9deb</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">5.15.2026::8:2:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:2:49</_modifiedTime>
+			<_UserColors type="w">
+				<IRPYRawContainer type="e">
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+				</IRPYRawContainer>
+			</_UserColors>
+			<_defaultSubsystem type="r">
+				<ISubsystemHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hname type="a">Default</_hname>
+					<_hid type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_hid>
+				</ISubsystemHandle>
+			</_defaultSubsystem>
+			<_component type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IComponent</_hm2Class>
+					<_hname type="a">DefaultComponent</_hname>
+					<_hid type="a">GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620</_hid>
+				</IHandle>
+			</_component>
+			<Multiplicities type="c">
+				<IRPYRawContainer type="e">
+					<IMultiplicityItem type="e">
+						<_name type="a">1</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">*</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">0,1</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">1..*</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+				</IRPYRawContainer>
+			</Multiplicities>
+			<_isImportedFromDM type="a">0</_isImportedFromDM>
+			<Diagrams type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Diagrams>
+			<mapOslcAddedCollections type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</mapOslcAddedCollections>
+			<mapAssociationsToRemove type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</mapAssociationsToRemove>
+			<AggregatesList type="e">
+				<value>GUID d9689b73-885e-44c4-896b-de43defa0a33</value>
+				<value>GUID 5717d983-7bb5-4aba-bdc8-41bcb977f568</value>
+				<value>GUID ab285915-0966-4322-a029-ffac3e6ef3df</value>
+				<value>GUID 9cc53d72-19ca-4127-8a20-6c84594ca402</value>
+				<value>GUID f3982d2a-a025-49c3-8420-66c1577c0878</value>
+				<value>GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620</value>
+			</AggregatesList>
+		</IProject>
+		<IProfile type="e">
+			<fileName type="a">SysML</fileName>
+			<_persistAs type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy</_persistAs>
+			<_id type="a">GUID d9689b73-885e-44c4-896b-de43defa0a33</_id>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IProfile type="e">
+			<fileName type="a">MISRAC++</fileName>
+			<_persistAs type="a">$OMROOT\Settings\MISRA</_persistAs>
+			<_id type="a">GUID 5717d983-7bb5-4aba-bdc8-41bcb977f568</_id>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IProfile type="e">
+			<fileName type="a">SysMLPerspectives</fileName>
+			<_persistAs type="a">$OMROOT\Settings\SysMLPerspectives</_persistAs>
+			<_id type="a">GUID ab285915-0966-4322-a029-ffac3e6ef3df</_id>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IDependency type="e">
+			<_id type="a">GUID 9cc53d72-19ca-4127-8a20-6c84594ca402</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">MISRAC__</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">AppliedProfile</_hname>
+							<_hid type="a">GUID d2eca2c1-e5a5-4296-9453-29283c4ed8bc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">5.15.2026::8:2:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:2:4</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IProfile</_hm2Class>
+					<_hname type="a">MISRAC++</_hname>
+					<_hid type="a">GUID 5717d983-7bb5-4aba-bdc8-41bcb977f568</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IProject</_hm2Class>
+					<_hname type="a">2IMP30_V1</_hname>
+					<_hid type="a">GUID 98303639-6bdf-4c4f-922a-27dbf0e15605</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<ISubsystem type="e">
+			<fileName type="a">Default</fileName>
+			<_id type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_id>
+		</ISubsystem>
+		<IComponent type="e">
+			<fileName type="a">DefaultComponent</fileName>
+			<_id type="a">GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620</_id>
+		</IComponent>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
