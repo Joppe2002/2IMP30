@@ -54,8 +54,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.15.2026::8:2:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2026::8:2:49</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.15.2026::9:9:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::9:9:31</_modifiedTime>
+			<_lastID type="a">3</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<value>16777215</value>
@@ -79,7 +80,7 @@
 			<_defaultSubsystem type="r">
 				<ISubsystemHandle type="e">
 					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hname type="a">Default</_hname>
+					<_hname type="a">SystemContext</_hname>
 					<_hid type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_hid>
 				</ISubsystemHandle>
 			</_defaultSubsystem>
@@ -133,6 +134,9 @@
 				<value>GUID ab285915-0966-4322-a029-ffac3e6ef3df</value>
 				<value>GUID 9cc53d72-19ca-4127-8a20-6c84594ca402</value>
 				<value>GUID f3982d2a-a025-49c3-8420-66c1577c0878</value>
+				<value>GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</value>
+				<value>GUID 48259056-c01c-453c-ad12-bc652aa5cc88</value>
+				<value>GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</value>
 				<value>GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620</value>
 			</AggregatesList>
 		</IProject>
@@ -188,8 +192,20 @@
 			</_dependent>
 		</IDependency>
 		<ISubsystem type="e">
-			<fileName type="a">Default</fileName>
+			<fileName type="a">SystemContext</fileName>
 			<_id type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Architecture</fileName>
+			<_id type="a">GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">UseCases</fileName>
+			<_id type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Requirements</fileName>
+			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
 		</ISubsystem>
 		<IComponent type="e">
 			<fileName type="a">DefaultComponent</fileName>

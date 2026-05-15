@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>110.0.1</version>
+	<lang>C++</lang>
+	<BuildNo>202408271326</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Architecture</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::9:4:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::9:4:48</_modifiedTime>
+			<weakCGTime type="a">5.15.2026::9:4:48</weakCGTime>
+			<strongCGTime type="a">5.15.2026::9:4:43</strongCGTime>
+			<_defaultComposite type="s">GUID fc3fefa4-18f6-48a0-8974-90a7d87683bb</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID fc3fefa4-18f6-48a0-8974-90a7d87683bb</value>
+				<value>GUID e0ab63f2-218f-4794-8bb3-94ccbceb04ab</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID fc3fefa4-18f6-48a0-8974-90a7d87683bb</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID e0ab63f2-218f-4794-8bb3-94ccbceb04ab</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">SMSWTD</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
+							<_hname type="a">Block</_hname>
+							<_hid type="a">GUID f685432f-691e-4ff1-be70-4d09d19457e1</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">5.15.2026::9:4:48</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">SystemContext_bdd</_hname>
+					<_hid type="a">GUID 1262a735-6698-44a7-bacb-0898afc79ac8</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.15.2026::9:4:48</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">5.15.2026::9:4:48</weakCGTime>
+			<strongCGTime type="a">5.15.2026::9:4:48</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 66ae35b2-0480-4e86-b72a-bd6303d937c9</value>
+				<value>GUID 01b8b846-e038-4f83-b34c-ca55b51e3af5</value>
+				<value>GUID db503191-6f8d-41e2-9bbc-cf73c36741dc</value>
+				<value>GUID 10f3190c-77f4-4f68-abff-e33cc898db6e</value>
+				<value>GUID 7fd9666c-0983-481e-bfd7-d9e43ba6012b</value>
+				<value>GUID 057cc3e0-dd0e-4554-93ee-5c68d31c6283</value>
+				<value>GUID f8030004-fe1d-4a3d-b985-ebfee57b4f6d</value>
+				<value>GUID 52c10908-d374-4350-a6db-2c41062d1339</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 66ae35b2-0480-4e86-b72a-bd6303d937c9</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStakeholders</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:51:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:51:35</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Stakeholders</_hname>
+					<_hid type="a">GUID 88748a4e-91bb-4333-8684-d33dd0115aaa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Stakeholders</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID 7d6fbdd5-b113-4fa5-9dbd-4b5f62440e25</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 01b8b846-e038-4f83-b34c-ca55b51e3af5</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsInformation_Channels</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:52:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:52:7</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Information_Channels</_hname>
+					<_hid type="a">GUID dcda1887-30ee-47b0-ad76-8484747d39ff</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Information_Channels</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID 61d95c04-d8c5-42b5-b38c-d757a114566b</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID db503191-6f8d-41e2-9bbc-cf73c36741dc</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStandards_and_Regulations</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:52:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:52:35</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Standards_and_Regulations</_hname>
+					<_hid type="a">GUID ed6b2302-6e36-4f81-9312-7a8bb3a8d738</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Standards_and_Regulations</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID f1a35a1e-4520-48b0-a94c-74c0eddf8a90</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 10f3190c-77f4-4f68-abff-e33cc898db6e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCultural_and_Geological_Differences</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:53:29</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:53:29</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Cultural_and_Geological_Differences</_hname>
+					<_hid type="a">GUID 48bd85df-aec5-4af6-bfcd-1f2396b6b986</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Cultural_and_Geological_Differences</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID c6507aaf-3e23-482a-a874-02bf827fa10f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 7fd9666c-0983-481e-bfd7-d9e43ba6012b</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsSatellite_Imagery</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:56:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:56:48</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Satellite_Imagery</_hname>
+					<_hid type="a">GUID c1a6639d-fa57-4446-bd4b-ddbdd6160d64</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Satellite_Imagery</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID 24ebf3d3-d197-45be-ac31-2c644f491827</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 057cc3e0-dd0e-4554-93ee-5c68d31c6283</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsAircraft_Sensors</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:56:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:56:51</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Aircraft_Sensors</_hname>
+					<_hid type="a">GUID c2206ceb-4dee-458c-b488-5a9fac5840c9</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Aircraft_Sensors</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID fb5610c7-3d91-439e-9deb-d59df488b933</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID f8030004-fe1d-4a3d-b985-ebfee57b4f6d</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsSeabed_Sensors</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:56:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:56:54</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Seabed_Sensors</_hname>
+					<_hid type="a">GUID f8c2d75c-f9a7-40c7-a46c-8146ae565127</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Seabed_Sensors</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID 8422e91a-53ac-4495-819d-9be870c42e25</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 52c10908-d374-4350-a6db-2c41062d1339</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsUnderwater_Sensors</_name>
+			<_modifiedTimeWeak type="a">5.15.2026::8:56:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2026::8:56:58</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Underwater_Sensors</_hname>
+					<_hid type="a">GUID cb400c11-e2af-4717-afa1-afa4b9c522b7</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hclass type="a">Underwater_Sensors</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID 5226b35c-beb1-429a-b78b-7cbca6382544</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
