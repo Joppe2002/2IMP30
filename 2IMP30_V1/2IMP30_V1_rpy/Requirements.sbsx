@@ -12,10 +12,10 @@
 			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">5.17.2026::11:34:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:34:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.17.2026::11:54:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.17.2026::11:54:11</_modifiedTime>
 			<_lastID type="a">17</_lastID>
-			<weakCGTime type="a">5.17.2026::11:34:15</weakCGTime>
+			<weakCGTime type="a">5.17.2026::11:54:11</weakCGTime>
 			<strongCGTime type="a">5.17.2026::11:10:54</strongCGTime>
 			<_defaultComposite type="s">GUID 57a83d9c-cc18-4f9a-b944-913420659258</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -38,8 +38,8 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</OwnedDependencies>
-			<_modifiedTimeWeak type="a">5.17.2026::11:34:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:34:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.17.2026::11:54:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.17.2026::11:54:11</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect environmental data from satellite, airborne, and underwater sensor platforms.\par%0D
 }%0D
@@ -59,8 +59,8 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</OwnedDependencies>
-			<_modifiedTimeWeak type="a">5.17.2026::11:34:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:34:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.17.2026::11:54:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.17.2026::11:54:11</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect atmospheric conditions associated with storm events.\par%0D
 \par%0D
@@ -81,11 +81,11 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</OwnedDependencies>
-			<_modifiedTimeWeak type="a">5.17.2026::11:21:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:21:9</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.17.2026::11:53:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.17.2026::11:53:51</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall record storm position including latitude, longitude, diameter, and altitude.\par%0D
+\viewkind4\uc1\pard\fs20 The system shall collect storm position including latitude, longitude, diameter, and altitude.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.01.01</reqID>
@@ -94,10 +94,10 @@
 			<_id type="a">GUID a2a76f0f-1df7-4b2d-a4f0-6c1542929841</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">PrecipitationDataCollection</_name>
-			<_modifiedTimeWeak type="a">5.17.2026::11:34:7</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:34:7</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.17.2026::11:54:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.17.2026::11:54:11</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall record precipitation type and amount.\par%0D
+\viewkind4\uc1\pard\fs20 The system shall collect precipitation type and amount.\par%0D
 \par%0D
 }%0D
 </_body>
@@ -107,10 +107,10 @@
 			<_id type="a">GUID a3c85bdf-df22-43bc-9ab4-4928cfa2bb38</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">WindDataCollection</_name>
-			<_modifiedTimeWeak type="a">5.17.2026::11:34:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:34:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.17.2026::11:54:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.17.2026::11:54:1</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall record wind speed and wind direction.\par%0D
+\viewkind4\uc1\pard\fs20 The system shall collect wind speed and wind direction.\par%0D
 \par%0D
 }%0D
 </_body>
@@ -447,8 +447,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.17.2026::11:38:44</_modifiedTime>
-			<_lastModifiedTime type="a">5.17.2026::11:38:44</_lastModifiedTime>
+			<_modifiedTime type="a">5.17.2026::11:54:11</_modifiedTime>
+			<_lastModifiedTime type="a">5.17.2026::11:54:11</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
