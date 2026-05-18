@@ -12,14 +12,14 @@
 			<_id type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">SystemContext</_name>
-			<_modifiedTimeWeak type="a">5.15.2026::9:5:30</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2026::7:57:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.15.2026::9:4:48</_modifiedTime>
 			<_lastID type="a">31</_lastID>
-			<weakCGTime type="a">5.15.2026::9:5:30</weakCGTime>
+			<weakCGTime type="a">5.18.2026::7:57:42</weakCGTime>
 			<strongCGTime type="a">5.15.2026::8:39:13</strongCGTime>
 			<_defaultComposite type="s">GUID 2f0b20e0-0698-4a1b-ae07-6af4217bfcad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">5.15.2026::9:4:48</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 1262a735-6698-44a7-bacb-0898afc79ac8</value>
 				<value>GUID 2f0b20e0-0698-4a1b-ae07-6af4217bfcad</value>
@@ -804,13 +804,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 1cdd61a5-4643-4cc6-89eb-f74b68d4e17f</value>
 				<value>GUID 738eb416-717c-43b0-87e0-77e4bfe07a50</value>
+				<value>GUID 1cdd61a5-4643-4cc6-89eb-f74b68d4e17f</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 1cdd61a5-4643-4cc6-89eb-f74b68d4e17f</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 738eb416-717c-43b0-87e0-77e4bfe07a50</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -820,8 +820,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 738eb416-717c-43b0-87e0-77e4bfe07a50</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID 1cdd61a5-4643-4cc6-89eb-f74b68d4e17f</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -1093,6 +1093,7 @@
 			<m_bShowQualifier2 type="a">1</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsUser</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1109,6 +1110,7 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsInformation_Channels</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1252,13 +1254,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 46b2910a-46c0-45b0-b6e2-f7dffcea9851</value>
 				<value>GUID 361a1af5-823d-4f1d-9005-c5c69e5b3a73</value>
+				<value>GUID 46b2910a-46c0-45b0-b6e2-f7dffcea9851</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 46b2910a-46c0-45b0-b6e2-f7dffcea9851</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 361a1af5-823d-4f1d-9005-c5c69e5b3a73</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -1268,8 +1270,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 361a1af5-823d-4f1d-9005-c5c69e5b3a73</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID 46b2910a-46c0-45b0-b6e2-f7dffcea9851</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -1735,13 +1737,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 0b3f057c-c5eb-4ae9-a2d9-81f4f3b39ab9</value>
 				<value>GUID 29f063c2-676b-42cf-a0e2-f866bc69ac3e</value>
+				<value>GUID 0b3f057c-c5eb-4ae9-a2d9-81f4f3b39ab9</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 0b3f057c-c5eb-4ae9-a2d9-81f4f3b39ab9</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 29f063c2-676b-42cf-a0e2-f866bc69ac3e</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -1751,8 +1753,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 29f063c2-676b-42cf-a0e2-f866bc69ac3e</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID 0b3f057c-c5eb-4ae9-a2d9-81f4f3b39ab9</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -2005,13 +2007,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID b23dc862-9f3e-4009-be63-7db5ab957a86</value>
 				<value>GUID 09ebf3b6-569b-4a28-8347-61d7d4b9c64c</value>
+				<value>GUID b23dc862-9f3e-4009-be63-7db5ab957a86</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID b23dc862-9f3e-4009-be63-7db5ab957a86</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 09ebf3b6-569b-4a28-8347-61d7d4b9c64c</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -2021,8 +2023,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 09ebf3b6-569b-4a28-8347-61d7d4b9c64c</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID b23dc862-9f3e-4009-be63-7db5ab957a86</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -2295,13 +2297,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID de04ad18-2cbd-406d-9e45-b5aa3a3bb7f3</value>
 				<value>GUID 80d7904f-3691-4c5f-81f4-c65d8d023a3d</value>
+				<value>GUID de04ad18-2cbd-406d-9e45-b5aa3a3bb7f3</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID de04ad18-2cbd-406d-9e45-b5aa3a3bb7f3</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 80d7904f-3691-4c5f-81f4-c65d8d023a3d</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -2311,8 +2313,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 80d7904f-3691-4c5f-81f4-c65d8d023a3d</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID de04ad18-2cbd-406d-9e45-b5aa3a3bb7f3</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -3147,13 +3149,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 791c616b-205d-4cdd-8f10-12aa2259a0c0</value>
 				<value>GUID 0699842a-3367-4907-a54d-94d1143f8dbf</value>
+				<value>GUID 791c616b-205d-4cdd-8f10-12aa2259a0c0</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 791c616b-205d-4cdd-8f10-12aa2259a0c0</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 0699842a-3367-4907-a54d-94d1143f8dbf</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -3163,8 +3165,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 0699842a-3367-4907-a54d-94d1143f8dbf</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID 791c616b-205d-4cdd-8f10-12aa2259a0c0</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -3524,13 +3526,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 36b73e85-8a41-4868-9471-0c438e62294b</value>
 				<value>GUID 376948e7-9008-4f94-bef4-aaa11f5df280</value>
+				<value>GUID 36b73e85-8a41-4868-9471-0c438e62294b</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 36b73e85-8a41-4868-9471-0c438e62294b</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 376948e7-9008-4f94-bef4-aaa11f5df280</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -3540,8 +3542,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 376948e7-9008-4f94-bef4-aaa11f5df280</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID 36b73e85-8a41-4868-9471-0c438e62294b</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -3698,13 +3700,13 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 6144e996-efd5-4f33-962b-1e8467eea833</value>
 				<value>GUID 5eea12db-f87f-45e1-99bb-324b27d1ab81</value>
+				<value>GUID 6144e996-efd5-4f33-962b-1e8467eea833</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 6144e996-efd5-4f33-962b-1e8467eea833</_id>
-			<m_name type="a">Attribute</m_name>
+			<_id type="a">GUID 5eea12db-f87f-45e1-99bb-324b27d1ab81</_id>
+			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -3714,8 +3716,8 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 5eea12db-f87f-45e1-99bb-324b27d1ab81</_id>
-			<m_name type="a">Operation</m_name>
+			<_id type="a">GUID 6144e996-efd5-4f33-962b-1e8467eea833</_id>
+			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -4700,7 +4702,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID a65ce121-2aae-4a86-bd08-2eebdace5144</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -4749,7 +4751,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID c6ad7ee5-4c08-49b7-99de-ac0722cbb01e</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -4798,7 +4800,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID 85b074cf-3e67-4816-a0f0-bb68d63825ba</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -4847,7 +4849,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID e30168c6-48c5-4cf9-9c49-fd725c3e4fd0</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -4896,7 +4898,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID 2b0a1a12-2165-45f6-91e3-88281502dd0a</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -4945,7 +4947,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID 0b9518b8-5773-4f6c-ae60-8a5223d9fa8c</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -4959,7 +4961,7 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">User</_name>
-			<_modifiedTimeWeak type="a">5.15.2026::9:5:30</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2026::7:57:50</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -4971,8 +4973,8 @@ Identify potential tsunami triggers</_text>
 Researchers</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">5.15.2026::9:5:30</_modifiedTime>
-			<weakCGTime type="a">5.15.2026::9:5:30</weakCGTime>
+			<_modifiedTime type="a">5.18.2026::7:57:50</_modifiedTime>
+			<weakCGTime type="a">5.18.2026::7:57:50</weakCGTime>
 			<strongCGTime type="a">5.15.2026::8:39:46</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -4981,6 +4983,9 @@ Researchers</_text>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 18657814-81b7-4144-af7a-55c284d4d30c</value>
+				<value>GUID 17f70632-328c-438c-89b3-93ad4f8b9fe0</value>
+				<value>GUID 34467c04-c78a-43f6-8b86-b93f9fb46c04</value>
+				<value>GUID 9a3081c3-31a7-4761-906b-35bf157b6c39</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -5000,6 +5005,93 @@ Researchers</_text>
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID 3dd2a0f7-a205-4e17-8928-c48877629d76</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 17f70632-328c-438c-89b3-93ad4f8b9fe0</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRelay_Storm_Info</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2026::7:57:42</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCases</_hsubsystem>
+					<_hname type="a">Relay_Storm_Info</_hname>
+					<_hid type="a">GUID 520a8701-539c-4b3c-bae1-0b809c0357f9</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCases</_hsubsystem>
+					<_hclass type="a">Relay_Storm_Info</_hclass>
+					<_hname type="a">itsUser</_hname>
+					<_hid type="a">GUID b9b3c044-864d-41b4-9621-9e44d53a9f15</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 34467c04-c78a-43f6-8b86-b93f9fb46c04</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRelay_Weather_Info</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2026::7:57:45</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCases</_hsubsystem>
+					<_hname type="a">Relay_Weather_Info</_hname>
+					<_hid type="a">GUID ba94c93b-a9e3-4b5e-a877-8bfe3c476763</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCases</_hsubsystem>
+					<_hclass type="a">Relay_Weather_Info</_hclass>
+					<_hname type="a">itsUser</_hname>
+					<_hid type="a">GUID f08401f9-582f-4ef0-bb9c-4f064dac69ad</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 9a3081c3-31a7-4761-906b-35bf157b6c39</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRelay_Evacuation_Info</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2026::7:57:50</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCases</_hsubsystem>
+					<_hname type="a">Relay_Evacuation_Info</_hname>
+					<_hid type="a">GUID 8310b6cf-740e-4b7e-8f23-8dfdd2f9c5c9</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCases</_hsubsystem>
+					<_hclass type="a">Relay_Evacuation_Info</_hclass>
+					<_hname type="a">itsUser</_hname>
+					<_hid type="a">GUID 443e6245-40d0-48df-98c8-5a1d0c1fa8b0</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

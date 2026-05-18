@@ -18,7 +18,8 @@
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
 					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
-					<_hid type="a">GUID 926f8b93-cd52-48a8-b547-7e8c0629e1df</_hid>
+					<_hname type="a">DefaultConfig</_hname>
+					<_hid type="a">GUID 3c8ead14-01ad-462b-8ab4-b43fb7a286c4</_hid>
 				</ICodeGenConfigInfoHandle>
 			</m_configActive>
 			<HandlesInMe type="c">
@@ -26,7 +27,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IProfile</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbsx</_hfilename>
 							<_hname type="a">SysML</_hname>
 							<_hid type="a">GUID d9689b73-885e-44c4-896b-de43defa0a33</_hid>
 						</IHandle>
@@ -34,7 +35,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IProfile</_hm2Class>
-							<_hfilename type="a">$OMROOT\Settings\MISRA\MISRAC++.sbs</_hfilename>
+							<_hfilename type="a">$OMROOT\Settings\MISRA\MISRAC++.sbsx</_hfilename>
 							<_hname type="a">MISRAC++</_hname>
 							<_hid type="a">GUID 5717d983-7bb5-4aba-bdc8-41bcb977f568</_hid>
 						</IHandle>
@@ -50,9 +51,33 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
-							<_hfilename type="a">.\Default.sbsx</_hfilename>
-							<_hname type="a">Default</_hname>
+							<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+							<_hname type="a">SystemContext</_hname>
 							<_hid type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+							<_hname type="a">Architecture</_hname>
+							<_hid type="a">GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UseCases.sbsx</_hfilename>
+							<_hname type="a">UseCases</_hname>
+							<_hid type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hname type="a">Requirements</_hname>
+							<_hid type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
