@@ -32,7 +32,7 @@
 								<m_nBottom type="a">723</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
-						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_wasOpenedOnCloseProject type="a">0</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
 								<_hm2Class type="a">IDiagram</_hm2Class>
@@ -76,7 +76,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">42 180 </_UpLeft>
 						<_DownRight type="a">1321 847 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -106,9 +106,9 @@
 								<_hid type="a">GUID e0943032-4ba9-4a3f-b899-7b04eacebd15</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">217 10 </_UpLeft>
-						<_DownRight type="a">1496 677 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<_UpLeft type="a">225 10 </_UpLeft>
+						<_DownRight type="a">1504 677 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
