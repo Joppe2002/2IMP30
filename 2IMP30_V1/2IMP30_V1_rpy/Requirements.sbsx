@@ -12,10 +12,10 @@
 			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">5.20.2026::12:57:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.20.2026::12:57:28</_modifiedTime>
-			<_lastID type="a">50</_lastID>
-			<weakCGTime type="a">5.20.2026::12:57:28</weakCGTime>
+			<_modifiedTimeWeak type="a">5.21.2026::12:14:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.21.2026::12:14:16</_modifiedTime>
+			<_lastID type="a">51</_lastID>
+			<weakCGTime type="a">5.21.2026::12:14:16</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 57a83d9c-cc18-4f9a-b944-913420659258</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -47,6 +47,7 @@
 				<value>GUID 4b140d8e-46d7-48c1-85f3-3350ca0eb46c</value>
 				<value>GUID 05048529-616e-49ec-b5d8-8118f100bfa4</value>
 				<value>GUID ce5f161c-83e4-4160-850d-e12005c38a71</value>
+				<value>GUID 4238e03c-b648-40b4-b090-9a52133132d4</value>
 				<value>GUID fd04fdde-b2b7-4362-a0f4-778274792ee4</value>
 				<value>GUID 9d109576-3c78-4c67-9eb1-056feb7b2562</value>
 				<value>GUID 19aa2e8f-0d79-47b5-86cc-35e9b042058f</value>
@@ -1257,13 +1258,17 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+							<_hid type="a">GUID aa7169a1-00cc-4815-9b38-64c2ee558b2a</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2026::7:19:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2026::7:19:43</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.21.2026::12:13:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.21.2026::12:13:27</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20\par%0D
+}%0D
+</_body>
 		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID 7387769e-4026-4e03-b9ca-20ed90669d98</_id>
@@ -1274,13 +1279,17 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+							<_hid type="a">GUID aa7169a1-00cc-4815-9b38-64c2ee558b2a</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2026::7:19:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2026::7:19:43</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.21.2026::12:13:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.21.2026::12:13:48</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20\par%0D
+}%0D
+</_body>
 		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID b22936b3-d295-4970-a25d-21adeadcc813</_id>
@@ -1291,13 +1300,17 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+							<_hid type="a">GUID aa7169a1-00cc-4815-9b38-64c2ee558b2a</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2026::7:19:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2026::7:19:43</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.21.2026::12:14:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.21.2026::12:14:16</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20\par%0D
+}%0D
+</_body>
 		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID 3d18939e-f249-46ab-893a-8e47512c5061</_id>
@@ -1860,6 +1873,17 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 }%0D
 </_body>
 		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">requirement_50</_name>
+			<_modifiedTimeWeak type="a">5.21.2026::11:46:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.21.2026::11:46:1</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system (connect to the data sources....)\par%0D
+}%0D
+</_body>
+		</IRequirement>
 		<IDiagram type="e">
 			<_id type="a">GUID fd04fdde-b2b7-4362-a0f4-778274792ee4</_id>
 			<_myState type="a">8192</_myState>
@@ -2135,8 +2159,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.20.2026::12:56:48</_modifiedTime>
-			<_lastModifiedTime type="a">5.20.2026::12:56:48</_lastModifiedTime>
+			<_modifiedTime type="a">5.21.2026::11:46:1</_modifiedTime>
+			<_lastModifiedTime type="a">5.21.2026::11:46:1</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -2179,7 +2203,7 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">29</elementList>
+			<elementList type="a">30</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -2221,6 +2245,7 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				<value>GUID 0d39111f-aa8c-4f0f-8cd4-6ea7762cb173</value>
 				<value>GUID 807d6d21-010a-47bd-ab46-9a77419092e6</value>
 				<value>GUID 1bee4cab-65ba-41c0-9140-8ed85ef571c3</value>
+				<value>GUID 4b49a93d-b933-44ca-bb1e-8cb58fcb529c</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIClass type="e">
@@ -2794,7 +2819,7 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.182657 0 0 0.135531 40 578.593 </m_transform>
+			<m_transform type="a">0.182657 0 0 0.136447 40 578.591 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -4135,8 +4160,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">0 382 </m_SourcePort>
-			<m_TargetPort type="a">542 542 </m_TargetPort>
+			<m_SourcePort type="a">-3 374 </m_SourcePort>
+			<m_TargetPort type="a">542 545 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -4348,6 +4373,108 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
+		<CGIAnnotation type="e">
+			<_id type="a">GUID 4b49a93d-b933-44ca-bb1e-8cb58fcb529c</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">176</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 908888dd-8fd3-43cc-91cf-0fd6439a6262</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">requirement_50</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4104</m_drawBehavior>
+			<m_transform type="a">0.182657 0 0 0.136447 58 848.591 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_AdditionalLabel type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_AdditionalLabel>
+			<m_polygon type="a">4 0 3  0 1095  1084 1095  1084 3  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<frameset type="a">&lt;frameset rows=50%25,50%25&gt;
+&lt;frame name=IDTextCompartment&gt;
+&lt;frame name=SpecificationTextCompartment&gt;</frameset>
+			<_iTempdisplayTextFlag type="a">1</_iTempdisplayTextFlag>
+			<m_bIsBoxStyle type="a">1</m_bIsBoxStyle>
+			<AggregatesList type="e">
+				<value>GUID 8ee6e7b9-4335-409f-96f3-f3d636bdd8d4</value>
+				<value>GUID 95a216ce-1659-49f2-8c6a-af1bf0fa4b85</value>
+			</AggregatesList>
+		</CGIAnnotation>
+		<CGICompartment type="e">
+			<_id type="a">GUID 8ee6e7b9-4335-409f-96f3-f3d636bdd8d4</_id>
+			<m_name type="a">ID</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
+		<CGICompartment type="e">
+			<_id type="a">GUID 95a216ce-1659-49f2-8c6a-af1bf0fa4b85</_id>
+			<m_name type="a">Specification</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
 		<IDiagram type="e">
 			<_id type="a">GUID 9d109576-3c78-4c67-9eb1-056feb7b2562</_id>
 			<_myState type="a">8192</_myState>
@@ -4573,8 +4700,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.20.2026::12:56:48</_modifiedTime>
-			<_lastModifiedTime type="a">5.20.2026::12:56:48</_lastModifiedTime>
+			<_modifiedTime type="a">5.21.2026::12:14:16</_modifiedTime>
+			<_lastModifiedTime type="a">5.21.2026::12:14:16</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -7996,8 +8123,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.20.2026::12:56:48</_modifiedTime>
-			<_lastModifiedTime type="a">5.20.2026::12:56:48</_lastModifiedTime>
+			<_modifiedTime type="a">5.21.2026::11:44:6</_modifiedTime>
+			<_lastModifiedTime type="a">5.21.2026::11:44:6</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
