@@ -12,10 +12,10 @@
 			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">5.21.2026::12:14:16</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:14:16</_modifiedTime>
-			<_lastID type="a">51</_lastID>
-			<weakCGTime type="a">5.21.2026::12:14:16</weakCGTime>
+			<_modifiedTimeWeak type="a">5.26.2026::12:33:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::12:33:48</_modifiedTime>
+			<_lastID type="a">52</_lastID>
+			<weakCGTime type="a">5.26.2026::12:33:48</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 57a83d9c-cc18-4f9a-b944-913420659258</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -48,6 +48,7 @@
 				<value>GUID 05048529-616e-49ec-b5d8-8118f100bfa4</value>
 				<value>GUID ce5f161c-83e4-4160-850d-e12005c38a71</value>
 				<value>GUID 4238e03c-b648-40b4-b090-9a52133132d4</value>
+				<value>GUID da25bbdf-399d-44ff-bd75-b9aecab54073</value>
 				<value>GUID fd04fdde-b2b7-4362-a0f4-778274792ee4</value>
 				<value>GUID 9d109576-3c78-4c67-9eb1-056feb7b2562</value>
 				<value>GUID 19aa2e8f-0d79-47b5-86cc-35e9b042058f</value>
@@ -1884,6 +1885,27 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 }%0D
 </_body>
 		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID da25bbdf-399d-44ff-bd75-b9aecab54073</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Data_Storage_Maintenance_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">5.26.2026::12:33:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::12:33:48</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 If data is not available in the storage a notification shall be send to a maintenance worker\par%0D
+}%0D
+</_body>
+		</IRequirement>
 		<IDiagram type="e">
 			<_id type="a">GUID fd04fdde-b2b7-4362-a0f4-778274792ee4</_id>
 			<_myState type="a">8192</_myState>
@@ -2159,8 +2181,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::11:46:1</_modifiedTime>
-			<_lastModifiedTime type="a">5.21.2026::11:46:1</_lastModifiedTime>
+			<_modifiedTime type="a">5.26.2026::12:31:14</_modifiedTime>
+			<_lastModifiedTime type="a">5.26.2026::12:31:14</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4700,8 +4722,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:14:16</_modifiedTime>
-			<_lastModifiedTime type="a">5.21.2026::12:14:16</_lastModifiedTime>
+			<_modifiedTime type="a">5.26.2026::12:31:14</_modifiedTime>
+			<_lastModifiedTime type="a">5.26.2026::12:31:14</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8123,8 +8145,8 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::11:44:6</_modifiedTime>
-			<_lastModifiedTime type="a">5.21.2026::11:44:6</_lastModifiedTime>
+			<_modifiedTime type="a">5.26.2026::12:31:14</_modifiedTime>
+			<_lastModifiedTime type="a">5.26.2026::12:31:14</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
