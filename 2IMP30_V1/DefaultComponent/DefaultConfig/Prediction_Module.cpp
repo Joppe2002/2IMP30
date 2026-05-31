@@ -1,0 +1,61 @@
+/********************************************************************
+	Rhapsody	: 10.0.1 
+	Login		: neppo
+	Component	: DefaultComponent 
+	Configuration 	: DefaultConfig
+	Model Element	: Prediction_Module
+//!	Generated Date	: Sun, 31, May 2026  
+	File Path	: DefaultComponent\DefaultConfig\Prediction_Module.cpp
+*********************************************************************/
+
+//#[ ignore
+#define NAMESPACE_PREFIX
+//#]
+
+//## auto_generated
+#include "Prediction_Module.h"
+//#[ ignore
+#define Architecture_Prediction_Module_Prediction_Module_SERIALIZE OM_NO_OP
+//#]
+
+//## package Architecture
+
+//## class Prediction_Module
+Prediction_Module::Prediction_Module(void) {
+    NOTIFY_CONSTRUCTOR(Prediction_Module, Prediction_Module(), 0, Architecture_Prediction_Module_Prediction_Module_SERIALIZE);
+}
+
+Prediction_Module::~Prediction_Module(void) {
+    NOTIFY_DESTRUCTOR(~Prediction_Module, true);
+}
+
+const Storm_Prediction* Prediction_Module::getItsStorm_Prediction(void) const {
+    return &itsStorm_Prediction;
+}
+
+const Tsunami_Prediction* Prediction_Module::getItsTsunami_Prediction(void) const {
+    return &itsTsunami_Prediction;
+}
+
+const Wheather_Prediction* Prediction_Module::getItsWheather_Prediction(void) const {
+    return &itsWheather_Prediction;
+}
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+void OMAnimatedPrediction_Module::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsStorm_Prediction", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsStorm_Prediction);
+    aomsRelations->addRelation("itsWheather_Prediction", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsWheather_Prediction);
+    aomsRelations->addRelation("itsTsunami_Prediction", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTsunami_Prediction);
+}
+//#]
+
+IMPLEMENT_META_P(Prediction_Module, Architecture, Architecture, false, OMAnimatedPrediction_Module)
+#endif // _OMINSTRUMENT
+
+/*********************************************************************
+	File Path	: DefaultComponent\DefaultConfig\Prediction_Module.cpp
+*********************************************************************/

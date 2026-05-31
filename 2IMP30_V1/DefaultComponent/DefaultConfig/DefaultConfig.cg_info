@@ -1,0 +1,872 @@
+I-Logix-RPY-Archive version 8.15.0 * 202408271326
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 79;
+	- value = "DefaultComponent\\DefaultConfig\\Actionable_Information_Generator.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Actionable_Information_Generator.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Aircraft_Sensors.cpp" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Aircraft_Sensors.h" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Architecture.cpp" 5.31.2026::12:28:56
+	"DefaultComponent\\DefaultConfig\\Architecture.h" 5.31.2026::12:21:3
+	"DefaultComponent\\DefaultConfig\\Civilians.cpp" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Civilians.h" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Cultural_and_Geological_Differences.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Cultural_and_Geological_Differences.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Data_Storage.cpp" 5.31.2026::12:30:9
+	"DefaultComponent\\DefaultConfig\\Data_Storage.h" 5.31.2026::12:28:56
+	"DefaultComponent\\DefaultConfig\\Emergency_Responders.cpp" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Emergency_Responders.h" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Flow_Direction_Detector.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Flow_Direction_Detector.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Government.cpp" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Government.h" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Government_Networks.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Government_Networks.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Information_Channels.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Information_Channels.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Mobile_Apps.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Mobile_Apps.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\News_Outlets.cpp" 5.31.2026::11:45:17
+	"DefaultComponent\\DefaultConfig\\News_Outlets.h" 5.31.2026::11:45:17
+	"DefaultComponent\\DefaultConfig\\Prediction_Module.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Prediction_Module.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Pressure_Sensor.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Pressure_Sensor.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\ProxyPortInterfaces.cpp" 5.31.2026::12:28:56
+	"DefaultComponent\\DefaultConfig\\ProxyPortInterfaces.h" 5.31.2026::12:28:56
+	"DefaultComponent\\DefaultConfig\\Researchers.cpp" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\Researchers.h" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\SMSWTD.cpp" 5.31.2026::12:28:56
+	"DefaultComponent\\DefaultConfig\\SMSWTD.h" 5.31.2026::12:28:56
+	"DefaultComponent\\DefaultConfig\\SMS_Signaling.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\SMS_Signaling.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Satellite_Imagery.cpp" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Satellite_Imagery.h" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Seabed_Sensors.cpp" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Seabed_Sensors.h" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Stakeholders.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Stakeholders.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Standards_and_Regulations.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Standards_and_Regulations.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Storm_Prediction.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Storm_Prediction.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Storm_Sensors.cpp" 5.31.2026::12:10:28
+	"DefaultComponent\\DefaultConfig\\Storm_Sensors.h" 5.31.2026::12:10:28
+	"DefaultComponent\\DefaultConfig\\SystemContext.cpp" 5.31.2026::12:21:3
+	"DefaultComponent\\DefaultConfig\\SystemContext.h" 5.31.2026::12:10:28
+	"DefaultComponent\\DefaultConfig\\System_Output.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\System_Output.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Tsunami_Prediction.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Tsunami_Prediction.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Tsunami_Sensors.cpp" 5.31.2026::12:21:3
+	"DefaultComponent\\DefaultConfig\\Tsunami_Sensors.h" 5.31.2026::12:21:3
+	"DefaultComponent\\DefaultConfig\\Underwater_Sensors.cpp" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\Underwater_Sensors.h" 5.31.2026::11:51:58
+	"DefaultComponent\\DefaultConfig\\UseCases.cpp" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\UseCases.h" 5.31.2026::9:51:16
+	"DefaultComponent\\DefaultConfig\\User.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\User.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Wheather_Prediction.cpp" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\Wheather_Prediction.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\bool_raw_flowDirection_ProxyFlowPropertyInterface.h" 5.31.2026::12:21:2
+	"DefaultComponent\\DefaultConfig\\int_precipitation_amount_ProxyFlowPropertyInterface.h" 5.31.2026::9:51:15
+	"DefaultComponent\\DefaultConfig\\int_raw_precipitation_amount_ProxyFlowPropertyInterface.h" 5.31.2026::11:42:47
+	"DefaultComponent\\DefaultConfig\\int_raw_pressure_ProxyFlowPropertyInterface.h" 5.31.2026::12:21:2
+	"DefaultComponent\\DefaultConfig\\int_raw_storm_altitude_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	"DefaultComponent\\DefaultConfig\\int_raw_storm_diameter_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	"DefaultComponent\\DefaultConfig\\int_raw_storm_latitude_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	"DefaultComponent\\DefaultConfig\\int_raw_storm_longitude_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	"DefaultComponent\\DefaultConfig\\int_raw_tectonicPlate_location_ProxyFlowPropertyInterface.h" 5.31.2026::12:21:2
+	"DefaultComponent\\DefaultConfig\\int_raw_vibrations_ProxyFlowPropertyInterface.h" 5.31.2026::12:21:2
+	"DefaultComponent\\DefaultConfig\\int_raw_wind_direction_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	"DefaultComponent\\DefaultConfig\\int_raw_wind_speed_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	"DefaultComponent\\DefaultConfig\\precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h" 5.31.2026::12:2:58
+	
+}
+- m_saveUnitAndOwnerSaveUnit = { IRPYRawContainer 
+	- size = 5;
+	- value = "GUID 23e6f377-05a7-4ab9-9462-3636d6ba4ccf" "GUID 98303639-6bdf-4c4f-922a-27dbf0e15605"
+	"GUID 48259056-c01c-453c-ad12-bc652aa5cc88" "GUID 98303639-6bdf-4c4f-922a-27dbf0e15605"
+	"GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620" "GUID 98303639-6bdf-4c4f-922a-27dbf0e15605"
+	"GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0" "GUID 98303639-6bdf-4c4f-922a-27dbf0e15605"
+	"GUID f3982d2a-a025-49c3-8420-66c1577c0878" "GUID 98303639-6bdf-4c4f-922a-27dbf0e15605"
+	
+}
+- size = 128;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_tectonicPlate_location_ProxyFlowPropertyInterface";
+	- _id = GUID 5449a77b-186b-4a54-b0e7-b21f9cf2011b;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID d6aa16c0-9035-46ef-975f-fe5dc4b1487b;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface";
+	- _id = GUID 7529c901-d6ce-4596-8a13-291a762e4692;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID b0795508-83a1-44b8-bae8-e502366591c7;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 121f98ec-1a2d-4863-a667-3d4e019da9ba;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 9828e9a9-c54b-4178-8426-5d3ac3660f5d;
+}
+- genTime = 5.31.2026::10:9:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 2951321b-5a5d-4e37-878a-61c2f230c241;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_wind_speed_ProxyFlowPropertyInterface";
+	- _id = GUID d8f3e7a7-e26f-46b6-bae9-3fcf9b6ea186;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "Actionable_Information_Generator";
+	- _id = GUID 72ec51d6-af6c-438e-ba0a-deab73b9e129;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 26f3b01b-2b0f-4ee1-8bd9-2d5f789fd19f;
+}
+- genTime = 5.31.2026::10:9:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID c387e5b0-0636-4e1b-9817-55e17361f0ab;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_storm_altitude_ProxyFlowPropertyInterface";
+	- _id = GUID ccdebd4d-d776-472e-b587-2205c45edbcf;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Information_Channels";
+	- _id = GUID dcda1887-30ee-47b0-ad76-8484747d39ff;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 4d59d0fb-d00c-4a5a-90a7-83f4c1d53da0;
+}
+- genTime = 5.31.2026::12:21:55;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 8c2d683a-9418-4773-907e-f076f3fe4042;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "SMSWTD";
+	- _id = GUID e0ab63f2-218f-4794-8bb3-94ccbceb04ab;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 4e8722cb-db3f-4b85-bf34-eb32290117af;
+}
+- genTime = 5.31.2026::11:54:13;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Flow_Direction_Detector";
+	- _id = GUID e7b37a79-c301-4c7e-ab48-8b82bed80621;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID e4ebb15b-360c-4c5b-99bb-7faf26ac6aef;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID e28d7ea3-7c94-4adf-96c3-cad38f64361e;
+}
+- genTime = 5.31.2026::11:51:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 86d58043-e532-4dbc-a8e0-f5ef22ce5278;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 67307b2c-46e2-4edf-9e52-04002309507a;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 30bfaa68-e1f5-47da-8867-398894723246;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 37d7097c-389e-45ea-b53d-745c6367d0f8;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID f9314b6d-3fb8-4ef0-bef5-26b496c1d117;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 35621108-ec2e-4b7c-bebe-645b69b56351;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 39bc3028-eabf-497d-b25b-09450fc66348;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "News_Outlets";
+	- _id = GUID de0e1a9b-a4ee-4bf8-bc39-53303d415912;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 23d1b23f-f43b-4fc8-89c3-5e505477d463;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID e0ed4169-9093-41fe-85c1-19d2722f6efe;
+}
+- genTime = 5.31.2026::9:51:16;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 27b9e42a-e3a6-4a10-a23e-b8fc6d253e94;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 3bf85f3e-ff5c-4aef-900a-d5b654cd8abe;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 20a10fb0-3ab4-42b6-8000-d474fb2af46a;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Satellite_Imagery";
+	- _id = GUID c1a6639d-fa57-4446-bd4b-ddbdd6160d64;
+}
+- genTime = 5.31.2026::11:51:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 7551edf8-b49e-4ed4-9791-454b11b41c9f;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 765ee6e4-32f1-4fca-a35a-d7337df58b53;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 75984cc4-b517-454f-93b9-0ec5231d562c;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 09a93a81-90f5-4a73-adda-c0f0446f2f34;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID fbd995bd-ddf6-40db-9d7d-bdb564d294d3;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Stakeholders";
+	- _id = GUID 88748a4e-91bb-4333-8684-d33dd0115aaa;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 83f16da7-f70d-40a6-9a7b-cf0a16b6e96f;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID a274c9cc-300f-45da-902a-351612b8fd75;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Storm_Sensors";
+	- _id = GUID 6045db08-1ae3-4648-80ca-e958da038be1;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 449c9891-2f18-4e77-829b-da986bce4e2a;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID f485da00-21db-41ca-8f13-ed520a775026;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 417b6baa-0bf9-43d5-96e8-1b2d3b8e48b5;
+}
+- genTime = 5.31.2026::12:21:55;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Government_Networks";
+	- _id = GUID 24112c56-59b7-4ed9-b66f-9b2d7688ef25;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
+	- _name = "UseCases";
+	- _id = GUID 48259056-c01c-453c-ad12-bc652aa5cc88;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 1789a9df-f9c0-4180-9cec-2e893d06f67f;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 7132d7ac-971a-4df3-b47d-5c61e95e17ba;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 2998849a-13f2-43c5-ae68-7d73b9833fab;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "Data_Storage";
+	- _id = GUID f41f605c-313c-4092-b3d8-22cd641350cf;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 4ccf88c7-e727-427a-a0d5-353beead1e57;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID f01f0399-2311-481a-b193-701c549b4e2a;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_storm_longitude_ProxyFlowPropertyInterface";
+	- _id = GUID 7456c6fe-43f3-4c75-b85c-6960e636dc6f;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID ee42c7b7-3ffd-4e65-b4e4-83c5a4334e84;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID d4d4ca2a-210b-4ab0-aaf2-fc259a1a5d13;
+}
+- genTime = 5.31.2026::11:44:42;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 0b01d9b6-f107-4381-9dd4-d1917f1f8ca2;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "System_Output";
+	- _id = GUID 40d76145-c08a-4b4a-8520-870a399b0eea;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "User";
+	- _id = GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_wind_direction_ProxyFlowPropertyInterface";
+	- _id = GUID 0ac836b6-e65f-434d-aaed-cb3ef7885233;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 3e73ae66-3f53-4c3d-a86f-4feadd478251;
+}
+- genTime = 5.31.2026::9:51:16;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
+	- _subsystem = "UseCases";
+	- _name = "Government";
+	- _id = GUID 836f35f4-05b6-4d04-8af4-fc38e4400936;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
+	- _subsystem = "UseCases";
+	- _name = "Researchers";
+	- _id = GUID d74d3156-c411-41bd-8dd6-e34ac738a86d;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_storm_latitude_ProxyFlowPropertyInterface";
+	- _id = GUID 4a151fe3-6b68-4668-b3b9-8661b96a6f4f;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 0991771e-95aa-411a-b63f-2d6d1bc6556b;
+}
+- genTime = 5.31.2026::11:48:22;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 4a65a5b8-46b8-467f-b127-52f5bf5ba858;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 0ad94b6e-1789-4998-a7d0-0c756825b18a;
+}
+- genTime = 5.31.2026::12:21:55;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 9dede968-2f0f-493f-a45b-afbd981f666a;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _name = "ProxyPortInterfaces";
+	- _id = GUID 23e6f377-05a7-4ab9-9462-3636d6ba4ccf;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
+	- _subsystem = "UseCases";
+	- _name = "Emergency_Responders";
+	- _id = GUID a216dd2f-6e5b-49bc-a875-d29450b3a547;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID d8941bb3-2dfd-4090-aa20-b0e47e7f613d;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 860ceac2-d221-4737-bcbf-e2ebb0c75a1f;
+}
+- genTime = 5.31.2026::12:21:55;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Mobile_Apps";
+	- _id = GUID 1c5c2574-7b44-40c0-887c-79a56bc85028;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
+	- _subsystem = "UseCases";
+	- _name = "News_Outlets";
+	- _id = GUID 457eb4ac-8f92-4ace-bdd7-33c10348257a;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Underwater_Sensors";
+	- _id = GUID cb400c11-e2af-4717-afa1-afa4b9c522b7;
+}
+- genTime = 5.31.2026::11:51:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 0fc989ff-d393-4ae3-ae23-8ac9d0397db8;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 39a9c089-4211-45b8-8c4c-ae173b381479;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 400cb0e9-9d5e-4e11-9e06-01f6d9bdcc01;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 3f9f7ab4-13aa-4c68-b1d2-ab76d7f359a9;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_precipitation_amount_ProxyFlowPropertyInterface";
+	- _id = GUID 6a830ada-b172-4e24-bcea-fa51fd6c0d7a;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 4844b23c-c370-44a1-a130-2600ebc09e46;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_storm_diameter_ProxyFlowPropertyInterface";
+	- _id = GUID ae320fbc-ea72-4947-bb43-ee3f609ae9ba;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 519d661c-71d8-4f29-878a-4bade9ad2057;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
+	- _subsystem = "UseCases";
+	- _name = "Civilians";
+	- _id = GUID c8a6b8cc-45e8-46d0-b480-14d46e2f5a8c;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 080e1435-0224-42f5-b16e-5cc0913908c4;
+}
+- genTime = 5.31.2026::12:21:3;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 386542d4-828b-4b50-8883-69a5c6b8cd7d;
+}
+- genTime = 5.31.2026::11:54:13;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 331bbd69-d07c-4284-8c98-d7576eb5b78f;
+}
+- genTime = 5.31.2026::11:47:23;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _name = "Architecture";
+	- _id = GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID cf496484-32c8-4731-9c08-425881dc6bc7;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID f4940d0a-5856-4af1-b91d-370dab4e948f;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 1151f76d-0425-4ae4-8808-f1784c730397;
+}
+- genTime = 5.31.2026::11:44:42;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 58248098-88f9-464b-a175-8fd27378e8c9;
+}
+- genTime = 5.31.2026::11:42:48;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 298e9092-542c-4b01-8fe9-43b810337122;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "Prediction_Module";
+	- _id = GUID 70c4b8f3-0233-4d32-b174-b26b7ea04db4;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Tsunami_Sensors";
+	- _id = GUID ac77ec64-0d16-44ca-8ea1-74f32873285f;
+}
+- genTime = 5.31.2026::12:21:55;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "bool_raw_flowDirection_ProxyFlowPropertyInterface";
+	- _id = GUID c65afbe5-cc77-45fa-ad5c-ed1418daf420;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "Tsunami_Prediction";
+	- _id = GUID d56b7669-4adb-49da-affc-fa3030b30368;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 028a68a6-4c63-434d-8e99-4d4530f9a557;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Seabed_Sensors";
+	- _id = GUID f8c2d75c-f9a7-40c7-a46c-8146ae565127;
+}
+- genTime = 5.31.2026::11:51:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 68645236-cc92-4bd4-aaa9-cdbf51223503;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 38012cfd-3c2d-442f-9872-f689a2ef6e7f;
+}
+- genTime = 5.31.2026::11:48:22;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\DefaultComponent.cmpx";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 926f8b93-cd52-48a8-b547-7e8c0629e1df;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "Wheather_Prediction";
+	- _id = GUID e5cff107-0441-43ee-a121-6238a2afad84;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 8ee6732b-3cf1-47c1-a7f4-698977707a8c;
+}
+- genTime = 5.31.2026::11:47:23;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 2cc8eb66-57a8-43e7-860f-971ee758e71d;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Standards_and_Regulations";
+	- _id = GUID ed6b2302-6e36-4f81-9312-7a8bb3a8d738;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "SMS_Signaling";
+	- _id = GUID a9fb394f-7361-46e0-b5b7-a9aea3328815;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 1d281398-8218-454f-95b3-cae30d2fde09;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
+	- _subsystem = "Architecture";
+	- _name = "Storm_Prediction";
+	- _id = GUID 7272d1d9-432a-49a5-9e58-5c994b3441a4;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_vibrations_ProxyFlowPropertyInterface";
+	- _id = GUID 9b99092d-8fc4-4b69-bc4c-f2602e3e84c1;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 5b114153-7e29-4ca2-8985-9629b2a94ac1;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 94ac08f4-3e11-43d8-8b62-01dc280efe8b;
+}
+- genTime = 5.31.2026::12:2:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID e47f681b-9af7-4c90-9e23-4f4bb5b1c370;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _name = "SystemContext";
+	- _id = GUID f3982d2a-a025-49c3-8420-66c1577c0878;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 307bfc3d-7b37-4ebf-b67a-287ba6d3d082;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Pressure_Sensor";
+	- _id = GUID 0a86deb8-1b22-405d-9b51-1d32ac79064a;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Cultural_and_Geological_Differences";
+	- _id = GUID 48bd85df-aec5-4af6-bfcd-1f2396b6b986;
+}
+- genTime = 5.31.2026::11:45:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 898c27bd-32f8-4015-bcc6-f0117935828b;
+}
+- genTime = 5.31.2026::12:21:55;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
+	- _subsystem = "SystemContext";
+	- _name = "Aircraft_Sensors";
+	- _id = GUID c2206ceb-4dee-458c-b488-5a9fac5840c9;
+}
+- genTime = 5.31.2026::11:51:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID e073dded-db70-45d6-bb4e-553a9cb91f95;
+}
+- genTime = 5.31.2026::12:29:31;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "int_raw_pressure_ProxyFlowPropertyInterface";
+	- _id = GUID 830c4d5b-d56d-4aac-a265-b610867f200b;
+}
+- genTime = 5.31.2026::12:30:9;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 1c5572cd-1149-4e16-8ac8-1b035a418d74;
+}
+- genTime = 5.31.2026::9:51:16;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID c1d96e2a-c34a-45f4-a186-782f5352234f;
+}
+- genTime = 5.31.2026::11:42:48;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID edae9316-df2b-44ca-b019-3d5c4dfa925d;
+}
+- genTime = 5.31.2026::12:10:28;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID ee06ae8e-76cd-4e69-b4ca-e1c82b054d27;
+}
+- genTime = 5.31.2026::12:28:56;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 617ce75e-5541-4da7-b803-3590d9d580a0;
+}
+- genTime = 5.31.2026::11:51:58;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _id = GUID 0eae3009-8237-4b53-a995-0cb84a84b38a;
+}
+- genTime = 5.31.2026::12:28:56;
+
