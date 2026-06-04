@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Data_Storage
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Data_Storage.h
 *********************************************************************/
 
@@ -51,6 +51,17 @@
 #include "precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h"
 //## operation setRaw_precipitation_type(precipitation_type_enum)
 #include "SystemContext.h"
+//## class p_Data_Storage_C
+#include "int_flowDirection_ProxyFlowPropertyInterface.h"
+//## class p_Data_Storage_C
+#include "int_pressure_ProxyFlowPropertyInterface.h"
+//## class p_Data_Storage_C
+#include "int_tectonicPlate_location_ProxyFlowPropertyInterface.h"
+//## class p_Data_Storage_C
+#include "int_vibrations_ProxyFlowPropertyInterface.h"
+//## link itsTsunami_Prediction
+class Tsunami_Prediction;
+
 //## package Architecture
 
 //## class Data_Storage
@@ -256,6 +267,83 @@ public :
         
         int_raw_vibrations_ProxyFlowPropertyInterface* itsInt_raw_vibrations_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibrations_ProxyFlowPropertyInterface
     };
+    
+    //## package Architecture
+    class p_Data_Storage_C : public int_flowDirection_ProxyFlowPropertyInterface, public int_pressure_ProxyFlowPropertyInterface, public int_tectonicPlate_location_ProxyFlowPropertyInterface, public int_vibrations_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_Data_Storage_C(void);
+        
+        //## auto_generated
+        virtual ~p_Data_Storage_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        int_flowDirection_ProxyFlowPropertyInterface* getItsInt_flowDirection_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        int_pressure_ProxyFlowPropertyInterface* getItsInt_pressure_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        int_tectonicPlate_location_ProxyFlowPropertyInterface* getItsInt_tectonicPlate_location_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        int_vibrations_ProxyFlowPropertyInterface* getItsInt_vibrations_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        Data_Storage::p_Data_Storage_C* getOutBound(void);
+        
+        //## auto_generated
+        virtual void setFlowDirection(int p_flowDirection);
+        
+        //## auto_generated
+        virtual void setPressure(int p_pressure);
+        
+        //## auto_generated
+        virtual void setTectonicPlate_location(int p_tectonicPlate_location);
+        
+        //## auto_generated
+        virtual void setVibrations(int p_vibrations);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_flowDirection_ProxyFlowPropertyInterface(int_flowDirection_ProxyFlowPropertyInterface* const p_int_flowDirection_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
+        void setItsInt_pressure_ProxyFlowPropertyInterface(int_pressure_ProxyFlowPropertyInterface* const p_int_pressure_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
+        void setItsInt_tectonicPlate_location_ProxyFlowPropertyInterface(int_tectonicPlate_location_ProxyFlowPropertyInterface* const p_int_tectonicPlate_location_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
+        void setItsInt_vibrations_ProxyFlowPropertyInterface(int_vibrations_ProxyFlowPropertyInterface* const p_int_vibrations_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_flowDirection_ProxyFlowPropertyInterface* itsInt_flowDirection_ProxyFlowPropertyInterface;		//## link itsInt_flowDirection_ProxyFlowPropertyInterface
+        
+        int_pressure_ProxyFlowPropertyInterface* itsInt_pressure_ProxyFlowPropertyInterface;		//## link itsInt_pressure_ProxyFlowPropertyInterface
+        
+        int_tectonicPlate_location_ProxyFlowPropertyInterface* itsInt_tectonicPlate_location_ProxyFlowPropertyInterface;		//## link itsInt_tectonicPlate_location_ProxyFlowPropertyInterface
+        
+        int_vibrations_ProxyFlowPropertyInterface* itsInt_vibrations_ProxyFlowPropertyInterface;		//## link itsInt_vibrations_ProxyFlowPropertyInterface
+    };
 //#]
 
     ////    Friends    ////
@@ -281,6 +369,10 @@ public :
     virtual void read_tsunami_sensors(void);
     
 //#[ ignore
+    void setFlowDirection(int p_flowDirection);
+    
+    void setPressure(int p_pressure);
+    
     void setRaw_flowDirection(bool p_raw_flowDirection);
     
     void setRaw_precipitation_amount(int p_raw_precipitation_amount);
@@ -304,8 +396,21 @@ public :
     void setRaw_wind_direction(int p_raw_wind_direction);
     
     void setRaw_wind_speed(int p_raw_wind_speed);
+    
+    void setTectonicPlate_location(int p_tectonicPlate_location);
+    
+    void setVibrations(int p_vibrations);
 //#]
 
+    //## operation write_storm_data()
+    virtual void write_storm_data(void);
+    
+    //## operation write_tsunami_data()
+    virtual void write_tsunami_data(void);
+    
+    //## operation write_weather_data()
+    virtual void write_weather_data(void);
+    
     ////    Additional operations    ////
     
     //## auto_generated
@@ -321,10 +426,19 @@ public :
     p_Tsunami_Data_C* get_p_Tsunami_Data(void) const;
     
     //## auto_generated
-    bool const getFlowDirection(void) const;
+    p_Data_Storage_C* getP_Data_Storage(void) const;
     
     //## auto_generated
-    void setFlowDirection(const bool p_flowDirection);
+    p_Data_Storage_C* get_p_Data_Storage(void) const;
+    
+    //## auto_generated
+    int const getTest(void) const;
+    
+    //## auto_generated
+    void setTest(const int p_Test);
+    
+    //## auto_generated
+    int const getFlowDirection(void) const;
     
     //## auto_generated
     int const getPrecipitation_amount(void) const;
@@ -340,9 +454,6 @@ public :
     
     //## auto_generated
     int const getPressure(void) const;
-    
-    //## auto_generated
-    void setPressure(const int p_pressure);
     
     //## auto_generated
     bool const getRaw_flowDirection(void) const;
@@ -381,6 +492,78 @@ public :
     int const getRaw_wind_speed(void) const;
     
     //## auto_generated
+    bool const getStored_flowDirection(void) const;
+    
+    //## auto_generated
+    void setStored_flowDirection(const bool p_stored_flowDirection);
+    
+    //## auto_generated
+    int const getStored_precipitation_amount(void) const;
+    
+    //## auto_generated
+    void setStored_precipitation_amount(const int p_stored_precipitation_amount);
+    
+    //## auto_generated
+    precipitation_type_enum const getStored_precipitation_type(void) const;
+    
+    //## auto_generated
+    void setStored_precipitation_type(const precipitation_type_enum p_stored_precipitation_type);
+    
+    //## auto_generated
+    int const getStored_pressure(void) const;
+    
+    //## auto_generated
+    void setStored_pressure(const int p_stored_pressure);
+    
+    //## auto_generated
+    int const getStored_storm_altitude(void) const;
+    
+    //## auto_generated
+    void setStored_storm_altitude(const int p_stored_storm_altitude);
+    
+    //## auto_generated
+    int const getStored_storm_diameter(void) const;
+    
+    //## auto_generated
+    void setStored_storm_diameter(const int p_stored_storm_diameter);
+    
+    //## auto_generated
+    int const getStored_storm_latitude(void) const;
+    
+    //## auto_generated
+    void setStored_storm_latitude(const int p_stored_storm_latitude);
+    
+    //## auto_generated
+    int const getStored_storm_longitude(void) const;
+    
+    //## auto_generated
+    void setStored_storm_longitude(const int p_stored_storm_longitude);
+    
+    //## auto_generated
+    int const getStored_tectonicPlate_location(void) const;
+    
+    //## auto_generated
+    void setStored_tectonicPlate_location(const int p_stored_tectonicPlate_location);
+    
+    //## auto_generated
+    int const getStored_vibrations(void) const;
+    
+    //## auto_generated
+    void setStored_vibrations(const int p_stored_vibrations);
+    
+    //## auto_generated
+    int const getStored_wind_direction(void) const;
+    
+    //## auto_generated
+    void setStored_wind_direction(const int p_stored_wind_direction);
+    
+    //## auto_generated
+    int const getStored_wind_speed(void) const;
+    
+    //## auto_generated
+    void setStored_wind_speed(const int p_stored_wind_speed);
+    
+    //## auto_generated
     int const getStorm_altitude(void) const;
     
     //## auto_generated
@@ -408,13 +591,7 @@ public :
     int const getTectonicPlate_location(void) const;
     
     //## auto_generated
-    void setTectonicPlate_location(const int p_tectonicPlate_location);
-    
-    //## auto_generated
     int const getVibrations(void) const;
-    
-    //## auto_generated
-    void setVibrations(const int p_vibrations);
     
     //## auto_generated
     int const getWind_direction(void) const;
@@ -427,6 +604,12 @@ public :
     
     //## auto_generated
     void setWind_speed(const int p_wind_speed);
+    
+    //## auto_generated
+    const Tsunami_Prediction* getItsTsunami_Prediction(void) const;
+    
+    //## auto_generated
+    void setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
     
     //## auto_generated
     virtual bool cancelTimeout(const IOxfTimeout* arg);
@@ -443,13 +626,18 @@ protected :
     void initStatechart(void);
     
     //## auto_generated
+    void cleanUpRelations(void);
+    
+    //## auto_generated
     void cancelTimeouts(void);
     
     ////    Attributes    ////
 
 private :
 
-    bool flowDirection;		//## attribute flowDirection
+    int Test;		//## attribute Test
+    
+    int flowDirection;		//## attribute flowDirection
     
     int precipitation_amount;		//## attribute precipitation_amount
     
@@ -481,6 +669,30 @@ private :
     
     int raw_wind_speed;		//## attribute raw_wind_speed
     
+    bool stored_flowDirection;		//## attribute stored_flowDirection
+    
+    int stored_precipitation_amount;		//## attribute stored_precipitation_amount
+    
+    precipitation_type_enum stored_precipitation_type;		//## attribute stored_precipitation_type
+    
+    int stored_pressure;		//## attribute stored_pressure
+    
+    int stored_storm_altitude;		//## attribute stored_storm_altitude
+    
+    int stored_storm_diameter;		//## attribute stored_storm_diameter
+    
+    int stored_storm_latitude;		//## attribute stored_storm_latitude
+    
+    int stored_storm_longitude;		//## attribute stored_storm_longitude
+    
+    int stored_tectonicPlate_location;		//## attribute stored_tectonicPlate_location
+    
+    int stored_vibrations;		//## attribute stored_vibrations
+    
+    int stored_wind_direction;		//## attribute stored_wind_direction
+    
+    int stored_wind_speed;		//## attribute stored_wind_speed
+    
     int storm_altitude;		//## attribute storm_altitude
     
     int storm_diameter;		//## attribute storm_diameter
@@ -503,12 +715,25 @@ private :
     p_Storm_Data_C p_Storm_Data;
     
     p_Tsunami_Data_C p_Tsunami_Data;
+    
+    p_Data_Storage_C p_Data_Storage;
 //#]
 
+    Tsunami_Prediction* itsTsunami_Prediction;		//## link itsTsunami_Prediction
+    
     ////    Framework operations    ////
 
 public :
 
+    //## auto_generated
+    void __setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
+    
+    //## auto_generated
+    void _setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
+    
+    //## auto_generated
+    void _clearItsTsunami_Prediction(void);
+    
     // rootState:
     //## statechart_method
     inline RhpBoolean rootState_IN(void) const;
@@ -517,9 +742,17 @@ public :
     //## statechart_method
     inline RhpBoolean updating_storage_IN(void) const;
     
+    // relaying_tsunami_data:
+    //## statechart_method
+    inline RhpBoolean relaying_tsunami_data_IN(void) const;
+    
     // idle:
     //## statechart_method
     inline RhpBoolean idle_IN(void) const;
+    
+    // accepttimeevent_5:
+    //## statechart_method
+    inline RhpBoolean accepttimeevent_5_IN(void) const;
     
     // accepttimeevent_2:
     //## statechart_method
@@ -545,8 +778,10 @@ protected :
     enum Data_Storage_Enum {
         OMNonState = 0,
         updating_storage = 1,
-        idle = 2,
-        accepttimeevent_2 = 3
+        relaying_tsunami_data = 2,
+        idle = 3,
+        accepttimeevent_5 = 4,
+        accepttimeevent_2 = 5
     };
 //#]
 
@@ -581,7 +816,13 @@ public :
     void updating_storage_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void relaying_tsunami_data_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void idle_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void accepttimeevent_5_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void accepttimeevent_2_serializeStates(AOMSState* aomsState) const;
@@ -597,8 +838,16 @@ inline RhpBoolean Data_Storage::updating_storage_IN(void) const {
     return rootState_subState == updating_storage;
 }
 
+inline RhpBoolean Data_Storage::relaying_tsunami_data_IN(void) const {
+    return rootState_subState == relaying_tsunami_data;
+}
+
 inline RhpBoolean Data_Storage::idle_IN(void) const {
     return rootState_subState == idle;
+}
+
+inline RhpBoolean Data_Storage::accepttimeevent_5_IN(void) const {
+    return rootState_subState == accepttimeevent_5;
 }
 
 inline RhpBoolean Data_Storage::accepttimeevent_2_IN(void) const {

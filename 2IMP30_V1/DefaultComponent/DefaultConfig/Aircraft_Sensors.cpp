@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Aircraft_Sensors
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Aircraft_Sensors.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Aircraft_Sensors
 Aircraft_Sensors::Aircraft_Sensors(void) : Storm_Sensors() {
     NOTIFY_CONSTRUCTOR(Aircraft_Sensors, Aircraft_Sensors(), 0, SystemContext_Aircraft_Sensors_Aircraft_Sensors_SERIALIZE);
+    initRelations();
 }
 
 Aircraft_Sensors::~Aircraft_Sensors(void) {
     NOTIFY_DESTRUCTOR(~Aircraft_Sensors, false);
+}
+
+void Aircraft_Sensors::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Aircraft_Sensors::OMCreateInstances(void) {
+}
+
+void Aircraft_Sensors::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

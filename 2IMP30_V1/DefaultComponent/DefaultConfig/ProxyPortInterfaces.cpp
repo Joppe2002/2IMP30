@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ProxyPortInterfaces
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\ProxyPortInterfaces.cpp
 *********************************************************************/
 
@@ -16,6 +16,10 @@
 #include "ProxyPortInterfaces.h"
 //## auto_generated
 #include "bool_raw_flowDirection_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "int_flowDirection_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "int_pressure_ProxyFlowPropertyInterface.h"
 //## auto_generated
 #include "int_raw_precipitation_amount_ProxyFlowPropertyInterface.h"
 //## auto_generated
@@ -36,6 +40,10 @@
 #include "int_raw_wind_direction_ProxyFlowPropertyInterface.h"
 //## auto_generated
 #include "int_raw_wind_speed_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "int_tectonicPlate_location_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "int_vibrations_ProxyFlowPropertyInterface.h"
 //## auto_generated
 #include "precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h"
 //## package ProxyPortInterfaces

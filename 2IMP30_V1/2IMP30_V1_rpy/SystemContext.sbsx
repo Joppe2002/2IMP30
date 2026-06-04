@@ -12,10 +12,10 @@
 			<_id type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">SystemContext</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::12:23:39</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:23:39</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:6</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:20:6</_modifiedTime>
 			<_lastID type="a">35</_lastID>
-			<weakCGTime type="a">5.31.2026::12:23:39</weakCGTime>
+			<weakCGTime type="a">6.1.2026::8:20:6</weakCGTime>
 			<strongCGTime type="a">5.31.2026::12:19:30</strongCGTime>
 			<_defaultComposite type="s">GUID 2f0b20e0-0698-4a1b-ae07-6af4217bfcad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -5892,7 +5892,7 @@
 		<IGeneralization type="e">
 			<_id type="a">GUID d5b0e077-eb3f-47fc-89fa-69451f36d40d</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -5971,7 +5971,7 @@
 		<IGeneralization type="e">
 			<_id type="a">GUID 663417b9-30e5-40e6-b128-3e68e8191719</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -6055,7 +6055,7 @@ Measure tectonic shifts and vibrations beneath ocean bed.</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID 65aa43ec-dd78-4c99-b851-172cace2f477</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -6142,7 +6142,7 @@ Identify potential tsunami triggers</_text>
 		<IGeneralization type="e">
 			<_id type="a">GUID 4335e579-e000-4989-bf3a-06207a06b68d</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -6463,7 +6463,7 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.31.2026::12:10:24</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:26</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -6473,9 +6473,9 @@ Identify potential tsunami triggers</_text>
 					<_hid type="a">GUID 97b5f118-83a5-4b28-ac10-1e9539378c18</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.31.2026::12:10:24</_modifiedTime>
+			<_modifiedTime type="a">6.1.2026::8:20:26</_modifiedTime>
 			<_lastID type="a">9</_lastID>
-			<weakCGTime type="a">5.31.2026::12:10:24</weakCGTime>
+			<weakCGTime type="a">6.1.2026::8:20:26</weakCGTime>
 			<strongCGTime type="a">5.31.2026::11:51:5</strongCGTime>
 			<Operations type="c">
 				<IRPYRawContainer type="e">
@@ -6565,7 +6565,7 @@ Identify potential tsunami triggers</_text>
 		<IInstanceValue type="e">
 			<_id type="a">GUID 5d3e55ea-1a11-41f6-ac96-0be3ea2a3ec1</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IPort</_hm2Class>
@@ -6577,7 +6577,7 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID 1ac046aa-c705-497f-adcb-04b695e7f426</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_declaration type="a">Object</_declaration>
 			<_kind type="a">Language</_kind>
 		</IType>
@@ -6705,8 +6705,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.31.2026::12:10:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:10:24</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:20:26</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
@@ -7334,7 +7334,7 @@ Identify potential tsunami triggers</_text>
 		<IInstanceValue type="e">
 			<_id type="a">GUID 30188be6-765e-47ce-af6a-42b5f2e52271</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IPort</_hm2Class>
@@ -7346,7 +7346,7 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID f451c02d-f41e-402a-9609-bcf0d1c04df8</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_declaration type="a">Object</_declaration>
 			<_kind type="a">Language</_kind>
 		</IType>
@@ -7415,7 +7415,7 @@ Identify potential tsunami triggers</_text>
 		<IInstanceValue type="e">
 			<_id type="a">GUID df679bf9-159d-4b64-8f56-73ec3ef1f411</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IPort</_hm2Class>
@@ -7427,7 +7427,7 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID 326594eb-873e-42a2-bf44-47ea4c63978f</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_declaration type="a">Object</_declaration>
 			<_kind type="a">Language</_kind>
 		</IType>
@@ -7496,7 +7496,7 @@ Identify potential tsunami triggers</_text>
 		<IInstanceValue type="e">
 			<_id type="a">GUID 75e736c2-a49b-479e-aa01-9cea17d73125</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IPort</_hm2Class>
@@ -7508,7 +7508,7 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID 0cb56548-50bc-48d7-956d-78fd923565a5</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_declaration type="a">Object</_declaration>
 			<_kind type="a">Language</_kind>
 		</IType>
@@ -7577,7 +7577,7 @@ Identify potential tsunami triggers</_text>
 		<IInstanceValue type="e">
 			<_id type="a">GUID 32060f68-8c9d-4228-b6c3-b8ea8c81ecec</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IPort</_hm2Class>
@@ -7589,7 +7589,7 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID 8cd5a49f-da0b-4704-ab1e-6bb4f89b3eb9</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_declaration type="a">Object</_declaration>
 			<_kind type="a">Language</_kind>
 		</IType>
@@ -7962,40 +7962,47 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.31.2026::12:9:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:9:36</_modifiedTime>
-			<_lastID type="a">4</_lastID>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:6</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:20:6</_modifiedTime>
+			<_lastID type="a">5</_lastID>
 			<_kind type="a">Enumeration</_kind>
 			<AggregatesList type="e">
 				<value>GUID 5a3a8d5b-72a4-4322-8e0b-4c80928718d0</value>
 				<value>GUID 6e33bbb0-4af0-4e25-b8a8-c9f36b06a443</value>
 				<value>GUID 90ffcb79-45e3-499e-bc05-d8544bf8ecf4</value>
 				<value>GUID c6923b53-aee3-4b26-95ac-c5300249d71f</value>
+				<value>GUID 722a1cfb-cf20-4b41-a810-83b2cb53b040</value>
 			</AggregatesList>
 		</IType>
 		<IEnumerationLiteral type="e">
 			<_id type="a">GUID 5a3a8d5b-72a4-4322-8e0b-4c80928718d0</_id>
 			<_name type="a">rain</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::12:9:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:9:31</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.1.2026::8:19:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:19:57</_modifiedTime>
 		</IEnumerationLiteral>
 		<IEnumerationLiteral type="e">
 			<_id type="a">GUID 6e33bbb0-4af0-4e25-b8a8-c9f36b06a443</_id>
 			<_name type="a">snow</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::12:9:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:9:34</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.1.2026::8:19:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:19:59</_modifiedTime>
 		</IEnumerationLiteral>
 		<IEnumerationLiteral type="e">
 			<_id type="a">GUID 90ffcb79-45e3-499e-bc05-d8544bf8ecf4</_id>
 			<_name type="a">hail</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::12:9:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:9:32</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:20:1</_modifiedTime>
 		</IEnumerationLiteral>
 		<IEnumerationLiteral type="e">
 			<_id type="a">GUID c6923b53-aee3-4b26-95ac-c5300249d71f</_id>
 			<_name type="a">nothing</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::12:9:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::12:9:36</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:20:3</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 722a1cfb-cf20-4b41-a810-83b2cb53b040</_id>
+			<_name type="a">lightning</_name>
+			<_modifiedTimeWeak type="a">6.1.2026::8:20:6</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.1.2026::8:20:6</_modifiedTime>
 		</IEnumerationLiteral>
 		<IActor type="e">
 			<_id type="a">GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88</_id>

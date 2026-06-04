@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
 *********************************************************************/
 
@@ -18,18 +18,18 @@
 #include "Data_Storage.h"
 //## classInstance itsSMSWTD
 #include "SMSWTD.h"
+//## classInstance itsStorm_Prediction
+#include "Storm_Prediction.h"
+//## classInstance itsTsunami_Prediction
+#include "Tsunami_Prediction.h"
+//## classInstance itsWheather_Prediction
+#include "Wheather_Prediction.h"
 //## auto_generated
 #include "Actionable_Information_Generator.h"
 //## auto_generated
 #include "Prediction_Module.h"
 //## auto_generated
-#include "Storm_Prediction.h"
-//## auto_generated
 #include "System_Output.h"
-//## auto_generated
-#include "Tsunami_Prediction.h"
-//## auto_generated
-#include "Wheather_Prediction.h"
 //## package Architecture
 
 
@@ -38,6 +38,15 @@ Data_Storage itsData_Storage;
 
 //## classInstance itsSMSWTD
 SMSWTD itsSMSWTD;
+
+//## classInstance itsStorm_Prediction
+Storm_Prediction itsStorm_Prediction;
+
+//## classInstance itsTsunami_Prediction
+Tsunami_Prediction itsTsunami_Prediction;
+
+//## classInstance itsWheather_Prediction
+Wheather_Prediction itsWheather_Prediction;
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
@@ -94,6 +103,17 @@ void Architecture_OMConnectRelations(void) {
         itsSMSWTD.get_p_SMSWTD_3()->setItsInt_raw_vibrations_ProxyFlowPropertyInterface(itsData_Storage.get_p_Tsunami_Data()->getItsInt_raw_vibrations_ProxyFlowPropertyInterface());
         
     }
+    {
+        
+        itsData_Storage.get_p_Data_Storage()->setItsInt_flowDirection_ProxyFlowPropertyInterface(itsTsunami_Prediction.get_p_Tsunami_Prediction()->getItsInt_flowDirection_ProxyFlowPropertyInterface());
+        
+        itsData_Storage.get_p_Data_Storage()->setItsInt_pressure_ProxyFlowPropertyInterface(itsTsunami_Prediction.get_p_Tsunami_Prediction()->getItsInt_pressure_ProxyFlowPropertyInterface());
+        
+        itsData_Storage.get_p_Data_Storage()->setItsInt_tectonicPlate_location_ProxyFlowPropertyInterface(itsTsunami_Prediction.get_p_Tsunami_Prediction()->getItsInt_tectonicPlate_location_ProxyFlowPropertyInterface());
+        
+        itsData_Storage.get_p_Data_Storage()->setItsInt_vibrations_ProxyFlowPropertyInterface(itsTsunami_Prediction.get_p_Tsunami_Prediction()->getItsInt_vibrations_ProxyFlowPropertyInterface());
+        
+    }
     
     #ifdef _OMINSTRUMENT
     RenameGlobalInstances();
@@ -120,6 +140,9 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 static void RenameGlobalInstances(void) {
     OM_SET_INSTANCE_NAME(&itsSMSWTD, SMSWTD, "itsSMSWTD", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&itsData_Storage, Data_Storage, "itsData_Storage", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsTsunami_Prediction, Tsunami_Prediction, "itsTsunami_Prediction", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsWheather_Prediction, Wheather_Prediction, "itsWheather_Prediction", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsStorm_Prediction, Storm_Prediction, "itsStorm_Prediction", AOMNoMultiplicity);
 }
 #endif // _OMINSTRUMENT
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: System_Output
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\System_Output.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class System_Output
 System_Output::System_Output(void) {
     NOTIFY_CONSTRUCTOR(System_Output, System_Output(), 0, Architecture_System_Output_System_Output_SERIALIZE);
+    initRelations();
 }
 
 System_Output::~System_Output(void) {
     NOTIFY_DESTRUCTOR(~System_Output, true);
+}
+
+void System_Output::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void System_Output::OMCreateInstances(void) {
+}
+
+void System_Output::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

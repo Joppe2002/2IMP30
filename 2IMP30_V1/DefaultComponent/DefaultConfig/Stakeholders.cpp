@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Stakeholders
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Stakeholders.cpp
 *********************************************************************/
 
@@ -25,6 +25,7 @@
 //## actor Stakeholders
 Stakeholders::Stakeholders(void) : itsSMSWTD(NULL) {
     NOTIFY_CONSTRUCTOR(Stakeholders, Stakeholders(), 0, SystemContext_Stakeholders_Stakeholders_SERIALIZE);
+    initRelations();
 }
 
 Stakeholders::~Stakeholders(void) {
@@ -42,6 +43,11 @@ void Stakeholders::setItsSMSWTD(SMSWTD* const p_SMSWTD) {
             p_SMSWTD->_setItsStakeholders(this);
         }
     _setItsSMSWTD(p_SMSWTD);
+}
+
+void Stakeholders::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
 }
 
 void Stakeholders::cleanUpRelations(void) {
@@ -80,6 +86,12 @@ void Stakeholders::_setItsSMSWTD(SMSWTD* const p_SMSWTD) {
 void Stakeholders::_clearItsSMSWTD(void) {
     NOTIFY_RELATION_CLEARED("itsSMSWTD");
     itsSMSWTD = NULL;
+}
+
+void Stakeholders::OMCreateInstances(void) {
+}
+
+void Stakeholders::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

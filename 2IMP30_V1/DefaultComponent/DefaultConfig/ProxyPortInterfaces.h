@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ProxyPortInterfaces
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\ProxyPortInterfaces.h
 *********************************************************************/
 
@@ -17,6 +17,12 @@
 #include <aom.h>
 //## auto_generated
 class bool_raw_flowDirection_ProxyFlowPropertyInterface;
+
+//## auto_generated
+class int_flowDirection_ProxyFlowPropertyInterface;
+
+//## auto_generated
+class int_pressure_ProxyFlowPropertyInterface;
 
 //## auto_generated
 class int_raw_precipitation_amount_ProxyFlowPropertyInterface;
@@ -47,6 +53,12 @@ class int_raw_wind_direction_ProxyFlowPropertyInterface;
 
 //## auto_generated
 class int_raw_wind_speed_ProxyFlowPropertyInterface;
+
+//## auto_generated
+class int_tectonicPlate_location_ProxyFlowPropertyInterface;
+
+//## auto_generated
+class int_vibrations_ProxyFlowPropertyInterface;
 
 //## auto_generated
 class precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface;

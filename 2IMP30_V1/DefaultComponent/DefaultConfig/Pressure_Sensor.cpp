@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Pressure_Sensor
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Pressure_Sensor.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Pressure_Sensor
 Pressure_Sensor::Pressure_Sensor(void) : Underwater_Sensors() {
     NOTIFY_CONSTRUCTOR(Pressure_Sensor, Pressure_Sensor(), 0, SystemContext_Pressure_Sensor_Pressure_Sensor_SERIALIZE);
+    initRelations();
 }
 
 Pressure_Sensor::~Pressure_Sensor(void) {
     NOTIFY_DESTRUCTOR(~Pressure_Sensor, false);
+}
+
+void Pressure_Sensor::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Pressure_Sensor::OMCreateInstances(void) {
+}
+
+void Pressure_Sensor::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

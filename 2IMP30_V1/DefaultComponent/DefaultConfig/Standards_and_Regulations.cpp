@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Standards_and_Regulations
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Standards_and_Regulations.cpp
 *********************************************************************/
 
@@ -25,6 +25,7 @@
 //## class Standards_and_Regulations
 Standards_and_Regulations::Standards_and_Regulations(void) : itsSMSWTD(NULL) {
     NOTIFY_CONSTRUCTOR(Standards_and_Regulations, Standards_and_Regulations(), 0, SystemContext_Standards_and_Regulations_Standards_and_Regulations_SERIALIZE);
+    initRelations();
 }
 
 Standards_and_Regulations::~Standards_and_Regulations(void) {
@@ -42,6 +43,11 @@ void Standards_and_Regulations::setItsSMSWTD(SMSWTD* const p_SMSWTD) {
             p_SMSWTD->_setItsStandards_and_Regulations(this);
         }
     _setItsSMSWTD(p_SMSWTD);
+}
+
+void Standards_and_Regulations::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
 }
 
 void Standards_and_Regulations::cleanUpRelations(void) {
@@ -80,6 +86,12 @@ void Standards_and_Regulations::_setItsSMSWTD(SMSWTD* const p_SMSWTD) {
 void Standards_and_Regulations::_clearItsSMSWTD(void) {
     NOTIFY_RELATION_CLEARED("itsSMSWTD");
     itsSMSWTD = NULL;
+}
+
+void Standards_and_Regulations::OMCreateInstances(void) {
+}
+
+void Standards_and_Regulations::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

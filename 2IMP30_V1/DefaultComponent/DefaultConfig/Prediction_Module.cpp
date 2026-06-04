@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Prediction_Module
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Prediction_Module.cpp
 *********************************************************************/
 
@@ -23,6 +23,7 @@
 //## class Prediction_Module
 Prediction_Module::Prediction_Module(void) {
     NOTIFY_CONSTRUCTOR(Prediction_Module, Prediction_Module(), 0, Architecture_Prediction_Module_Prediction_Module_SERIALIZE);
+    initRelations();
 }
 
 Prediction_Module::~Prediction_Module(void) {
@@ -39,6 +40,17 @@ const Tsunami_Prediction* Prediction_Module::getItsTsunami_Prediction(void) cons
 
 const Wheather_Prediction* Prediction_Module::getItsWheather_Prediction(void) const {
     return &itsWheather_Prediction;
+}
+
+void Prediction_Module::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Prediction_Module::OMCreateInstances(void) {
+}
+
+void Prediction_Module::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Mobile_Apps
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Mobile_Apps.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Mobile_Apps
 Mobile_Apps::Mobile_Apps(void) : Information_Channels() {
     NOTIFY_CONSTRUCTOR(Mobile_Apps, Mobile_Apps(), 0, SystemContext_Mobile_Apps_Mobile_Apps_SERIALIZE);
+    initRelations();
 }
 
 Mobile_Apps::~Mobile_Apps(void) {
     NOTIFY_DESTRUCTOR(~Mobile_Apps, false);
+}
+
+void Mobile_Apps::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Mobile_Apps::OMCreateInstances(void) {
+}
+
+void Mobile_Apps::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

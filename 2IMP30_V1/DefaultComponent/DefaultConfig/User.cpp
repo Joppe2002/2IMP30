@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: User
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\User.cpp
 *********************************************************************/
 
@@ -25,6 +25,7 @@
 //## actor User
 User::User(void) : itsInformation_Channels(NULL) {
     NOTIFY_CONSTRUCTOR(User, User(), 0, SystemContext_User_User_SERIALIZE);
+    initRelations();
 }
 
 User::~User(void) {
@@ -42,6 +43,11 @@ void User::setItsInformation_Channels(Information_Channels* const p_Information_
             p_Information_Channels->_setItsUser(this);
         }
     _setItsInformation_Channels(p_Information_Channels);
+}
+
+void User::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
 }
 
 void User::cleanUpRelations(void) {
@@ -80,6 +86,12 @@ void User::_setItsInformation_Channels(Information_Channels* const p_Information
 void User::_clearItsInformation_Channels(void) {
     NOTIFY_RELATION_CLEARED("itsInformation_Channels");
     itsInformation_Channels = NULL;
+}
+
+void User::OMCreateInstances(void) {
+}
+
+void User::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

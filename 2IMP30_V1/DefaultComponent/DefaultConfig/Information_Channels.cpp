@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Information_Channels
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Information_Channels.cpp
 *********************************************************************/
 
@@ -27,6 +27,7 @@
 //## class Information_Channels
 Information_Channels::Information_Channels(void) : itsSMSWTD(NULL), itsUser(NULL) {
     NOTIFY_CONSTRUCTOR(Information_Channels, Information_Channels(), 0, SystemContext_Information_Channels_Information_Channels_SERIALIZE);
+    initRelations();
 }
 
 Information_Channels::~Information_Channels(void) {
@@ -56,6 +57,11 @@ void Information_Channels::setItsUser(User* const p_User) {
             p_User->_setItsInformation_Channels(this);
         }
     _setItsUser(p_User);
+}
+
+void Information_Channels::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
 }
 
 void Information_Channels::cleanUpRelations(void) {
@@ -129,6 +135,12 @@ void Information_Channels::_setItsUser(User* const p_User) {
 void Information_Channels::_clearItsUser(void) {
     NOTIFY_RELATION_CLEARED("itsUser");
     itsUser = NULL;
+}
+
+void Information_Channels::OMCreateInstances(void) {
+}
+
+void Information_Channels::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

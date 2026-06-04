@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Storm_Prediction
 Storm_Prediction::Storm_Prediction(void) {
     NOTIFY_CONSTRUCTOR(Storm_Prediction, Storm_Prediction(), 0, Architecture_Storm_Prediction_Storm_Prediction_SERIALIZE);
+    initRelations();
 }
 
 Storm_Prediction::~Storm_Prediction(void) {
     NOTIFY_DESTRUCTOR(~Storm_Prediction, true);
+}
+
+void Storm_Prediction::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Storm_Prediction::OMCreateInstances(void) {
+}
+
+void Storm_Prediction::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

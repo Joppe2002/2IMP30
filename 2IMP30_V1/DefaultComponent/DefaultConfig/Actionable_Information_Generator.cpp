@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Actionable_Information_Generator
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Actionable_Information_Generator.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Actionable_Information_Generator
 Actionable_Information_Generator::Actionable_Information_Generator(void) {
     NOTIFY_CONSTRUCTOR(Actionable_Information_Generator, Actionable_Information_Generator(), 0, Architecture_Actionable_Information_Generator_Actionable_Information_Generator_SERIALIZE);
+    initRelations();
 }
 
 Actionable_Information_Generator::~Actionable_Information_Generator(void) {
     NOTIFY_DESTRUCTOR(~Actionable_Information_Generator, true);
+}
+
+void Actionable_Information_Generator::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Actionable_Information_Generator::OMCreateInstances(void) {
+}
+
+void Actionable_Information_Generator::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

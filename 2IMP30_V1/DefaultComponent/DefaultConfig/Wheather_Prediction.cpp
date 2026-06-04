@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Wheather_Prediction
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Wheather_Prediction.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Wheather_Prediction
 Wheather_Prediction::Wheather_Prediction(void) {
     NOTIFY_CONSTRUCTOR(Wheather_Prediction, Wheather_Prediction(), 0, Architecture_Wheather_Prediction_Wheather_Prediction_SERIALIZE);
+    initRelations();
 }
 
 Wheather_Prediction::~Wheather_Prediction(void) {
     NOTIFY_DESTRUCTOR(~Wheather_Prediction, true);
+}
+
+void Wheather_Prediction::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Wheather_Prediction::OMCreateInstances(void) {
+}
+
+void Wheather_Prediction::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

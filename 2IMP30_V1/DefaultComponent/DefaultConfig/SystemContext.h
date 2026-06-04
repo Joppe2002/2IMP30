@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SystemContext
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SystemContext.h
 *********************************************************************/
 
@@ -71,7 +71,8 @@ enum precipitation_type_enum {
     rain,
     snow,
     hail,
-    nothing
+    nothing,
+    lightning
 };
 
 //## classInstance itsStorm_Sensors

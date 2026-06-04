@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Prediction_Module
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Mon, 1, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Prediction_Module.h
 *********************************************************************/
 
@@ -57,6 +57,11 @@ public :
     
     //## auto_generated
     const Wheather_Prediction* getItsWheather_Prediction(void) const;
+
+protected :
+
+    //## auto_generated
+    void initRelations(void);
     
     ////    Relations and components    ////
 
@@ -67,6 +72,16 @@ private :
     Tsunami_Prediction itsTsunami_Prediction;		//## classInstance itsTsunami_Prediction
     
     Wheather_Prediction itsWheather_Prediction;		//## classInstance itsWheather_Prediction
+    
+    ////    Framework operations    ////
+
+protected :
+
+    //## auto_generated
+    void OMCreateInstances(void);
+    
+    //## auto_generated
+    void OMConnectRelations(void);
 };
 
 #ifdef _OMINSTRUMENT
