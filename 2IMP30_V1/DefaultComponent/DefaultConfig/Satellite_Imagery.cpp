@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Satellite_Imagery
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Satellite_Imagery.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Satellite_Imagery
 Satellite_Imagery::Satellite_Imagery(void) : Storm_Sensors() {
     NOTIFY_CONSTRUCTOR(Satellite_Imagery, Satellite_Imagery(), 0, SystemContext_Satellite_Imagery_Satellite_Imagery_SERIALIZE);
+    initRelations();
 }
 
 Satellite_Imagery::~Satellite_Imagery(void) {
     NOTIFY_DESTRUCTOR(~Satellite_Imagery, false);
+}
+
+void Satellite_Imagery::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Satellite_Imagery::OMCreateInstances(void) {
+}
+
+void Satellite_Imagery::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

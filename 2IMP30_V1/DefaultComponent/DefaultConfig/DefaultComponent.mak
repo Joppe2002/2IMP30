@@ -117,6 +117,7 @@ OBJS= \
   SystemContext.obj \
   Architecture.obj \
   UseCases.obj \
+  Behavior.obj \
   ProxyPortInterfaces.obj
 
 
@@ -278,13 +279,13 @@ News_Outlets.obj : News_Outlets.cpp News_Outlets.h    SystemContext.h Informatio
 
 
 
-Storm_Sensors.obj : Storm_Sensors.cpp Storm_Sensors.h    SystemContext.h SMSWTD.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_storm_altitude_ProxyFlowPropertyInterface.h int_raw_storm_diameter_ProxyFlowPropertyInterface.h int_raw_storm_latitude_ProxyFlowPropertyInterface.h int_raw_storm_longitude_ProxyFlowPropertyInterface.h int_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_wind_speed_ProxyFlowPropertyInterface.h 
+Storm_Sensors.obj : Storm_Sensors.cpp Storm_Sensors.h    SystemContext.h SMSWTD.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Storm_Sensors.obj" "Storm_Sensors.cpp" 
 
 
 
-Tsunami_Sensors.obj : Tsunami_Sensors.cpp Tsunami_Sensors.h    SystemContext.h SMSWTD.h int_raw_tectonicPlate_location_ProxyFlowPropertyInterface.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_pressure_ProxyFlowPropertyInterface.h bool_raw_flowDirection_ProxyFlowPropertyInterface.h 
+Tsunami_Sensors.obj : Tsunami_Sensors.cpp Tsunami_Sensors.h    SystemContext.h SMSWTD.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Tsunami_Sensors.obj" "Tsunami_Sensors.cpp" 
 
@@ -302,13 +303,13 @@ Stakeholders.obj : Stakeholders.cpp Stakeholders.h    SystemContext.h SMSWTD.h
 
 
 
-SMSWTD.obj : SMSWTD.cpp SMSWTD.h    Architecture.h Stakeholders.h Information_Channels.h Standards_and_Regulations.h Cultural_and_Geological_Differences.h Prediction_Module.h Actionable_Information_Generator.h Data_Storage.h System_Output.h Tsunami_Sensors.h Storm_Sensors.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_storm_altitude_ProxyFlowPropertyInterface.h int_raw_storm_diameter_ProxyFlowPropertyInterface.h int_raw_storm_latitude_ProxyFlowPropertyInterface.h int_raw_storm_longitude_ProxyFlowPropertyInterface.h int_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_wind_speed_ProxyFlowPropertyInterface.h SystemContext.h int_raw_tectonicPlate_location_ProxyFlowPropertyInterface.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_pressure_ProxyFlowPropertyInterface.h bool_raw_flowDirection_ProxyFlowPropertyInterface.h 
+SMSWTD.obj : SMSWTD.cpp SMSWTD.h    Architecture.h Stakeholders.h Information_Channels.h Standards_and_Regulations.h Cultural_and_Geological_Differences.h Prediction_Module.h Actionable_Information_Generator.h Data_Storage.h System_Output.h Tsunami_Sensors.h Storm_Sensors.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD.obj" "SMSWTD.cpp" 
 
 
 
-Data_Storage.obj : Data_Storage.cpp Data_Storage.h    Architecture.h SystemContext.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_storm_altitude_ProxyFlowPropertyInterface.h int_raw_storm_diameter_ProxyFlowPropertyInterface.h int_raw_storm_latitude_ProxyFlowPropertyInterface.h int_raw_storm_longitude_ProxyFlowPropertyInterface.h int_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_wind_speed_ProxyFlowPropertyInterface.h 
+Data_Storage.obj : Data_Storage.cpp Data_Storage.h    Architecture.h Storm_Prediction.h Behavior.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Data_Storage.obj" "Data_Storage.cpp" 
 
@@ -320,7 +321,7 @@ Tsunami_Prediction.obj : Tsunami_Prediction.cpp Tsunami_Prediction.h    Architec
 
 
 
-Storm_Prediction.obj : Storm_Prediction.cpp Storm_Prediction.h    Architecture.h 
+Storm_Prediction.obj : Storm_Prediction.cpp Storm_Prediction.h    Architecture.h Data_Storage.h Behavior.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Storm_Prediction.obj" "Storm_Prediction.cpp" 
 
@@ -392,7 +393,13 @@ UseCases.obj : UseCases.cpp UseCases.h
 
 
 
-ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_raw_precipitation_amount_ProxyFlowPropertyInterface.h precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_storm_altitude_ProxyFlowPropertyInterface.h int_raw_storm_diameter_ProxyFlowPropertyInterface.h int_raw_storm_latitude_ProxyFlowPropertyInterface.h int_raw_storm_longitude_ProxyFlowPropertyInterface.h int_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_wind_speed_ProxyFlowPropertyInterface.h int_raw_tectonicPlate_location_ProxyFlowPropertyInterface.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_pressure_ProxyFlowPropertyInterface.h bool_raw_flowDirection_ProxyFlowPropertyInterface.h 
+Behavior.obj : Behavior.cpp Behavior.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Behavior.obj" "Behavior.cpp" 
+
+
+
+ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ProxyPortInterfaces.obj" "ProxyPortInterfaces.cpp" 
 
@@ -457,6 +464,7 @@ clean:
 	if exist SystemContext.obj erase SystemContext.obj
 	if exist Architecture.obj erase Architecture.obj
 	if exist UseCases.obj erase UseCases.obj
+	if exist Behavior.obj erase Behavior.obj
 	if exist ProxyPortInterfaces.obj erase ProxyPortInterfaces.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)

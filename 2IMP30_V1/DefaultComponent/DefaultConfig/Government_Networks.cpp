@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Government_Networks
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Government_Networks.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Government_Networks
 Government_Networks::Government_Networks(void) : Information_Channels() {
     NOTIFY_CONSTRUCTOR(Government_Networks, Government_Networks(), 0, SystemContext_Government_Networks_Government_Networks_SERIALIZE);
+    initRelations();
 }
 
 Government_Networks::~Government_Networks(void) {
     NOTIFY_DESTRUCTOR(~Government_Networks, false);
+}
+
+void Government_Networks::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Government_Networks::OMCreateInstances(void) {
+}
+
+void Government_Networks::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

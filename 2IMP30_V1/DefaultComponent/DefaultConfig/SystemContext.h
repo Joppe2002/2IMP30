@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SystemContext
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Fri, 5, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SystemContext.h
 *********************************************************************/
 
@@ -65,14 +65,6 @@ class Underwater_Sensors;
 
 //## package SystemContext
 
-
-//## type precipitation_type_enum
-enum precipitation_type_enum {
-    rain,
-    snow,
-    hail,
-    nothing
-};
 
 //## classInstance itsStorm_Sensors
 extern Storm_Sensors itsStorm_Sensors;

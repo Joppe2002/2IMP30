@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Fri, 5, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h
 *********************************************************************/
 
@@ -27,16 +27,16 @@ class Prediction_Module;
 //## classInstance itsSMSWTD
 class SMSWTD;
 
-//## auto_generated
+//## classInstance itsStorm_Prediction
 class Storm_Prediction;
 
 //## auto_generated
 class System_Output;
 
-//## auto_generated
+//## classInstance itsTsunami_Prediction
 class Tsunami_Prediction;
 
-//## auto_generated
+//## classInstance itsWheather_Prediction
 class Wheather_Prediction;
 
 //## package Architecture
@@ -48,14 +48,17 @@ extern Data_Storage itsData_Storage;
 //## classInstance itsSMSWTD
 extern SMSWTD itsSMSWTD;
 
+//## classInstance itsStorm_Prediction
+extern Storm_Prediction itsStorm_Prediction;
+
+//## classInstance itsTsunami_Prediction
+extern Tsunami_Prediction itsTsunami_Prediction;
+
+//## classInstance itsWheather_Prediction
+extern Wheather_Prediction itsWheather_Prediction;
+
 //## auto_generated
 void Architecture_initRelations(void);
-
-//## auto_generated
-void Architecture_OMCreateInstances(void);
-
-//## auto_generated
-void Architecture_OMConnectRelations(void);
 
 //## auto_generated
 bool Architecture_startBehavior(void);

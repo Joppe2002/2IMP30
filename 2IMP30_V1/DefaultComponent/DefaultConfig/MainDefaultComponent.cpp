@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DefaultConfig
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Fri, 5, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\MainDefaultComponent.cpp
 *********************************************************************/
 
@@ -13,13 +13,14 @@
 //## auto_generated
 #include "Architecture.h"
 //## auto_generated
+#include "Behavior.h"
+//## auto_generated
 #include "SystemContext.h"
 //## auto_generated
 #include "UseCases.h"
 DefaultComponent::DefaultComponent(void) {
-    Architecture_OMCreateInstances();
+    Architecture_initRelations();
     SystemContext_OMCreateInstances();
-    Architecture_OMConnectRelations();
     SystemContext_OMConnectRelations();
     (void) Architecture_startBehavior();
 }

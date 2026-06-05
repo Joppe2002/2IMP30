@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Cultural_and_Geological_Differences
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Cultural_and_Geological_Differences.cpp
 *********************************************************************/
 
@@ -25,6 +25,7 @@
 //## class Cultural_and_Geological_Differences
 Cultural_and_Geological_Differences::Cultural_and_Geological_Differences(void) : itsSMSWTD(NULL) {
     NOTIFY_CONSTRUCTOR(Cultural_and_Geological_Differences, Cultural_and_Geological_Differences(), 0, SystemContext_Cultural_and_Geological_Differences_Cultural_and_Geological_Differences_SERIALIZE);
+    initRelations();
 }
 
 Cultural_and_Geological_Differences::~Cultural_and_Geological_Differences(void) {
@@ -42,6 +43,11 @@ void Cultural_and_Geological_Differences::setItsSMSWTD(SMSWTD* const p_SMSWTD) {
             p_SMSWTD->_setItsCultural_and_Geological_Differences(this);
         }
     _setItsSMSWTD(p_SMSWTD);
+}
+
+void Cultural_and_Geological_Differences::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
 }
 
 void Cultural_and_Geological_Differences::cleanUpRelations(void) {
@@ -80,6 +86,12 @@ void Cultural_and_Geological_Differences::_setItsSMSWTD(SMSWTD* const p_SMSWTD) 
 void Cultural_and_Geological_Differences::_clearItsSMSWTD(void) {
     NOTIFY_RELATION_CLEARED("itsSMSWTD");
     itsSMSWTD = NULL;
+}
+
+void Cultural_and_Geological_Differences::OMCreateInstances(void) {
+}
+
+void Cultural_and_Geological_Differences::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Fri, 5, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.cpp
 *********************************************************************/
 
@@ -34,7 +34,7 @@
 
 //## class SMSWTD
 //#[ ignore
-SMSWTD::p_SMSWTD_C::p_SMSWTD_C(void) : int_raw_precipitation_amount_ProxyFlowPropertyInterface(), precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(), int_raw_storm_altitude_ProxyFlowPropertyInterface(), int_raw_storm_diameter_ProxyFlowPropertyInterface(), int_raw_storm_latitude_ProxyFlowPropertyInterface(), int_raw_storm_longitude_ProxyFlowPropertyInterface(), int_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_wind_speed_ProxyFlowPropertyInterface(), _p_(0), itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_altitude_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_diameter_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_latitude_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_longitude_ProxyFlowPropertyInterface(NULL), itsInt_raw_wind_direction_ProxyFlowPropertyInterface(NULL), itsInt_raw_wind_speed_ProxyFlowPropertyInterface(NULL), itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(NULL) {
+SMSWTD::p_SMSWTD_C::p_SMSWTD_C(void) : int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), _p_(0), itsBool_raw_wind_direction_ProxyFlowPropertyInterface(NULL), itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(NULL), itsInt_raw_precipitation_type_ProxyFlowPropertyInterface(NULL), itsInt_raw_wind_speed_ProxyFlowPropertyInterface(NULL) {
 }
 
 SMSWTD::p_SMSWTD_C::~p_SMSWTD_C(void) {
@@ -42,46 +42,26 @@ SMSWTD::p_SMSWTD_C::~p_SMSWTD_C(void) {
 }
 
 void SMSWTD::p_SMSWTD_C::connectSMSWTD(SMSWTD* part) {
-    setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(part);
-    setItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_wind_direction_ProxyFlowPropertyInterface(part);
     setItsInt_raw_wind_speed_ProxyFlowPropertyInterface(part);
+    setItsBool_raw_wind_direction_ProxyFlowPropertyInterface(part);
+    setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(part);
+    setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(part);
     
+}
+
+bool_raw_wind_direction_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsBool_raw_wind_direction_ProxyFlowPropertyInterface(void) {
+    return this;
 }
 
 int_raw_precipitation_amount_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(void) {
     return this;
 }
 
-int_raw_storm_altitude_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_storm_diameter_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_storm_latitude_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_storm_longitude_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_wind_direction_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_wind_direction_ProxyFlowPropertyInterface(void) {
+int_raw_precipitation_type_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(void) {
     return this;
 }
 
 int_raw_wind_speed_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsInt_raw_wind_speed_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_C::getItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(void) {
     return this;
 }
 
@@ -93,50 +73,18 @@ void SMSWTD::p_SMSWTD_C::setRaw_precipitation_amount(int p_raw_precipitation_amo
     
 }
 
-void SMSWTD::p_SMSWTD_C::setRaw_precipitation_type(precipitation_type_enum p_raw_precipitation_type) {
+void SMSWTD::p_SMSWTD_C::setRaw_precipitation_type(int p_raw_precipitation_type) {
     
-    if (itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface != NULL) {
-        itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface->setRaw_precipitation_type(p_raw_precipitation_type);
+    if (itsInt_raw_precipitation_type_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_precipitation_type_ProxyFlowPropertyInterface->setRaw_precipitation_type(p_raw_precipitation_type);
     }
     
 }
 
-void SMSWTD::p_SMSWTD_C::setRaw_storm_altitude(int p_raw_storm_altitude) {
+void SMSWTD::p_SMSWTD_C::setRaw_wind_direction(bool p_raw_wind_direction) {
     
-    if (itsInt_raw_storm_altitude_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_altitude_ProxyFlowPropertyInterface->setRaw_storm_altitude(p_raw_storm_altitude);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_C::setRaw_storm_diameter(int p_raw_storm_diameter) {
-    
-    if (itsInt_raw_storm_diameter_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_diameter_ProxyFlowPropertyInterface->setRaw_storm_diameter(p_raw_storm_diameter);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_C::setRaw_storm_latitude(int p_raw_storm_latitude) {
-    
-    if (itsInt_raw_storm_latitude_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_latitude_ProxyFlowPropertyInterface->setRaw_storm_latitude(p_raw_storm_latitude);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_C::setRaw_storm_longitude(int p_raw_storm_longitude) {
-    
-    if (itsInt_raw_storm_longitude_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_longitude_ProxyFlowPropertyInterface->setRaw_storm_longitude(p_raw_storm_longitude);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_C::setRaw_wind_direction(int p_raw_wind_direction) {
-    
-    if (itsInt_raw_wind_direction_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_wind_direction_ProxyFlowPropertyInterface->setRaw_wind_direction(p_raw_wind_direction);
+    if (itsBool_raw_wind_direction_ProxyFlowPropertyInterface != NULL) {
+        itsBool_raw_wind_direction_ProxyFlowPropertyInterface->setRaw_wind_direction(p_raw_wind_direction);
     }
     
 }
@@ -149,109 +97,61 @@ void SMSWTD::p_SMSWTD_C::setRaw_wind_speed(int p_raw_wind_speed) {
     
 }
 
+void SMSWTD::p_SMSWTD_C::setItsBool_raw_wind_direction_ProxyFlowPropertyInterface(bool_raw_wind_direction_ProxyFlowPropertyInterface* const p_bool_raw_wind_direction_ProxyFlowPropertyInterface) {
+    itsBool_raw_wind_direction_ProxyFlowPropertyInterface = p_bool_raw_wind_direction_ProxyFlowPropertyInterface;
+}
+
 void SMSWTD::p_SMSWTD_C::setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(int_raw_precipitation_amount_ProxyFlowPropertyInterface* const p_int_raw_precipitation_amount_ProxyFlowPropertyInterface) {
     itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface = p_int_raw_precipitation_amount_ProxyFlowPropertyInterface;
 }
 
-void SMSWTD::p_SMSWTD_C::setItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(int_raw_storm_altitude_ProxyFlowPropertyInterface* const p_int_raw_storm_altitude_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_altitude_ProxyFlowPropertyInterface = p_int_raw_storm_altitude_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_C::setItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(int_raw_storm_diameter_ProxyFlowPropertyInterface* const p_int_raw_storm_diameter_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_diameter_ProxyFlowPropertyInterface = p_int_raw_storm_diameter_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_C::setItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(int_raw_storm_latitude_ProxyFlowPropertyInterface* const p_int_raw_storm_latitude_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_latitude_ProxyFlowPropertyInterface = p_int_raw_storm_latitude_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_C::setItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(int_raw_storm_longitude_ProxyFlowPropertyInterface* const p_int_raw_storm_longitude_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_longitude_ProxyFlowPropertyInterface = p_int_raw_storm_longitude_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_C::setItsInt_raw_wind_direction_ProxyFlowPropertyInterface(int_raw_wind_direction_ProxyFlowPropertyInterface* const p_int_raw_wind_direction_ProxyFlowPropertyInterface) {
-    itsInt_raw_wind_direction_ProxyFlowPropertyInterface = p_int_raw_wind_direction_ProxyFlowPropertyInterface;
+void SMSWTD::p_SMSWTD_C::setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(int_raw_precipitation_type_ProxyFlowPropertyInterface* const p_int_raw_precipitation_type_ProxyFlowPropertyInterface) {
+    itsInt_raw_precipitation_type_ProxyFlowPropertyInterface = p_int_raw_precipitation_type_ProxyFlowPropertyInterface;
 }
 
 void SMSWTD::p_SMSWTD_C::setItsInt_raw_wind_speed_ProxyFlowPropertyInterface(int_raw_wind_speed_ProxyFlowPropertyInterface* const p_int_raw_wind_speed_ProxyFlowPropertyInterface) {
     itsInt_raw_wind_speed_ProxyFlowPropertyInterface = p_int_raw_wind_speed_ProxyFlowPropertyInterface;
 }
 
-void SMSWTD::p_SMSWTD_C::setItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* const p_precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface) {
-    itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface = p_precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface;
-}
-
 void SMSWTD::p_SMSWTD_C::cleanUpRelations(void) {
+    if(itsBool_raw_wind_direction_ProxyFlowPropertyInterface != NULL)
+        {
+            itsBool_raw_wind_direction_ProxyFlowPropertyInterface = NULL;
+        }
     if(itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface != NULL)
         {
             itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface = NULL;
         }
-    if(itsInt_raw_storm_altitude_ProxyFlowPropertyInterface != NULL)
+    if(itsInt_raw_precipitation_type_ProxyFlowPropertyInterface != NULL)
         {
-            itsInt_raw_storm_altitude_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_storm_diameter_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_storm_diameter_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_storm_latitude_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_storm_latitude_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_storm_longitude_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_storm_longitude_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_wind_direction_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_wind_direction_ProxyFlowPropertyInterface = NULL;
+            itsInt_raw_precipitation_type_ProxyFlowPropertyInterface = NULL;
         }
     if(itsInt_raw_wind_speed_ProxyFlowPropertyInterface != NULL)
         {
             itsInt_raw_wind_speed_ProxyFlowPropertyInterface = NULL;
         }
-    if(itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface != NULL)
-        {
-            itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface = NULL;
-        }
 }
 
-SMSWTD::p_SMSWTD_1_C::p_SMSWTD_1_C(void) : int_raw_precipitation_amount_ProxyFlowPropertyInterface(), precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(), int_raw_storm_altitude_ProxyFlowPropertyInterface(), int_raw_storm_diameter_ProxyFlowPropertyInterface(), int_raw_storm_latitude_ProxyFlowPropertyInterface(), int_raw_storm_longitude_ProxyFlowPropertyInterface(), int_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_wind_speed_ProxyFlowPropertyInterface(), _p_(0), itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_altitude_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_diameter_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_latitude_ProxyFlowPropertyInterface(NULL), itsInt_raw_storm_longitude_ProxyFlowPropertyInterface(NULL), itsInt_raw_wind_direction_ProxyFlowPropertyInterface(NULL), itsInt_raw_wind_speed_ProxyFlowPropertyInterface(NULL), itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(NULL) {
+SMSWTD::p_SMSWTD_1_C::p_SMSWTD_1_C(void) : int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), _p_(0), itsBool_raw_wind_direction_ProxyFlowPropertyInterface(NULL), itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(NULL), itsInt_raw_precipitation_type_ProxyFlowPropertyInterface(NULL), itsInt_raw_wind_speed_ProxyFlowPropertyInterface(NULL) {
 }
 
 SMSWTD::p_SMSWTD_1_C::~p_SMSWTD_1_C(void) {
     cleanUpRelations();
 }
 
+bool_raw_wind_direction_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsBool_raw_wind_direction_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
 int_raw_precipitation_amount_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(void) {
     return this;
 }
 
-int_raw_storm_altitude_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_storm_diameter_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_storm_latitude_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_storm_longitude_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_wind_direction_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_wind_direction_ProxyFlowPropertyInterface(void) {
+int_raw_precipitation_type_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(void) {
     return this;
 }
 
 int_raw_wind_speed_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsInt_raw_wind_speed_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_1_C::getItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(void) {
     return this;
 }
 
@@ -267,50 +167,18 @@ void SMSWTD::p_SMSWTD_1_C::setRaw_precipitation_amount(int p_raw_precipitation_a
     
 }
 
-void SMSWTD::p_SMSWTD_1_C::setRaw_precipitation_type(precipitation_type_enum p_raw_precipitation_type) {
+void SMSWTD::p_SMSWTD_1_C::setRaw_precipitation_type(int p_raw_precipitation_type) {
     
-    if (itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface != NULL) {
-        itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface->setRaw_precipitation_type(p_raw_precipitation_type);
+    if (itsInt_raw_precipitation_type_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_precipitation_type_ProxyFlowPropertyInterface->setRaw_precipitation_type(p_raw_precipitation_type);
     }
     
 }
 
-void SMSWTD::p_SMSWTD_1_C::setRaw_storm_altitude(int p_raw_storm_altitude) {
+void SMSWTD::p_SMSWTD_1_C::setRaw_wind_direction(bool p_raw_wind_direction) {
     
-    if (itsInt_raw_storm_altitude_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_altitude_ProxyFlowPropertyInterface->setRaw_storm_altitude(p_raw_storm_altitude);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_1_C::setRaw_storm_diameter(int p_raw_storm_diameter) {
-    
-    if (itsInt_raw_storm_diameter_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_diameter_ProxyFlowPropertyInterface->setRaw_storm_diameter(p_raw_storm_diameter);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_1_C::setRaw_storm_latitude(int p_raw_storm_latitude) {
-    
-    if (itsInt_raw_storm_latitude_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_latitude_ProxyFlowPropertyInterface->setRaw_storm_latitude(p_raw_storm_latitude);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_1_C::setRaw_storm_longitude(int p_raw_storm_longitude) {
-    
-    if (itsInt_raw_storm_longitude_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_storm_longitude_ProxyFlowPropertyInterface->setRaw_storm_longitude(p_raw_storm_longitude);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_1_C::setRaw_wind_direction(int p_raw_wind_direction) {
-    
-    if (itsInt_raw_wind_direction_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_wind_direction_ProxyFlowPropertyInterface->setRaw_wind_direction(p_raw_wind_direction);
+    if (itsBool_raw_wind_direction_ProxyFlowPropertyInterface != NULL) {
+        itsBool_raw_wind_direction_ProxyFlowPropertyInterface->setRaw_wind_direction(p_raw_wind_direction);
     }
     
 }
@@ -323,267 +191,43 @@ void SMSWTD::p_SMSWTD_1_C::setRaw_wind_speed(int p_raw_wind_speed) {
     
 }
 
+void SMSWTD::p_SMSWTD_1_C::setItsBool_raw_wind_direction_ProxyFlowPropertyInterface(bool_raw_wind_direction_ProxyFlowPropertyInterface* const p_bool_raw_wind_direction_ProxyFlowPropertyInterface) {
+    itsBool_raw_wind_direction_ProxyFlowPropertyInterface = p_bool_raw_wind_direction_ProxyFlowPropertyInterface;
+}
+
 void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(int_raw_precipitation_amount_ProxyFlowPropertyInterface* const p_int_raw_precipitation_amount_ProxyFlowPropertyInterface) {
     itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface = p_int_raw_precipitation_amount_ProxyFlowPropertyInterface;
 }
 
-void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(int_raw_storm_altitude_ProxyFlowPropertyInterface* const p_int_raw_storm_altitude_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_altitude_ProxyFlowPropertyInterface = p_int_raw_storm_altitude_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(int_raw_storm_diameter_ProxyFlowPropertyInterface* const p_int_raw_storm_diameter_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_diameter_ProxyFlowPropertyInterface = p_int_raw_storm_diameter_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(int_raw_storm_latitude_ProxyFlowPropertyInterface* const p_int_raw_storm_latitude_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_latitude_ProxyFlowPropertyInterface = p_int_raw_storm_latitude_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(int_raw_storm_longitude_ProxyFlowPropertyInterface* const p_int_raw_storm_longitude_ProxyFlowPropertyInterface) {
-    itsInt_raw_storm_longitude_ProxyFlowPropertyInterface = p_int_raw_storm_longitude_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_wind_direction_ProxyFlowPropertyInterface(int_raw_wind_direction_ProxyFlowPropertyInterface* const p_int_raw_wind_direction_ProxyFlowPropertyInterface) {
-    itsInt_raw_wind_direction_ProxyFlowPropertyInterface = p_int_raw_wind_direction_ProxyFlowPropertyInterface;
+void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(int_raw_precipitation_type_ProxyFlowPropertyInterface* const p_int_raw_precipitation_type_ProxyFlowPropertyInterface) {
+    itsInt_raw_precipitation_type_ProxyFlowPropertyInterface = p_int_raw_precipitation_type_ProxyFlowPropertyInterface;
 }
 
 void SMSWTD::p_SMSWTD_1_C::setItsInt_raw_wind_speed_ProxyFlowPropertyInterface(int_raw_wind_speed_ProxyFlowPropertyInterface* const p_int_raw_wind_speed_ProxyFlowPropertyInterface) {
     itsInt_raw_wind_speed_ProxyFlowPropertyInterface = p_int_raw_wind_speed_ProxyFlowPropertyInterface;
 }
 
-void SMSWTD::p_SMSWTD_1_C::setItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* const p_precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface) {
-    itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface = p_precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface;
-}
-
 void SMSWTD::p_SMSWTD_1_C::cleanUpRelations(void) {
+    if(itsBool_raw_wind_direction_ProxyFlowPropertyInterface != NULL)
+        {
+            itsBool_raw_wind_direction_ProxyFlowPropertyInterface = NULL;
+        }
     if(itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface != NULL)
         {
             itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface = NULL;
         }
-    if(itsInt_raw_storm_altitude_ProxyFlowPropertyInterface != NULL)
+    if(itsInt_raw_precipitation_type_ProxyFlowPropertyInterface != NULL)
         {
-            itsInt_raw_storm_altitude_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_storm_diameter_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_storm_diameter_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_storm_latitude_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_storm_latitude_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_storm_longitude_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_storm_longitude_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_wind_direction_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_wind_direction_ProxyFlowPropertyInterface = NULL;
+            itsInt_raw_precipitation_type_ProxyFlowPropertyInterface = NULL;
         }
     if(itsInt_raw_wind_speed_ProxyFlowPropertyInterface != NULL)
         {
             itsInt_raw_wind_speed_ProxyFlowPropertyInterface = NULL;
         }
-    if(itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface != NULL)
-        {
-            itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface = NULL;
-        }
-}
-
-SMSWTD::p_SMSWTD_2_C::p_SMSWTD_2_C(void) : int_raw_tectonicPlate_location_ProxyFlowPropertyInterface(), int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_pressure_ProxyFlowPropertyInterface(), bool_raw_flowDirection_ProxyFlowPropertyInterface(), _p_(0), itsBool_raw_flowDirection_ProxyFlowPropertyInterface(NULL), itsInt_raw_pressure_ProxyFlowPropertyInterface(NULL), itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(NULL), itsInt_raw_vibrations_ProxyFlowPropertyInterface(NULL) {
-}
-
-SMSWTD::p_SMSWTD_2_C::~p_SMSWTD_2_C(void) {
-    cleanUpRelations();
-}
-
-void SMSWTD::p_SMSWTD_2_C::connectSMSWTD(SMSWTD* part) {
-    setItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_vibrations_ProxyFlowPropertyInterface(part);
-    setItsInt_raw_pressure_ProxyFlowPropertyInterface(part);
-    setItsBool_raw_flowDirection_ProxyFlowPropertyInterface(part);
-    
-}
-
-bool_raw_flowDirection_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_2_C::getItsBool_raw_flowDirection_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_pressure_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_2_C::getItsInt_raw_pressure_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_tectonicPlate_location_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_2_C::getItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_vibrations_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_2_C::getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-void SMSWTD::p_SMSWTD_2_C::setRaw_flowDirection(bool p_raw_flowDirection) {
-    
-    if (itsBool_raw_flowDirection_ProxyFlowPropertyInterface != NULL) {
-        itsBool_raw_flowDirection_ProxyFlowPropertyInterface->setRaw_flowDirection(p_raw_flowDirection);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_2_C::setRaw_pressure(int p_raw_pressure) {
-    
-    if (itsInt_raw_pressure_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_pressure_ProxyFlowPropertyInterface->setRaw_pressure(p_raw_pressure);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_2_C::setRaw_tectonicPlate_location(int p_raw_tectonicPlate_location) {
-    
-    if (itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface->setRaw_tectonicPlate_location(p_raw_tectonicPlate_location);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_2_C::setRaw_vibrations(int p_raw_vibrations) {
-    
-    if (itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_vibrations_ProxyFlowPropertyInterface->setRaw_vibrations(p_raw_vibrations);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_2_C::setItsBool_raw_flowDirection_ProxyFlowPropertyInterface(bool_raw_flowDirection_ProxyFlowPropertyInterface* const p_bool_raw_flowDirection_ProxyFlowPropertyInterface) {
-    itsBool_raw_flowDirection_ProxyFlowPropertyInterface = p_bool_raw_flowDirection_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_2_C::setItsInt_raw_pressure_ProxyFlowPropertyInterface(int_raw_pressure_ProxyFlowPropertyInterface* const p_int_raw_pressure_ProxyFlowPropertyInterface) {
-    itsInt_raw_pressure_ProxyFlowPropertyInterface = p_int_raw_pressure_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_2_C::setItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(int_raw_tectonicPlate_location_ProxyFlowPropertyInterface* const p_int_raw_tectonicPlate_location_ProxyFlowPropertyInterface) {
-    itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface = p_int_raw_tectonicPlate_location_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_2_C::setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface) {
-    itsInt_raw_vibrations_ProxyFlowPropertyInterface = p_int_raw_vibrations_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_2_C::cleanUpRelations(void) {
-    if(itsBool_raw_flowDirection_ProxyFlowPropertyInterface != NULL)
-        {
-            itsBool_raw_flowDirection_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_pressure_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_pressure_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_vibrations_ProxyFlowPropertyInterface = NULL;
-        }
-}
-
-SMSWTD::p_SMSWTD_3_C::p_SMSWTD_3_C(void) : bool_raw_flowDirection_ProxyFlowPropertyInterface(), int_raw_pressure_ProxyFlowPropertyInterface(), int_raw_tectonicPlate_location_ProxyFlowPropertyInterface(), int_raw_vibrations_ProxyFlowPropertyInterface(), _p_(0), itsBool_raw_flowDirection_ProxyFlowPropertyInterface(NULL), itsInt_raw_pressure_ProxyFlowPropertyInterface(NULL), itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(NULL), itsInt_raw_vibrations_ProxyFlowPropertyInterface(NULL) {
-}
-
-SMSWTD::p_SMSWTD_3_C::~p_SMSWTD_3_C(void) {
-    cleanUpRelations();
-}
-
-bool_raw_flowDirection_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_3_C::getItsBool_raw_flowDirection_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_pressure_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_3_C::getItsInt_raw_pressure_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_tectonicPlate_location_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_3_C::getItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-int_raw_vibrations_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_3_C::getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void) {
-    return this;
-}
-
-SMSWTD::p_SMSWTD_3_C* SMSWTD::p_SMSWTD_3_C::getOutBound(void) {
-    return this;
-}
-
-void SMSWTD::p_SMSWTD_3_C::setRaw_flowDirection(bool p_raw_flowDirection) {
-    
-    if (itsBool_raw_flowDirection_ProxyFlowPropertyInterface != NULL) {
-        itsBool_raw_flowDirection_ProxyFlowPropertyInterface->setRaw_flowDirection(p_raw_flowDirection);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_3_C::setRaw_pressure(int p_raw_pressure) {
-    
-    if (itsInt_raw_pressure_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_pressure_ProxyFlowPropertyInterface->setRaw_pressure(p_raw_pressure);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_3_C::setRaw_tectonicPlate_location(int p_raw_tectonicPlate_location) {
-    
-    if (itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface->setRaw_tectonicPlate_location(p_raw_tectonicPlate_location);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_3_C::setRaw_vibrations(int p_raw_vibrations) {
-    
-    if (itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL) {
-        itsInt_raw_vibrations_ProxyFlowPropertyInterface->setRaw_vibrations(p_raw_vibrations);
-    }
-    
-}
-
-void SMSWTD::p_SMSWTD_3_C::setItsBool_raw_flowDirection_ProxyFlowPropertyInterface(bool_raw_flowDirection_ProxyFlowPropertyInterface* const p_bool_raw_flowDirection_ProxyFlowPropertyInterface) {
-    itsBool_raw_flowDirection_ProxyFlowPropertyInterface = p_bool_raw_flowDirection_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_3_C::setItsInt_raw_pressure_ProxyFlowPropertyInterface(int_raw_pressure_ProxyFlowPropertyInterface* const p_int_raw_pressure_ProxyFlowPropertyInterface) {
-    itsInt_raw_pressure_ProxyFlowPropertyInterface = p_int_raw_pressure_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_3_C::setItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(int_raw_tectonicPlate_location_ProxyFlowPropertyInterface* const p_int_raw_tectonicPlate_location_ProxyFlowPropertyInterface) {
-    itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface = p_int_raw_tectonicPlate_location_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_3_C::setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface) {
-    itsInt_raw_vibrations_ProxyFlowPropertyInterface = p_int_raw_vibrations_ProxyFlowPropertyInterface;
-}
-
-void SMSWTD::p_SMSWTD_3_C::cleanUpRelations(void) {
-    if(itsBool_raw_flowDirection_ProxyFlowPropertyInterface != NULL)
-        {
-            itsBool_raw_flowDirection_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_pressure_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_pressure_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface = NULL;
-        }
-    if(itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL)
-        {
-            itsInt_raw_vibrations_ProxyFlowPropertyInterface = NULL;
-        }
 }
 //#]
 
-SMSWTD::SMSWTD(IOxfActive* const theActiveContext) : OMReactive(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(), int_raw_storm_altitude_ProxyFlowPropertyInterface(), int_raw_storm_diameter_ProxyFlowPropertyInterface(), int_raw_storm_latitude_ProxyFlowPropertyInterface(), int_raw_storm_longitude_ProxyFlowPropertyInterface(), int_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_wind_speed_ProxyFlowPropertyInterface(), int_raw_tectonicPlate_location_ProxyFlowPropertyInterface(), int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_pressure_ProxyFlowPropertyInterface(), bool_raw_flowDirection_ProxyFlowPropertyInterface(), itsCultural_and_Geological_Differences(NULL), itsInformation_Channels(NULL), itsStakeholders(NULL), itsStandards_and_Regulations(NULL), itsStorm_Sensors(NULL), itsTsunami_Sensors(NULL) {
+SMSWTD::SMSWTD(IOxfActive* const theActiveContext) : OMReactive(), int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), itsCultural_and_Geological_Differences(NULL), itsInformation_Channels(NULL), itsStakeholders(NULL), itsStandards_and_Regulations(NULL), itsStorm_Sensors(NULL), itsTsunami_Sensors(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(SMSWTD, SMSWTD(), 0, Architecture_SMSWTD_SMSWTD_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
@@ -600,15 +244,6 @@ SMSWTD::~SMSWTD(void) {
 }
 
 //#[ ignore
-void SMSWTD::setRaw_flowDirection(bool p_raw_flowDirection) {
-    if (raw_flowDirection != p_raw_flowDirection) {
-        raw_flowDirection = p_raw_flowDirection;
-        FLOW_DATA_RECEIVE("raw_flowDirection", raw_flowDirection, x2String);
-        FLOW_DATA_SEND(raw_flowDirection, p_SMSWTD_3, setRaw_flowDirection, x2String);
-    }
-    
-}
-
 void SMSWTD::setRaw_precipitation_amount(int p_raw_precipitation_amount) {
     if (raw_precipitation_amount != p_raw_precipitation_amount) {
         raw_precipitation_amount = p_raw_precipitation_amount;
@@ -618,8 +253,8 @@ void SMSWTD::setRaw_precipitation_amount(int p_raw_precipitation_amount) {
     
 }
 
-void SMSWTD::setRaw_precipitation_type(precipitation_type_enum p_raw_precipitation_type) {
-    if (memcmp(&raw_precipitation_type, &p_raw_precipitation_type, sizeof(precipitation_type_enum))) {
+void SMSWTD::setRaw_precipitation_type(int p_raw_precipitation_type) {
+    if (raw_precipitation_type != p_raw_precipitation_type) {
         raw_precipitation_type = p_raw_precipitation_type;
         FLOW_DATA_RECEIVE("raw_precipitation_type", raw_precipitation_type, x2String);
         FLOW_DATA_SEND(raw_precipitation_type, p_SMSWTD_1, setRaw_precipitation_type, x2String);
@@ -627,70 +262,7 @@ void SMSWTD::setRaw_precipitation_type(precipitation_type_enum p_raw_precipitati
     
 }
 
-void SMSWTD::setRaw_pressure(int p_raw_pressure) {
-    if (raw_pressure != p_raw_pressure) {
-        raw_pressure = p_raw_pressure;
-        FLOW_DATA_RECEIVE("raw_pressure", raw_pressure, x2String);
-        FLOW_DATA_SEND(raw_pressure, p_SMSWTD_3, setRaw_pressure, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_storm_altitude(int p_raw_storm_altitude) {
-    if (raw_storm_altitude != p_raw_storm_altitude) {
-        raw_storm_altitude = p_raw_storm_altitude;
-        FLOW_DATA_RECEIVE("raw_storm_altitude", raw_storm_altitude, x2String);
-        FLOW_DATA_SEND(raw_storm_altitude, p_SMSWTD_1, setRaw_storm_altitude, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_storm_diameter(int p_raw_storm_diameter) {
-    if (raw_storm_diameter != p_raw_storm_diameter) {
-        raw_storm_diameter = p_raw_storm_diameter;
-        FLOW_DATA_RECEIVE("raw_storm_diameter", raw_storm_diameter, x2String);
-        FLOW_DATA_SEND(raw_storm_diameter, p_SMSWTD_1, setRaw_storm_diameter, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_storm_latitude(int p_raw_storm_latitude) {
-    if (raw_storm_latitude != p_raw_storm_latitude) {
-        raw_storm_latitude = p_raw_storm_latitude;
-        FLOW_DATA_RECEIVE("raw_storm_latitude", raw_storm_latitude, x2String);
-        FLOW_DATA_SEND(raw_storm_latitude, p_SMSWTD_1, setRaw_storm_latitude, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_storm_longitude(int p_raw_storm_longitude) {
-    if (raw_storm_longitude != p_raw_storm_longitude) {
-        raw_storm_longitude = p_raw_storm_longitude;
-        FLOW_DATA_RECEIVE("raw_storm_longitude", raw_storm_longitude, x2String);
-        FLOW_DATA_SEND(raw_storm_longitude, p_SMSWTD_1, setRaw_storm_longitude, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_tectonicPlate_location(int p_raw_tectonicPlate_location) {
-    if (raw_tectonicPlate_location != p_raw_tectonicPlate_location) {
-        raw_tectonicPlate_location = p_raw_tectonicPlate_location;
-        FLOW_DATA_RECEIVE("raw_tectonicPlate_location", raw_tectonicPlate_location, x2String);
-        FLOW_DATA_SEND(raw_tectonicPlate_location, p_SMSWTD_3, setRaw_tectonicPlate_location, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_vibrations(int p_raw_vibrations) {
-    if (raw_vibrations != p_raw_vibrations) {
-        raw_vibrations = p_raw_vibrations;
-        FLOW_DATA_RECEIVE("raw_vibrations", raw_vibrations, x2String);
-        FLOW_DATA_SEND(raw_vibrations, p_SMSWTD_3, setRaw_vibrations, x2String);
-    }
-    
-}
-
-void SMSWTD::setRaw_wind_direction(int p_raw_wind_direction) {
+void SMSWTD::setRaw_wind_direction(bool p_raw_wind_direction) {
     if (raw_wind_direction != p_raw_wind_direction) {
         raw_wind_direction = p_raw_wind_direction;
         FLOW_DATA_RECEIVE("raw_wind_direction", raw_wind_direction, x2String);
@@ -725,63 +297,15 @@ SMSWTD::p_SMSWTD_1_C* SMSWTD::get_p_SMSWTD_1(void) const {
     return (SMSWTD::p_SMSWTD_1_C*) &p_SMSWTD_1;
 }
 
-SMSWTD::p_SMSWTD_2_C* SMSWTD::getP_SMSWTD_2(void) const {
-    return (SMSWTD::p_SMSWTD_2_C*) &p_SMSWTD_2;
-}
-
-SMSWTD::p_SMSWTD_2_C* SMSWTD::get_p_SMSWTD_2(void) const {
-    return (SMSWTD::p_SMSWTD_2_C*) &p_SMSWTD_2;
-}
-
-SMSWTD::p_SMSWTD_3_C* SMSWTD::getP_SMSWTD_3(void) const {
-    return (SMSWTD::p_SMSWTD_3_C*) &p_SMSWTD_3;
-}
-
-SMSWTD::p_SMSWTD_3_C* SMSWTD::get_p_SMSWTD_3(void) const {
-    return (SMSWTD::p_SMSWTD_3_C*) &p_SMSWTD_3;
-}
-
-bool const SMSWTD::getRaw_flowDirection(void) const {
-    return raw_flowDirection;
-}
-
 int const SMSWTD::getRaw_precipitation_amount(void) const {
     return raw_precipitation_amount;
 }
 
-precipitation_type_enum const SMSWTD::getRaw_precipitation_type(void) const {
+int const SMSWTD::getRaw_precipitation_type(void) const {
     return raw_precipitation_type;
 }
 
-int const SMSWTD::getRaw_pressure(void) const {
-    return raw_pressure;
-}
-
-int const SMSWTD::getRaw_storm_altitude(void) const {
-    return raw_storm_altitude;
-}
-
-int const SMSWTD::getRaw_storm_diameter(void) const {
-    return raw_storm_diameter;
-}
-
-int const SMSWTD::getRaw_storm_latitude(void) const {
-    return raw_storm_latitude;
-}
-
-int const SMSWTD::getRaw_storm_longitude(void) const {
-    return raw_storm_longitude;
-}
-
-int const SMSWTD::getRaw_tectonicPlate_location(void) const {
-    return raw_tectonicPlate_location;
-}
-
-int const SMSWTD::getRaw_vibrations(void) const {
-    return raw_vibrations;
-}
-
-int const SMSWTD::getRaw_wind_direction(void) const {
+bool const SMSWTD::getRaw_wind_direction(void) const {
     return raw_wind_direction;
 }
 
@@ -891,8 +415,9 @@ bool SMSWTD::startBehavior(void) {
 }
 
 void SMSWTD::initRelations(void) {
-    OMCreateInstances();
-    OMConnectRelations();
+    if (get_p_SMSWTD() != NULL) {
+        get_p_SMSWTD()->connectSMSWTD(this);
+    }
 }
 
 void SMSWTD::cleanUpRelations(void) {
@@ -1120,33 +645,13 @@ void SMSWTD::destroy(void) {
     OMReactive::destroy();
 }
 
-void SMSWTD::OMCreateInstances(void) {
-}
-
-void SMSWTD::OMConnectRelations(void) {
-    if (get_p_SMSWTD() != NULL) {
-        get_p_SMSWTD()->connectSMSWTD(this);
-    }
-    if (get_p_SMSWTD_2() != NULL) {
-        get_p_SMSWTD_2()->connectSMSWTD(this);
-    }
-}
-
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedSMSWTD::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    aomsAttributes->addAttribute("raw_precipitation_amount", x2String(myReal->raw_precipitation_amount));
-    aomsAttributes->addAttribute("raw_precipitation_type", x2String((int)myReal->raw_precipitation_type));
-    aomsAttributes->addAttribute("raw_storm_altitude", x2String(myReal->raw_storm_altitude));
-    aomsAttributes->addAttribute("raw_storm_diameter", x2String(myReal->raw_storm_diameter));
-    aomsAttributes->addAttribute("raw_storm_latitude", x2String(myReal->raw_storm_latitude));
-    aomsAttributes->addAttribute("raw_storm_longitude", x2String(myReal->raw_storm_longitude));
-    aomsAttributes->addAttribute("raw_wind_direction", x2String(myReal->raw_wind_direction));
     aomsAttributes->addAttribute("raw_wind_speed", x2String(myReal->raw_wind_speed));
-    aomsAttributes->addAttribute("raw_flowDirection", x2String(myReal->raw_flowDirection));
-    aomsAttributes->addAttribute("raw_pressure", x2String(myReal->raw_pressure));
-    aomsAttributes->addAttribute("raw_tectonicPlate_location", x2String(myReal->raw_tectonicPlate_location));
-    aomsAttributes->addAttribute("raw_vibrations", x2String(myReal->raw_vibrations));
+    aomsAttributes->addAttribute("raw_wind_direction", x2String(myReal->raw_wind_direction));
+    aomsAttributes->addAttribute("raw_precipitation_amount", x2String(myReal->raw_precipitation_amount));
+    aomsAttributes->addAttribute("raw_precipitation_type", x2String(myReal->raw_precipitation_type));
 }
 
 void OMAnimatedSMSWTD::serializeRelations(AOMSRelations* aomsRelations) const {

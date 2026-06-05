@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SystemContext
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Fri, 5, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SystemContext.cpp
 *********************************************************************/
 
@@ -76,32 +76,13 @@ void SystemContext_OMCreateInstances(void) {
 void SystemContext_OMConnectRelations(void) {
     {
         
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface());
-        
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface());
-        
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_storm_altitude_ProxyFlowPropertyInterface());
-        
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_storm_diameter_ProxyFlowPropertyInterface());
-        
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_storm_latitude_ProxyFlowPropertyInterface());
-        
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_storm_longitude_ProxyFlowPropertyInterface());
-        
-        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_wind_direction_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_wind_direction_ProxyFlowPropertyInterface());
-        
         itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_wind_speed_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_wind_speed_ProxyFlowPropertyInterface());
         
-    }
-    {
+        itsStorm_Sensors.get_p_Storm_Sensors()->setItsBool_raw_wind_direction_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsBool_raw_wind_direction_ProxyFlowPropertyInterface());
         
-        itsTsunami_Sensors.get_p_Tsunami_Sensors()->setItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD_2()->getItsInt_raw_tectonicPlate_location_ProxyFlowPropertyInterface());
+        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface());
         
-        itsTsunami_Sensors.get_p_Tsunami_Sensors()->setItsInt_raw_vibrations_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD_2()->getItsInt_raw_vibrations_ProxyFlowPropertyInterface());
-        
-        itsTsunami_Sensors.get_p_Tsunami_Sensors()->setItsInt_raw_pressure_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD_2()->getItsInt_raw_pressure_ProxyFlowPropertyInterface());
-        
-        itsTsunami_Sensors.get_p_Tsunami_Sensors()->setItsBool_raw_flowDirection_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD_2()->getItsBool_raw_flowDirection_ProxyFlowPropertyInterface());
+        itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_precipitation_type_ProxyFlowPropertyInterface());
         
     }
     

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Cultural_and_Geological_Differences
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Cultural_and_Geological_Differences.h
 *********************************************************************/
 
@@ -51,6 +51,9 @@ public :
 protected :
 
     //## auto_generated
+    void initRelations(void);
+    
+    //## auto_generated
     void cleanUpRelations(void);
     
     ////    Relations and components    ////
@@ -71,6 +74,14 @@ public :
     
     //## auto_generated
     void _clearItsSMSWTD(void);
+
+protected :
+
+    //## auto_generated
+    void OMCreateInstances(void);
+    
+    //## auto_generated
+    void OMConnectRelations(void);
 };
 
 #ifdef _OMINSTRUMENT

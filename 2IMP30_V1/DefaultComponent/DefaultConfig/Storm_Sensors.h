@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Sensors
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Fri, 5, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Sensors.h
 *********************************************************************/
 
@@ -18,26 +18,24 @@
 //## auto_generated
 #include "SystemContext.h"
 //## class p_Storm_Sensors_C
+#include "bool_raw_wind_direction_ProxyFlowPropertyInterface.h"
+//## class p_Storm_Sensors_C
 #include "int_raw_precipitation_amount_ProxyFlowPropertyInterface.h"
 //## class p_Storm_Sensors_C
-#include "int_raw_storm_altitude_ProxyFlowPropertyInterface.h"
-//## class p_Storm_Sensors_C
-#include "int_raw_storm_diameter_ProxyFlowPropertyInterface.h"
-//## class p_Storm_Sensors_C
-#include "int_raw_storm_latitude_ProxyFlowPropertyInterface.h"
-//## class p_Storm_Sensors_C
-#include "int_raw_storm_longitude_ProxyFlowPropertyInterface.h"
-//## class p_Storm_Sensors_C
-#include "int_raw_wind_direction_ProxyFlowPropertyInterface.h"
+#include "int_raw_precipitation_type_ProxyFlowPropertyInterface.h"
 //## class p_Storm_Sensors_C
 #include "int_raw_wind_speed_ProxyFlowPropertyInterface.h"
-//## class p_Storm_Sensors_C
-#include "precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface.h"
 //## link itsSMSWTD
 class SMSWTD;
 
 //#[ ignore
 #define OMAnim_SystemContext_Storm_Sensors_setRaw_precipitation_amount_int_ARGS_DECLARATION int p_raw_precipitation_amount;
+
+#define OMAnim_SystemContext_Storm_Sensors_setRaw_precipitation_type_int_ARGS_DECLARATION int p_raw_precipitation_type;
+
+#define OMAnim_SystemContext_Storm_Sensors_setRaw_wind_direction_bool_ARGS_DECLARATION bool p_raw_wind_direction;
+
+#define OMAnim_SystemContext_Storm_Sensors_setRaw_wind_speed_int_ARGS_DECLARATION int p_raw_wind_speed;
 //#]
 
 //## package SystemContext
@@ -48,7 +46,7 @@ public :
 
 //#[ ignore
     //## package SystemContext
-    class p_Storm_Sensors_C : public int_raw_precipitation_amount_ProxyFlowPropertyInterface, public precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface, public int_raw_storm_altitude_ProxyFlowPropertyInterface, public int_raw_storm_diameter_ProxyFlowPropertyInterface, public int_raw_storm_latitude_ProxyFlowPropertyInterface, public int_raw_storm_longitude_ProxyFlowPropertyInterface, public int_raw_wind_direction_ProxyFlowPropertyInterface, public int_raw_wind_speed_ProxyFlowPropertyInterface {
+    class p_Storm_Sensors_C : public int_raw_wind_speed_ProxyFlowPropertyInterface, public bool_raw_wind_direction_ProxyFlowPropertyInterface, public int_raw_precipitation_amount_ProxyFlowPropertyInterface, public int_raw_precipitation_type_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
     public :
@@ -62,28 +60,16 @@ public :
         ////    Operations    ////
         
         //## auto_generated
+        bool_raw_wind_direction_ProxyFlowPropertyInterface* getItsBool_raw_wind_direction_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
         int_raw_precipitation_amount_ProxyFlowPropertyInterface* getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(void);
         
         //## auto_generated
-        int_raw_storm_altitude_ProxyFlowPropertyInterface* getItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(void);
-        
-        //## auto_generated
-        int_raw_storm_diameter_ProxyFlowPropertyInterface* getItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(void);
-        
-        //## auto_generated
-        int_raw_storm_latitude_ProxyFlowPropertyInterface* getItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(void);
-        
-        //## auto_generated
-        int_raw_storm_longitude_ProxyFlowPropertyInterface* getItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(void);
-        
-        //## auto_generated
-        int_raw_wind_direction_ProxyFlowPropertyInterface* getItsInt_raw_wind_direction_ProxyFlowPropertyInterface(void);
+        int_raw_precipitation_type_ProxyFlowPropertyInterface* getItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(void);
         
         //## auto_generated
         int_raw_wind_speed_ProxyFlowPropertyInterface* getItsInt_raw_wind_speed_ProxyFlowPropertyInterface(void);
-        
-        //## auto_generated
-        precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* getItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(void);
         
         //## auto_generated
         Storm_Sensors::p_Storm_Sensors_C* getOutBound(void);
@@ -92,22 +78,10 @@ public :
         virtual void setRaw_precipitation_amount(int p_raw_precipitation_amount);
         
         //## auto_generated
-        virtual void setRaw_precipitation_type(precipitation_type_enum p_raw_precipitation_type);
+        virtual void setRaw_precipitation_type(int p_raw_precipitation_type);
         
         //## auto_generated
-        virtual void setRaw_storm_altitude(int p_raw_storm_altitude);
-        
-        //## auto_generated
-        virtual void setRaw_storm_diameter(int p_raw_storm_diameter);
-        
-        //## auto_generated
-        virtual void setRaw_storm_latitude(int p_raw_storm_latitude);
-        
-        //## auto_generated
-        virtual void setRaw_storm_longitude(int p_raw_storm_longitude);
-        
-        //## auto_generated
-        virtual void setRaw_wind_direction(int p_raw_wind_direction);
+        virtual void setRaw_wind_direction(bool p_raw_wind_direction);
         
         //## auto_generated
         virtual void setRaw_wind_speed(int p_raw_wind_speed);
@@ -115,28 +89,16 @@ public :
         ////    Additional operations    ////
         
         //## auto_generated
+        void setItsBool_raw_wind_direction_ProxyFlowPropertyInterface(bool_raw_wind_direction_ProxyFlowPropertyInterface* const p_bool_raw_wind_direction_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
         void setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(int_raw_precipitation_amount_ProxyFlowPropertyInterface* const p_int_raw_precipitation_amount_ProxyFlowPropertyInterface);
         
         //## auto_generated
-        void setItsInt_raw_storm_altitude_ProxyFlowPropertyInterface(int_raw_storm_altitude_ProxyFlowPropertyInterface* const p_int_raw_storm_altitude_ProxyFlowPropertyInterface);
-        
-        //## auto_generated
-        void setItsInt_raw_storm_diameter_ProxyFlowPropertyInterface(int_raw_storm_diameter_ProxyFlowPropertyInterface* const p_int_raw_storm_diameter_ProxyFlowPropertyInterface);
-        
-        //## auto_generated
-        void setItsInt_raw_storm_latitude_ProxyFlowPropertyInterface(int_raw_storm_latitude_ProxyFlowPropertyInterface* const p_int_raw_storm_latitude_ProxyFlowPropertyInterface);
-        
-        //## auto_generated
-        void setItsInt_raw_storm_longitude_ProxyFlowPropertyInterface(int_raw_storm_longitude_ProxyFlowPropertyInterface* const p_int_raw_storm_longitude_ProxyFlowPropertyInterface);
-        
-        //## auto_generated
-        void setItsInt_raw_wind_direction_ProxyFlowPropertyInterface(int_raw_wind_direction_ProxyFlowPropertyInterface* const p_int_raw_wind_direction_ProxyFlowPropertyInterface);
+        void setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(int_raw_precipitation_type_ProxyFlowPropertyInterface* const p_int_raw_precipitation_type_ProxyFlowPropertyInterface);
         
         //## auto_generated
         void setItsInt_raw_wind_speed_ProxyFlowPropertyInterface(int_raw_wind_speed_ProxyFlowPropertyInterface* const p_int_raw_wind_speed_ProxyFlowPropertyInterface);
-        
-        //## auto_generated
-        void setItsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface(precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* const p_precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface);
     
     protected :
     
@@ -151,21 +113,13 @@ public :
         
         ////    Relations and components    ////
         
+        bool_raw_wind_direction_ProxyFlowPropertyInterface* itsBool_raw_wind_direction_ProxyFlowPropertyInterface;		//## link itsBool_raw_wind_direction_ProxyFlowPropertyInterface
+        
         int_raw_precipitation_amount_ProxyFlowPropertyInterface* itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface;		//## link itsInt_raw_precipitation_amount_ProxyFlowPropertyInterface
         
-        int_raw_storm_altitude_ProxyFlowPropertyInterface* itsInt_raw_storm_altitude_ProxyFlowPropertyInterface;		//## link itsInt_raw_storm_altitude_ProxyFlowPropertyInterface
-        
-        int_raw_storm_diameter_ProxyFlowPropertyInterface* itsInt_raw_storm_diameter_ProxyFlowPropertyInterface;		//## link itsInt_raw_storm_diameter_ProxyFlowPropertyInterface
-        
-        int_raw_storm_latitude_ProxyFlowPropertyInterface* itsInt_raw_storm_latitude_ProxyFlowPropertyInterface;		//## link itsInt_raw_storm_latitude_ProxyFlowPropertyInterface
-        
-        int_raw_storm_longitude_ProxyFlowPropertyInterface* itsInt_raw_storm_longitude_ProxyFlowPropertyInterface;		//## link itsInt_raw_storm_longitude_ProxyFlowPropertyInterface
-        
-        int_raw_wind_direction_ProxyFlowPropertyInterface* itsInt_raw_wind_direction_ProxyFlowPropertyInterface;		//## link itsInt_raw_wind_direction_ProxyFlowPropertyInterface
+        int_raw_precipitation_type_ProxyFlowPropertyInterface* itsInt_raw_precipitation_type_ProxyFlowPropertyInterface;		//## link itsInt_raw_precipitation_type_ProxyFlowPropertyInterface
         
         int_raw_wind_speed_ProxyFlowPropertyInterface* itsInt_raw_wind_speed_ProxyFlowPropertyInterface;		//## link itsInt_raw_wind_speed_ProxyFlowPropertyInterface
-        
-        precipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface* itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface;		//## link itsPrecipitation_type_enum_raw_precipitation_type_ProxyFlowPropertyInterface
     };
 //#]
 
@@ -188,17 +142,9 @@ public :
 //#[ ignore
     void setRaw_precipitation_amount(int p_raw_precipitation_amount);
     
-    void setRaw_precipitation_type(precipitation_type_enum p_raw_precipitation_type);
+    void setRaw_precipitation_type(int p_raw_precipitation_type);
     
-    void setRaw_storm_altitude(int p_raw_storm_altitude);
-    
-    void setRaw_storm_diameter(int p_raw_storm_diameter);
-    
-    void setRaw_storm_latitude(int p_raw_storm_latitude);
-    
-    void setRaw_storm_longitude(int p_raw_storm_longitude);
-    
-    void setRaw_wind_direction(int p_raw_wind_direction);
+    void setRaw_wind_direction(bool p_raw_wind_direction);
     
     void setRaw_wind_speed(int p_raw_wind_speed);
 //#]
@@ -215,22 +161,10 @@ public :
     int const getRaw_precipitation_amount(void) const;
     
     //## auto_generated
-    precipitation_type_enum const getRaw_precipitation_type(void) const;
+    int const getRaw_precipitation_type(void) const;
     
     //## auto_generated
-    int const getRaw_storm_altitude(void) const;
-    
-    //## auto_generated
-    int const getRaw_storm_diameter(void) const;
-    
-    //## auto_generated
-    int const getRaw_storm_latitude(void) const;
-    
-    //## auto_generated
-    int const getRaw_storm_longitude(void) const;
-    
-    //## auto_generated
-    int const getRaw_wind_direction(void) const;
+    bool const getRaw_wind_direction(void) const;
     
     //## auto_generated
     int const getRaw_wind_speed(void) const;
@@ -255,17 +189,9 @@ private :
 
     int raw_precipitation_amount;		//## attribute raw_precipitation_amount
     
-    precipitation_type_enum raw_precipitation_type;		//## attribute raw_precipitation_type
+    int raw_precipitation_type;		//## attribute raw_precipitation_type
     
-    int raw_storm_altitude;		//## attribute raw_storm_altitude
-    
-    int raw_storm_diameter;		//## attribute raw_storm_diameter
-    
-    int raw_storm_latitude;		//## attribute raw_storm_latitude
-    
-    int raw_storm_longitude;		//## attribute raw_storm_longitude
-    
-    int raw_wind_direction;		//## attribute raw_wind_direction
+    bool raw_wind_direction;		//## attribute raw_wind_direction
     
     int raw_wind_speed;		//## attribute raw_wind_speed
     
@@ -302,11 +228,23 @@ protected :
 #ifdef _OMINSTRUMENT
 DECLARE_OPERATION_CLASS(SystemContext_Storm_Sensors_setRaw_precipitation_amount_int)
 
+DECLARE_OPERATION_CLASS(SystemContext_Storm_Sensors_setRaw_precipitation_type_int)
+
+DECLARE_OPERATION_CLASS(SystemContext_Storm_Sensors_setRaw_wind_direction_bool)
+
+DECLARE_OPERATION_CLASS(SystemContext_Storm_Sensors_setRaw_wind_speed_int)
+
 //#[ ignore
 class OMAnimatedStorm_Sensors : virtual public AOMInstance {
     DECLARE_META(Storm_Sensors, OMAnimatedStorm_Sensors)
     
     DECLARE_META_OP(SystemContext_Storm_Sensors_setRaw_precipitation_amount_int)
+    
+    DECLARE_META_OP(SystemContext_Storm_Sensors_setRaw_precipitation_type_int)
+    
+    DECLARE_META_OP(SystemContext_Storm_Sensors_setRaw_wind_direction_bool)
+    
+    DECLARE_META_OP(SystemContext_Storm_Sensors_setRaw_wind_speed_int)
     
     ////    Framework operations    ////
     

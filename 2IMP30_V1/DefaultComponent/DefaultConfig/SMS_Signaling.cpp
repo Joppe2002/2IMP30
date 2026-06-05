@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMS_Signaling
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SMS_Signaling.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class SMS_Signaling
 SMS_Signaling::SMS_Signaling(void) : Information_Channels() {
     NOTIFY_CONSTRUCTOR(SMS_Signaling, SMS_Signaling(), 0, SystemContext_SMS_Signaling_SMS_Signaling_SERIALIZE);
+    initRelations();
 }
 
 SMS_Signaling::~SMS_Signaling(void) {
     NOTIFY_DESTRUCTOR(~SMS_Signaling, false);
+}
+
+void SMS_Signaling::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void SMS_Signaling::OMCreateInstances(void) {
+}
+
+void SMS_Signaling::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: News_Outlets
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\News_Outlets.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class News_Outlets
 News_Outlets::News_Outlets(void) : Information_Channels() {
     NOTIFY_CONSTRUCTOR(News_Outlets, News_Outlets(), 0, SystemContext_News_Outlets_News_Outlets_SERIALIZE);
+    initRelations();
 }
 
 News_Outlets::~News_Outlets(void) {
     NOTIFY_DESTRUCTOR(~News_Outlets, false);
+}
+
+void News_Outlets::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void News_Outlets::OMCreateInstances(void) {
+}
+
+void News_Outlets::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

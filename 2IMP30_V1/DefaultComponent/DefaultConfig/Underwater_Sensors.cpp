@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Underwater_Sensors
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Underwater_Sensors.cpp
 *********************************************************************/
 
@@ -23,10 +23,22 @@
 //## class Underwater_Sensors
 Underwater_Sensors::Underwater_Sensors(void) : Tsunami_Sensors() {
     NOTIFY_CONSTRUCTOR(Underwater_Sensors, Underwater_Sensors(), 0, SystemContext_Underwater_Sensors_Underwater_Sensors_SERIALIZE);
+    initRelations();
 }
 
 Underwater_Sensors::~Underwater_Sensors(void) {
     NOTIFY_DESTRUCTOR(~Underwater_Sensors, false);
+}
+
+void Underwater_Sensors::initRelations(void) {
+    OMCreateInstances();
+    OMConnectRelations();
+}
+
+void Underwater_Sensors::OMCreateInstances(void) {
+}
+
+void Underwater_Sensors::OMConnectRelations(void) {
 }
 
 #ifdef _OMINSTRUMENT

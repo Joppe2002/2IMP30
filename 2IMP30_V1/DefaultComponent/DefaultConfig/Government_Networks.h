@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Government_Networks
-//!	Generated Date	: Sun, 31, May 2026  
+//!	Generated Date	: Wed, 3, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Government_Networks.h
 *********************************************************************/
 
@@ -38,6 +38,21 @@ public :
     
     //## auto_generated
     ~Government_Networks(void);
+    
+    ////    Additional operations    ////
+
+protected :
+
+    //## auto_generated
+    void initRelations(void);
+    
+    ////    Framework operations    ////
+    
+    //## auto_generated
+    void OMCreateInstances(void);
+    
+    //## auto_generated
+    void OMConnectRelations(void);
 };
 
 #ifdef _OMINSTRUMENT
