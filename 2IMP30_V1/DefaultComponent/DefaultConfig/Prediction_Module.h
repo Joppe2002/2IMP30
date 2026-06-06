@@ -1,10 +1,10 @@
 /*********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Prediction_Module
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Prediction_Module.h
 *********************************************************************/
 
@@ -17,6 +17,14 @@
 #include <aom.h>
 //## auto_generated
 #include "Architecture.h"
+//## auto_generated
+#include <omthread.h>
+//## auto_generated
+#include <omreactive.h>
+//## auto_generated
+#include <state.h>
+//## auto_generated
+#include <event.h>
 //## classInstance itsStorm_Prediction
 #include "Storm_Prediction.h"
 //## classInstance itsTsunami_Prediction
@@ -26,11 +34,7 @@
 //## package Architecture
 
 //## class Prediction_Module
-class Prediction_Module {
-#ifdef _OMINSTRUMENT
-    OM_DECLARE_COMPOSITE_OFFSET
-#endif // _OMINSTRUMENT
-
+class Prediction_Module : public OMReactive {
     ////    Friends    ////
     
 public :
@@ -42,7 +46,7 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    Prediction_Module(void);
+    explicit Prediction_Module(IOxfActive* const theActiveContext = NULL);
     
     //## auto_generated
     ~Prediction_Module(void);
@@ -58,6 +62,9 @@ public :
     //## auto_generated
     const Wheather_Prediction* getItsWheather_Prediction(void) const;
     
+    //## auto_generated
+    virtual bool startBehavior(void);
+    
     ////    Relations and components    ////
 
 private :
@@ -67,6 +74,16 @@ private :
     Tsunami_Prediction itsTsunami_Prediction;		//## classInstance itsTsunami_Prediction
     
     Wheather_Prediction itsWheather_Prediction;		//## classInstance itsWheather_Prediction
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void setActiveContext(IOxfActive* const theActiveContext, bool activeInstance);
+    
+    //## auto_generated
+    virtual void destroy(void);
 };
 
 #ifdef _OMINSTRUMENT

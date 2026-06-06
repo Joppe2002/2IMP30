@@ -1,10 +1,10 @@
 /*********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Data_Storage
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Data_Storage.h
 *********************************************************************/
 
@@ -162,37 +162,37 @@ public :
     p_Data_Storage_C* get_p_Data_Storage(void) const;
     
     //## auto_generated
-    int const getRaw_precipitation_amount(void) const;
+    const int getRaw_precipitation_amount(void) const;
     
     //## auto_generated
-    int const getRaw_precipitation_type(void) const;
+    const int getRaw_precipitation_type(void) const;
     
     //## auto_generated
-    bool const getRaw_wind_direction(void) const;
+    const bool getRaw_wind_direction(void) const;
     
     //## auto_generated
-    int const getRaw_wind_speed(void) const;
+    const int getRaw_wind_speed(void) const;
     
     //## auto_generated
-    int const getStored_precipitation_amount(void) const;
+    const int getStored_precipitation_amount(void) const;
     
     //## auto_generated
     void setStored_precipitation_amount(const int p_stored_precipitation_amount);
     
     //## auto_generated
-    precipitation_type_enum const getStored_precipitation_type(void) const;
+    const precipitation_type_enum getStored_precipitation_type(void) const;
     
     //## auto_generated
     void setStored_precipitation_type(const precipitation_type_enum p_stored_precipitation_type);
     
     //## auto_generated
-    bool const getStored_wind_direction(void) const;
+    const bool getStored_wind_direction(void) const;
     
     //## auto_generated
     void setStored_wind_direction(const bool p_stored_wind_direction);
     
     //## auto_generated
-    int const getStored_wind_speed(void) const;
+    const int getStored_wind_speed(void) const;
     
     //## auto_generated
     void setStored_wind_speed(const int p_stored_wind_speed);

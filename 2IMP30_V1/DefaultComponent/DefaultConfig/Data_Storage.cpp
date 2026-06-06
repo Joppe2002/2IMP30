@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Data_Storage
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Data_Storage.cpp
 *********************************************************************/
 
@@ -193,23 +193,23 @@ Data_Storage::p_Data_Storage_C* Data_Storage::get_p_Data_Storage(void) const {
     return (Data_Storage::p_Data_Storage_C*) &p_Data_Storage;
 }
 
-int const Data_Storage::getRaw_precipitation_amount(void) const {
+const int Data_Storage::getRaw_precipitation_amount(void) const {
     return raw_precipitation_amount;
 }
 
-int const Data_Storage::getRaw_precipitation_type(void) const {
+const int Data_Storage::getRaw_precipitation_type(void) const {
     return raw_precipitation_type;
 }
 
-bool const Data_Storage::getRaw_wind_direction(void) const {
+const bool Data_Storage::getRaw_wind_direction(void) const {
     return raw_wind_direction;
 }
 
-int const Data_Storage::getRaw_wind_speed(void) const {
+const int Data_Storage::getRaw_wind_speed(void) const {
     return raw_wind_speed;
 }
 
-int const Data_Storage::getStored_precipitation_amount(void) const {
+const int Data_Storage::getStored_precipitation_amount(void) const {
     return stored_precipitation_amount;
 }
 
@@ -218,7 +218,7 @@ void Data_Storage::setStored_precipitation_amount(const int p_stored_precipitati
     NOTIFY_SET_OPERATION;
 }
 
-precipitation_type_enum const Data_Storage::getStored_precipitation_type(void) const {
+const precipitation_type_enum Data_Storage::getStored_precipitation_type(void) const {
     return stored_precipitation_type;
 }
 
@@ -227,7 +227,7 @@ void Data_Storage::setStored_precipitation_type(const precipitation_type_enum p_
     NOTIFY_SET_OPERATION;
 }
 
-bool const Data_Storage::getStored_wind_direction(void) const {
+const bool Data_Storage::getStored_wind_direction(void) const {
     return stored_wind_direction;
 }
 
@@ -236,7 +236,7 @@ void Data_Storage::setStored_wind_direction(const bool p_stored_wind_direction) 
     NOTIFY_SET_OPERATION;
 }
 
-int const Data_Storage::getStored_wind_speed(void) const {
+const int Data_Storage::getStored_wind_speed(void) const {
     return stored_wind_speed;
 }
 

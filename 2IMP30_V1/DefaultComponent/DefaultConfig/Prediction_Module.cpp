@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Prediction_Module
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Prediction_Module.cpp
 *********************************************************************/
 
@@ -21,8 +21,14 @@
 //## package Architecture
 
 //## class Prediction_Module
-Prediction_Module::Prediction_Module(void) {
-    NOTIFY_CONSTRUCTOR(Prediction_Module, Prediction_Module(), 0, Architecture_Prediction_Module_Prediction_Module_SERIALIZE);
+Prediction_Module::Prediction_Module(IOxfActive* const theActiveContext) : OMReactive() {
+    NOTIFY_REACTIVE_CONSTRUCTOR(Prediction_Module, Prediction_Module(), 0, Architecture_Prediction_Module_Prediction_Module_SERIALIZE);
+    setActiveContext(theActiveContext, false);
+    {
+        {
+            itsStorm_Prediction.setShouldDelete(false);
+        }
+    }
 }
 
 Prediction_Module::~Prediction_Module(void) {
@@ -41,6 +47,31 @@ const Wheather_Prediction* Prediction_Module::getItsWheather_Prediction(void) co
     return &itsWheather_Prediction;
 }
 
+bool Prediction_Module::startBehavior(void) {
+    bool done = true;
+    if(done == true)
+        {
+            done = itsStorm_Prediction.startBehavior();
+        }
+    if(done == true)
+        {
+            done = OMReactive::startBehavior();
+        }
+    return done;
+}
+
+void Prediction_Module::setActiveContext(IOxfActive* const theActiveContext, bool activeInstance) {
+    OMReactive::setActiveContext(theActiveContext, activeInstance);
+    {
+        itsStorm_Prediction.setActiveContext(theActiveContext, false);
+    }
+}
+
+void Prediction_Module::destroy(void) {
+    itsStorm_Prediction.destroy();
+    OMReactive::destroy();
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedPrediction_Module::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -53,7 +84,7 @@ void OMAnimatedPrediction_Module::serializeRelations(AOMSRelations* aomsRelation
 }
 //#]
 
-IMPLEMENT_META_P(Prediction_Module, Architecture, Architecture, false, OMAnimatedPrediction_Module)
+IMPLEMENT_REACTIVE_META_SIMPLE_P(Prediction_Module, Architecture, Architecture, false, OMAnimatedPrediction_Module)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

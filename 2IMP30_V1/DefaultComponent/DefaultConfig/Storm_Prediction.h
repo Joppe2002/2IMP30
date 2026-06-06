@@ -1,10 +1,10 @@
 /*********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.h
 *********************************************************************/
 
@@ -17,6 +17,14 @@
 #include <aom.h>
 //## auto_generated
 #include "Architecture.h"
+//## auto_generated
+#include <omthread.h>
+//## auto_generated
+#include <omreactive.h>
+//## auto_generated
+#include <state.h>
+//## auto_generated
+#include <event.h>
 //## operation get_Storm_Data(int,precipitation_type_enum,int,bool)
 #include "Behavior.h"
 //## link itsData_Storage
@@ -25,11 +33,66 @@ class Data_Storage;
 //## package Architecture
 
 //## class Storm_Prediction
-class Storm_Prediction {
-    ////    Friends    ////
-    
+class Storm_Prediction : public OMReactive {
 public :
 
+    //## class Storm_Prediction::Storm_Prediction_Result
+    class Storm_Prediction_Result {
+        ////    Friends    ////
+        
+    public :
+    
+    #ifdef _OMINSTRUMENT
+        friend class OMAnimatedStorm_Prediction_Result;
+    #endif // _OMINSTRUMENT
+    
+        ////    Constructors and destructors    ////
+        
+        //## auto_generated
+        Storm_Prediction_Result(void);
+        
+        //## auto_generated
+        ~Storm_Prediction_Result(void);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        const bool getPred_direction(void) const;
+        
+        //## auto_generated
+        void setPred_direction(const bool p_pred_direction);
+        
+        //## auto_generated
+        const float getPred_probability(void) const;
+        
+        //## auto_generated
+        void setPred_probability(const float p_pred_probability);
+        
+        //## auto_generated
+        const float getPred_severity(void) const;
+        
+        //## auto_generated
+        void setPred_severity(const float p_pred_severity);
+        
+        //## auto_generated
+        const float getPred_speed(void) const;
+        
+        //## auto_generated
+        void setPred_speed(const float p_pred_speed);
+        
+        ////    Attributes    ////
+        
+        bool pred_direction;		//## attribute pred_direction
+        
+        float pred_probability;		//## attribute pred_probability
+        
+        float pred_severity;		//## attribute pred_severity
+        
+        float pred_speed;		//## attribute pred_speed
+    };
+    
+    ////    Friends    ////
+    
 #ifdef _OMINSTRUMENT
     friend class OMAnimatedStorm_Prediction;
 #endif // _OMINSTRUMENT
@@ -37,7 +100,7 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    Storm_Prediction(void);
+    explicit Storm_Prediction(IOxfActive* const theActiveContext = NULL);
     
     //## auto_generated
     virtual ~Storm_Prediction(void);
@@ -47,28 +110,31 @@ public :
     //## operation get_Storm_Data(int,precipitation_type_enum,int,bool)
     virtual void get_Storm_Data(int stored_precipitation_amount, const precipitation_type_enum& stored_precipitation_type, int stored_wind_speed, bool stored_wind_direction);
     
+    //## operation predictStorm()
+    virtual Storm_Prediction_Result* predictStorm(void);
+    
     ////    Additional operations    ////
     
     //## auto_generated
-    int const getPrecipitation_amount(void) const;
+    const int getPrecipitation_amount(void) const;
     
     //## auto_generated
     void setPrecipitation_amount(const int p_precipitation_amount);
     
     //## auto_generated
-    precipitation_type_enum const getPrecipitation_type(void) const;
+    const precipitation_type_enum getPrecipitation_type(void) const;
     
     //## auto_generated
     void setPrecipitation_type(const precipitation_type_enum p_precipitation_type);
     
     //## auto_generated
-    bool const getWind_direction(void) const;
+    const bool getWind_direction(void) const;
     
     //## auto_generated
     void setWind_direction(const bool p_wind_direction);
     
     //## auto_generated
-    int const getWind_speed(void) const;
+    const int getWind_speed(void) const;
     
     //## auto_generated
     void setWind_speed(const int p_wind_speed);
@@ -78,11 +144,23 @@ public :
     
     //## auto_generated
     void setItsData_Storage(Data_Storage* const p_Data_Storage);
+    
+    //## auto_generated
+    virtual bool cancelTimeout(const IOxfTimeout* arg);
+    
+    //## auto_generated
+    virtual bool startBehavior(void);
 
 protected :
 
     //## auto_generated
+    void initStatechart(void);
+    
+    //## auto_generated
     void cleanUpRelations(void);
+    
+    //## auto_generated
+    void cancelTimeouts(void);
     
     ////    Attributes    ////
 
@@ -112,12 +190,57 @@ public :
     
     //## auto_generated
     void _clearItsData_Storage(void);
+    
+    // rootState:
+    //## statechart_method
+    inline RhpBoolean rootState_IN(void) const;
+    
+    // PredictStorm:
+    //## statechart_method
+    inline RhpBoolean PredictStorm_IN(void) const;
+    
+    // Idle:
+    //## statechart_method
+    inline RhpBoolean Idle_IN(void) const;
+    
+    // accepttimeevent_3:
+    //## statechart_method
+    inline RhpBoolean accepttimeevent_3_IN(void) const;
+
+protected :
+
+    //## statechart_method
+    virtual void rootState_entDef(void);
+    
+    //## statechart_method
+    virtual IOxfReactive::TakeEventStatus rootState_processEvent(void);
+    
+    ////    Framework    ////
+    
+//#[ ignore
+    enum Storm_Prediction_Enum {
+        OMNonState = 0,
+        PredictStorm = 1,
+        Idle = 2,
+        accepttimeevent_3 = 3
+    };
+//#]
+
+private :
+
+//#[ ignore
+    Storm_Prediction_Enum rootState_subState;
+    
+    Storm_Prediction_Enum rootState_active;
+    
+    IOxfTimeout* rootState_timeout;
+//#]
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 class OMAnimatedStorm_Prediction : virtual public AOMInstance {
-    DECLARE_META(Storm_Prediction, OMAnimatedStorm_Prediction)
+    DECLARE_REACTIVE_META(Storm_Prediction, OMAnimatedStorm_Prediction)
     
     ////    Framework operations    ////
     
@@ -126,9 +249,47 @@ public :
     virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
     
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void PredictStorm_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Idle_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void accepttimeevent_3_serializeStates(AOMSState* aomsState) const;
+};
+
+class OMAnimatedStorm_Prediction_Result : virtual public AOMInstance {
+    DECLARE_META(Storm_Prediction::Storm_Prediction_Result, OMAnimatedStorm_Prediction_Result)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
 };
 //#]
 #endif // _OMINSTRUMENT
+
+inline RhpBoolean Storm_Prediction::rootState_IN(void) const {
+    return true;
+}
+
+inline RhpBoolean Storm_Prediction::PredictStorm_IN(void) const {
+    return rootState_subState == PredictStorm;
+}
+
+inline RhpBoolean Storm_Prediction::Idle_IN(void) const {
+    return rootState_subState == Idle;
+}
+
+inline RhpBoolean Storm_Prediction::accepttimeevent_3_IN(void) const {
+    return rootState_subState == accepttimeevent_3;
+}
 
 #endif
 /*********************************************************************

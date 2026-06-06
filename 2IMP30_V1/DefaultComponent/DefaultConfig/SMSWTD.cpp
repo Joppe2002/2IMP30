@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.cpp
 *********************************************************************/
 
@@ -297,19 +297,19 @@ SMSWTD::p_SMSWTD_1_C* SMSWTD::get_p_SMSWTD_1(void) const {
     return (SMSWTD::p_SMSWTD_1_C*) &p_SMSWTD_1;
 }
 
-int const SMSWTD::getRaw_precipitation_amount(void) const {
+const int SMSWTD::getRaw_precipitation_amount(void) const {
     return raw_precipitation_amount;
 }
 
-int const SMSWTD::getRaw_precipitation_type(void) const {
+const int SMSWTD::getRaw_precipitation_type(void) const {
     return raw_precipitation_type;
 }
 
-bool const SMSWTD::getRaw_wind_direction(void) const {
+const bool SMSWTD::getRaw_wind_direction(void) const {
     return raw_wind_direction;
 }
 
-int const SMSWTD::getRaw_wind_speed(void) const {
+const int SMSWTD::getRaw_wind_speed(void) const {
     return raw_wind_speed;
 }
 

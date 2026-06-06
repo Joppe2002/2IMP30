@@ -2,9 +2,9 @@
 <RhapsodyArchive>
 	<MagicNumber></MagicNumber>
 	<CODE-PAGE>1252</CODE-PAGE>
-	<version>110.0.1</version>
+	<version>110.0</version>
 	<lang>C++</lang>
-	<BuildNo>202408271326</BuildNo>
+	<BuildNo>202402122040</BuildNo>
 	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
 	
 	<RHAPSODY-MODEL>
@@ -5815,31 +5815,28 @@
 			<_name type="a">Relay_Storm_Info</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The Predict_strom_scenario predicts a storm with over 60%25 probability\b\par%0D
-\par%0D
-Post-Condition\par%0D
-\b0 1) The Governments of the affected areas are informed about the strom\par%0D
-2) The Emergency Responders and News Outlets of the affected areas are informed about the storm if the probability is over 90%25\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system determines that a storm occurs with over 60%25 probability in a certain region\par%0D
-2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas\par%0D
-3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.\par%0D
-4) The message is send by Email to the relevant Governments\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If an actor is already informed about the storm, no new Email is send\par%0D
-2) If the actor is not available by email, an SMS will be send\par%0D
-3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated\par%0D
-4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed\par%0D
-\b\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) The Predict_strom_scenario predicts a storm with over 60%25 probability%0D
+%0D
+Post-Condition%0D
+1) The Governments of the affected areas are informed about the strom%0D
+2) The Emergency Responders and News Outlets of the affected areas are informed about the storm if the probability is over 90%25%0D
+%0D
+Main Scenario%0D
+1) The system determines that a storm occurs with over 60%25 probability in a certain region%0D
+2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas%0D
+3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.%0D
+4) The message is send by Email to the relevant Governments%0D
+%0D
+Alternative Scenario%0D
+1) If an actor is already informed about the storm, no new Email is send%0D
+2) If the actor is not available by email, an SMS will be send%0D
+3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated%0D
+4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.27.2026::12:9:42</_modifiedTime>
@@ -5965,29 +5962,26 @@ Alternative Scenario\par%0D
 			<_name type="a">Relay_Weather_Info</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) A new weather forecast has been generated\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Generate_Weather_Forecast has generated a new forecast\par%0D
-2) A researcher requests weather forecast data\b\par%0D
-\par%0D
-Post-Condition\par%0D
-\b0 1) The weather forecast is available via a website and an app\par%0D
-2) More extensive data is send to a researcher if requested\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system has produced a new weather forecast\par%0D
-2) The website and app are updated based on the new data\par%0D
-3) When a Civilian or News Outlets access the app or website the local weather forecast is shown in the local language and local standard units.\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If a researcher requests data, the relevant data is send per email to the researcher in the requested language\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) A new weather forecast has been generated%0D
+%0D
+Trigger%0D
+1) Generate_Weather_Forecast has generated a new forecast%0D
+2) A researcher requests weather forecast data%0D
+%0D
+Post-Condition%0D
+1) The weather forecast is available via a website and an app%0D
+2) More extensive data is send to a researcher if requested%0D
+%0D
+Main Scenario%0D
+1) The system has produced a new weather forecast%0D
+2) The website and app are updated based on the new data%0D
+3) When a Civilian or News Outlets access the app or website the local weather forecast is shown in the local language and local standard units.%0D
+%0D
+Alternative Scenario%0D
+1) If a researcher requests data, the relevant data is send per email to the researcher in the requested language%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:18:2</_modifiedTime>
@@ -6113,31 +6107,28 @@ Alternative Scenario\par%0D
 			<_name type="a">Relay_Evacuation_Info</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The Predict_strom_scenario predicts a storm with severity over 4 with over 60%25 probability\par%0D
-2) Predict_Tsunami_Risk predicts a tsunami with over 60%25 probability\b\par%0D
-\par%0D
-Post-Condition\par%0D
-\b0 1) The Governments of the affected areas are informed about the strom or tsunami\par%0D
-2) The Emergency Responders and News Outlets of the affected areas are informed about the storm or tsunami if the probability is over 90%25\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system determines that a storm with severity over 4 or a tsunami occurs with over 60%25 probability in a certain region\par%0D
-2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas\par%0D
-3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.\par%0D
-4) The message is send by Email to the relevant Governments\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If an actor is already informed about the storm or tsunami, no new Email is send\par%0D
-2) If the actor is not available by email, an SMS will be send\par%0D
-3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated\par%0D
-4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) The Predict_strom_scenario predicts a storm with severity over 4 with over 60%25 probability%0D
+2) Predict_Tsunami_Risk predicts a tsunami with over 60%25 probability%0D
+%0D
+Post-Condition%0D
+1) The Governments of the affected areas are informed about the strom or tsunami%0D
+2) The Emergency Responders and News Outlets of the affected areas are informed about the storm or tsunami if the probability is over 90%25%0D
+%0D
+Main Scenario%0D
+1) The system determines that a storm with severity over 4 or a tsunami occurs with over 60%25 probability in a certain region%0D
+2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas%0D
+3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.%0D
+4) The message is send by Email to the relevant Governments%0D
+%0D
+Alternative Scenario%0D
+1) If an actor is already informed about the storm or tsunami, no new Email is send%0D
+2) If the actor is not available by email, an SMS will be send%0D
+3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated%0D
+4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.27.2026::12:9:3</_modifiedTime>
@@ -6318,30 +6309,27 @@ Alternative Scenario\par%0D
 			<_name type="a">Predict_storm_scenario</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) New sensor data since the last prediction is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The predictions are made periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) If a storm is predicted, the associated data is send to Relay_Storm_Info and Relay_Evacuation_Info\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New sensor data is read from the data storage\par%0D
-2) Using a machine learning algrorithm, the location, probability and severity of storms are calculated\par%0D
-3) If a storm is predicted with over 60%25 probability the relevant data is send to Relay_Storm_Info and Relay_Evacuation\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no storm is predicted with over 60%25 probability, the system does not output anything\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) New sensor data since the last prediction is available in the data storage%0D
+%0D
+Trigger%0D
+1) The predictions are made periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) If a storm is predicted, the associated data is send to Relay_Storm_Info and Relay_Evacuation_Info%0D
+%0D
+Main Scenario%0D
+1) New sensor data is read from the data storage%0D
+2) Using a machine learning algrorithm, the location, probability and severity of storms are calculated%0D
+3) If a storm is predicted with over 60%25 probability the relevant data is send to Relay_Storm_Info and Relay_Evacuation%0D
+%0D
+Alternative Scenario%0D
+1) If no storm is predicted with over 60%25 probability, the system does not output anything%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:25:11</_modifiedTime>
@@ -6402,35 +6390,32 @@ Alternative Scenario\par%0D
 			</OwnedDependencies>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:36:44</_modifiedTime>
@@ -6495,36 +6480,33 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:36:56</_modifiedTime>
@@ -6585,36 +6567,33 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\b\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:37:10</_modifiedTime>
@@ -6747,31 +6726,28 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) New sensor data since the last prediction is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The predictions are made periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) If a tsunami is predicted, the associated data is send to Relay_Evacuation_Info\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New sensor data is read from the data storage\par%0D
-2) Using a machine learning algrorithm, the location, probability and severity of tsunamis are calculated\par%0D
-3) If a tsunami is predicted with over 60%25 probability the relevant data is send to Relay_Evacuation\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no tsunami is predicted with over 60%25 probability, the system does not output anything\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) New sensor data since the last prediction is available in the data storage%0D
+%0D
+Trigger%0D
+1) The predictions are made periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) If a tsunami is predicted, the associated data is send to Relay_Evacuation_Info%0D
+%0D
+Main Scenario%0D
+1) New sensor data is read from the data storage%0D
+2) Using a machine learning algrorithm, the location, probability and severity of tsunamis are calculated%0D
+3) If a tsunami is predicted with over 60%25 probability the relevant data is send to Relay_Evacuation%0D
+%0D
+Alternative Scenario%0D
+1) If no tsunami is predicted with over 60%25 probability, the system does not output anything%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:25:39</_modifiedTime>
@@ -6834,32 +6810,29 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) New sensor data since the last prediction is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The predictions are made periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The new weather forecast is send to Relay_Weather_Info\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New sensor data is read from the data storage\par%0D
-2) Using a machine learning algrorithm the weather for the entire planet is predicted.\par%0D
-3) The prediction is send to Relay_Weather_Info\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) -\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) New sensor data since the last prediction is available in the data storage%0D
+%0D
+Trigger%0D
+1) The predictions are made periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The new weather forecast is send to Relay_Weather_Info%0D
+%0D
+Main Scenario%0D
+1) New sensor data is read from the data storage%0D
+2) Using a machine learning algrorithm the weather for the entire planet is predicted.%0D
+3) The prediction is send to Relay_Weather_Info%0D
+%0D
+Alternative Scenario%0D
+1) -%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:27:16</_modifiedTime>
@@ -6954,29 +6927,26 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) Sensor data is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) A researcher requests data\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The requested data is send to a researcher\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) A researcher requests sensor data \par%0D
-2) The requested data is pulled from the data storage\par%0D
-3) The requested data is send to the requesting researcher per email in the requested language\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If not all data is available in the data storage, only the available part is send and the researcher is informed that the rest is not available\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) Sensor data is available in the data storage%0D
+%0D
+Trigger%0D
+1) A researcher requests data%0D
+%0D
+Post-Condition%0D
+1) The requested data is send to a researcher%0D
+%0D
+Main Scenario%0D
+1) A researcher requests sensor data %0D
+2) The requested data is pulled from the data storage%0D
+3) The requested data is send to the requesting researcher per email in the requested language%0D
+%0D
+Alternative Scenario%0D
+1) If not all data is available in the data storage, only the available part is send and the researcher is informed that the rest is not available%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:20:17</_modifiedTime>
@@ -7062,33 +7032,30 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) Data storage contains sensor data\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is requested \b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The requested data is received by the requester\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) Data is requested\par%0D
-2) The data is located in the data storage\par%0D
-3) The requested data is send to the requester\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If the requested data is not available in the data storage, a notification is send to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) Data storage contains sensor data%0D
+%0D
+Trigger%0D
+1) Data is requested %0D
+%0D
+Post-Condition%0D
+1) The requested data is received by the requester%0D
+%0D
+Main Scenario%0D
+1) Data is requested%0D
+2) The data is located in the data storage%0D
+3) The requested data is send to the requester%0D
+%0D
+Alternative Scenario%0D
+1) If the requested data is not available in the data storage, a notification is send to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:34:12</_modifiedTime>
@@ -7251,36 +7218,33 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\b\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.24.2026::15:31:27</_modifiedTime>
@@ -7335,34 +7299,31 @@ Alternative Scenario\par%0D
 			<_name type="a">Relay_Connection_Error</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) ?\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) A connection cannot be established with a sensor\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The system has raised an error\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system raises an error\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) ?\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) ?%0D
+%0D
+Trigger%0D
+1) A connection cannot be established with a sensor%0D
+%0D
+Post-Condition%0D
+1) The system has raised an error%0D
+%0D
+Main Scenario%0D
+1) The system raises an error%0D
+%0D
+Alternative Scenario%0D
+1) ?%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.21.2026::13:23:52</_modifiedTime>

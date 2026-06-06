@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0.1 
-	Login		: neppo
+	Rhapsody	: 10.0 
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Fri, 5, Jun 2026  
+//!	Generated Date	: Sat, 6, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
 *********************************************************************/
 
@@ -64,6 +64,9 @@ void Architecture_initRelations(void) {
         {
             itsData_Storage.setShouldDelete(false);
         }
+        {
+            itsStorm_Prediction.setShouldDelete(false);
+        }
     }
     itsData_Storage.setItsStorm_Prediction(&itsStorm_Prediction);
     {
@@ -92,6 +95,10 @@ bool Architecture_startBehavior(void) {
     if(done == true)
         {
             done = itsSMSWTD.startBehavior();
+        }
+    if(done == true)
+        {
+            done = itsStorm_Prediction.startBehavior();
         }
     return done;
 }
