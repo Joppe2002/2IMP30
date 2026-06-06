@@ -42,6 +42,13 @@ class Wheather_Prediction;
 //## package Architecture
 
 
+//## type ActorType
+enum ActorType {
+    GOVERNMENT = 0,
+    EMERGENCY_RESPONDER = 1,
+    CIVILIAN = 2
+};
+
 //## classInstance itsData_Storage
 extern Data_Storage itsData_Storage;
 

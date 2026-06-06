@@ -279,7 +279,7 @@ News_Outlets.obj : News_Outlets.cpp News_Outlets.h    SystemContext.h Informatio
 
 
 
-Storm_Sensors.obj : Storm_Sensors.cpp Storm_Sensors.h    SystemContext.h SMSWTD.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+Storm_Sensors.obj : Storm_Sensors.cpp Storm_Sensors.h    SystemContext.h SMSWTD.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Storm_Sensors.obj" "Storm_Sensors.cpp" 
 
@@ -303,13 +303,13 @@ Stakeholders.obj : Stakeholders.cpp Stakeholders.h    SystemContext.h SMSWTD.h
 
 
 
-SMSWTD.obj : SMSWTD.cpp SMSWTD.h    Architecture.h Stakeholders.h Information_Channels.h Standards_and_Regulations.h Cultural_and_Geological_Differences.h Prediction_Module.h Actionable_Information_Generator.h Data_Storage.h System_Output.h Tsunami_Sensors.h Storm_Sensors.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+SMSWTD.obj : SMSWTD.cpp SMSWTD.h    Architecture.h Stakeholders.h Information_Channels.h Standards_and_Regulations.h Cultural_and_Geological_Differences.h Prediction_Module.h Actionable_Information_Generator.h Data_Storage.h System_Output.h Tsunami_Sensors.h Storm_Sensors.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD.obj" "SMSWTD.cpp" 
 
 
 
-Data_Storage.obj : Data_Storage.cpp Data_Storage.h    Architecture.h Storm_Prediction.h Behavior.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+Data_Storage.obj : Data_Storage.cpp Data_Storage.h    Architecture.h Storm_Prediction.h Behavior.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Data_Storage.obj" "Data_Storage.cpp" 
 
@@ -399,7 +399,7 @@ Behavior.obj : Behavior.cpp Behavior.h
 
 
 
-ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ProxyPortInterfaces.obj" "ProxyPortInterfaces.cpp" 
 
