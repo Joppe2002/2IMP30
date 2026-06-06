@@ -128,6 +128,30 @@ public :
     void setPrecipitation_type(const precipitation_type_enum p_precipitation_type);
     
     //## auto_generated
+    const bool getSt_pred_direction(void) const;
+    
+    //## auto_generated
+    void setSt_pred_direction(const bool p_st_pred_direction);
+    
+    //## auto_generated
+    const float getSt_pred_probability(void) const;
+    
+    //## auto_generated
+    void setSt_pred_probability(const float p_st_pred_probability);
+    
+    //## auto_generated
+    const float getSt_pred_severity(void) const;
+    
+    //## auto_generated
+    void setSt_pred_severity(const float p_st_pred_severity);
+    
+    //## auto_generated
+    const float getSt_pred_speed(void) const;
+    
+    //## auto_generated
+    void setSt_pred_speed(const float p_st_pred_speed);
+    
+    //## auto_generated
     const bool getWind_direction(void) const;
     
     //## auto_generated
@@ -169,6 +193,14 @@ private :
     int precipitation_amount;		//## attribute precipitation_amount
     
     precipitation_type_enum precipitation_type;		//## attribute precipitation_type
+    
+    bool st_pred_direction;		//## attribute st_pred_direction
+    
+    float st_pred_probability;		//## attribute st_pred_probability
+    
+    float st_pred_severity;		//## attribute st_pred_severity
+    
+    float st_pred_speed;		//## attribute st_pred_speed
     
     bool wind_direction;		//## attribute wind_direction
     

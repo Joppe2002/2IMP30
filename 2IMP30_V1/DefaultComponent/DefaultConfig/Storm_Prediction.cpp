@@ -103,10 +103,17 @@ Storm_Prediction::Storm_Prediction_Result* Storm_Prediction::predictStorm(void) 
     printf("Do prediction \n");
     
     Storm_Prediction::Storm_Prediction_Result* result = new Storm_Prediction::Storm_Prediction_Result();
-    result->pred_direction   = this->wind_direction;
-    result->pred_probability = (float)rand() / (float)RAND_MAX;
-    result->pred_severity    = (float)this->wind_direction * (float)this->precipitation_type + (float)4.0;
-    result->pred_speed       = (float)this->wind_speed * (float)10.0;
+    
+    this->st_pred_direction   = this->wind_direction;
+    this->st_pred_probability = (float)rand() / (float)RAND_MAX;
+    this->st_pred_severity    = (float)this->wind_direction * (float)this->precipitation_type + (float)4.0;
+    this->st_pred_speed       = (float)this->wind_speed * (float)10.0;
+    
+    
+    result->pred_direction   = this->st_pred_direction;
+    result->pred_probability = this->st_pred_probability;
+    result->pred_severity    = this->st_pred_severity;
+    result->pred_speed       = this->st_pred_speed;
     
     return result;
     //#]
@@ -118,7 +125,6 @@ const int Storm_Prediction::getPrecipitation_amount(void) const {
 
 void Storm_Prediction::setPrecipitation_amount(const int p_precipitation_amount) {
     precipitation_amount = p_precipitation_amount;
-    NOTIFY_SET_OPERATION;
 }
 
 const precipitation_type_enum Storm_Prediction::getPrecipitation_type(void) const {
@@ -127,6 +133,39 @@ const precipitation_type_enum Storm_Prediction::getPrecipitation_type(void) cons
 
 void Storm_Prediction::setPrecipitation_type(const precipitation_type_enum p_precipitation_type) {
     precipitation_type = p_precipitation_type;
+}
+
+const bool Storm_Prediction::getSt_pred_direction(void) const {
+    return st_pred_direction;
+}
+
+void Storm_Prediction::setSt_pred_direction(const bool p_st_pred_direction) {
+    st_pred_direction = p_st_pred_direction;
+}
+
+const float Storm_Prediction::getSt_pred_probability(void) const {
+    return st_pred_probability;
+}
+
+void Storm_Prediction::setSt_pred_probability(const float p_st_pred_probability) {
+    st_pred_probability = p_st_pred_probability;
+}
+
+const float Storm_Prediction::getSt_pred_severity(void) const {
+    return st_pred_severity;
+}
+
+void Storm_Prediction::setSt_pred_severity(const float p_st_pred_severity) {
+    st_pred_severity = p_st_pred_severity;
+    NOTIFY_SET_OPERATION;
+}
+
+const float Storm_Prediction::getSt_pred_speed(void) const {
+    return st_pred_speed;
+}
+
+void Storm_Prediction::setSt_pred_speed(const float p_st_pred_speed) {
+    st_pred_speed = p_st_pred_speed;
 }
 
 const bool Storm_Prediction::getWind_direction(void) const {
@@ -274,7 +313,7 @@ IOxfReactive::TakeEventStatus Storm_Prediction::rootState_processEvent(void) {
                     printf("prediction direction   = %d \n", prediction->pred_direction);
                     printf("prediction probability = %f \n", prediction->pred_probability);
                     printf("prediction severity    = %f \n", prediction->pred_severity);
-                    printf("prediction speed 	   = %f \n", prediction->pred_speed);
+                    printf("prediction speed       = %f \n", prediction->pred_speed);
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("2");
                     res = eventConsumed;
@@ -313,6 +352,10 @@ void OMAnimatedStorm_Prediction::serializeAttributes(AOMSAttributes* aomsAttribu
     aomsAttributes->addAttribute("precipitation_amount", x2String(myReal->precipitation_amount));
     aomsAttributes->addAttribute("wind_direction", x2String(myReal->wind_direction));
     aomsAttributes->addAttribute("wind_speed", x2String(myReal->wind_speed));
+    aomsAttributes->addAttribute("st_pred_direction", x2String(myReal->st_pred_direction));
+    aomsAttributes->addAttribute("st_pred_probability", x2String(myReal->st_pred_probability));
+    aomsAttributes->addAttribute("st_pred_severity", x2String(myReal->st_pred_severity));
+    aomsAttributes->addAttribute("st_pred_speed", x2String(myReal->st_pred_speed));
 }
 
 void OMAnimatedStorm_Prediction::serializeRelations(AOMSRelations* aomsRelations) const {
