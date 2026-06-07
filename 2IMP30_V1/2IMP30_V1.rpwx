@@ -75,9 +75,9 @@
 								<_hid type="a">GUID 053607e1-db85-49f8-a90a-9668185b1596</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">126 3 </_UpLeft>
-						<_DownRight type="a">1919 703 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_UpLeft type="a">0 3 </_UpLeft>
+						<_DownRight type="a">1793 703 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -108,10 +108,10 @@
 								<_hid type="a">GUID 053607e1-db85-49f8-a90a-9668185b1596</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">112 50 </_UpLeft>
-						<_DownRight type="a">1777 700 </_DownRight>
+						<_UpLeft type="a">127 50 </_UpLeft>
+						<_DownRight type="a">1792 700 </_DownRight>
 						<_instanceName type="a">itsStorm_Prediction</_instanceName>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
