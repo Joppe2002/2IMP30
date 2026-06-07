@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sat, 6, Jun 2026  
+//!	Generated Date	: Sun, 7, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h
 *********************************************************************/
 
@@ -15,6 +15,8 @@
 #include <oxf.h>
 //## auto_generated
 #include <aom.h>
+//## auto_generated
+#include <event.h>
 //## auto_generated
 class Actionable_Information_Generator;
 
@@ -82,6 +84,34 @@ public :
     //## auto_generated
     ~Architecture_OMInitializer(void);
 };
+//#]
+
+//## event evPredictionReady()
+class evPredictionReady : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevPredictionReady;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evPredictionReady(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevPredictionReady : virtual public AOMEvent {
+    DECLARE_META_EVENT(evPredictionReady)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evPredictionReady_Architecture_id;
 //#]
 
 #endif

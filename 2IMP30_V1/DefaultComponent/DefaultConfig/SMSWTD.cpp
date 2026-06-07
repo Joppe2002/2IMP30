@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Sat, 6, Jun 2026  
+//!	Generated Date	: Sun, 7, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.cpp
 *********************************************************************/
 
@@ -232,6 +232,9 @@ SMSWTD::SMSWTD(IOxfActive* const theActiveContext) : OMReactive(), int_raw_wind_
     setActiveContext(theActiveContext, false);
     {
         {
+            itsPrediction_Module.setShouldDelete(false);
+        }
+        {
             itsData_Storage.setShouldDelete(false);
         }
     }
@@ -406,6 +409,10 @@ bool SMSWTD::startBehavior(void) {
     if(done == true)
         {
             done = itsData_Storage.startBehavior();
+        }
+    if(done == true)
+        {
+            done = itsPrediction_Module.startBehavior();
         }
     if(done == true)
         {
@@ -636,12 +643,14 @@ void SMSWTD::_clearItsTsunami_Sensors(void) {
 void SMSWTD::setActiveContext(IOxfActive* const theActiveContext, bool activeInstance) {
     OMReactive::setActiveContext(theActiveContext, activeInstance);
     {
+        itsPrediction_Module.setActiveContext(theActiveContext, false);
         itsData_Storage.setActiveContext(theActiveContext, false);
     }
 }
 
 void SMSWTD::destroy(void) {
     itsData_Storage.destroy();
+    itsPrediction_Module.destroy();
     OMReactive::destroy();
 }
 

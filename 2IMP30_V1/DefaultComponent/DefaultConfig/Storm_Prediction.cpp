@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Sat, 6, Jun 2026  
+//!	Generated Date	: Sun, 7, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.cpp
 *********************************************************************/
 
@@ -261,9 +261,9 @@ void Storm_Prediction::setItsData_Storage(Data_Storage* const p_Data_Storage) {
 
 bool Storm_Prediction::cancelTimeout(const IOxfTimeout* arg) {
     bool res = false;
-    if(rootState_timeout == arg)
+    if(state_15_timeout == arg)
         {
-            rootState_timeout = NULL;
+            state_15_timeout = NULL;
             res = true;
         }
     return res;
@@ -278,7 +278,11 @@ bool Storm_Prediction::startBehavior(void) {
 void Storm_Prediction::initStatechart(void) {
     rootState_subState = OMNonState;
     rootState_active = OMNonState;
-    rootState_timeout = NULL;
+    state_16_subState = OMNonState;
+    state_16_active = OMNonState;
+    state_15_subState = OMNonState;
+    state_15_active = OMNonState;
+    state_15_timeout = NULL;
 }
 
 void Storm_Prediction::cleanUpRelations(void) {
@@ -295,7 +299,7 @@ void Storm_Prediction::cleanUpRelations(void) {
 }
 
 void Storm_Prediction::cancelTimeouts(void) {
-    cancel(rootState_timeout);
+    cancel(state_15_timeout);
 }
 
 void Storm_Prediction::__setItsData_Storage(Data_Storage* const p_Data_Storage) {
@@ -323,92 +327,408 @@ void Storm_Prediction::_clearItsData_Storage(void) {
     itsData_Storage = NULL;
 }
 
-void Storm_Prediction::rootState_entDef(void) {
-    {
-        NOTIFY_STATE_ENTERED("ROOT");
-        NOTIFY_TRANSITION_STARTED("0");
-        NOTIFY_STATE_ENTERED("ROOT.Idle");
-        rootState_subState = Idle;
-        rootState_active = Idle;
-        rootState_timeout = scheduleTimeout(3000, "ROOT.Idle");
-        NOTIFY_TRANSITION_TERMINATED("0");
-    }
+void Storm_Prediction::state_9_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.state_9");
+    rootState_subState = state_9;
+    rootState_active = state_9;
+    state_15_entDef();
+    state_16_entDef();
 }
 
-IOxfReactive::TakeEventStatus Storm_Prediction::rootState_processEvent(void) {
-    IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    switch (rootState_active) {
-        // State Idle
-        case Idle:
+void Storm_Prediction::state_9_exit(void) {
+    state_15_exit();
+    switch (state_16_subState) {
+        // State Standby
+        case Standby:
         {
-            if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
+        }
+        break;
+        // State MediumRisk
+        case MediumRisk:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
+        }
+        break;
+        // State HighRisk
+        case HighRisk:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
+        }
+        break;
+        default:
+            break;
+    }
+    state_16_subState = OMNonState;
+    NOTIFY_STATE_EXITED("ROOT.state_9.state_16");
+    
+    NOTIFY_STATE_EXITED("ROOT.state_9");
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::state_9_processEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    IOxfReactive::TakeEventStatus omComponentStatus = eventNotConsumed;
+    bool dispatchDone = false;
+    {
+        // State state_15
+        omComponentStatus = state_15_processEvent();
+        if(omComponentStatus != eventNotConsumed)
+            {
+                res = eventConsumed;
+                if(IS_IN(state_9) == false)
+                    {
+                        dispatchDone = true;
+                    }
+            }
+    }
+    if(!dispatchDone)
+        {
+            // State state_16
+            omComponentStatus = state_16_processEvent();
+            if(omComponentStatus != eventNotConsumed)
                 {
-                    if(getCurrentEvent() == rootState_timeout)
+                    res = eventConsumed;
+                }
+        }
+    
+    return res;
+}
+
+void Storm_Prediction::state_16_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16");
+    NOTIFY_TRANSITION_STARTED("11");
+    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
+    state_16_subState = Standby;
+    state_16_active = Standby;
+    //#[ state state_9.state_16.Standby.(Entry) 
+    printf("Standby - NO significant risk \n");
+    
+    this->wasPredicted = false;
+    
+    
+    //#]
+    NOTIFY_TRANSITION_TERMINATED("11");
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::state_16_processEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (state_16_active) {
+        // State Standby
+        case Standby:
+        {
+            if(IS_EVENT_TYPE_OF(evPredictionReady_Architecture_id) == 1)
+                {
+                    //## transition 8 
+                    if(st_pred_probability >= 0.6 &&  st_pred_probability < 0.9)
                         {
-                            NOTIFY_TRANSITION_STARTED("1");
-                            cancel(rootState_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.Idle");
-                            NOTIFY_STATE_ENTERED("ROOT.accepttimeevent_3");
-                            pushNullTransition();
-                            rootState_subState = accepttimeevent_3;
-                            rootState_active = accepttimeevent_3;
-                            NOTIFY_TRANSITION_TERMINATED("1");
+                            NOTIFY_TRANSITION_STARTED("7");
+                            NOTIFY_TRANSITION_STARTED("8");
+                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
+                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.MediumRisk");
+                            state_16_subState = MediumRisk;
+                            state_16_active = MediumRisk;
+                            //#[ state state_9.state_16.MediumRisk.(Entry) 
+                            // Governement
+                            this->generateActionableInfo(GOVERNMENT);
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("8");
+                            NOTIFY_TRANSITION_TERMINATED("7");
                             res = eventConsumed;
+                        }
+                    else
+                        {
+                            //## transition 9 
+                            if(st_pred_probability >= 0.9)
+                                {
+                                    NOTIFY_TRANSITION_STARTED("7");
+                                    NOTIFY_TRANSITION_STARTED("9");
+                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
+                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.HighRisk");
+                                    state_16_subState = HighRisk;
+                                    state_16_active = HighRisk;
+                                    //#[ state state_9.state_16.HighRisk.(Entry) 
+                                    // Government and Emergency Responders
+                                    this->generateActionableInfo(GOVERNMENT);
+                                    this->generateActionableInfo(EMERGENCY_RESPONDER);
+                                    //#]
+                                    NOTIFY_TRANSITION_TERMINATED("9");
+                                    NOTIFY_TRANSITION_TERMINATED("7");
+                                    res = eventConsumed;
+                                }
+                            else
+                                {
+                                    //## transition 10 
+                                    if(st_pred_probability < 0.6)
+                                        {
+                                            NOTIFY_TRANSITION_STARTED("7");
+                                            NOTIFY_TRANSITION_STARTED("10");
+                                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
+                                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
+                                            state_16_subState = Standby;
+                                            state_16_active = Standby;
+                                            //#[ state state_9.state_16.Standby.(Entry) 
+                                            printf("Standby - NO significant risk \n");
+                                            
+                                            this->wasPredicted = false;
+                                            
+                                            
+                                            //#]
+                                            NOTIFY_TRANSITION_TERMINATED("10");
+                                            NOTIFY_TRANSITION_TERMINATED("7");
+                                            res = eventConsumed;
+                                        }
+                                }
                         }
                 }
             
-        }
-        break;
-        case accepttimeevent_3:
-        {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
-                {
-                    NOTIFY_TRANSITION_STARTED("2");
-                    popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.accepttimeevent_3");
-                    NOTIFY_STATE_ENTERED("ROOT.PredictStorm");
-                    pushNullTransition();
-                    rootState_subState = PredictStorm;
-                    rootState_active = PredictStorm;
-                    //#[ state PredictStorm.(Entry) 
-                    this->prev_probability = this->st_pred_probability;
-                    
-                    updatePredictionData();
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("2");
-                    res = eventConsumed;
-                }
             
         }
         break;
-        // State PredictStorm
-        case PredictStorm:
+        // State MediumRisk
+        case MediumRisk:
+        {
+            if(IS_EVENT_TYPE_OF(evPredictionReady_Architecture_id) == 1)
+                {
+                    //## transition 13 
+                    if(st_pred_probability > prev_probability )
+                        {
+                            //## transition 14 
+                            if(st_pred_probability < 0.9)
+                                {
+                                    NOTIFY_TRANSITION_STARTED("13");
+                                    NOTIFY_TRANSITION_STARTED("14");
+                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
+                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.MediumRisk");
+                                    state_16_subState = MediumRisk;
+                                    state_16_active = MediumRisk;
+                                    //#[ state state_9.state_16.MediumRisk.(Entry) 
+                                    // Governement
+                                    this->generateActionableInfo(GOVERNMENT);
+                                    //#]
+                                    NOTIFY_TRANSITION_TERMINATED("14");
+                                    NOTIFY_TRANSITION_TERMINATED("13");
+                                    res = eventConsumed;
+                                }
+                            else
+                                {
+                                    //## transition 15 
+                                    if(st_pred_probability >= 0.9)
+                                        {
+                                            NOTIFY_TRANSITION_STARTED("13");
+                                            NOTIFY_TRANSITION_STARTED("15");
+                                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
+                                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.HighRisk");
+                                            state_16_subState = HighRisk;
+                                            state_16_active = HighRisk;
+                                            //#[ state state_9.state_16.HighRisk.(Entry) 
+                                            // Government and Emergency Responders
+                                            this->generateActionableInfo(GOVERNMENT);
+                                            this->generateActionableInfo(EMERGENCY_RESPONDER);
+                                            //#]
+                                            NOTIFY_TRANSITION_TERMINATED("15");
+                                            NOTIFY_TRANSITION_TERMINATED("13");
+                                            res = eventConsumed;
+                                        }
+                                }
+                        }
+                    else
+                        {
+                            //## transition 18 
+                            if(st_pred_probability < 0.6 )
+                                {
+                                    NOTIFY_TRANSITION_STARTED("18");
+                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
+                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
+                                    state_16_subState = Standby;
+                                    state_16_active = Standby;
+                                    //#[ state state_9.state_16.Standby.(Entry) 
+                                    printf("Standby - NO significant risk \n");
+                                    
+                                    this->wasPredicted = false;
+                                    
+                                    
+                                    //#]
+                                    NOTIFY_TRANSITION_TERMINATED("18");
+                                    res = eventConsumed;
+                                }
+                        }
+                }
+            
+            
+        }
+        break;
+        // State HighRisk
+        case HighRisk:
+        {
+            if(IS_EVENT_TYPE_OF(evPredictionReady_Architecture_id) == 1)
+                {
+                    //## transition 16 
+                    if(st_pred_probability >= 0.6 &&  st_pred_probability < 0.9 )
+                        {
+                            NOTIFY_TRANSITION_STARTED("16");
+                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
+                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.MediumRisk");
+                            state_16_subState = MediumRisk;
+                            state_16_active = MediumRisk;
+                            //#[ state state_9.state_16.MediumRisk.(Entry) 
+                            // Governement
+                            this->generateActionableInfo(GOVERNMENT);
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("16");
+                            res = eventConsumed;
+                        }
+                    else
+                        {
+                            //## transition 17 
+                            if(st_pred_probability > prev_probability)
+                                {
+                                    NOTIFY_TRANSITION_STARTED("17");
+                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
+                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.HighRisk");
+                                    state_16_subState = HighRisk;
+                                    state_16_active = HighRisk;
+                                    //#[ state state_9.state_16.HighRisk.(Entry) 
+                                    // Government and Emergency Responders
+                                    this->generateActionableInfo(GOVERNMENT);
+                                    this->generateActionableInfo(EMERGENCY_RESPONDER);
+                                    //#]
+                                    NOTIFY_TRANSITION_TERMINATED("17");
+                                    res = eventConsumed;
+                                }
+                            else
+                                {
+                                    //## transition 19 
+                                    if(st_pred_probability < 0.6)
+                                        {
+                                            NOTIFY_TRANSITION_STARTED("19");
+                                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
+                                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
+                                            state_16_subState = Standby;
+                                            state_16_active = Standby;
+                                            //#[ state state_9.state_16.Standby.(Entry) 
+                                            printf("Standby - NO significant risk \n");
+                                            
+                                            this->wasPredicted = false;
+                                            
+                                            
+                                            //#]
+                                            NOTIFY_TRANSITION_TERMINATED("19");
+                                            res = eventConsumed;
+                                        }
+                                }
+                        }
+                }
+            
+            
+        }
+        break;
+        default:
+            break;
+    }
+    return res;
+}
+
+void Storm_Prediction::state_15_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15");
+    NOTIFY_TRANSITION_STARTED("2");
+    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.Initial");
+    state_15_subState = Initial;
+    state_15_active = Initial;
+    state_15_timeout = scheduleTimeout(3000, "ROOT.state_9.state_15.Initial");
+    NOTIFY_TRANSITION_TERMINATED("2");
+}
+
+void Storm_Prediction::state_15_exit(void) {
+    switch (state_15_subState) {
+        // State StormExistancePredicted
+        case StormExistancePredicted:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.StormExistancePredicted");
+        }
+        break;
+        // State do_Predict_Storm
+        case do_Predict_Storm:
+        {
+            popNullTransition();
+            //#[ state state_9.state_15.do_Predict_Storm.(Exit) 
+            GEN(evPredictionReady);
+            printf("SEND PREDICTION\n");
+            //#]
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.do_Predict_Storm");
+        }
+        break;
+        // State Initial
+        case Initial:
+        {
+            cancel(state_15_timeout);
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.Initial");
+        }
+        break;
+        case accepttimeevent_13:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.accepttimeevent_13");
+        }
+        break;
+        default:
+            break;
+    }
+    state_15_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.state_9.state_15");
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::state_15_processEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (state_15_active) {
+        // State StormExistancePredicted
+        case StormExistancePredicted:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("6");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_15.StormExistancePredicted");
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.Initial");
+                    state_15_subState = Initial;
+                    state_15_active = Initial;
+                    state_15_timeout = scheduleTimeout(3000, "ROOT.state_9.state_15.Initial");
+                    NOTIFY_TRANSITION_TERMINATED("6");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State do_Predict_Storm
+        case do_Predict_Storm:
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
                     //## transition 4 
-                    if(st_pred_probability > 0.6)
+                    if(st_pred_probability >= 0.6)
                         {
                             NOTIFY_TRANSITION_STARTED("3");
                             NOTIFY_TRANSITION_STARTED("4");
                             popNullTransition();
-                            NOTIFY_STATE_EXITED("ROOT.PredictStorm");
-                            NOTIFY_STATE_ENTERED("ROOT.StormExistancePredicted");
+                            //#[ state state_9.state_15.do_Predict_Storm.(Exit) 
+                            GEN(evPredictionReady);
+                            printf("SEND PREDICTION\n");
+                            //#]
+                            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.do_Predict_Storm");
+                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.StormExistancePredicted");
                             pushNullTransition();
-                            rootState_subState = StormExistancePredicted;
-                            rootState_active = StormExistancePredicted;
-                            //#[ state StormExistancePredicted.(Entry) 
-                            if(this->wasPredicted){
-                            	if (this->prev_probability >= this->st_pred_probability){
-                            		printf("Storm Predicted - NO new notification.\n");
-                            	} else {
-                            		printf("Storm Predicted - SEND new NOTIFICATION\n");
-                            	}
-                            }  else {
-                            	printf("Storm Predicted - SEND new NOTIFICATION\n");
-                            }
+                            state_15_subState = StormExistancePredicted;
+                            state_15_active = StormExistancePredicted;
+                            //#[ state state_9.state_15.StormExistancePredicted.(Entry) 
+                            //if(this->wasPredicted && this->prev_probability >= this->st_pred_probability){
+                            //	printf("Storm Predicted - NO new notification.\n");
+                            //}  else {
+                            //	printf("Storm Predicted - SEND new NOTIFICATION\n");
+                            //}
                             
-                            this->wasPredicted = true; 
+                            //this->wasPredicted = true; 
                             //#]
                             NOTIFY_TRANSITION_TERMINATED("4");
                             NOTIFY_TRANSITION_TERMINATED("3");
@@ -416,115 +736,98 @@ IOxfReactive::TakeEventStatus Storm_Prediction::rootState_processEvent(void) {
                         }
                     else
                         {
-                            NOTIFY_TRANSITION_STARTED("3");
-                            NOTIFY_TRANSITION_STARTED("5");
-                            popNullTransition();
-                            NOTIFY_STATE_EXITED("ROOT.PredictStorm");
-                            //#[ transition 5 
-                            this->wasPredicted = false;
-                            //#]
-                            NOTIFY_STATE_ENTERED("ROOT.Idle");
-                            rootState_subState = Idle;
-                            rootState_active = Idle;
-                            rootState_timeout = scheduleTimeout(3000, "ROOT.Idle");
-                            NOTIFY_TRANSITION_TERMINATED("5");
-                            NOTIFY_TRANSITION_TERMINATED("3");
-                            res = eventConsumed;
-                        }
-                }
-            
-        }
-        break;
-        // State StormExistancePredicted
-        case StormExistancePredicted:
-        {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
-                {
-                    //## transition 7 
-                    if(st_pred_probability >= 0.9)
-                        {
-                            NOTIFY_TRANSITION_STARTED("6");
-                            NOTIFY_TRANSITION_STARTED("7");
-                            popNullTransition();
-                            NOTIFY_STATE_EXITED("ROOT.StormExistancePredicted");
-                            NOTIFY_STATE_ENTERED("ROOT.HighRiskStorm");
-                            pushNullTransition();
-                            rootState_subState = HighRiskStorm;
-                            rootState_active = HighRiskStorm;
-                            //#[ state HighRiskStorm.(Entry) 
-                            // Government and Emergency Responders
-                            this->generateActionableInfo(GOVERNMENT);
-                            this->generateActionableInfo(EMERGENCY_RESPONDER);
-                            //#]
-                            NOTIFY_TRANSITION_TERMINATED("7");
-                            NOTIFY_TRANSITION_TERMINATED("6");
-                            res = eventConsumed;
-                        }
-                    else
-                        {
-                            //## transition 8 
-                            if((st_pred_probability > 0.6) && (st_pred_probability < 0.9))
+                            //## transition 5 
+                            if(st_pred_probability < 0.6)
                                 {
-                                    NOTIFY_TRANSITION_STARTED("6");
-                                    NOTIFY_TRANSITION_STARTED("8");
+                                    NOTIFY_TRANSITION_STARTED("3");
+                                    NOTIFY_TRANSITION_STARTED("5");
                                     popNullTransition();
-                                    NOTIFY_STATE_EXITED("ROOT.StormExistancePredicted");
-                                    NOTIFY_STATE_ENTERED("ROOT.MidiumRiskStorm");
-                                    pushNullTransition();
-                                    rootState_subState = MidiumRiskStorm;
-                                    rootState_active = MidiumRiskStorm;
-                                    //#[ state MidiumRiskStorm.(Entry) 
-                                    // Governement
-                                    this->generateActionableInfo(GOVERNMENT);
+                                    //#[ state state_9.state_15.do_Predict_Storm.(Exit) 
+                                    GEN(evPredictionReady);
+                                    printf("SEND PREDICTION\n");
                                     //#]
-                                    NOTIFY_TRANSITION_TERMINATED("8");
-                                    NOTIFY_TRANSITION_TERMINATED("6");
+                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_15.do_Predict_Storm");
+                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.Initial");
+                                    state_15_subState = Initial;
+                                    state_15_active = Initial;
+                                    state_15_timeout = scheduleTimeout(3000, "ROOT.state_9.state_15.Initial");
+                                    NOTIFY_TRANSITION_TERMINATED("5");
+                                    NOTIFY_TRANSITION_TERMINATED("3");
                                     res = eventConsumed;
                                 }
                         }
                 }
             
-        }
-        break;
-        // State HighRiskStorm
-        case HighRiskStorm:
-        {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
-                {
-                    NOTIFY_TRANSITION_STARTED("9");
-                    popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.HighRiskStorm");
-                    NOTIFY_STATE_ENTERED("ROOT.Idle");
-                    rootState_subState = Idle;
-                    rootState_active = Idle;
-                    rootState_timeout = scheduleTimeout(3000, "ROOT.Idle");
-                    NOTIFY_TRANSITION_TERMINATED("9");
-                    res = eventConsumed;
-                }
             
         }
         break;
-        // State MidiumRiskStorm
-        case MidiumRiskStorm:
+        // State Initial
+        case Initial:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
+                {
+                    if(getCurrentEvent() == state_15_timeout)
+                        {
+                            NOTIFY_TRANSITION_STARTED("0");
+                            cancel(state_15_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.Initial");
+                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.accepttimeevent_13");
+                            pushNullTransition();
+                            state_15_subState = accepttimeevent_13;
+                            state_15_active = accepttimeevent_13;
+                            NOTIFY_TRANSITION_TERMINATED("0");
+                            res = eventConsumed;
+                        }
+                }
+            
+            
+        }
+        break;
+        case accepttimeevent_13:
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
-                    NOTIFY_TRANSITION_STARTED("10");
+                    NOTIFY_TRANSITION_STARTED("1");
                     popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.MidiumRiskStorm");
-                    NOTIFY_STATE_ENTERED("ROOT.Idle");
-                    rootState_subState = Idle;
-                    rootState_active = Idle;
-                    rootState_timeout = scheduleTimeout(3000, "ROOT.Idle");
-                    NOTIFY_TRANSITION_TERMINATED("10");
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_15.accepttimeevent_13");
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.do_Predict_Storm");
+                    pushNullTransition();
+                    state_15_subState = do_Predict_Storm;
+                    state_15_active = do_Predict_Storm;
+                    //#[ state state_9.state_15.do_Predict_Storm.(Entry) 
+                    this->prev_probability = this->st_pred_probability;
+                    
+                    updatePredictionData();
+                    //#]
+                    NOTIFY_TRANSITION_TERMINATED("1");
                     res = eventConsumed;
                 }
+            
             
         }
         break;
         default:
             break;
     }
+    return res;
+}
+
+void Storm_Prediction::rootState_entDef(void) {
+    {
+        NOTIFY_STATE_ENTERED("ROOT");
+        NOTIFY_TRANSITION_STARTED("12");
+        state_9_entDef();
+        NOTIFY_TRANSITION_TERMINATED("12");
+    }
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::rootState_processEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    // State state_9
+    if(rootState_active == state_9)
+        {
+            res = state_9_processEvent();
+        }
     return res;
 }
 
@@ -554,35 +857,74 @@ void OMAnimatedStorm_Prediction::serializeRelations(AOMSRelations* aomsRelations
 
 void OMAnimatedStorm_Prediction::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
-    switch (myReal->rootState_subState) {
-        case Storm_Prediction::Idle:
+    if(myReal->rootState_subState == Storm_Prediction::state_9)
         {
-            Idle_serializeStates(aomsState);
+            state_9_serializeStates(aomsState);
+        }
+}
+
+void OMAnimatedStorm_Prediction::state_9_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9");
+    state_15_serializeStates(aomsState);
+    state_16_serializeStates(aomsState);
+}
+
+void OMAnimatedStorm_Prediction::state_16_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_16");
+    switch (myReal->state_16_subState) {
+        case Storm_Prediction::Standby:
+        {
+            Standby_serializeStates(aomsState);
         }
         break;
-        case Storm_Prediction::accepttimeevent_3:
+        case Storm_Prediction::MediumRisk:
         {
-            accepttimeevent_3_serializeStates(aomsState);
+            MediumRisk_serializeStates(aomsState);
         }
         break;
-        case Storm_Prediction::PredictStorm:
+        case Storm_Prediction::HighRisk:
         {
-            PredictStorm_serializeStates(aomsState);
+            HighRisk_serializeStates(aomsState);
         }
         break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedStorm_Prediction::Standby_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_16.Standby");
+}
+
+void OMAnimatedStorm_Prediction::MediumRisk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_16.MediumRisk");
+}
+
+void OMAnimatedStorm_Prediction::HighRisk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_16.HighRisk");
+}
+
+void OMAnimatedStorm_Prediction::state_15_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_15");
+    switch (myReal->state_15_subState) {
         case Storm_Prediction::StormExistancePredicted:
         {
             StormExistancePredicted_serializeStates(aomsState);
         }
         break;
-        case Storm_Prediction::HighRiskStorm:
+        case Storm_Prediction::do_Predict_Storm:
         {
-            HighRiskStorm_serializeStates(aomsState);
+            do_Predict_Storm_serializeStates(aomsState);
         }
         break;
-        case Storm_Prediction::MidiumRiskStorm:
+        case Storm_Prediction::Initial:
         {
-            MidiumRiskStorm_serializeStates(aomsState);
+            Initial_serializeStates(aomsState);
+        }
+        break;
+        case Storm_Prediction::accepttimeevent_13:
+        {
+            accepttimeevent_13_serializeStates(aomsState);
         }
         break;
         default:
@@ -591,27 +933,19 @@ void OMAnimatedStorm_Prediction::rootState_serializeStates(AOMSState* aomsState)
 }
 
 void OMAnimatedStorm_Prediction::StormExistancePredicted_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.StormExistancePredicted");
+    aomsState->addState("ROOT.state_9.state_15.StormExistancePredicted");
 }
 
-void OMAnimatedStorm_Prediction::PredictStorm_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.PredictStorm");
+void OMAnimatedStorm_Prediction::Initial_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_15.Initial");
 }
 
-void OMAnimatedStorm_Prediction::MidiumRiskStorm_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.MidiumRiskStorm");
+void OMAnimatedStorm_Prediction::do_Predict_Storm_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_15.do_Predict_Storm");
 }
 
-void OMAnimatedStorm_Prediction::Idle_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.Idle");
-}
-
-void OMAnimatedStorm_Prediction::HighRiskStorm_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.HighRiskStorm");
-}
-
-void OMAnimatedStorm_Prediction::accepttimeevent_3_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.accepttimeevent_3");
+void OMAnimatedStorm_Prediction::accepttimeevent_13_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_15.accepttimeevent_13");
 }
 
 void OMAnimatedStorm_Prediction_Result::serializeAttributes(AOMSAttributes* aomsAttributes) const {

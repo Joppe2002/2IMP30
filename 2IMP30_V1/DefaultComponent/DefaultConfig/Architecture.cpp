@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sat, 6, Jun 2026  
+//!	Generated Date	: Sun, 7, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
 *********************************************************************/
 
@@ -30,6 +30,14 @@
 #include "Prediction_Module.h"
 //## auto_generated
 #include "System_Output.h"
+//#[ ignore
+#define evPredictionReady_SERIALIZE OM_NO_OP
+
+#define evPredictionReady_UNSERIALIZE OM_NO_OP
+
+#define evPredictionReady_CONSTRUCTOR evPredictionReady()
+//#]
+
 //## package Architecture
 
 
@@ -125,6 +133,18 @@ Architecture_OMInitializer::Architecture_OMInitializer(void) {
 Architecture_OMInitializer::~Architecture_OMInitializer(void) {
 }
 //#]
+
+//## event evPredictionReady()
+evPredictionReady::evPredictionReady(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evPredictionReady)
+    setId(evPredictionReady_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evPredictionReady_Architecture_id(11201);
+//#]
+
+IMPLEMENT_META_EVENT_P(evPredictionReady, Architecture, Architecture, evPredictionReady())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
