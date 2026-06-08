@@ -1,0 +1,256 @@
+/*********************************************************************
+	Rhapsody	: 10.0 
+	Login		: 20223834
+	Component	: DefaultComponent 
+	Configuration 	: DefaultConfig
+	Model Element	: Architecture
+//!	Generated Date	: Mon, 8, Jun 2026  
+	File Path	: DefaultComponent\DefaultConfig\Architecture.h
+*********************************************************************/
+
+#ifndef Architecture_H
+#define Architecture_H
+
+//## auto_generated
+#include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include <event.h>
+//## auto_generated
+class Actionable_Information_Generator;
+
+//## classInstance itsData_Storage
+class Data_Storage;
+
+//## auto_generated
+class Prediction_Module;
+
+//## classInstance itsSMSWTD
+class SMSWTD;
+
+//## classInstance itsStorm_Prediction
+class Storm_Prediction;
+
+//## classInstance itsSystem_Output
+class System_Output;
+
+//## classInstance itsTsunami_Prediction
+class Tsunami_Prediction;
+
+//## classInstance itsWheather_Prediction
+class Wheather_Prediction;
+
+//## package Architecture
+
+
+//## classInstance itsData_Storage
+extern Data_Storage itsData_Storage;
+
+//## classInstance itsSMSWTD
+extern SMSWTD itsSMSWTD;
+
+//## classInstance itsStorm_Prediction
+extern Storm_Prediction itsStorm_Prediction;
+
+//## classInstance itsSystem_Output
+extern System_Output itsSystem_Output;
+
+//## classInstance itsTsunami_Prediction
+extern Tsunami_Prediction itsTsunami_Prediction;
+
+//## classInstance itsWheather_Prediction
+extern Wheather_Prediction itsWheather_Prediction;
+
+//## auto_generated
+void Architecture_initRelations(void);
+
+//## auto_generated
+bool Architecture_startBehavior(void);
+
+//#[ ignore
+class Architecture_OMInitializer {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    Architecture_OMInitializer(void);
+    
+    //## auto_generated
+    ~Architecture_OMInitializer(void);
+};
+//#]
+
+//## event evPredictionReady()
+class evPredictionReady : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevPredictionReady;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evPredictionReady(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevPredictionReady : virtual public AOMEvent {
+    DECLARE_META_EVENT(evPredictionReady)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evPredictionReady_Architecture_id;
+//#]
+
+//## event evMediumStorm()
+class evMediumStorm : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevMediumStorm;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evMediumStorm(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevMediumStorm : virtual public AOMEvent {
+    DECLARE_META_EVENT(evMediumStorm)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evMediumStorm_Architecture_id;
+//#]
+
+//## event evHighStorm()
+class evHighStorm : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevHighStorm;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evHighStorm(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevHighStorm : virtual public AOMEvent {
+    DECLARE_META_EVENT(evHighStorm)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evHighStorm_Architecture_id;
+//#]
+
+//## event evPredictionReadyTs()
+class evPredictionReadyTs : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevPredictionReadyTs;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evPredictionReadyTs(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevPredictionReadyTs : virtual public AOMEvent {
+    DECLARE_META_EVENT(evPredictionReadyTs)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evPredictionReadyTs_Architecture_id;
+//#]
+
+//## event evHighTsunami()
+class evHighTsunami : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevHighTsunami;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evHighTsunami(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevHighTsunami : virtual public AOMEvent {
+    DECLARE_META_EVENT(evHighTsunami)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evHighTsunami_Architecture_id;
+//#]
+
+//## event evMediumTsunami()
+class evMediumTsunami : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevMediumTsunami;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evMediumTsunami(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevMediumTsunami : virtual public AOMEvent {
+    DECLARE_META_EVENT(evMediumTsunami)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evMediumTsunami_Architecture_id;
+//#]
+
+#endif
+/*********************************************************************
+	File Path	: DefaultComponent\DefaultConfig\Architecture.h
+*********************************************************************/
