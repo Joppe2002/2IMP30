@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sun, 7, Jun 2026  
+//!	Generated Date	: Mon, 8, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h
 *********************************************************************/
 
@@ -43,13 +43,6 @@ class Wheather_Prediction;
 
 //## package Architecture
 
-
-//## type ActorType
-enum ActorType {
-    GOVERNMENT = 0,
-    EMERGENCY_RESPONDER = 1,
-    CIVILIAN = 2
-};
 
 //## classInstance itsData_Storage
 extern Data_Storage itsData_Storage;

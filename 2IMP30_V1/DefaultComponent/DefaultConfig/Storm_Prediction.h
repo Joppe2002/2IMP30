@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Sun, 7, Jun 2026  
+//!	Generated Date	: Mon, 8, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.h
 *********************************************************************/
 
@@ -31,72 +31,17 @@
 class Data_Storage;
 
 //#[ ignore
-#define OMAnim_Architecture_Storm_Prediction_setTest_probability_float_ARGS_DECLARATION float p_test_probability;
+#define OMAnim_Architecture_Storm_Prediction_setStorm_probability_float_ARGS_DECLARATION float p_storm_probability;
 //#]
 
 //## package Architecture
 
 //## class Storm_Prediction
 class Storm_Prediction : public OMReactive {
-public :
-
-    //## class Storm_Prediction::Storm_Prediction_Result
-    class Storm_Prediction_Result {
-        ////    Friends    ////
-        
-    public :
-    
-    #ifdef _OMINSTRUMENT
-        friend class OMAnimatedStorm_Prediction_Result;
-    #endif // _OMINSTRUMENT
-    
-        ////    Constructors and destructors    ////
-        
-        //## auto_generated
-        Storm_Prediction_Result(void);
-        
-        //## auto_generated
-        ~Storm_Prediction_Result(void);
-        
-        ////    Additional operations    ////
-        
-        //## auto_generated
-        const bool getPred_direction(void) const;
-        
-        //## auto_generated
-        void setPred_direction(const bool p_pred_direction);
-        
-        //## auto_generated
-        const float getPred_probability(void) const;
-        
-        //## auto_generated
-        void setPred_probability(const float p_pred_probability);
-        
-        //## auto_generated
-        const float getPred_severity(void) const;
-        
-        //## auto_generated
-        void setPred_severity(const float p_pred_severity);
-        
-        //## auto_generated
-        const float getPred_speed(void) const;
-        
-        //## auto_generated
-        void setPred_speed(const float p_pred_speed);
-        
-        ////    Attributes    ////
-        
-        bool pred_direction;		//## attribute pred_direction
-        
-        float pred_probability;		//## attribute pred_probability
-        
-        float pred_severity;		//## attribute pred_severity
-        
-        float pred_speed;		//## attribute pred_speed
-    };
-    
     ////    Friends    ////
     
+public :
+
 #ifdef _OMINSTRUMENT
     friend class OMAnimatedStorm_Prediction;
 #endif // _OMINSTRUMENT
@@ -111,17 +56,8 @@ public :
     
     ////    Operations    ////
     
-    //## operation generateActionableInfo(ActorType)
-    virtual void generateActionableInfo(const ActorType& Actor);
-    
     //## operation get_Storm_Data(int,precipitation_type_enum,int,bool)
     virtual void get_Storm_Data(int stored_precipitation_amount, const precipitation_type_enum& stored_precipitation_type, int stored_wind_speed, bool stored_wind_direction);
-    
-    //## operation predictStorm()
-    virtual Storm_Prediction_Result* predictStorm(void);
-    
-    //## operation updatePredictionData()
-    virtual void updatePredictionData(void);
     
     ////    Additional operations    ////
     
@@ -138,46 +74,40 @@ public :
     void setPrecipitation_type(const precipitation_type_enum p_precipitation_type);
     
     //## auto_generated
-    const float getPrev_probability(void) const;
+    const bool getPred_direction(void) const;
     
     //## auto_generated
-    void setPrev_probability(const float p_prev_probability);
+    void setPred_direction(const bool p_pred_direction);
     
     //## auto_generated
-    const bool getSt_pred_direction(void) const;
+    const float getPred_probability(void) const;
     
     //## auto_generated
-    void setSt_pred_direction(const bool p_st_pred_direction);
+    void setPred_probability(const float p_pred_probability);
     
     //## auto_generated
-    const float getSt_pred_probability(void) const;
+    const int getPred_severity(void) const;
     
     //## auto_generated
-    void setSt_pred_probability(const float p_st_pred_probability);
+    void setPred_severity(const int p_pred_severity);
     
     //## auto_generated
-    const float getSt_pred_severity(void) const;
+    const float getPred_speed(void) const;
     
     //## auto_generated
-    void setSt_pred_severity(const float p_st_pred_severity);
+    void setPred_speed(const float p_pred_speed);
     
     //## auto_generated
-    const float getSt_pred_speed(void) const;
+    const float getStorm_probability(void) const;
     
     //## auto_generated
-    void setSt_pred_speed(const float p_st_pred_speed);
+    void setStorm_probability(const float p_storm_probability);
     
     //## auto_generated
-    const float getTest_probability(void) const;
+    const int getStorm_risk(void) const;
     
     //## auto_generated
-    void setTest_probability(const float p_test_probability);
-    
-    //## auto_generated
-    const bool getWasPredicted(void) const;
-    
-    //## auto_generated
-    void setWasPredicted(const bool p_wasPredicted);
+    void setStorm_risk(const int p_storm_risk);
     
     //## auto_generated
     const bool getWind_direction(void) const;
@@ -222,19 +152,17 @@ private :
     
     precipitation_type_enum precipitation_type;		//## attribute precipitation_type
     
-    float prev_probability;		//## attribute prev_probability
+    bool pred_direction;		//## attribute pred_direction
     
-    bool st_pred_direction;		//## attribute st_pred_direction
+    float pred_probability;		//## attribute pred_probability
     
-    float st_pred_probability;		//## attribute st_pred_probability
+    int pred_severity;		//## attribute pred_severity
     
-    float st_pred_severity;		//## attribute st_pred_severity
+    float pred_speed;		//## attribute pred_speed
     
-    float st_pred_speed;		//## attribute st_pred_speed
+    float storm_probability;		//## attribute storm_probability
     
-    float test_probability;		//## attribute test_probability
-    
-    bool wasPredicted;		//## attribute wasPredicted
+    int storm_risk;		//## attribute storm_risk
     
     bool wind_direction;		//## attribute wind_direction
     
@@ -261,69 +189,62 @@ public :
     //## statechart_method
     inline RhpBoolean rootState_IN(void) const;
     
-    // state_9:
+    // normal_operation:
     //## statechart_method
-    inline RhpBoolean state_9_IN(void) const;
+    inline RhpBoolean normal_operation_IN(void) const;
     
     //## statechart_method
-    void state_9_entDef(void);
+    void normal_operation_entDef(void);
     
     //## statechart_method
-    void state_9_exit(void);
+    void normal_operation_exit(void);
     
     //## statechart_method
-    IOxfReactive::TakeEventStatus state_9_processEvent(void);
+    IOxfReactive::TakeEventStatus normal_operation_processEvent(void);
     
-    // state_16:
+    // state_7:
     //## statechart_method
-    inline RhpBoolean state_16_IN(void) const;
-    
-    //## statechart_method
-    void state_16_entDef(void);
+    inline RhpBoolean state_7_IN(void) const;
     
     //## statechart_method
-    IOxfReactive::TakeEventStatus state_16_processEvent(void);
-    
-    // Standby:
-    //## statechart_method
-    inline RhpBoolean Standby_IN(void) const;
-    
-    // MediumRisk:
-    //## statechart_method
-    inline RhpBoolean MediumRisk_IN(void) const;
-    
-    // HighRisk:
-    //## statechart_method
-    inline RhpBoolean HighRisk_IN(void) const;
-    
-    // state_15:
-    //## statechart_method
-    inline RhpBoolean state_15_IN(void) const;
+    void state_7_entDef(void);
     
     //## statechart_method
-    void state_15_entDef(void);
+    IOxfReactive::TakeEventStatus state_7_processEvent(void);
+    
+    // waiting:
+    //## statechart_method
+    inline RhpBoolean waiting_IN(void) const;
+    
+    // medium_risk:
+    //## statechart_method
+    inline RhpBoolean medium_risk_IN(void) const;
+    
+    // high_risk:
+    //## statechart_method
+    inline RhpBoolean high_risk_IN(void) const;
+    
+    // state_6:
+    //## statechart_method
+    inline RhpBoolean state_6_IN(void) const;
     
     //## statechart_method
-    void state_15_exit(void);
+    void state_6_entDef(void);
     
     //## statechart_method
-    IOxfReactive::TakeEventStatus state_15_processEvent(void);
+    IOxfReactive::TakeEventStatus state_6_processEvent(void);
     
-    // StormExistancePredicted:
+    // prediction:
     //## statechart_method
-    inline RhpBoolean StormExistancePredicted_IN(void) const;
+    inline RhpBoolean prediction_IN(void) const;
     
-    // Initial:
+    // idle:
     //## statechart_method
-    inline RhpBoolean Initial_IN(void) const;
+    inline RhpBoolean idle_IN(void) const;
     
-    // do_Predict_Storm:
+    // accepttimeevent_2:
     //## statechart_method
-    inline RhpBoolean do_Predict_Storm_IN(void) const;
-    
-    // accepttimeevent_13:
-    //## statechart_method
-    inline RhpBoolean accepttimeevent_13_IN(void) const;
+    inline RhpBoolean accepttimeevent_2_IN(void) const;
 
 protected :
 
@@ -338,16 +259,15 @@ protected :
 //#[ ignore
     enum Storm_Prediction_Enum {
         OMNonState = 0,
-        state_9 = 1,
-        state_16 = 2,
-        Standby = 3,
-        MediumRisk = 4,
-        HighRisk = 5,
-        state_15 = 6,
-        StormExistancePredicted = 7,
-        Initial = 8,
-        do_Predict_Storm = 9,
-        accepttimeevent_13 = 10
+        normal_operation = 1,
+        state_7 = 2,
+        waiting = 3,
+        medium_risk = 4,
+        high_risk = 5,
+        state_6 = 6,
+        prediction = 7,
+        idle = 8,
+        accepttimeevent_2 = 9
     };
 //#]
 
@@ -358,26 +278,26 @@ private :
     
     Storm_Prediction_Enum rootState_active;
     
-    Storm_Prediction_Enum state_16_subState;
+    Storm_Prediction_Enum state_7_subState;
     
-    Storm_Prediction_Enum state_16_active;
+    Storm_Prediction_Enum state_7_active;
     
-    Storm_Prediction_Enum state_15_subState;
+    Storm_Prediction_Enum state_6_subState;
     
-    Storm_Prediction_Enum state_15_active;
+    Storm_Prediction_Enum state_6_active;
     
-    IOxfTimeout* state_15_timeout;
+    IOxfTimeout* state_6_timeout;
 //#]
 };
 
 #ifdef _OMINSTRUMENT
-DECLARE_OPERATION_CLASS(Architecture_Storm_Prediction_setTest_probability_float)
+DECLARE_OPERATION_CLASS(Architecture_Storm_Prediction_setStorm_probability_float)
 
 //#[ ignore
 class OMAnimatedStorm_Prediction : virtual public AOMInstance {
     DECLARE_REACTIVE_META(Storm_Prediction, OMAnimatedStorm_Prediction)
     
-    DECLARE_META_OP(Architecture_Storm_Prediction_setTest_probability_float)
+    DECLARE_META_OP(Architecture_Storm_Prediction_setStorm_probability_float)
     
     ////    Framework operations    ////
     
@@ -391,44 +311,31 @@ public :
     void rootState_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void state_9_serializeStates(AOMSState* aomsState) const;
+    void normal_operation_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void state_16_serializeStates(AOMSState* aomsState) const;
+    void state_7_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void Standby_serializeStates(AOMSState* aomsState) const;
+    void waiting_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void MediumRisk_serializeStates(AOMSState* aomsState) const;
+    void medium_risk_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void HighRisk_serializeStates(AOMSState* aomsState) const;
+    void high_risk_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void state_15_serializeStates(AOMSState* aomsState) const;
+    void state_6_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void StormExistancePredicted_serializeStates(AOMSState* aomsState) const;
+    void prediction_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void Initial_serializeStates(AOMSState* aomsState) const;
+    void idle_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void do_Predict_Storm_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void accepttimeevent_13_serializeStates(AOMSState* aomsState) const;
-};
-
-class OMAnimatedStorm_Prediction_Result : virtual public AOMInstance {
-    DECLARE_META(Storm_Prediction::Storm_Prediction_Result, OMAnimatedStorm_Prediction_Result)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    void accepttimeevent_2_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -437,44 +344,40 @@ inline RhpBoolean Storm_Prediction::rootState_IN(void) const {
     return true;
 }
 
-inline RhpBoolean Storm_Prediction::state_9_IN(void) const {
-    return rootState_subState == state_9;
+inline RhpBoolean Storm_Prediction::normal_operation_IN(void) const {
+    return rootState_subState == normal_operation;
 }
 
-inline RhpBoolean Storm_Prediction::state_16_IN(void) const {
-    return state_9_IN();
+inline RhpBoolean Storm_Prediction::state_7_IN(void) const {
+    return normal_operation_IN();
 }
 
-inline RhpBoolean Storm_Prediction::Standby_IN(void) const {
-    return state_16_subState == Standby;
+inline RhpBoolean Storm_Prediction::waiting_IN(void) const {
+    return state_7_subState == waiting;
 }
 
-inline RhpBoolean Storm_Prediction::MediumRisk_IN(void) const {
-    return state_16_subState == MediumRisk;
+inline RhpBoolean Storm_Prediction::medium_risk_IN(void) const {
+    return state_7_subState == medium_risk;
 }
 
-inline RhpBoolean Storm_Prediction::HighRisk_IN(void) const {
-    return state_16_subState == HighRisk;
+inline RhpBoolean Storm_Prediction::high_risk_IN(void) const {
+    return state_7_subState == high_risk;
 }
 
-inline RhpBoolean Storm_Prediction::state_15_IN(void) const {
-    return state_9_IN();
+inline RhpBoolean Storm_Prediction::state_6_IN(void) const {
+    return normal_operation_IN();
 }
 
-inline RhpBoolean Storm_Prediction::StormExistancePredicted_IN(void) const {
-    return state_15_subState == StormExistancePredicted;
+inline RhpBoolean Storm_Prediction::prediction_IN(void) const {
+    return state_6_subState == prediction;
 }
 
-inline RhpBoolean Storm_Prediction::Initial_IN(void) const {
-    return state_15_subState == Initial;
+inline RhpBoolean Storm_Prediction::idle_IN(void) const {
+    return state_6_subState == idle;
 }
 
-inline RhpBoolean Storm_Prediction::do_Predict_Storm_IN(void) const {
-    return state_15_subState == do_Predict_Storm;
-}
-
-inline RhpBoolean Storm_Prediction::accepttimeevent_13_IN(void) const {
-    return state_15_subState == accepttimeevent_13;
+inline RhpBoolean Storm_Prediction::accepttimeevent_2_IN(void) const {
+    return state_6_subState == accepttimeevent_2;
 }
 
 #endif

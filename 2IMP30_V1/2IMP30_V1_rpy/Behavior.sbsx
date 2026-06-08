@@ -12,10 +12,10 @@
 			<_id type="a">GUID dff28762-58c5-43a8-a425-3a7ea26979db</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Behavior</_name>
-			<_modifiedTimeWeak type="a">6.6.2026::17:6:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.6.2026::17:6:5</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.8.2026::7:57:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2026::7:57:59</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">6.6.2026::17:6:5</weakCGTime>
+			<weakCGTime type="a">6.8.2026::7:57:59</weakCGTime>
 			<strongCGTime type="a">5.31.2026::10:8:45</strongCGTime>
 			<_defaultComposite type="s">GUID f11e5d82-402e-4ff7-882c-a0fec2328fe3</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -254,8 +254,8 @@
 			</_properties>
 			<_name type="a">GUI</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.6.2026::17:6:11</_modifiedTime>
-			<_lastModifiedTime type="a">6.6.2026::17:6:11</_lastModifiedTime>
+			<_modifiedTime type="a">6.8.2026::7:58:11</_modifiedTime>
+			<_lastModifiedTime type="a">6.8.2026::7:58:11</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -298,7 +298,7 @@
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">17</elementList>
+			<elementList type="a">20</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -325,9 +325,12 @@
 				<value>GUID 52f5e3c4-5608-4b87-aacf-15997598bacd</value>
 				<value>GUID df89fd0b-9dd1-4a0b-b740-9cfa26219ad9</value>
 				<value>GUID a86f7ac2-5a8c-4e27-80f0-4d8f805573a6</value>
-				<value>GUID 6a59284a-dbf2-41ec-aae0-3a2ecf720b11</value>
-				<value>GUID 4065d0b6-4b27-4ac8-9396-2c27ff2df115</value>
-				<value>GUID a719d43c-5671-404f-84e9-1876e825255b</value>
+				<value>GUID eb12616b-f6b0-488f-9461-93775548b2ae</value>
+				<value>GUID d793ddfb-deba-4386-8b83-a255a469fcdb</value>
+				<value>GUID 29dd1f68-dc60-4573-9123-23364d85e350</value>
+				<value>GUID f89928d8-8ac0-4067-83d4-d7cfc54bd954</value>
+				<value>GUID 1e1f9534-b594-42de-8d77-caf857f3749b</value>
+				<value>GUID 1ee3116b-f6bc-4fd3-aabf-4047edfb46ce</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIBox type="e">
@@ -387,7 +390,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">4.34722 0 0 3.67424 20 20 </m_transform>
+			<m_transform type="a">5.96296 0 0 3.67424 20 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1475,7 +1478,7 @@
 			<m_text type="a">Data storage</m_text>
 		</CGIFreeText>
 		<CGIActiveX type="e">
-			<_id type="a">GUID 6a59284a-dbf2-41ec-aae0-3a2ecf720b11</_id>
+			<_id type="a">GUID eb12616b-f6b0-488f-9461-93775548b2ae</_id>
 			<_properties type="p"><IPropertyContainer type="e">
 				<Subjects type="c">
 					<IRPYRawContainer type="e">
@@ -1511,8 +1514,77 @@
 										</Properties>
 									</IPropertyMetaclass>
 									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">221</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hclass type="a">Storm_Prediction</_hclass>
+					<_hname type="a">pred_direction</_hname>
+					<_hid type="a">GUID 4110cee2-3316-42c7-8e68-83a9b3642fb6</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">direction</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.00157312 0 0 0.000278887 703 362.311 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.pred_direction</m_csModelObjPath>
+			<m_csName type="a">direction</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+							<_hsubsystem type="a">Architecture</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsStorm_Prediction</_hname>
+							<_hid type="a">GUID b524f4a0-e5e7-4875-ad82-f05d4b59d320</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID d793ddfb-deba-4386-8b83-a255a469fcdb</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
 									<IPropertyMetaclass type="e">
-										<_Name type="a">flowProperty</_Name>
+										<_Name type="a">DigitalDisplay</_Name>
 										<Properties type="c">
 											<IRPYRawContainer type="e">
 												<IProperty type="e">
@@ -1540,14 +1612,14 @@
 					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
 					<_hsubsystem type="a">Architecture</_hsubsystem>
 					<_hclass type="a">Storm_Prediction</_hclass>
-					<_hname type="a">st_pred_severity</_hname>
-					<_hid type="a">GUID 3eb63777-36ef-4b92-b8c4-dd2bafcc62c2</_hid>
+					<_hname type="a">pred_severity</_hname>
+					<_hid type="a">GUID 1a10b9c8-f9c5-4d14-a8b8-a075b7673448</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">prediction severity</m_str>
+					<m_str type="a">severity</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1563,13 +1635,13 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00157312 0 0 0.000278887 689 364.311 </m_transform>
+			<m_transform type="a">0.00157312 0 0 0.000278887 702 435.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.st_pred_severity</m_csModelObjPath>
-			<m_csName type="a">prediction severity</m_csName>
+			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.pred_severity</m_csModelObjPath>
+			<m_csName type="a">severity</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					
@@ -1586,7 +1658,173 @@
 			</m_PartsArray>
 		</CGIActiveX>
 		<CGIActiveX type="e">
-			<_id type="a">GUID 4065d0b6-4b27-4ac8-9396-2c27ff2df115</_id>
+			<_id type="a">GUID 29dd1f68-dc60-4573-9123-23364d85e350</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">DigitalDisplay</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;DisplayedString;;Style;4;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">221</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hclass type="a">Storm_Prediction</_hclass>
+					<_hname type="a">pred_probability</_hname>
+					<_hid type="a">GUID 9390a143-97ed-44b6-ab66-8528c2ff31b9</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">probability</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.00157312 0 0 0.000278887 929 364.311 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.pred_probability</m_csModelObjPath>
+			<m_csName type="a">probability</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+							<_hsubsystem type="a">Architecture</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsStorm_Prediction</_hname>
+							<_hid type="a">GUID b524f4a0-e5e7-4875-ad82-f05d4b59d320</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID f89928d8-8ac0-4067-83d4-d7cfc54bd954</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">DigitalDisplay</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;DisplayedString;;Style;4;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">221</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hclass type="a">Storm_Prediction</_hclass>
+					<_hname type="a">pred_speed</_hname>
+					<_hid type="a">GUID cc367f3f-59ca-496e-a265-cb80eb0cd679</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">speed</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.00157312 0 0 0.000278887 929 434.311 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.pred_speed</m_csModelObjPath>
+			<m_csName type="a">speed</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+							<_hsubsystem type="a">Architecture</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsStorm_Prediction</_hname>
+							<_hid type="a">GUID b524f4a0-e5e7-4875-ad82-f05d4b59d320</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 1e1f9534-b594-42de-8d77-caf857f3749b</_id>
 			<_properties type="p"><IPropertyContainer type="e">
 				<Subjects type="c">
 					<IRPYRawContainer type="e">
@@ -1673,14 +1911,14 @@
 					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
 					<_hsubsystem type="a">Architecture</_hsubsystem>
 					<_hclass type="a">Storm_Prediction</_hclass>
-					<_hname type="a">test_probability</_hname>
-					<_hid type="a">GUID 0d0af289-ce27-4c7d-a2a4-32177ce112c3</_hid>
+					<_hname type="a">storm_probability</_hname>
+					<_hid type="a">GUID a0b0f087-b4fd-4d03-8d25-5fde24d820d0</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">test_probability</m_str>
+					<m_str type="a">storm_probability</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1696,13 +1934,13 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00252476 0 0 0.000610064 679 126.68 </m_transform>
+			<m_transform type="a">0.00252476 0 0 0.000610064 693 189.68 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.test_probability</m_csModelObjPath>
-			<m_csName type="a">test_probability</m_csName>
+			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.storm_probability</m_csModelObjPath>
+			<m_csName type="a">storm_probability</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					
@@ -1719,7 +1957,7 @@
 			</m_PartsArray>
 		</CGIActiveX>
 		<CGIActiveX type="e">
-			<_id type="a">GUID a719d43c-5671-404f-84e9-1876e825255b</_id>
+			<_id type="a">GUID 1ee3116b-f6bc-4fd3-aabf-4047edfb46ce</_id>
 			<_properties type="p"><IPropertyContainer type="e">
 				<Subjects type="c">
 					<IRPYRawContainer type="e">
@@ -1729,20 +1967,6 @@
 								<IRPYRawContainer type="e">
 									<IPropertyMetaclass type="e">
 										<_Name type="a">DigitalDisplay</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<IProperty type="e">
-													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
-													<_Value type="a">BackColor;16777215;DisplayedString;;Style;4;</_Value>
-													<_Type type="a">String</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-									<IPropertyMetaclass type="e">
-										<_Name type="a">ValueProperty</_Name>
 										<Properties type="c">
 											<IRPYRawContainer type="e">
 												<IProperty type="e">
@@ -1770,14 +1994,14 @@
 					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
 					<_hsubsystem type="a">Architecture</_hsubsystem>
 					<_hclass type="a">Storm_Prediction</_hclass>
-					<_hname type="a">test_probability</_hname>
-					<_hid type="a">GUID 0d0af289-ce27-4c7d-a2a4-32177ce112c3</_hid>
+					<_hname type="a">storm_risk</_hname>
+					<_hid type="a">GUID 92d873b8-7ccb-4bc8-a892-87ae88af1b0a</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">test probability</m_str>
+					<m_str type="a">storm risk</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1793,13 +2017,13 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00157312 0 0 0.000278887 743 230.311 </m_transform>
+			<m_transform type="a">0.00157312 0 0 0.000278887 1126 396.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.test_probability</m_csModelObjPath>
-			<m_csName type="a">test probability</m_csName>
+			<m_csModelObjPath type="a">Architecture.itsStorm_Prediction.storm_risk</m_csModelObjPath>
+			<m_csName type="a">storm risk</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					

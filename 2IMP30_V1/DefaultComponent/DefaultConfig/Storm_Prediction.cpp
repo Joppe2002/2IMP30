@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Sun, 7, Jun 2026  
+//!	Generated Date	: Mon, 8, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.cpp
 *********************************************************************/
 
@@ -26,64 +26,15 @@
     aomsmethod->addAttribute("stored_wind_direction", x2String(stored_wind_direction));
 #define Architecture_Storm_Prediction_Storm_Prediction_SERIALIZE OM_NO_OP
 
-#define Architecture_Storm_Prediction_generateActionableInfo_SERIALIZE aomsmethod->addAttribute("Actor", x2String((int)Actor));
+#define OMAnim_Architecture_Storm_Prediction_setStorm_probability_float_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_storm_probability)
 
-#define Architecture_Storm_Prediction_predictStorm_SERIALIZE OM_NO_OP
-
-#define Architecture_Storm_Prediction_updatePredictionData_SERIALIZE OM_NO_OP
-
-#define OMAnim_Architecture_Storm_Prediction_setTest_probability_float_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_test_probability)
-
-#define OMAnim_Architecture_Storm_Prediction_setTest_probability_float_SERIALIZE_RET_VAL
-
-#define Architecture_Storm_Prediction_Storm_Prediction_Result_Storm_Prediction_Result_SERIALIZE OM_NO_OP
+#define OMAnim_Architecture_Storm_Prediction_setStorm_probability_float_SERIALIZE_RET_VAL
 //#]
 
 //## package Architecture
 
 //## class Storm_Prediction
-//## class Storm_Prediction::Storm_Prediction_Result
-Storm_Prediction::Storm_Prediction_Result::Storm_Prediction_Result(void) {
-    NOTIFY_CONSTRUCTOR(Storm_Prediction_Result, Storm_Prediction_Result(), 0, Architecture_Storm_Prediction_Storm_Prediction_Result_Storm_Prediction_Result_SERIALIZE);
-}
-
-Storm_Prediction::Storm_Prediction_Result::~Storm_Prediction_Result(void) {
-    NOTIFY_DESTRUCTOR(~Storm_Prediction_Result, true);
-}
-
-const bool Storm_Prediction::Storm_Prediction_Result::getPred_direction(void) const {
-    return pred_direction;
-}
-
-void Storm_Prediction::Storm_Prediction_Result::setPred_direction(const bool p_pred_direction) {
-    pred_direction = p_pred_direction;
-}
-
-const float Storm_Prediction::Storm_Prediction_Result::getPred_probability(void) const {
-    return pred_probability;
-}
-
-void Storm_Prediction::Storm_Prediction_Result::setPred_probability(const float p_pred_probability) {
-    pred_probability = p_pred_probability;
-}
-
-const float Storm_Prediction::Storm_Prediction_Result::getPred_severity(void) const {
-    return pred_severity;
-}
-
-void Storm_Prediction::Storm_Prediction_Result::setPred_severity(const float p_pred_severity) {
-    pred_severity = p_pred_severity;
-}
-
-const float Storm_Prediction::Storm_Prediction_Result::getPred_speed(void) const {
-    return pred_speed;
-}
-
-void Storm_Prediction::Storm_Prediction_Result::setPred_speed(const float p_pred_speed) {
-    pred_speed = p_pred_speed;
-}
-
-Storm_Prediction::Storm_Prediction(IOxfActive* const theActiveContext) : OMReactive(), wasPredicted(false), itsData_Storage(NULL) {
+Storm_Prediction::Storm_Prediction(IOxfActive* const theActiveContext) : OMReactive(), itsData_Storage(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(Storm_Prediction, Storm_Prediction(), 0, Architecture_Storm_Prediction_Storm_Prediction_SERIALIZE);
     setActiveContext(theActiveContext, false);
     initStatechart();
@@ -95,25 +46,6 @@ Storm_Prediction::~Storm_Prediction(void) {
     cancelTimeouts();
 }
 
-void Storm_Prediction::generateActionableInfo(const ActorType& Actor) {
-    NOTIFY_OPERATION(generateActionableInfo, generateActionableInfo(const ActorType&), 1, Architecture_Storm_Prediction_generateActionableInfo_SERIALIZE);
-    //#[ operation generateActionableInfo(ActorType)
-    if(Actor == GOVERNMENT) {
-    	printf("Notify Government\n");
-    } else if (Actor == EMERGENCY_RESPONDER) {
-    	printf("Notify Emergency Responders\n");
-    } else {
-    	printf("Notify --- --- ??? --- ---\n");
-    }
-    
-    float probability 	= this->st_pred_probability;
-    float severity 		= this->st_pred_severity;
-    
-    
-    printf("NOTIFY - STORM approaching with severity: %f, with probability: %f \n", severity, probability); 
-    //#]
-}
-
 void Storm_Prediction::get_Storm_Data(int stored_precipitation_amount, const precipitation_type_enum& stored_precipitation_type, int stored_wind_speed, bool stored_wind_direction) {
     NOTIFY_OPERATION(get_Storm_Data, get_Storm_Data(int,const precipitation_type_enum&,int,bool), 4, Architecture_Storm_Prediction_get_Storm_Data_SERIALIZE);
     //#[ operation get_Storm_Data(int,precipitation_type_enum,int,bool)
@@ -121,39 +53,6 @@ void Storm_Prediction::get_Storm_Data(int stored_precipitation_amount, const pre
     precipitation_type = stored_precipitation_type;
     wind_speed = stored_wind_speed;
     wind_direction = stored_wind_direction;
-    //#]
-}
-
-Storm_Prediction::Storm_Prediction_Result* Storm_Prediction::predictStorm(void) {
-    NOTIFY_OPERATION(predictStorm, predictStorm(), 0, Architecture_Storm_Prediction_predictStorm_SERIALIZE);
-    //#[ operation predictStorm()
-    printf("Do prediction \n");
-    
-    Storm_Prediction::Storm_Prediction_Result* result = new Storm_Prediction::Storm_Prediction_Result();
-    
-    result->pred_direction   = this->wind_direction;
-    result->pred_probability = this->test_probability;
-    result->pred_severity    = (float)this->wind_direction * (float)this->precipitation_type + (float)4.0;
-    result->pred_speed       = (float)this->wind_speed * (float)10.0;
-    
-    return result;
-    //#]
-}
-
-void Storm_Prediction::updatePredictionData(void) {
-    NOTIFY_OPERATION(updatePredictionData, updatePredictionData(), 0, Architecture_Storm_Prediction_updatePredictionData_SERIALIZE);
-    //#[ operation updatePredictionData()
-    Storm_Prediction::Storm_Prediction_Result* prediction;
-    prediction = this->predictStorm();
-    printf("prediction direction   = %d \n", prediction->pred_direction);
-    printf("prediction probability = %f \n", prediction->pred_probability);
-    printf("prediction severity    = %f \n", prediction->pred_severity);
-    printf("prediction speed       = %f \n", prediction->pred_speed);
-    
-    this->st_pred_direction   = prediction->pred_direction;
-    this->st_pred_probability = prediction->pred_probability ;
-    this->st_pred_severity    = prediction->pred_severity;
-    this->st_pred_speed       = prediction->pred_speed;
     //#]
 }
 
@@ -173,62 +72,58 @@ void Storm_Prediction::setPrecipitation_type(const precipitation_type_enum p_pre
     precipitation_type = p_precipitation_type;
 }
 
-const float Storm_Prediction::getPrev_probability(void) const {
-    return prev_probability;
+const bool Storm_Prediction::getPred_direction(void) const {
+    return pred_direction;
 }
 
-void Storm_Prediction::setPrev_probability(const float p_prev_probability) {
-    prev_probability = p_prev_probability;
-}
-
-const bool Storm_Prediction::getSt_pred_direction(void) const {
-    return st_pred_direction;
-}
-
-void Storm_Prediction::setSt_pred_direction(const bool p_st_pred_direction) {
-    st_pred_direction = p_st_pred_direction;
-}
-
-const float Storm_Prediction::getSt_pred_probability(void) const {
-    return st_pred_probability;
-}
-
-void Storm_Prediction::setSt_pred_probability(const float p_st_pred_probability) {
-    st_pred_probability = p_st_pred_probability;
-}
-
-const float Storm_Prediction::getSt_pred_severity(void) const {
-    return st_pred_severity;
-}
-
-void Storm_Prediction::setSt_pred_severity(const float p_st_pred_severity) {
-    st_pred_severity = p_st_pred_severity;
+void Storm_Prediction::setPred_direction(const bool p_pred_direction) {
+    pred_direction = p_pred_direction;
     NOTIFY_SET_OPERATION;
 }
 
-const float Storm_Prediction::getSt_pred_speed(void) const {
-    return st_pred_speed;
+const float Storm_Prediction::getPred_probability(void) const {
+    return pred_probability;
 }
 
-void Storm_Prediction::setSt_pred_speed(const float p_st_pred_speed) {
-    st_pred_speed = p_st_pred_speed;
-}
-
-const float Storm_Prediction::getTest_probability(void) const {
-    return test_probability;
-}
-
-void Storm_Prediction::setTest_probability(const float p_test_probability) {
-    test_probability = p_test_probability;
+void Storm_Prediction::setPred_probability(const float p_pred_probability) {
+    pred_probability = p_pred_probability;
     NOTIFY_SET_OPERATION;
 }
 
-const bool Storm_Prediction::getWasPredicted(void) const {
-    return wasPredicted;
+const int Storm_Prediction::getPred_severity(void) const {
+    return pred_severity;
 }
 
-void Storm_Prediction::setWasPredicted(const bool p_wasPredicted) {
-    wasPredicted = p_wasPredicted;
+void Storm_Prediction::setPred_severity(const int p_pred_severity) {
+    pred_severity = p_pred_severity;
+    NOTIFY_SET_OPERATION;
+}
+
+const float Storm_Prediction::getPred_speed(void) const {
+    return pred_speed;
+}
+
+void Storm_Prediction::setPred_speed(const float p_pred_speed) {
+    pred_speed = p_pred_speed;
+    NOTIFY_SET_OPERATION;
+}
+
+const float Storm_Prediction::getStorm_probability(void) const {
+    return storm_probability;
+}
+
+void Storm_Prediction::setStorm_probability(const float p_storm_probability) {
+    storm_probability = p_storm_probability;
+    NOTIFY_SET_OPERATION;
+}
+
+const int Storm_Prediction::getStorm_risk(void) const {
+    return storm_risk;
+}
+
+void Storm_Prediction::setStorm_risk(const int p_storm_risk) {
+    storm_risk = p_storm_risk;
+    NOTIFY_SET_OPERATION;
 }
 
 const bool Storm_Prediction::getWind_direction(void) const {
@@ -261,9 +156,9 @@ void Storm_Prediction::setItsData_Storage(Data_Storage* const p_Data_Storage) {
 
 bool Storm_Prediction::cancelTimeout(const IOxfTimeout* arg) {
     bool res = false;
-    if(state_15_timeout == arg)
+    if(state_6_timeout == arg)
         {
-            state_15_timeout = NULL;
+            state_6_timeout = NULL;
             res = true;
         }
     return res;
@@ -278,11 +173,11 @@ bool Storm_Prediction::startBehavior(void) {
 void Storm_Prediction::initStatechart(void) {
     rootState_subState = OMNonState;
     rootState_active = OMNonState;
-    state_16_subState = OMNonState;
-    state_16_active = OMNonState;
-    state_15_subState = OMNonState;
-    state_15_active = OMNonState;
-    state_15_timeout = NULL;
+    state_7_subState = OMNonState;
+    state_7_active = OMNonState;
+    state_6_subState = OMNonState;
+    state_6_active = OMNonState;
+    state_6_timeout = NULL;
 }
 
 void Storm_Prediction::cleanUpRelations(void) {
@@ -299,7 +194,7 @@ void Storm_Prediction::cleanUpRelations(void) {
 }
 
 void Storm_Prediction::cancelTimeouts(void) {
-    cancel(state_15_timeout);
+    cancel(state_6_timeout);
 }
 
 void Storm_Prediction::__setItsData_Storage(Data_Storage* const p_Data_Storage) {
@@ -327,55 +222,82 @@ void Storm_Prediction::_clearItsData_Storage(void) {
     itsData_Storage = NULL;
 }
 
-void Storm_Prediction::state_9_entDef(void) {
-    NOTIFY_STATE_ENTERED("ROOT.state_9");
-    rootState_subState = state_9;
-    rootState_active = state_9;
-    state_15_entDef();
-    state_16_entDef();
+void Storm_Prediction::normal_operation_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.normal_operation");
+    rootState_subState = normal_operation;
+    rootState_active = normal_operation;
+    state_6_entDef();
+    state_7_entDef();
 }
 
-void Storm_Prediction::state_9_exit(void) {
-    state_15_exit();
-    switch (state_16_subState) {
-        // State Standby
-        case Standby:
+void Storm_Prediction::normal_operation_exit(void) {
+    switch (state_6_subState) {
+        // State idle
+        case idle:
         {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
+            cancel(state_6_timeout);
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6.idle");
         }
         break;
-        // State MediumRisk
-        case MediumRisk:
+        // State prediction
+        case prediction:
         {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6.prediction");
         }
         break;
-        // State HighRisk
-        case HighRisk:
+        case accepttimeevent_2:
         {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6.accepttimeevent_2");
         }
         break;
         default:
             break;
     }
-    state_16_subState = OMNonState;
-    NOTIFY_STATE_EXITED("ROOT.state_9.state_16");
+    state_6_subState = OMNonState;
+    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6");
+    switch (state_7_subState) {
+        // State waiting
+        case waiting:
+        {
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
+        }
+        break;
+        // State medium_risk
+        case medium_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.medium_risk");
+        }
+        break;
+        // State high_risk
+        case high_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.high_risk");
+        }
+        break;
+        default:
+            break;
+    }
+    state_7_subState = OMNonState;
+    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7");
     
-    NOTIFY_STATE_EXITED("ROOT.state_9");
+    NOTIFY_STATE_EXITED("ROOT.normal_operation");
 }
 
-IOxfReactive::TakeEventStatus Storm_Prediction::state_9_processEvent(void) {
+IOxfReactive::TakeEventStatus Storm_Prediction::normal_operation_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     IOxfReactive::TakeEventStatus omComponentStatus = eventNotConsumed;
     bool dispatchDone = false;
     {
-        // State state_15
-        omComponentStatus = state_15_processEvent();
+        // State state_6
+        omComponentStatus = state_6_processEvent();
         if(omComponentStatus != eventNotConsumed)
             {
                 res = eventConsumed;
-                if(IS_IN(state_9) == false)
+                if(IS_IN(normal_operation) == false)
                     {
                         dispatchDone = true;
                     }
@@ -383,8 +305,8 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_9_processEvent(void) {
     }
     if(!dispatchDone)
         {
-            // State state_16
-            omComponentStatus = state_16_processEvent();
+            // State state_7
+            omComponentStatus = state_7_processEvent();
             if(omComponentStatus != eventNotConsumed)
                 {
                     res = eventConsumed;
@@ -394,87 +316,75 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_9_processEvent(void) {
     return res;
 }
 
-void Storm_Prediction::state_16_entDef(void) {
-    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16");
-    NOTIFY_TRANSITION_STARTED("11");
-    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
-    state_16_subState = Standby;
-    state_16_active = Standby;
-    //#[ state state_9.state_16.Standby.(Entry) 
-    printf("Standby - NO significant risk \n");
-    
-    this->wasPredicted = false;
-    
-    
-    //#]
-    NOTIFY_TRANSITION_TERMINATED("11");
+void Storm_Prediction::state_7_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7");
+    NOTIFY_TRANSITION_STARTED("8");
+    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.waiting");
+    state_7_subState = waiting;
+    state_7_active = waiting;
+    NOTIFY_TRANSITION_TERMINATED("8");
 }
 
-IOxfReactive::TakeEventStatus Storm_Prediction::state_16_processEvent(void) {
+IOxfReactive::TakeEventStatus Storm_Prediction::state_7_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    switch (state_16_active) {
-        // State Standby
-        case Standby:
+    switch (state_7_active) {
+        // State waiting
+        case waiting:
         {
             if(IS_EVENT_TYPE_OF(evPredictionReady_Architecture_id) == 1)
                 {
-                    //## transition 8 
-                    if(st_pred_probability >= 0.6 &&  st_pred_probability < 0.9)
+                    //## transition 6 
+                    if(pred_probability >=0.9)
                         {
-                            NOTIFY_TRANSITION_STARTED("7");
-                            NOTIFY_TRANSITION_STARTED("8");
-                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
-                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.MediumRisk");
-                            state_16_subState = MediumRisk;
-                            state_16_active = MediumRisk;
-                            //#[ state state_9.state_16.MediumRisk.(Entry) 
-                            // Governement
-                            this->generateActionableInfo(GOVERNMENT);
+                            NOTIFY_TRANSITION_STARTED("5");
+                            NOTIFY_TRANSITION_STARTED("6");
+                            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
+                            NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.high_risk");
+                            pushNullTransition();
+                            state_7_subState = high_risk;
+                            state_7_active = high_risk;
+                            //#[ state normal_operation.state_7.high_risk.(Entry) 
+                            storm_risk = 2;
                             //#]
-                            NOTIFY_TRANSITION_TERMINATED("8");
-                            NOTIFY_TRANSITION_TERMINATED("7");
+                            NOTIFY_TRANSITION_TERMINATED("6");
+                            NOTIFY_TRANSITION_TERMINATED("5");
                             res = eventConsumed;
                         }
                     else
                         {
                             //## transition 9 
-                            if(st_pred_probability >= 0.9)
+                            if(pred_probability <0.6)
                                 {
-                                    NOTIFY_TRANSITION_STARTED("7");
+                                    NOTIFY_TRANSITION_STARTED("5");
                                     NOTIFY_TRANSITION_STARTED("9");
-                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
-                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.HighRisk");
-                                    state_16_subState = HighRisk;
-                                    state_16_active = HighRisk;
-                                    //#[ state state_9.state_16.HighRisk.(Entry) 
-                                    // Government and Emergency Responders
-                                    this->generateActionableInfo(GOVERNMENT);
-                                    this->generateActionableInfo(EMERGENCY_RESPONDER);
+                                    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
+                                    //#[ transition 9 
+                                    storm_risk = 0;
                                     //#]
+                                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.waiting");
+                                    state_7_subState = waiting;
+                                    state_7_active = waiting;
                                     NOTIFY_TRANSITION_TERMINATED("9");
-                                    NOTIFY_TRANSITION_TERMINATED("7");
+                                    NOTIFY_TRANSITION_TERMINATED("5");
                                     res = eventConsumed;
                                 }
                             else
                                 {
                                     //## transition 10 
-                                    if(st_pred_probability < 0.6)
+                                    if(pred_probability >=0.6 && pred_probability <0.9)
                                         {
-                                            NOTIFY_TRANSITION_STARTED("7");
+                                            NOTIFY_TRANSITION_STARTED("5");
                                             NOTIFY_TRANSITION_STARTED("10");
-                                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.Standby");
-                                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
-                                            state_16_subState = Standby;
-                                            state_16_active = Standby;
-                                            //#[ state state_9.state_16.Standby.(Entry) 
-                                            printf("Standby - NO significant risk \n");
-                                            
-                                            this->wasPredicted = false;
-                                            
-                                            
+                                            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
+                                            NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.medium_risk");
+                                            pushNullTransition();
+                                            state_7_subState = medium_risk;
+                                            state_7_active = medium_risk;
+                                            //#[ state normal_operation.state_7.medium_risk.(Entry) 
+                                            storm_risk = 1;
                                             //#]
                                             NOTIFY_TRANSITION_TERMINATED("10");
-                                            NOTIFY_TRANSITION_TERMINATED("7");
+                                            NOTIFY_TRANSITION_TERMINATED("5");
                                             res = eventConsumed;
                                         }
                                 }
@@ -484,139 +394,37 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_16_processEvent(void) {
             
         }
         break;
-        // State MediumRisk
-        case MediumRisk:
+        // State medium_risk
+        case medium_risk:
         {
-            if(IS_EVENT_TYPE_OF(evPredictionReady_Architecture_id) == 1)
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
-                    //## transition 13 
-                    if(st_pred_probability > prev_probability )
-                        {
-                            //## transition 14 
-                            if(st_pred_probability < 0.9)
-                                {
-                                    NOTIFY_TRANSITION_STARTED("13");
-                                    NOTIFY_TRANSITION_STARTED("14");
-                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
-                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.MediumRisk");
-                                    state_16_subState = MediumRisk;
-                                    state_16_active = MediumRisk;
-                                    //#[ state state_9.state_16.MediumRisk.(Entry) 
-                                    // Governement
-                                    this->generateActionableInfo(GOVERNMENT);
-                                    //#]
-                                    NOTIFY_TRANSITION_TERMINATED("14");
-                                    NOTIFY_TRANSITION_TERMINATED("13");
-                                    res = eventConsumed;
-                                }
-                            else
-                                {
-                                    //## transition 15 
-                                    if(st_pred_probability >= 0.9)
-                                        {
-                                            NOTIFY_TRANSITION_STARTED("13");
-                                            NOTIFY_TRANSITION_STARTED("15");
-                                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
-                                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.HighRisk");
-                                            state_16_subState = HighRisk;
-                                            state_16_active = HighRisk;
-                                            //#[ state state_9.state_16.HighRisk.(Entry) 
-                                            // Government and Emergency Responders
-                                            this->generateActionableInfo(GOVERNMENT);
-                                            this->generateActionableInfo(EMERGENCY_RESPONDER);
-                                            //#]
-                                            NOTIFY_TRANSITION_TERMINATED("15");
-                                            NOTIFY_TRANSITION_TERMINATED("13");
-                                            res = eventConsumed;
-                                        }
-                                }
-                        }
-                    else
-                        {
-                            //## transition 18 
-                            if(st_pred_probability < 0.6 )
-                                {
-                                    NOTIFY_TRANSITION_STARTED("18");
-                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.MediumRisk");
-                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
-                                    state_16_subState = Standby;
-                                    state_16_active = Standby;
-                                    //#[ state state_9.state_16.Standby.(Entry) 
-                                    printf("Standby - NO significant risk \n");
-                                    
-                                    this->wasPredicted = false;
-                                    
-                                    
-                                    //#]
-                                    NOTIFY_TRANSITION_TERMINATED("18");
-                                    res = eventConsumed;
-                                }
-                        }
+                    NOTIFY_TRANSITION_STARTED("11");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.medium_risk");
+                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.waiting");
+                    state_7_subState = waiting;
+                    state_7_active = waiting;
+                    NOTIFY_TRANSITION_TERMINATED("11");
+                    res = eventConsumed;
                 }
             
             
         }
         break;
-        // State HighRisk
-        case HighRisk:
+        // State high_risk
+        case high_risk:
         {
-            if(IS_EVENT_TYPE_OF(evPredictionReady_Architecture_id) == 1)
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
-                    //## transition 16 
-                    if(st_pred_probability >= 0.6 &&  st_pred_probability < 0.9 )
-                        {
-                            NOTIFY_TRANSITION_STARTED("16");
-                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
-                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.MediumRisk");
-                            state_16_subState = MediumRisk;
-                            state_16_active = MediumRisk;
-                            //#[ state state_9.state_16.MediumRisk.(Entry) 
-                            // Governement
-                            this->generateActionableInfo(GOVERNMENT);
-                            //#]
-                            NOTIFY_TRANSITION_TERMINATED("16");
-                            res = eventConsumed;
-                        }
-                    else
-                        {
-                            //## transition 17 
-                            if(st_pred_probability > prev_probability)
-                                {
-                                    NOTIFY_TRANSITION_STARTED("17");
-                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
-                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.HighRisk");
-                                    state_16_subState = HighRisk;
-                                    state_16_active = HighRisk;
-                                    //#[ state state_9.state_16.HighRisk.(Entry) 
-                                    // Government and Emergency Responders
-                                    this->generateActionableInfo(GOVERNMENT);
-                                    this->generateActionableInfo(EMERGENCY_RESPONDER);
-                                    //#]
-                                    NOTIFY_TRANSITION_TERMINATED("17");
-                                    res = eventConsumed;
-                                }
-                            else
-                                {
-                                    //## transition 19 
-                                    if(st_pred_probability < 0.6)
-                                        {
-                                            NOTIFY_TRANSITION_STARTED("19");
-                                            NOTIFY_STATE_EXITED("ROOT.state_9.state_16.HighRisk");
-                                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_16.Standby");
-                                            state_16_subState = Standby;
-                                            state_16_active = Standby;
-                                            //#[ state state_9.state_16.Standby.(Entry) 
-                                            printf("Standby - NO significant risk \n");
-                                            
-                                            this->wasPredicted = false;
-                                            
-                                            
-                                            //#]
-                                            NOTIFY_TRANSITION_TERMINATED("19");
-                                            res = eventConsumed;
-                                        }
-                                }
-                        }
+                    NOTIFY_TRANSITION_STARTED("7");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.high_risk");
+                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.waiting");
+                    state_7_subState = waiting;
+                    state_7_active = waiting;
+                    NOTIFY_TRANSITION_TERMINATED("7");
+                    res = eventConsumed;
                 }
             
             
@@ -628,153 +436,33 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_16_processEvent(void) {
     return res;
 }
 
-void Storm_Prediction::state_15_entDef(void) {
-    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15");
-    NOTIFY_TRANSITION_STARTED("2");
-    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.Initial");
-    state_15_subState = Initial;
-    state_15_active = Initial;
-    state_15_timeout = scheduleTimeout(3000, "ROOT.state_9.state_15.Initial");
-    NOTIFY_TRANSITION_TERMINATED("2");
+void Storm_Prediction::state_6_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_6");
+    NOTIFY_TRANSITION_STARTED("3");
+    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_6.idle");
+    state_6_subState = idle;
+    state_6_active = idle;
+    state_6_timeout = scheduleTimeout(5000, "ROOT.normal_operation.state_6.idle");
+    NOTIFY_TRANSITION_TERMINATED("3");
 }
 
-void Storm_Prediction::state_15_exit(void) {
-    switch (state_15_subState) {
-        // State StormExistancePredicted
-        case StormExistancePredicted:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.StormExistancePredicted");
-        }
-        break;
-        // State do_Predict_Storm
-        case do_Predict_Storm:
-        {
-            popNullTransition();
-            //#[ state state_9.state_15.do_Predict_Storm.(Exit) 
-            GEN(evPredictionReady);
-            printf("SEND PREDICTION\n");
-            //#]
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.do_Predict_Storm");
-        }
-        break;
-        // State Initial
-        case Initial:
-        {
-            cancel(state_15_timeout);
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.Initial");
-        }
-        break;
-        case accepttimeevent_13:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.accepttimeevent_13");
-        }
-        break;
-        default:
-            break;
-    }
-    state_15_subState = OMNonState;
-    
-    NOTIFY_STATE_EXITED("ROOT.state_9.state_15");
-}
-
-IOxfReactive::TakeEventStatus Storm_Prediction::state_15_processEvent(void) {
+IOxfReactive::TakeEventStatus Storm_Prediction::state_6_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    switch (state_15_active) {
-        // State StormExistancePredicted
-        case StormExistancePredicted:
-        {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
-                {
-                    NOTIFY_TRANSITION_STARTED("6");
-                    popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.state_9.state_15.StormExistancePredicted");
-                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.Initial");
-                    state_15_subState = Initial;
-                    state_15_active = Initial;
-                    state_15_timeout = scheduleTimeout(3000, "ROOT.state_9.state_15.Initial");
-                    NOTIFY_TRANSITION_TERMINATED("6");
-                    res = eventConsumed;
-                }
-            
-            
-        }
-        break;
-        // State do_Predict_Storm
-        case do_Predict_Storm:
-        {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
-                {
-                    //## transition 4 
-                    if(st_pred_probability >= 0.6)
-                        {
-                            NOTIFY_TRANSITION_STARTED("3");
-                            NOTIFY_TRANSITION_STARTED("4");
-                            popNullTransition();
-                            //#[ state state_9.state_15.do_Predict_Storm.(Exit) 
-                            GEN(evPredictionReady);
-                            printf("SEND PREDICTION\n");
-                            //#]
-                            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.do_Predict_Storm");
-                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.StormExistancePredicted");
-                            pushNullTransition();
-                            state_15_subState = StormExistancePredicted;
-                            state_15_active = StormExistancePredicted;
-                            //#[ state state_9.state_15.StormExistancePredicted.(Entry) 
-                            //if(this->wasPredicted && this->prev_probability >= this->st_pred_probability){
-                            //	printf("Storm Predicted - NO new notification.\n");
-                            //}  else {
-                            //	printf("Storm Predicted - SEND new NOTIFICATION\n");
-                            //}
-                            
-                            //this->wasPredicted = true; 
-                            //#]
-                            NOTIFY_TRANSITION_TERMINATED("4");
-                            NOTIFY_TRANSITION_TERMINATED("3");
-                            res = eventConsumed;
-                        }
-                    else
-                        {
-                            //## transition 5 
-                            if(st_pred_probability < 0.6)
-                                {
-                                    NOTIFY_TRANSITION_STARTED("3");
-                                    NOTIFY_TRANSITION_STARTED("5");
-                                    popNullTransition();
-                                    //#[ state state_9.state_15.do_Predict_Storm.(Exit) 
-                                    GEN(evPredictionReady);
-                                    printf("SEND PREDICTION\n");
-                                    //#]
-                                    NOTIFY_STATE_EXITED("ROOT.state_9.state_15.do_Predict_Storm");
-                                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.Initial");
-                                    state_15_subState = Initial;
-                                    state_15_active = Initial;
-                                    state_15_timeout = scheduleTimeout(3000, "ROOT.state_9.state_15.Initial");
-                                    NOTIFY_TRANSITION_TERMINATED("5");
-                                    NOTIFY_TRANSITION_TERMINATED("3");
-                                    res = eventConsumed;
-                                }
-                        }
-                }
-            
-            
-        }
-        break;
-        // State Initial
-        case Initial:
+    switch (state_6_active) {
+        // State idle
+        case idle:
         {
             if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
                 {
-                    if(getCurrentEvent() == state_15_timeout)
+                    if(getCurrentEvent() == state_6_timeout)
                         {
                             NOTIFY_TRANSITION_STARTED("0");
-                            cancel(state_15_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.state_9.state_15.Initial");
-                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.accepttimeevent_13");
+                            cancel(state_6_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6.idle");
+                            NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_6.accepttimeevent_2");
                             pushNullTransition();
-                            state_15_subState = accepttimeevent_13;
-                            state_15_active = accepttimeevent_13;
+                            state_6_subState = accepttimeevent_2;
+                            state_6_active = accepttimeevent_2;
                             NOTIFY_TRANSITION_TERMINATED("0");
                             res = eventConsumed;
                         }
@@ -783,21 +471,49 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_15_processEvent(void) {
             
         }
         break;
-        case accepttimeevent_13:
+        // State prediction
+        case prediction:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("2");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6.prediction");
+                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_6.idle");
+                    state_6_subState = idle;
+                    state_6_active = idle;
+                    state_6_timeout = scheduleTimeout(5000, "ROOT.normal_operation.state_6.idle");
+                    NOTIFY_TRANSITION_TERMINATED("2");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        case accepttimeevent_2:
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
                     NOTIFY_TRANSITION_STARTED("1");
                     popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.state_9.state_15.accepttimeevent_13");
-                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_15.do_Predict_Storm");
+                    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6.accepttimeevent_2");
+                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_6.prediction");
                     pushNullTransition();
-                    state_15_subState = do_Predict_Storm;
-                    state_15_active = do_Predict_Storm;
-                    //#[ state state_9.state_15.do_Predict_Storm.(Entry) 
-                    this->prev_probability = this->st_pred_probability;
+                    state_6_subState = prediction;
+                    state_6_active = prediction;
+                    //#[ state normal_operation.state_6.prediction.(Entry) 
+                    printf("Test\n");
+                    pred_direction = wind_direction;
+                    pred_probability = storm_probability;
+                    pred_severity = (int)(((precipitation_amount) + wind_speed) /40.0f);
+                    pred_speed = wind_speed *0.8f;
                     
-                    updatePredictionData();
+                    GEN(evPredictionReady);
+                    
+                    //printf("direction = %d \n", pred_direction);
+                    //printf("probability = %f \n", pred_probability);
+                    //printf("severity = %f \n", pred_severity);
+                    //printf("speed = %f \n", pred_speed);
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("1");
                     res = eventConsumed;
@@ -815,18 +531,18 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_15_processEvent(void) {
 void Storm_Prediction::rootState_entDef(void) {
     {
         NOTIFY_STATE_ENTERED("ROOT");
-        NOTIFY_TRANSITION_STARTED("12");
-        state_9_entDef();
-        NOTIFY_TRANSITION_TERMINATED("12");
+        NOTIFY_TRANSITION_STARTED("4");
+        normal_operation_entDef();
+        NOTIFY_TRANSITION_TERMINATED("4");
     }
 }
 
 IOxfReactive::TakeEventStatus Storm_Prediction::rootState_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    // State state_9
-    if(rootState_active == state_9)
+    // State normal_operation
+    if(rootState_active == normal_operation)
         {
-            res = state_9_processEvent();
+            res = normal_operation_processEvent();
         }
     return res;
 }
@@ -838,13 +554,12 @@ void OMAnimatedStorm_Prediction::serializeAttributes(AOMSAttributes* aomsAttribu
     aomsAttributes->addAttribute("precipitation_amount", x2String(myReal->precipitation_amount));
     aomsAttributes->addAttribute("wind_direction", x2String(myReal->wind_direction));
     aomsAttributes->addAttribute("wind_speed", x2String(myReal->wind_speed));
-    aomsAttributes->addAttribute("st_pred_direction", x2String(myReal->st_pred_direction));
-    aomsAttributes->addAttribute("st_pred_probability", x2String(myReal->st_pred_probability));
-    aomsAttributes->addAttribute("st_pred_severity", x2String(myReal->st_pred_severity));
-    aomsAttributes->addAttribute("st_pred_speed", x2String(myReal->st_pred_speed));
-    aomsAttributes->addAttribute("wasPredicted", x2String(myReal->wasPredicted));
-    aomsAttributes->addAttribute("prev_probability", x2String(myReal->prev_probability));
-    aomsAttributes->addAttribute("test_probability", x2String(myReal->test_probability));
+    aomsAttributes->addAttribute("pred_direction", x2String(myReal->pred_direction));
+    aomsAttributes->addAttribute("pred_severity", x2String(myReal->pred_severity));
+    aomsAttributes->addAttribute("pred_probability", x2String(myReal->pred_probability));
+    aomsAttributes->addAttribute("pred_speed", x2String(myReal->pred_speed));
+    aomsAttributes->addAttribute("storm_probability", x2String(myReal->storm_probability));
+    aomsAttributes->addAttribute("storm_risk", x2String(myReal->storm_risk));
 }
 
 void OMAnimatedStorm_Prediction::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -857,74 +572,34 @@ void OMAnimatedStorm_Prediction::serializeRelations(AOMSRelations* aomsRelations
 
 void OMAnimatedStorm_Prediction::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
-    if(myReal->rootState_subState == Storm_Prediction::state_9)
+    if(myReal->rootState_subState == Storm_Prediction::normal_operation)
         {
-            state_9_serializeStates(aomsState);
+            normal_operation_serializeStates(aomsState);
         }
 }
 
-void OMAnimatedStorm_Prediction::state_9_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9");
-    state_15_serializeStates(aomsState);
-    state_16_serializeStates(aomsState);
+void OMAnimatedStorm_Prediction::normal_operation_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation");
+    state_6_serializeStates(aomsState);
+    state_7_serializeStates(aomsState);
 }
 
-void OMAnimatedStorm_Prediction::state_16_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_16");
-    switch (myReal->state_16_subState) {
-        case Storm_Prediction::Standby:
+void OMAnimatedStorm_Prediction::state_7_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_7");
+    switch (myReal->state_7_subState) {
+        case Storm_Prediction::waiting:
         {
-            Standby_serializeStates(aomsState);
+            waiting_serializeStates(aomsState);
         }
         break;
-        case Storm_Prediction::MediumRisk:
+        case Storm_Prediction::medium_risk:
         {
-            MediumRisk_serializeStates(aomsState);
+            medium_risk_serializeStates(aomsState);
         }
         break;
-        case Storm_Prediction::HighRisk:
+        case Storm_Prediction::high_risk:
         {
-            HighRisk_serializeStates(aomsState);
-        }
-        break;
-        default:
-            break;
-    }
-}
-
-void OMAnimatedStorm_Prediction::Standby_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_16.Standby");
-}
-
-void OMAnimatedStorm_Prediction::MediumRisk_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_16.MediumRisk");
-}
-
-void OMAnimatedStorm_Prediction::HighRisk_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_16.HighRisk");
-}
-
-void OMAnimatedStorm_Prediction::state_15_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_15");
-    switch (myReal->state_15_subState) {
-        case Storm_Prediction::StormExistancePredicted:
-        {
-            StormExistancePredicted_serializeStates(aomsState);
-        }
-        break;
-        case Storm_Prediction::do_Predict_Storm:
-        {
-            do_Predict_Storm_serializeStates(aomsState);
-        }
-        break;
-        case Storm_Prediction::Initial:
-        {
-            Initial_serializeStates(aomsState);
-        }
-        break;
-        case Storm_Prediction::accepttimeevent_13:
-        {
-            accepttimeevent_13_serializeStates(aomsState);
+            high_risk_serializeStates(aomsState);
         }
         break;
         default:
@@ -932,37 +607,59 @@ void OMAnimatedStorm_Prediction::state_15_serializeStates(AOMSState* aomsState) 
     }
 }
 
-void OMAnimatedStorm_Prediction::StormExistancePredicted_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_15.StormExistancePredicted");
+void OMAnimatedStorm_Prediction::waiting_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_7.waiting");
 }
 
-void OMAnimatedStorm_Prediction::Initial_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_15.Initial");
+void OMAnimatedStorm_Prediction::medium_risk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_7.medium_risk");
 }
 
-void OMAnimatedStorm_Prediction::do_Predict_Storm_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_15.do_Predict_Storm");
+void OMAnimatedStorm_Prediction::high_risk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_7.high_risk");
 }
 
-void OMAnimatedStorm_Prediction::accepttimeevent_13_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_15.accepttimeevent_13");
+void OMAnimatedStorm_Prediction::state_6_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_6");
+    switch (myReal->state_6_subState) {
+        case Storm_Prediction::idle:
+        {
+            idle_serializeStates(aomsState);
+        }
+        break;
+        case Storm_Prediction::prediction:
+        {
+            prediction_serializeStates(aomsState);
+        }
+        break;
+        case Storm_Prediction::accepttimeevent_2:
+        {
+            accepttimeevent_2_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
 }
 
-void OMAnimatedStorm_Prediction_Result::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    aomsAttributes->addAttribute("pred_direction", x2String(myReal->pred_direction));
-    aomsAttributes->addAttribute("pred_probability", x2String(myReal->pred_probability));
-    aomsAttributes->addAttribute("pred_severity", x2String(myReal->pred_severity));
-    aomsAttributes->addAttribute("pred_speed", x2String(myReal->pred_speed));
+void OMAnimatedStorm_Prediction::prediction_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_6.prediction");
+}
+
+void OMAnimatedStorm_Prediction::idle_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_6.idle");
+}
+
+void OMAnimatedStorm_Prediction::accepttimeevent_2_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_6.accepttimeevent_2");
 }
 //#]
 
 IMPLEMENT_REACTIVE_META_P(Storm_Prediction, Architecture, Architecture, false, OMAnimatedStorm_Prediction)
 
-IMPLEMENT_META_OP(OMAnimatedStorm_Prediction, Architecture_Storm_Prediction_setTest_probability_float, "setTest_probability", FALSE, "setTest_probability(float)", 1)
+IMPLEMENT_META_OP(OMAnimatedStorm_Prediction, Architecture_Storm_Prediction_setStorm_probability_float, "setStorm_probability", FALSE, "setStorm_probability(float)", 1)
 
-IMPLEMENT_OP_CALL(Architecture_Storm_Prediction_setTest_probability_float, Storm_Prediction, setTest_probability(p_test_probability), NO_OP())
-
-IMPLEMENT_META_P(Storm_Prediction::Storm_Prediction_Result, Architecture, Architecture, false, OMAnimatedStorm_Prediction_Result)
+IMPLEMENT_OP_CALL(Architecture_Storm_Prediction_setStorm_probability_float, Storm_Prediction, setStorm_probability(p_storm_probability), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************
