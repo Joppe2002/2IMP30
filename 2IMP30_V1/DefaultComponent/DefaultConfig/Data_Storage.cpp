@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Data_Storage
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Data_Storage.cpp
 *********************************************************************/
 
@@ -18,10 +18,14 @@
 #include "Data_Storage.h"
 //## link itsStorm_Prediction
 #include "Storm_Prediction.h"
+//## link itsTsunami_Prediction
+#include "Tsunami_Prediction.h"
 //#[ ignore
 #define Architecture_Data_Storage_Data_Storage_SERIALIZE OM_NO_OP
 
 #define Architecture_Data_Storage_relay_storm_data_SERIALIZE OM_NO_OP
+
+#define Architecture_Data_Storage_relay_tsunami_data_SERIALIZE OM_NO_OP
 //#]
 
 //## package Architecture
@@ -125,9 +129,65 @@ void Data_Storage::p_Data_Storage_C::cleanUpRelations(void) {
             itsInt_raw_wind_speed_ProxyFlowPropertyInterface = NULL;
         }
 }
+
+Data_Storage::p_Data_Storage_1_C::p_Data_Storage_1_C(void) : int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_vibration_location_ProxyFlowPropertyInterface(), _p_(0), itsInt_raw_vibration_location_ProxyFlowPropertyInterface(NULL), itsInt_raw_vibrations_ProxyFlowPropertyInterface(NULL) {
+}
+
+Data_Storage::p_Data_Storage_1_C::~p_Data_Storage_1_C(void) {
+    cleanUpRelations();
+}
+
+void Data_Storage::p_Data_Storage_1_C::connectData_Storage(Data_Storage* part) {
+    setItsInt_raw_vibrations_ProxyFlowPropertyInterface(part);
+    setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(part);
+    
+}
+
+int_raw_vibration_location_ProxyFlowPropertyInterface* Data_Storage::p_Data_Storage_1_C::getItsInt_raw_vibration_location_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+int_raw_vibrations_ProxyFlowPropertyInterface* Data_Storage::p_Data_Storage_1_C::getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+void Data_Storage::p_Data_Storage_1_C::setRaw_vibration_location(int p_raw_vibration_location) {
+    
+    if (itsInt_raw_vibration_location_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_vibration_location_ProxyFlowPropertyInterface->setRaw_vibration_location(p_raw_vibration_location);
+    }
+    
+}
+
+void Data_Storage::p_Data_Storage_1_C::setRaw_vibrations(int p_raw_vibrations) {
+    
+    if (itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_vibrations_ProxyFlowPropertyInterface->setRaw_vibrations(p_raw_vibrations);
+    }
+    
+}
+
+void Data_Storage::p_Data_Storage_1_C::setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(int_raw_vibration_location_ProxyFlowPropertyInterface* const p_int_raw_vibration_location_ProxyFlowPropertyInterface) {
+    itsInt_raw_vibration_location_ProxyFlowPropertyInterface = p_int_raw_vibration_location_ProxyFlowPropertyInterface;
+}
+
+void Data_Storage::p_Data_Storage_1_C::setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface) {
+    itsInt_raw_vibrations_ProxyFlowPropertyInterface = p_int_raw_vibrations_ProxyFlowPropertyInterface;
+}
+
+void Data_Storage::p_Data_Storage_1_C::cleanUpRelations(void) {
+    if(itsInt_raw_vibration_location_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_raw_vibration_location_ProxyFlowPropertyInterface = NULL;
+        }
+    if(itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_raw_vibrations_ProxyFlowPropertyInterface = NULL;
+        }
+}
 //#]
 
-Data_Storage::Data_Storage(IOxfActive* const theActiveContext) : OMReactive(), int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), itsStorm_Prediction(NULL) {
+Data_Storage::Data_Storage(IOxfActive* const theActiveContext) : OMReactive(), int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_vibration_location_ProxyFlowPropertyInterface(), itsStorm_Prediction(NULL), itsTsunami_Prediction(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(Data_Storage, Data_Storage(), 0, Architecture_Data_Storage_Data_Storage_SERIALIZE);
     setActiveContext(theActiveContext, false);
     initRelations();
@@ -151,6 +211,16 @@ void Data_Storage::relay_storm_data(void) {
     //#]
 }
 
+void Data_Storage::relay_tsunami_data(void) {
+    NOTIFY_OPERATION(relay_tsunami_data, relay_tsunami_data(), 0, Architecture_Data_Storage_relay_tsunami_data_SERIALIZE);
+    //#[ operation relay_tsunami_data()
+    if(itsTsunami_Prediction){
+    itsTsunami_Prediction->get_Tsunami_Data(stored_vibrations, stored_vibration_location);}
+    else{printf("SKIP");}
+    
+    //#]
+}
+
 //#[ ignore
 void Data_Storage::setRaw_precipitation_amount(int p_raw_precipitation_amount) {
     if (raw_precipitation_amount != p_raw_precipitation_amount) {
@@ -164,6 +234,22 @@ void Data_Storage::setRaw_precipitation_type(int p_raw_precipitation_type) {
     if (raw_precipitation_type != p_raw_precipitation_type) {
         raw_precipitation_type = p_raw_precipitation_type;
         FLOW_DATA_RECEIVE("raw_precipitation_type", raw_precipitation_type, x2String);
+    }
+    
+}
+
+void Data_Storage::setRaw_vibration_location(int p_raw_vibration_location) {
+    if (raw_vibration_location != p_raw_vibration_location) {
+        raw_vibration_location = p_raw_vibration_location;
+        FLOW_DATA_RECEIVE("raw_vibration_location", raw_vibration_location, x2String);
+    }
+    
+}
+
+void Data_Storage::setRaw_vibrations(int p_raw_vibrations) {
+    if (raw_vibrations != p_raw_vibrations) {
+        raw_vibrations = p_raw_vibrations;
+        FLOW_DATA_RECEIVE("raw_vibrations", raw_vibrations, x2String);
     }
     
 }
@@ -193,12 +279,28 @@ Data_Storage::p_Data_Storage_C* Data_Storage::get_p_Data_Storage(void) const {
     return (Data_Storage::p_Data_Storage_C*) &p_Data_Storage;
 }
 
+Data_Storage::p_Data_Storage_1_C* Data_Storage::getP_Data_Storage_1(void) const {
+    return (Data_Storage::p_Data_Storage_1_C*) &p_Data_Storage_1;
+}
+
+Data_Storage::p_Data_Storage_1_C* Data_Storage::get_p_Data_Storage_1(void) const {
+    return (Data_Storage::p_Data_Storage_1_C*) &p_Data_Storage_1;
+}
+
 const int Data_Storage::getRaw_precipitation_amount(void) const {
     return raw_precipitation_amount;
 }
 
 const int Data_Storage::getRaw_precipitation_type(void) const {
     return raw_precipitation_type;
+}
+
+const int Data_Storage::getRaw_vibration_location(void) const {
+    return raw_vibration_location;
+}
+
+const int Data_Storage::getRaw_vibrations(void) const {
+    return raw_vibrations;
 }
 
 const bool Data_Storage::getRaw_wind_direction(void) const {
@@ -225,6 +327,22 @@ const precipitation_type_enum Data_Storage::getStored_precipitation_type(void) c
 void Data_Storage::setStored_precipitation_type(const precipitation_type_enum p_stored_precipitation_type) {
     stored_precipitation_type = p_stored_precipitation_type;
     NOTIFY_SET_OPERATION;
+}
+
+const int Data_Storage::getStored_vibration_location(void) const {
+    return stored_vibration_location;
+}
+
+void Data_Storage::setStored_vibration_location(const int p_stored_vibration_location) {
+    stored_vibration_location = p_stored_vibration_location;
+}
+
+const int Data_Storage::getStored_vibrations(void) const {
+    return stored_vibrations;
+}
+
+void Data_Storage::setStored_vibrations(const int p_stored_vibrations) {
+    stored_vibrations = p_stored_vibrations;
 }
 
 const bool Data_Storage::getStored_wind_direction(void) const {
@@ -257,6 +375,18 @@ void Data_Storage::setItsStorm_Prediction(Storm_Prediction* const p_Storm_Predic
     _setItsStorm_Prediction(p_Storm_Prediction);
 }
 
+const Tsunami_Prediction* Data_Storage::getItsTsunami_Prediction(void) const {
+    return itsTsunami_Prediction;
+}
+
+void Data_Storage::setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction) {
+    if(p_Tsunami_Prediction != NULL)
+        {
+            p_Tsunami_Prediction->_setItsData_Storage(this);
+        }
+    _setItsTsunami_Prediction(p_Tsunami_Prediction);
+}
+
 bool Data_Storage::cancelTimeout(const IOxfTimeout* arg) {
     bool res = false;
     if(rootState_timeout == arg)
@@ -277,6 +407,9 @@ void Data_Storage::initRelations(void) {
     if (get_p_Data_Storage() != NULL) {
         get_p_Data_Storage()->connectData_Storage(this);
     }
+    if (get_p_Data_Storage_1() != NULL) {
+        get_p_Data_Storage_1()->connectData_Storage(this);
+    }
 }
 
 void Data_Storage::initStatechart(void) {
@@ -295,6 +428,16 @@ void Data_Storage::cleanUpRelations(void) {
                     itsStorm_Prediction->__setItsData_Storage(NULL);
                 }
             itsStorm_Prediction = NULL;
+        }
+    if(itsTsunami_Prediction != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsTsunami_Prediction");
+            const Data_Storage* p_Data_Storage = itsTsunami_Prediction->getItsData_Storage();
+            if(p_Data_Storage != NULL)
+                {
+                    itsTsunami_Prediction->__setItsData_Storage(NULL);
+                }
+            itsTsunami_Prediction = NULL;
         }
 }
 
@@ -325,6 +468,31 @@ void Data_Storage::_setItsStorm_Prediction(Storm_Prediction* const p_Storm_Predi
 void Data_Storage::_clearItsStorm_Prediction(void) {
     NOTIFY_RELATION_CLEARED("itsStorm_Prediction");
     itsStorm_Prediction = NULL;
+}
+
+void Data_Storage::__setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction) {
+    itsTsunami_Prediction = p_Tsunami_Prediction;
+    if(p_Tsunami_Prediction != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsTsunami_Prediction", p_Tsunami_Prediction, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsTsunami_Prediction");
+        }
+}
+
+void Data_Storage::_setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction) {
+    if(itsTsunami_Prediction != NULL)
+        {
+            itsTsunami_Prediction->__setItsData_Storage(NULL);
+        }
+    __setItsTsunami_Prediction(p_Tsunami_Prediction);
+}
+
+void Data_Storage::_clearItsTsunami_Prediction(void) {
+    NOTIFY_RELATION_CLEARED("itsTsunami_Prediction");
+    itsTsunami_Prediction = NULL;
 }
 
 void Data_Storage::rootState_entDef(void) {
@@ -403,6 +571,10 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                     if(raw_precipitation_type == 1){stored_precipitation_type = precipitation_type_enum::rain;}
                     if(raw_precipitation_type == 2){stored_precipitation_type = precipitation_type_enum::hail;}
                     if(raw_precipitation_type == 3){stored_precipitation_type = precipitation_type_enum::snow;}
+                    
+                    
+                    stored_vibrations = raw_vibrations;
+                    stored_vibration_location = raw_vibration_location;
                     //#]
                     rootState_timeout = scheduleTimeout(1000, "ROOT.polling_storm_data");
                     NOTIFY_TRANSITION_TERMINATED("2");
@@ -424,6 +596,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                     rootState_active = relaying_storm_data;
                     //#[ state relaying_storm_data.(Entry) 
                     relay_storm_data();
+                    relay_tsunami_data();
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("4");
                     res = eventConsumed;
@@ -466,6 +639,10 @@ void OMAnimatedData_Storage::serializeAttributes(AOMSAttributes* aomsAttributes)
     aomsAttributes->addAttribute("stored_wind_direction", x2String(myReal->stored_wind_direction));
     aomsAttributes->addAttribute("stored_wind_speed", x2String(myReal->stored_wind_speed));
     aomsAttributes->addAttribute("stored_precipitation_type", x2String((int)myReal->stored_precipitation_type));
+    aomsAttributes->addAttribute("raw_vibrations", x2String(myReal->raw_vibrations));
+    aomsAttributes->addAttribute("raw_vibration_location", x2String(myReal->raw_vibration_location));
+    aomsAttributes->addAttribute("stored_vibrations", x2String(myReal->stored_vibrations));
+    aomsAttributes->addAttribute("stored_vibration_location", x2String(myReal->stored_vibration_location));
 }
 
 void OMAnimatedData_Storage::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -473,6 +650,11 @@ void OMAnimatedData_Storage::serializeRelations(AOMSRelations* aomsRelations) co
     if(myReal->itsStorm_Prediction)
         {
             aomsRelations->ADD_ITEM(myReal->itsStorm_Prediction);
+        }
+    aomsRelations->addRelation("itsTsunami_Prediction", false, true);
+    if(myReal->itsTsunami_Prediction)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsTsunami_Prediction);
         }
 }
 

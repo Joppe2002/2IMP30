@@ -1,10 +1,10 @@
 /*********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Data_Storage
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Data_Storage.h
 *********************************************************************/
 
@@ -34,15 +34,22 @@
 //## class Data_Storage
 #include "int_raw_precipitation_type_ProxyFlowPropertyInterface.h"
 //## class Data_Storage
+#include "int_raw_vibration_location_ProxyFlowPropertyInterface.h"
+//## class Data_Storage
+#include "int_raw_vibrations_ProxyFlowPropertyInterface.h"
+//## class Data_Storage
 #include "int_raw_wind_speed_ProxyFlowPropertyInterface.h"
 //## link itsStorm_Prediction
 class Storm_Prediction;
+
+//## link itsTsunami_Prediction
+class Tsunami_Prediction;
 
 //## package Architecture
 
 //## class Data_Storage
 // Include sensor input
-class Data_Storage : public OMReactive, public int_raw_wind_speed_ProxyFlowPropertyInterface, public bool_raw_wind_direction_ProxyFlowPropertyInterface, public int_raw_precipitation_amount_ProxyFlowPropertyInterface, public int_raw_precipitation_type_ProxyFlowPropertyInterface {
+class Data_Storage : public OMReactive, public int_raw_wind_speed_ProxyFlowPropertyInterface, public bool_raw_wind_direction_ProxyFlowPropertyInterface, public int_raw_precipitation_amount_ProxyFlowPropertyInterface, public int_raw_precipitation_type_ProxyFlowPropertyInterface, public int_raw_vibrations_ProxyFlowPropertyInterface, public int_raw_vibration_location_ProxyFlowPropertyInterface {
 public :
 
 //#[ ignore
@@ -122,6 +129,61 @@ public :
         
         int_raw_wind_speed_ProxyFlowPropertyInterface* itsInt_raw_wind_speed_ProxyFlowPropertyInterface;		//## link itsInt_raw_wind_speed_ProxyFlowPropertyInterface
     };
+    
+    //## package Architecture
+    class p_Data_Storage_1_C : public int_raw_vibrations_ProxyFlowPropertyInterface, public int_raw_vibration_location_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_Data_Storage_1_C(void);
+        
+        //## auto_generated
+        virtual ~p_Data_Storage_1_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        void connectData_Storage(Data_Storage* part);
+        
+        //## auto_generated
+        int_raw_vibration_location_ProxyFlowPropertyInterface* getItsInt_raw_vibration_location_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        int_raw_vibrations_ProxyFlowPropertyInterface* getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        virtual void setRaw_vibration_location(int p_raw_vibration_location);
+        
+        //## auto_generated
+        virtual void setRaw_vibrations(int p_raw_vibrations);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(int_raw_vibration_location_ProxyFlowPropertyInterface* const p_int_raw_vibration_location_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
+        void setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_raw_vibration_location_ProxyFlowPropertyInterface* itsInt_raw_vibration_location_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibration_location_ProxyFlowPropertyInterface
+        
+        int_raw_vibrations_ProxyFlowPropertyInterface* itsInt_raw_vibrations_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibrations_ProxyFlowPropertyInterface
+    };
 //#]
 
     ////    Friends    ////
@@ -143,10 +205,17 @@ public :
     //## operation relay_storm_data()
     virtual void relay_storm_data(void);
     
+    //## operation relay_tsunami_data()
+    virtual void relay_tsunami_data(void);
+    
 //#[ ignore
     void setRaw_precipitation_amount(int p_raw_precipitation_amount);
     
     void setRaw_precipitation_type(int p_raw_precipitation_type);
+    
+    void setRaw_vibration_location(int p_raw_vibration_location);
+    
+    void setRaw_vibrations(int p_raw_vibrations);
     
     void setRaw_wind_direction(bool p_raw_wind_direction);
     
@@ -162,10 +231,22 @@ public :
     p_Data_Storage_C* get_p_Data_Storage(void) const;
     
     //## auto_generated
+    p_Data_Storage_1_C* getP_Data_Storage_1(void) const;
+    
+    //## auto_generated
+    p_Data_Storage_1_C* get_p_Data_Storage_1(void) const;
+    
+    //## auto_generated
     const int getRaw_precipitation_amount(void) const;
     
     //## auto_generated
     const int getRaw_precipitation_type(void) const;
+    
+    //## auto_generated
+    const int getRaw_vibration_location(void) const;
+    
+    //## auto_generated
+    const int getRaw_vibrations(void) const;
     
     //## auto_generated
     const bool getRaw_wind_direction(void) const;
@@ -186,6 +267,18 @@ public :
     void setStored_precipitation_type(const precipitation_type_enum p_stored_precipitation_type);
     
     //## auto_generated
+    const int getStored_vibration_location(void) const;
+    
+    //## auto_generated
+    void setStored_vibration_location(const int p_stored_vibration_location);
+    
+    //## auto_generated
+    const int getStored_vibrations(void) const;
+    
+    //## auto_generated
+    void setStored_vibrations(const int p_stored_vibrations);
+    
+    //## auto_generated
     const bool getStored_wind_direction(void) const;
     
     //## auto_generated
@@ -202,6 +295,12 @@ public :
     
     //## auto_generated
     void setItsStorm_Prediction(Storm_Prediction* const p_Storm_Prediction);
+    
+    //## auto_generated
+    const Tsunami_Prediction* getItsTsunami_Prediction(void) const;
+    
+    //## auto_generated
+    void setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
     
     //## auto_generated
     virtual bool cancelTimeout(const IOxfTimeout* arg);
@@ -231,6 +330,10 @@ private :
     
     int raw_precipitation_type;		//## attribute raw_precipitation_type
     
+    int raw_vibration_location;		//## attribute raw_vibration_location
+    
+    int raw_vibrations;		//## attribute raw_vibrations
+    
     bool raw_wind_direction;		//## attribute raw_wind_direction
     
     int raw_wind_speed;		//## attribute raw_wind_speed
@@ -238,6 +341,10 @@ private :
     int stored_precipitation_amount;		//## attribute stored_precipitation_amount
     
     precipitation_type_enum stored_precipitation_type;		//## attribute stored_precipitation_type
+    
+    int stored_vibration_location;		//## attribute stored_vibration_location
+    
+    int stored_vibrations;		//## attribute stored_vibrations
     
     bool stored_wind_direction;		//## attribute stored_wind_direction
     
@@ -247,9 +354,13 @@ private :
     
 //#[ ignore
     p_Data_Storage_C p_Data_Storage;
+    
+    p_Data_Storage_1_C p_Data_Storage_1;
 //#]
 
     Storm_Prediction* itsStorm_Prediction;		//## link itsStorm_Prediction
+    
+    Tsunami_Prediction* itsTsunami_Prediction;		//## link itsTsunami_Prediction
     
     ////    Framework operations    ////
 
@@ -263,6 +374,15 @@ public :
     
     //## auto_generated
     void _clearItsStorm_Prediction(void);
+    
+    //## auto_generated
+    void __setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
+    
+    //## auto_generated
+    void _setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
+    
+    //## auto_generated
+    void _clearItsTsunami_Prediction(void);
     
     // rootState:
     //## statechart_method

@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.cpp
 *********************************************************************/
 
@@ -225,9 +225,119 @@ void SMSWTD::p_SMSWTD_1_C::cleanUpRelations(void) {
             itsInt_raw_wind_speed_ProxyFlowPropertyInterface = NULL;
         }
 }
+
+SMSWTD::p_SMSWTD_2_C::p_SMSWTD_2_C(void) : int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_vibration_location_ProxyFlowPropertyInterface(), _p_(0), itsInt_raw_vibration_location_ProxyFlowPropertyInterface(NULL), itsInt_raw_vibrations_ProxyFlowPropertyInterface(NULL) {
+}
+
+SMSWTD::p_SMSWTD_2_C::~p_SMSWTD_2_C(void) {
+    cleanUpRelations();
+}
+
+void SMSWTD::p_SMSWTD_2_C::connectSMSWTD(SMSWTD* part) {
+    setItsInt_raw_vibrations_ProxyFlowPropertyInterface(part);
+    setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(part);
+    
+}
+
+int_raw_vibration_location_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_2_C::getItsInt_raw_vibration_location_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+int_raw_vibrations_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_2_C::getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+void SMSWTD::p_SMSWTD_2_C::setRaw_vibration_location(int p_raw_vibration_location) {
+    
+    if (itsInt_raw_vibration_location_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_vibration_location_ProxyFlowPropertyInterface->setRaw_vibration_location(p_raw_vibration_location);
+    }
+    
+}
+
+void SMSWTD::p_SMSWTD_2_C::setRaw_vibrations(int p_raw_vibrations) {
+    
+    if (itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_vibrations_ProxyFlowPropertyInterface->setRaw_vibrations(p_raw_vibrations);
+    }
+    
+}
+
+void SMSWTD::p_SMSWTD_2_C::setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(int_raw_vibration_location_ProxyFlowPropertyInterface* const p_int_raw_vibration_location_ProxyFlowPropertyInterface) {
+    itsInt_raw_vibration_location_ProxyFlowPropertyInterface = p_int_raw_vibration_location_ProxyFlowPropertyInterface;
+}
+
+void SMSWTD::p_SMSWTD_2_C::setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface) {
+    itsInt_raw_vibrations_ProxyFlowPropertyInterface = p_int_raw_vibrations_ProxyFlowPropertyInterface;
+}
+
+void SMSWTD::p_SMSWTD_2_C::cleanUpRelations(void) {
+    if(itsInt_raw_vibration_location_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_raw_vibration_location_ProxyFlowPropertyInterface = NULL;
+        }
+    if(itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_raw_vibrations_ProxyFlowPropertyInterface = NULL;
+        }
+}
+
+SMSWTD::p_SMSWTD_3_C::p_SMSWTD_3_C(void) : int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_vibration_location_ProxyFlowPropertyInterface(), _p_(0), itsInt_raw_vibration_location_ProxyFlowPropertyInterface(NULL), itsInt_raw_vibrations_ProxyFlowPropertyInterface(NULL) {
+}
+
+SMSWTD::p_SMSWTD_3_C::~p_SMSWTD_3_C(void) {
+    cleanUpRelations();
+}
+
+int_raw_vibration_location_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_3_C::getItsInt_raw_vibration_location_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+int_raw_vibrations_ProxyFlowPropertyInterface* SMSWTD::p_SMSWTD_3_C::getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+SMSWTD::p_SMSWTD_3_C* SMSWTD::p_SMSWTD_3_C::getOutBound(void) {
+    return this;
+}
+
+void SMSWTD::p_SMSWTD_3_C::setRaw_vibration_location(int p_raw_vibration_location) {
+    
+    if (itsInt_raw_vibration_location_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_vibration_location_ProxyFlowPropertyInterface->setRaw_vibration_location(p_raw_vibration_location);
+    }
+    
+}
+
+void SMSWTD::p_SMSWTD_3_C::setRaw_vibrations(int p_raw_vibrations) {
+    
+    if (itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL) {
+        itsInt_raw_vibrations_ProxyFlowPropertyInterface->setRaw_vibrations(p_raw_vibrations);
+    }
+    
+}
+
+void SMSWTD::p_SMSWTD_3_C::setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(int_raw_vibration_location_ProxyFlowPropertyInterface* const p_int_raw_vibration_location_ProxyFlowPropertyInterface) {
+    itsInt_raw_vibration_location_ProxyFlowPropertyInterface = p_int_raw_vibration_location_ProxyFlowPropertyInterface;
+}
+
+void SMSWTD::p_SMSWTD_3_C::setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface) {
+    itsInt_raw_vibrations_ProxyFlowPropertyInterface = p_int_raw_vibrations_ProxyFlowPropertyInterface;
+}
+
+void SMSWTD::p_SMSWTD_3_C::cleanUpRelations(void) {
+    if(itsInt_raw_vibration_location_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_raw_vibration_location_ProxyFlowPropertyInterface = NULL;
+        }
+    if(itsInt_raw_vibrations_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_raw_vibrations_ProxyFlowPropertyInterface = NULL;
+        }
+}
 //#]
 
-SMSWTD::SMSWTD(IOxfActive* const theActiveContext) : OMReactive(), int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), itsCultural_and_Geological_Differences(NULL), itsInformation_Channels(NULL), itsStakeholders(NULL), itsStandards_and_Regulations(NULL), itsStorm_Sensors(NULL), itsTsunami_Sensors(NULL) {
+SMSWTD::SMSWTD(IOxfActive* const theActiveContext) : OMReactive(), int_raw_wind_speed_ProxyFlowPropertyInterface(), bool_raw_wind_direction_ProxyFlowPropertyInterface(), int_raw_precipitation_amount_ProxyFlowPropertyInterface(), int_raw_precipitation_type_ProxyFlowPropertyInterface(), int_raw_vibrations_ProxyFlowPropertyInterface(), int_raw_vibration_location_ProxyFlowPropertyInterface(), itsCultural_and_Geological_Differences(NULL), itsInformation_Channels(NULL), itsStakeholders(NULL), itsStandards_and_Regulations(NULL), itsStorm_Sensors(NULL), itsTsunami_Sensors(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(SMSWTD, SMSWTD(), 0, Architecture_SMSWTD_SMSWTD_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
@@ -261,6 +371,24 @@ void SMSWTD::setRaw_precipitation_type(int p_raw_precipitation_type) {
         raw_precipitation_type = p_raw_precipitation_type;
         FLOW_DATA_RECEIVE("raw_precipitation_type", raw_precipitation_type, x2String);
         FLOW_DATA_SEND(raw_precipitation_type, p_SMSWTD_1, setRaw_precipitation_type, x2String);
+    }
+    
+}
+
+void SMSWTD::setRaw_vibration_location(int p_raw_vibration_location) {
+    if (raw_vibration_location != p_raw_vibration_location) {
+        raw_vibration_location = p_raw_vibration_location;
+        FLOW_DATA_RECEIVE("raw_vibration_location", raw_vibration_location, x2String);
+        FLOW_DATA_SEND(raw_vibration_location, p_SMSWTD_3, setRaw_vibration_location, x2String);
+    }
+    
+}
+
+void SMSWTD::setRaw_vibrations(int p_raw_vibrations) {
+    if (raw_vibrations != p_raw_vibrations) {
+        raw_vibrations = p_raw_vibrations;
+        FLOW_DATA_RECEIVE("raw_vibrations", raw_vibrations, x2String);
+        FLOW_DATA_SEND(raw_vibrations, p_SMSWTD_3, setRaw_vibrations, x2String);
     }
     
 }
@@ -300,12 +428,36 @@ SMSWTD::p_SMSWTD_1_C* SMSWTD::get_p_SMSWTD_1(void) const {
     return (SMSWTD::p_SMSWTD_1_C*) &p_SMSWTD_1;
 }
 
+SMSWTD::p_SMSWTD_2_C* SMSWTD::getP_SMSWTD_2(void) const {
+    return (SMSWTD::p_SMSWTD_2_C*) &p_SMSWTD_2;
+}
+
+SMSWTD::p_SMSWTD_2_C* SMSWTD::get_p_SMSWTD_2(void) const {
+    return (SMSWTD::p_SMSWTD_2_C*) &p_SMSWTD_2;
+}
+
+SMSWTD::p_SMSWTD_3_C* SMSWTD::getP_SMSWTD_3(void) const {
+    return (SMSWTD::p_SMSWTD_3_C*) &p_SMSWTD_3;
+}
+
+SMSWTD::p_SMSWTD_3_C* SMSWTD::get_p_SMSWTD_3(void) const {
+    return (SMSWTD::p_SMSWTD_3_C*) &p_SMSWTD_3;
+}
+
 const int SMSWTD::getRaw_precipitation_amount(void) const {
     return raw_precipitation_amount;
 }
 
 const int SMSWTD::getRaw_precipitation_type(void) const {
     return raw_precipitation_type;
+}
+
+const int SMSWTD::getRaw_vibration_location(void) const {
+    return raw_vibration_location;
+}
+
+const int SMSWTD::getRaw_vibrations(void) const {
+    return raw_vibrations;
 }
 
 const bool SMSWTD::getRaw_wind_direction(void) const {
@@ -424,6 +576,9 @@ bool SMSWTD::startBehavior(void) {
 void SMSWTD::initRelations(void) {
     if (get_p_SMSWTD() != NULL) {
         get_p_SMSWTD()->connectSMSWTD(this);
+    }
+    if (get_p_SMSWTD_2() != NULL) {
+        get_p_SMSWTD_2()->connectSMSWTD(this);
     }
 }
 
@@ -661,6 +816,8 @@ void OMAnimatedSMSWTD::serializeAttributes(AOMSAttributes* aomsAttributes) const
     aomsAttributes->addAttribute("raw_wind_direction", x2String(myReal->raw_wind_direction));
     aomsAttributes->addAttribute("raw_precipitation_amount", x2String(myReal->raw_precipitation_amount));
     aomsAttributes->addAttribute("raw_precipitation_type", x2String(myReal->raw_precipitation_type));
+    aomsAttributes->addAttribute("raw_vibrations", x2String(myReal->raw_vibrations));
+    aomsAttributes->addAttribute("raw_vibration_location", x2String(myReal->raw_vibration_location));
 }
 
 void OMAnimatedSMSWTD::serializeRelations(AOMSRelations* aomsRelations) const {

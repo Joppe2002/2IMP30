@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ProxyPortInterfaces
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\ProxyPortInterfaces.cpp
 *********************************************************************/
 
@@ -20,6 +20,10 @@
 #include "int_raw_precipitation_amount_ProxyFlowPropertyInterface.h"
 //## auto_generated
 #include "int_raw_precipitation_type_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "int_raw_vibration_location_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "int_raw_vibrations_ProxyFlowPropertyInterface.h"
 //## auto_generated
 #include "int_raw_wind_speed_ProxyFlowPropertyInterface.h"
 //## package ProxyPortInterfaces

@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.cpp
 *********************************************************************/
 
@@ -90,11 +90,11 @@ void Storm_Prediction::setPred_probability(const float p_pred_probability) {
     NOTIFY_SET_OPERATION;
 }
 
-const int Storm_Prediction::getPred_severity(void) const {
+const float Storm_Prediction::getPred_severity(void) const {
     return pred_severity;
 }
 
-void Storm_Prediction::setPred_severity(const int p_pred_severity) {
+void Storm_Prediction::setPred_severity(const float p_pred_severity) {
     pred_severity = p_pred_severity;
     NOTIFY_SET_OPERATION;
 }
@@ -505,7 +505,7 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_6_processEvent(void) {
                     printf("Test\n");
                     pred_direction = wind_direction;
                     pred_probability = storm_probability;
-                    pred_severity = (int)(((precipitation_amount) + wind_speed) /40.0f);
+                    pred_severity = ((precipitation_amount+1) * wind_speed) /2020;
                     pred_speed = wind_speed *0.8f;
                     
                     GEN(evPredictionReady);

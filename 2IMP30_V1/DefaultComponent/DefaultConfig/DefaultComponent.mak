@@ -55,9 +55,9 @@ LINK_FLAGS=$(LinkDebug)  /NOLOGO    $(SUBSYSTEM) /MACHINE:x64
 
 FLAGSFILE=
 RULESFILE=
-OMROOT="C:\Program Files\IBM\Rhapsody\10.0\Share"
-RHPROOT="C:\Program Files\IBM\Rhapsody\10.0"
-FRAMEWORK_LIB_ROOT="C:\ProgramData\IBM\Rhapsody\10.0x64\UserShare"
+OMROOT="C:\Program Files\IBM\Rhapsody\10.0.1\Share"
+RHPROOT="C:\Program Files\IBM\Rhapsody\10.0.1"
+FRAMEWORK_LIB_ROOT="C:\ProgramData\IBM\Rhapsody\10.0.1x64\UserShare"
 
 CPP_EXT=.cpp
 H_EXT=.h
@@ -285,7 +285,7 @@ Storm_Sensors.obj : Storm_Sensors.cpp Storm_Sensors.h    SystemContext.h SMSWTD.
 
 
 
-Tsunami_Sensors.obj : Tsunami_Sensors.cpp Tsunami_Sensors.h    SystemContext.h SMSWTD.h 
+Tsunami_Sensors.obj : Tsunami_Sensors.cpp Tsunami_Sensors.h    SystemContext.h SMSWTD.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_vibration_location_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Tsunami_Sensors.obj" "Tsunami_Sensors.cpp" 
 
@@ -303,19 +303,19 @@ Stakeholders.obj : Stakeholders.cpp Stakeholders.h    SystemContext.h SMSWTD.h
 
 
 
-SMSWTD.obj : SMSWTD.cpp SMSWTD.h    Architecture.h Stakeholders.h Information_Channels.h Standards_and_Regulations.h Cultural_and_Geological_Differences.h Prediction_Module.h Actionable_Information_Generator.h Data_Storage.h System_Output.h Tsunami_Sensors.h Storm_Sensors.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+SMSWTD.obj : SMSWTD.cpp SMSWTD.h    Architecture.h Stakeholders.h Information_Channels.h Standards_and_Regulations.h Cultural_and_Geological_Differences.h Prediction_Module.h Actionable_Information_Generator.h Data_Storage.h System_Output.h Tsunami_Sensors.h Storm_Sensors.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_vibration_location_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD.obj" "SMSWTD.cpp" 
 
 
 
-Data_Storage.obj : Data_Storage.cpp Data_Storage.h    Architecture.h Storm_Prediction.h Behavior.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+Data_Storage.obj : Data_Storage.cpp Data_Storage.h    Architecture.h Storm_Prediction.h Tsunami_Prediction.h Behavior.h int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_vibration_location_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Data_Storage.obj" "Data_Storage.cpp" 
 
 
 
-Tsunami_Prediction.obj : Tsunami_Prediction.cpp Tsunami_Prediction.h    Architecture.h 
+Tsunami_Prediction.obj : Tsunami_Prediction.cpp Tsunami_Prediction.h    Architecture.h Data_Storage.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Tsunami_Prediction.obj" "Tsunami_Prediction.cpp" 
 
@@ -399,7 +399,7 @@ Behavior.obj : Behavior.cpp Behavior.h
 
 
 
-ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h 
+ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_raw_wind_speed_ProxyFlowPropertyInterface.h bool_raw_wind_direction_ProxyFlowPropertyInterface.h int_raw_precipitation_amount_ProxyFlowPropertyInterface.h int_raw_precipitation_type_ProxyFlowPropertyInterface.h int_raw_vibrations_ProxyFlowPropertyInterface.h int_raw_vibration_location_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ProxyPortInterfaces.obj" "ProxyPortInterfaces.cpp" 
 

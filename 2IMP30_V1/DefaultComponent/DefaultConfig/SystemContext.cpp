@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SystemContext
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SystemContext.cpp
 *********************************************************************/
 
@@ -83,6 +83,13 @@ void SystemContext_OMConnectRelations(void) {
         itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface());
         
         itsStorm_Sensors.get_p_Storm_Sensors()->setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD()->getItsInt_raw_precipitation_type_ProxyFlowPropertyInterface());
+        
+    }
+    {
+        
+        itsTsunami_Sensors.get_p_Tsunami_Sensors()->setItsInt_raw_vibrations_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD_2()->getItsInt_raw_vibrations_ProxyFlowPropertyInterface());
+        
+        itsTsunami_Sensors.get_p_Tsunami_Sensors()->setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(itsSMSWTD.get_p_SMSWTD_2()->getItsInt_raw_vibration_location_ProxyFlowPropertyInterface());
         
     }
     

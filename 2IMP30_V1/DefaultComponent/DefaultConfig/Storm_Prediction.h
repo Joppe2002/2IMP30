@@ -1,10 +1,10 @@
 /*********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.h
 *********************************************************************/
 
@@ -86,10 +86,10 @@ public :
     void setPred_probability(const float p_pred_probability);
     
     //## auto_generated
-    const int getPred_severity(void) const;
+    const float getPred_severity(void) const;
     
     //## auto_generated
-    void setPred_severity(const int p_pred_severity);
+    void setPred_severity(const float p_pred_severity);
     
     //## auto_generated
     const float getPred_speed(void) const;
@@ -156,7 +156,7 @@ private :
     
     float pred_probability;		//## attribute pred_probability
     
-    int pred_severity;		//## attribute pred_severity
+    float pred_severity;		//## attribute pred_severity
     
     float pred_speed;		//## attribute pred_speed
     

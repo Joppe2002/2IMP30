@@ -1,10 +1,10 @@
 /********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
 *********************************************************************/
 
@@ -77,6 +77,7 @@ void Architecture_initRelations(void) {
         }
     }
     itsData_Storage.setItsStorm_Prediction(&itsStorm_Prediction);
+    itsData_Storage.setItsTsunami_Prediction(&itsTsunami_Prediction);
     {
         
         itsSMSWTD.get_p_SMSWTD_1()->setItsInt_raw_wind_speed_ProxyFlowPropertyInterface(itsData_Storage.get_p_Data_Storage()->getItsInt_raw_wind_speed_ProxyFlowPropertyInterface());
@@ -86,6 +87,13 @@ void Architecture_initRelations(void) {
         itsSMSWTD.get_p_SMSWTD_1()->setItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface(itsData_Storage.get_p_Data_Storage()->getItsInt_raw_precipitation_amount_ProxyFlowPropertyInterface());
         
         itsSMSWTD.get_p_SMSWTD_1()->setItsInt_raw_precipitation_type_ProxyFlowPropertyInterface(itsData_Storage.get_p_Data_Storage()->getItsInt_raw_precipitation_type_ProxyFlowPropertyInterface());
+        
+    }
+    {
+        
+        itsSMSWTD.get_p_SMSWTD_3()->setItsInt_raw_vibrations_ProxyFlowPropertyInterface(itsData_Storage.get_p_Data_Storage_1()->getItsInt_raw_vibrations_ProxyFlowPropertyInterface());
+        
+        itsSMSWTD.get_p_SMSWTD_3()->setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(itsData_Storage.get_p_Data_Storage_1()->getItsInt_raw_vibration_location_ProxyFlowPropertyInterface());
         
     }
     

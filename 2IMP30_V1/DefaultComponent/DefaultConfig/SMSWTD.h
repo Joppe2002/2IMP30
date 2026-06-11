@@ -1,10 +1,10 @@
 /*********************************************************************
-	Rhapsody	: 10.0 
-	Login		: 20214193
+	Rhapsody	: 10.0.1 
+	Login		: neppo
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Thu, 11, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -36,6 +36,10 @@
 //## class SMSWTD
 #include "int_raw_precipitation_type_ProxyFlowPropertyInterface.h"
 //## class SMSWTD
+#include "int_raw_vibration_location_ProxyFlowPropertyInterface.h"
+//## class SMSWTD
+#include "int_raw_vibrations_ProxyFlowPropertyInterface.h"
+//## class SMSWTD
 #include "int_raw_wind_speed_ProxyFlowPropertyInterface.h"
 //## classInstance itsPrediction_Module
 #include "Prediction_Module.h"
@@ -62,7 +66,7 @@ class Tsunami_Sensors;
 //## package Architecture
 
 //## class SMSWTD
-class SMSWTD : public OMReactive, public int_raw_wind_speed_ProxyFlowPropertyInterface, public bool_raw_wind_direction_ProxyFlowPropertyInterface, public int_raw_precipitation_amount_ProxyFlowPropertyInterface, public int_raw_precipitation_type_ProxyFlowPropertyInterface {
+class SMSWTD : public OMReactive, public int_raw_wind_speed_ProxyFlowPropertyInterface, public bool_raw_wind_direction_ProxyFlowPropertyInterface, public int_raw_precipitation_amount_ProxyFlowPropertyInterface, public int_raw_precipitation_type_ProxyFlowPropertyInterface, public int_raw_vibrations_ProxyFlowPropertyInterface, public int_raw_vibration_location_ProxyFlowPropertyInterface {
 public :
 
 //#[ ignore
@@ -219,6 +223,116 @@ public :
         
         int_raw_wind_speed_ProxyFlowPropertyInterface* itsInt_raw_wind_speed_ProxyFlowPropertyInterface;		//## link itsInt_raw_wind_speed_ProxyFlowPropertyInterface
     };
+    
+    //## package Architecture
+    class p_SMSWTD_2_C : public int_raw_vibrations_ProxyFlowPropertyInterface, public int_raw_vibration_location_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_SMSWTD_2_C(void);
+        
+        //## auto_generated
+        virtual ~p_SMSWTD_2_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        void connectSMSWTD(SMSWTD* part);
+        
+        //## auto_generated
+        int_raw_vibration_location_ProxyFlowPropertyInterface* getItsInt_raw_vibration_location_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        int_raw_vibrations_ProxyFlowPropertyInterface* getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        virtual void setRaw_vibration_location(int p_raw_vibration_location);
+        
+        //## auto_generated
+        virtual void setRaw_vibrations(int p_raw_vibrations);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(int_raw_vibration_location_ProxyFlowPropertyInterface* const p_int_raw_vibration_location_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
+        void setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_raw_vibration_location_ProxyFlowPropertyInterface* itsInt_raw_vibration_location_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibration_location_ProxyFlowPropertyInterface
+        
+        int_raw_vibrations_ProxyFlowPropertyInterface* itsInt_raw_vibrations_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibrations_ProxyFlowPropertyInterface
+    };
+    
+    //## package Architecture
+    class p_SMSWTD_3_C : public int_raw_vibrations_ProxyFlowPropertyInterface, public int_raw_vibration_location_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_SMSWTD_3_C(void);
+        
+        //## auto_generated
+        virtual ~p_SMSWTD_3_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        int_raw_vibration_location_ProxyFlowPropertyInterface* getItsInt_raw_vibration_location_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        int_raw_vibrations_ProxyFlowPropertyInterface* getItsInt_raw_vibrations_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        SMSWTD::p_SMSWTD_3_C* getOutBound(void);
+        
+        //## auto_generated
+        virtual void setRaw_vibration_location(int p_raw_vibration_location);
+        
+        //## auto_generated
+        virtual void setRaw_vibrations(int p_raw_vibrations);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_raw_vibration_location_ProxyFlowPropertyInterface(int_raw_vibration_location_ProxyFlowPropertyInterface* const p_int_raw_vibration_location_ProxyFlowPropertyInterface);
+        
+        //## auto_generated
+        void setItsInt_raw_vibrations_ProxyFlowPropertyInterface(int_raw_vibrations_ProxyFlowPropertyInterface* const p_int_raw_vibrations_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_raw_vibration_location_ProxyFlowPropertyInterface* itsInt_raw_vibration_location_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibration_location_ProxyFlowPropertyInterface
+        
+        int_raw_vibrations_ProxyFlowPropertyInterface* itsInt_raw_vibrations_ProxyFlowPropertyInterface;		//## link itsInt_raw_vibrations_ProxyFlowPropertyInterface
+    };
 //#]
 
     ////    Friends    ////
@@ -242,6 +356,10 @@ public :
     
     void setRaw_precipitation_type(int p_raw_precipitation_type);
     
+    void setRaw_vibration_location(int p_raw_vibration_location);
+    
+    void setRaw_vibrations(int p_raw_vibrations);
+    
     void setRaw_wind_direction(bool p_raw_wind_direction);
     
     void setRaw_wind_speed(int p_raw_wind_speed);
@@ -262,10 +380,28 @@ public :
     p_SMSWTD_1_C* get_p_SMSWTD_1(void) const;
     
     //## auto_generated
+    p_SMSWTD_2_C* getP_SMSWTD_2(void) const;
+    
+    //## auto_generated
+    p_SMSWTD_2_C* get_p_SMSWTD_2(void) const;
+    
+    //## auto_generated
+    p_SMSWTD_3_C* getP_SMSWTD_3(void) const;
+    
+    //## auto_generated
+    p_SMSWTD_3_C* get_p_SMSWTD_3(void) const;
+    
+    //## auto_generated
     const int getRaw_precipitation_amount(void) const;
     
     //## auto_generated
     const int getRaw_precipitation_type(void) const;
+    
+    //## auto_generated
+    const int getRaw_vibration_location(void) const;
+    
+    //## auto_generated
+    const int getRaw_vibrations(void) const;
     
     //## auto_generated
     const bool getRaw_wind_direction(void) const;
@@ -340,6 +476,10 @@ private :
     
     int raw_precipitation_type;		//## attribute raw_precipitation_type
     
+    int raw_vibration_location;		//## attribute raw_vibration_location
+    
+    int raw_vibrations;		//## attribute raw_vibrations
+    
     bool raw_wind_direction;		//## attribute raw_wind_direction
     
     int raw_wind_speed;		//## attribute raw_wind_speed
@@ -350,6 +490,10 @@ private :
     p_SMSWTD_C p_SMSWTD;
     
     p_SMSWTD_1_C p_SMSWTD_1;
+    
+    p_SMSWTD_2_C p_SMSWTD_2;
+    
+    p_SMSWTD_3_C p_SMSWTD_3;
 //#]
 
     Actionable_Information_Generator itsActionable_Information_Generator;		//## classInstance itsActionable_Information_Generator
