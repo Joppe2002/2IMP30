@@ -389,9 +389,9 @@ void Data_Storage::setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_
 
 bool Data_Storage::cancelTimeout(const IOxfTimeout* arg) {
     bool res = false;
-    if(rootState_timeout == arg)
+    if(MainBehavior_timeout == arg)
         {
-            rootState_timeout = NULL;
+            MainBehavior_timeout = NULL;
             res = true;
         }
     return res;
@@ -415,7 +415,9 @@ void Data_Storage::initRelations(void) {
 void Data_Storage::initStatechart(void) {
     rootState_subState = OMNonState;
     rootState_active = OMNonState;
-    rootState_timeout = NULL;
+    MainBehavior_subState = OMNonState;
+    MainBehavior_timeout = NULL;
+    ErrorHandling_subState = OMNonState;
 }
 
 void Data_Storage::cleanUpRelations(void) {
@@ -442,7 +444,7 @@ void Data_Storage::cleanUpRelations(void) {
 }
 
 void Data_Storage::cancelTimeouts(void) {
-    cancel(rootState_timeout);
+    cancel(MainBehavior_timeout);
 }
 
 void Data_Storage::__setItsStorm_Prediction(Storm_Prediction* const p_Storm_Prediction) {
@@ -495,61 +497,225 @@ void Data_Storage::_clearItsTsunami_Prediction(void) {
     itsTsunami_Prediction = NULL;
 }
 
+void Data_Storage::MainBehavior_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.MainBehavior");
+    rootState_subState = MainBehavior;
+    NOTIFY_TRANSITION_STARTED("0");
+    NOTIFY_STATE_ENTERED("ROOT.MainBehavior.idle");
+    MainBehavior_subState = idle;
+    rootState_active = idle;
+    MainBehavior_timeout = scheduleTimeout(1000, "ROOT.MainBehavior.idle");
+    NOTIFY_TRANSITION_TERMINATED("0");
+}
+
+void Data_Storage::MainBehavior_exit(void) {
+    switch (MainBehavior_subState) {
+        // State polling_storm_data
+        case polling_storm_data:
+        {
+            cancel(MainBehavior_timeout);
+            NOTIFY_STATE_EXITED("ROOT.MainBehavior.polling_storm_data");
+        }
+        break;
+        // State relaying_storm_data
+        case relaying_storm_data:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.MainBehavior.relaying_storm_data");
+        }
+        break;
+        // State idle
+        case idle:
+        {
+            cancel(MainBehavior_timeout);
+            NOTIFY_STATE_EXITED("ROOT.MainBehavior.idle");
+        }
+        break;
+        case accepttimeevent_3:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.MainBehavior.accepttimeevent_3");
+        }
+        break;
+        case accepttimeevent_2:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.MainBehavior.accepttimeevent_2");
+        }
+        break;
+        default:
+            break;
+    }
+    MainBehavior_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.MainBehavior");
+}
+
+IOxfReactive::TakeEventStatus Data_Storage::MainBehavior_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorOccuredDS_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("7");
+            MainBehavior_exit();
+            ErrorHandling_entDef();
+            NOTIFY_TRANSITION_TERMINATED("7");
+            res = eventConsumed;
+        }
+    
+    return res;
+}
+
+void Data_Storage::ErrorHandling_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling");
+    rootState_subState = ErrorHandling;
+    //#[ state ErrorHandling.(Entry) 
+    printf("Data Storage not working");
+    //#]
+    NOTIFY_TRANSITION_STARTED("9");
+    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Error");
+    ErrorHandling_subState = Error;
+    rootState_active = Error;
+    NOTIFY_TRANSITION_TERMINATED("9");
+}
+
+IOxfReactive::TakeEventStatus Data_Storage::ErrorHandling_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorHandledDS_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("8");
+            switch (ErrorHandling_subState) {
+                // State Error
+                case Error:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
+                }
+                break;
+                // State Handled
+                case Handled:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Handled");
+                }
+                break;
+                default:
+                    break;
+            }
+            ErrorHandling_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.ErrorHandling");
+            MainBehavior_entDef();
+            NOTIFY_TRANSITION_TERMINATED("8");
+            res = eventConsumed;
+        }
+    
+    return res;
+}
+
 void Data_Storage::rootState_entDef(void) {
     {
         NOTIFY_STATE_ENTERED("ROOT");
-        NOTIFY_TRANSITION_STARTED("0");
-        NOTIFY_STATE_ENTERED("ROOT.idle");
-        rootState_subState = idle;
-        rootState_active = idle;
-        rootState_timeout = scheduleTimeout(1000, "ROOT.idle");
-        NOTIFY_TRANSITION_TERMINATED("0");
+        NOTIFY_TRANSITION_STARTED("6");
+        MainBehavior_entDef();
+        NOTIFY_TRANSITION_TERMINATED("6");
     }
 }
 
 IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (rootState_active) {
-        // State idle
-        case idle:
-        {
-            if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
-                {
-                    if(getCurrentEvent() == rootState_timeout)
-                        {
-                            NOTIFY_TRANSITION_STARTED("1");
-                            cancel(rootState_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.idle");
-                            NOTIFY_STATE_ENTERED("ROOT.accepttimeevent_2");
-                            pushNullTransition();
-                            rootState_subState = accepttimeevent_2;
-                            rootState_active = accepttimeevent_2;
-                            NOTIFY_TRANSITION_TERMINATED("1");
-                            res = eventConsumed;
-                        }
-                }
-            
-        }
-        break;
         // State polling_storm_data
         case polling_storm_data:
         {
             if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
                 {
-                    if(getCurrentEvent() == rootState_timeout)
+                    if(getCurrentEvent() == MainBehavior_timeout)
                         {
                             NOTIFY_TRANSITION_STARTED("3");
-                            cancel(rootState_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.polling_storm_data");
-                            NOTIFY_STATE_ENTERED("ROOT.accepttimeevent_3");
+                            cancel(MainBehavior_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.MainBehavior.polling_storm_data");
+                            NOTIFY_STATE_ENTERED("ROOT.MainBehavior.accepttimeevent_3");
                             pushNullTransition();
-                            rootState_subState = accepttimeevent_3;
+                            MainBehavior_subState = accepttimeevent_3;
                             rootState_active = accepttimeevent_3;
                             NOTIFY_TRANSITION_TERMINATED("3");
                             res = eventConsumed;
                         }
                 }
             
+            if(res == eventNotConsumed)
+                {
+                    res = MainBehavior_handleEvent();
+                }
+        }
+        break;
+        // State relaying_storm_data
+        case relaying_storm_data:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("5");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.MainBehavior.relaying_storm_data");
+                    NOTIFY_STATE_ENTERED("ROOT.MainBehavior.idle");
+                    MainBehavior_subState = idle;
+                    rootState_active = idle;
+                    MainBehavior_timeout = scheduleTimeout(1000, "ROOT.MainBehavior.idle");
+                    NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+            
+            if(res == eventNotConsumed)
+                {
+                    res = MainBehavior_handleEvent();
+                }
+        }
+        break;
+        // State idle
+        case idle:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
+                {
+                    if(getCurrentEvent() == MainBehavior_timeout)
+                        {
+                            NOTIFY_TRANSITION_STARTED("1");
+                            cancel(MainBehavior_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.MainBehavior.idle");
+                            NOTIFY_STATE_ENTERED("ROOT.MainBehavior.accepttimeevent_2");
+                            pushNullTransition();
+                            MainBehavior_subState = accepttimeevent_2;
+                            rootState_active = accepttimeevent_2;
+                            NOTIFY_TRANSITION_TERMINATED("1");
+                            res = eventConsumed;
+                        }
+                }
+            
+            if(res == eventNotConsumed)
+                {
+                    res = MainBehavior_handleEvent();
+                }
+        }
+        break;
+        case accepttimeevent_3:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("4");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.MainBehavior.accepttimeevent_3");
+                    NOTIFY_STATE_ENTERED("ROOT.MainBehavior.relaying_storm_data");
+                    pushNullTransition();
+                    MainBehavior_subState = relaying_storm_data;
+                    rootState_active = relaying_storm_data;
+                    //#[ state MainBehavior.relaying_storm_data.(Entry) 
+                    relay_storm_data();
+                    relay_tsunami_data();
+                    //#]
+                    NOTIFY_TRANSITION_TERMINATED("4");
+                    res = eventConsumed;
+                }
+            
+            if(res == eventNotConsumed)
+                {
+                    res = MainBehavior_handleEvent();
+                }
         }
         break;
         case accepttimeevent_2:
@@ -558,11 +724,11 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                 {
                     NOTIFY_TRANSITION_STARTED("2");
                     popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.accepttimeevent_2");
-                    NOTIFY_STATE_ENTERED("ROOT.polling_storm_data");
-                    rootState_subState = polling_storm_data;
+                    NOTIFY_STATE_EXITED("ROOT.MainBehavior.accepttimeevent_2");
+                    NOTIFY_STATE_ENTERED("ROOT.MainBehavior.polling_storm_data");
+                    MainBehavior_subState = polling_storm_data;
                     rootState_active = polling_storm_data;
-                    //#[ state polling_storm_data.(Entry) 
+                    //#[ state MainBehavior.polling_storm_data.(Entry) 
                     stored_precipitation_amount = raw_precipitation_amount;
                     stored_wind_speed = raw_wind_speed;
                     stored_wind_direction = raw_wind_direction;
@@ -574,50 +740,44 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                     if(raw_precipitation_type == 2){stored_precipitation_type = precipitation_type_enum::hail;}
                     if(raw_precipitation_type == 3){stored_precipitation_type = precipitation_type_enum::snow;}
                     //#]
-                    rootState_timeout = scheduleTimeout(1000, "ROOT.polling_storm_data");
+                    MainBehavior_timeout = scheduleTimeout(1000, "ROOT.MainBehavior.polling_storm_data");
                     NOTIFY_TRANSITION_TERMINATED("2");
                     res = eventConsumed;
                 }
             
+            if(res == eventNotConsumed)
+                {
+                    res = MainBehavior_handleEvent();
+                }
         }
         break;
-        case accepttimeevent_3:
+        // State Error
+        case Error:
         {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+            if(IS_EVENT_TYPE_OF(evRepairDS_Architecture_id) == 1)
                 {
-                    NOTIFY_TRANSITION_STARTED("4");
-                    popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.accepttimeevent_3");
-                    NOTIFY_STATE_ENTERED("ROOT.relaying_storm_data");
-                    pushNullTransition();
-                    rootState_subState = relaying_storm_data;
-                    rootState_active = relaying_storm_data;
-                    //#[ state relaying_storm_data.(Entry) 
-                    relay_storm_data();
-                    relay_tsunami_data();
+                    NOTIFY_TRANSITION_STARTED("10");
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
+                    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Handled");
+                    ErrorHandling_subState = Handled;
+                    rootState_active = Handled;
+                    //#[ state ErrorHandling.Handled.(Entry) 
+                    GEN(evErrorHandledDS());
                     //#]
-                    NOTIFY_TRANSITION_TERMINATED("4");
+                    NOTIFY_TRANSITION_TERMINATED("10");
                     res = eventConsumed;
                 }
             
+            if(res == eventNotConsumed)
+                {
+                    res = ErrorHandling_handleEvent();
+                }
         }
         break;
-        // State relaying_storm_data
-        case relaying_storm_data:
+        // State Handled
+        case Handled:
         {
-            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
-                {
-                    NOTIFY_TRANSITION_STARTED("5");
-                    popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.relaying_storm_data");
-                    NOTIFY_STATE_ENTERED("ROOT.idle");
-                    rootState_subState = idle;
-                    rootState_active = idle;
-                    rootState_timeout = scheduleTimeout(1000, "ROOT.idle");
-                    NOTIFY_TRANSITION_TERMINATED("5");
-                    res = eventConsumed;
-                }
-            
+            res = ErrorHandling_handleEvent();
         }
         break;
         default:
@@ -659,19 +819,37 @@ void OMAnimatedData_Storage::serializeRelations(AOMSRelations* aomsRelations) co
 void OMAnimatedData_Storage::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
     switch (myReal->rootState_subState) {
-        case Data_Storage::idle:
+        case Data_Storage::MainBehavior:
         {
-            idle_serializeStates(aomsState);
+            MainBehavior_serializeStates(aomsState);
         }
         break;
+        case Data_Storage::ErrorHandling:
+        {
+            ErrorHandling_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedData_Storage::MainBehavior_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.MainBehavior");
+    switch (myReal->MainBehavior_subState) {
         case Data_Storage::polling_storm_data:
         {
             polling_storm_data_serializeStates(aomsState);
         }
         break;
-        case Data_Storage::accepttimeevent_2:
+        case Data_Storage::relaying_storm_data:
         {
-            accepttimeevent_2_serializeStates(aomsState);
+            relaying_storm_data_serializeStates(aomsState);
+        }
+        break;
+        case Data_Storage::idle:
+        {
+            idle_serializeStates(aomsState);
         }
         break;
         case Data_Storage::accepttimeevent_3:
@@ -679,9 +857,9 @@ void OMAnimatedData_Storage::rootState_serializeStates(AOMSState* aomsState) con
             accepttimeevent_3_serializeStates(aomsState);
         }
         break;
-        case Data_Storage::relaying_storm_data:
+        case Data_Storage::accepttimeevent_2:
         {
-            relaying_storm_data_serializeStates(aomsState);
+            accepttimeevent_2_serializeStates(aomsState);
         }
         break;
         default:
@@ -690,23 +868,49 @@ void OMAnimatedData_Storage::rootState_serializeStates(AOMSState* aomsState) con
 }
 
 void OMAnimatedData_Storage::relaying_storm_data_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.relaying_storm_data");
+    aomsState->addState("ROOT.MainBehavior.relaying_storm_data");
 }
 
 void OMAnimatedData_Storage::polling_storm_data_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.polling_storm_data");
+    aomsState->addState("ROOT.MainBehavior.polling_storm_data");
 }
 
 void OMAnimatedData_Storage::idle_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.idle");
+    aomsState->addState("ROOT.MainBehavior.idle");
 }
 
 void OMAnimatedData_Storage::accepttimeevent_3_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.accepttimeevent_3");
+    aomsState->addState("ROOT.MainBehavior.accepttimeevent_3");
 }
 
 void OMAnimatedData_Storage::accepttimeevent_2_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.accepttimeevent_2");
+    aomsState->addState("ROOT.MainBehavior.accepttimeevent_2");
+}
+
+void OMAnimatedData_Storage::ErrorHandling_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling");
+    switch (myReal->ErrorHandling_subState) {
+        case Data_Storage::Error:
+        {
+            Error_serializeStates(aomsState);
+        }
+        break;
+        case Data_Storage::Handled:
+        {
+            Handled_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedData_Storage::Handled_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling.Handled");
+}
+
+void OMAnimatedData_Storage::Error_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling.Error");
 }
 //#]
 

@@ -102,6 +102,24 @@
 #define evRepairStPred_UNSERIALIZE OM_NO_OP
 
 #define evRepairStPred_CONSTRUCTOR evRepairStPred()
+
+#define evErrorOccuredDS_SERIALIZE OM_NO_OP
+
+#define evErrorOccuredDS_UNSERIALIZE OM_NO_OP
+
+#define evErrorOccuredDS_CONSTRUCTOR evErrorOccuredDS()
+
+#define evErrorHandledDS_SERIALIZE OM_NO_OP
+
+#define evErrorHandledDS_UNSERIALIZE OM_NO_OP
+
+#define evErrorHandledDS_CONSTRUCTOR evErrorHandledDS()
+
+#define evRepairDS_SERIALIZE OM_NO_OP
+
+#define evRepairDS_UNSERIALIZE OM_NO_OP
+
+#define evRepairDS_CONSTRUCTOR evRepairDS()
 //#]
 
 //## package Architecture
@@ -371,6 +389,42 @@ const IOxfEvent::ID evRepairStPred_Architecture_id(11212);
 //#]
 
 IMPLEMENT_META_EVENT_P(evRepairStPred, Architecture, Architecture, evRepairStPred())
+
+//## event evErrorOccuredDS()
+evErrorOccuredDS::evErrorOccuredDS(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorOccuredDS)
+    setId(evErrorOccuredDS_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorOccuredDS_Architecture_id(11213);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorOccuredDS, Architecture, Architecture, evErrorOccuredDS())
+
+//## event evErrorHandledDS()
+evErrorHandledDS::evErrorHandledDS(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorHandledDS)
+    setId(evErrorHandledDS_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorHandledDS_Architecture_id(11214);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorHandledDS, Architecture, Architecture, evErrorHandledDS())
+
+//## event evRepairDS()
+evRepairDS::evRepairDS(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evRepairDS)
+    setId(evRepairDS_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evRepairDS_Architecture_id(11215);
+//#]
+
+IMPLEMENT_META_EVENT_P(evRepairDS, Architecture, Architecture, evRepairDS())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp

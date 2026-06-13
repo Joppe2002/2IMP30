@@ -418,6 +418,90 @@ class OMAnimatedevRepairStPred : virtual public AOMEvent {
 extern const IOxfEvent::ID evRepairStPred_Architecture_id;
 //#]
 
+//## event evErrorOccuredDS()
+class evErrorOccuredDS : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorOccuredDS;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorOccuredDS(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorOccuredDS : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorOccuredDS)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorOccuredDS_Architecture_id;
+//#]
+
+//## event evErrorHandledDS()
+class evErrorHandledDS : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorHandledDS;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorHandledDS(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorHandledDS : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorHandledDS)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorHandledDS_Architecture_id;
+//#]
+
+//## event evRepairDS()
+class evRepairDS : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevRepairDS;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evRepairDS(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevRepairDS : virtual public AOMEvent {
+    DECLARE_META_EVENT(evRepairDS)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evRepairDS_Architecture_id;
+//#]
+
 #endif
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h

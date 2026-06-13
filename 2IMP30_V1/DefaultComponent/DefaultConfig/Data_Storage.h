@@ -388,6 +388,19 @@ public :
     //## statechart_method
     inline RhpBoolean rootState_IN(void) const;
     
+    // MainBehavior:
+    //## statechart_method
+    inline RhpBoolean MainBehavior_IN(void) const;
+    
+    //## statechart_method
+    void MainBehavior_entDef(void);
+    
+    //## statechart_method
+    void MainBehavior_exit(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus MainBehavior_handleEvent(void);
+    
     // relaying_storm_data:
     //## statechart_method
     inline RhpBoolean relaying_storm_data_IN(void) const;
@@ -407,6 +420,24 @@ public :
     // accepttimeevent_2:
     //## statechart_method
     inline RhpBoolean accepttimeevent_2_IN(void) const;
+    
+    // ErrorHandling:
+    //## statechart_method
+    inline RhpBoolean ErrorHandling_IN(void) const;
+    
+    //## statechart_method
+    void ErrorHandling_entDef(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus ErrorHandling_handleEvent(void);
+    
+    // Handled:
+    //## statechart_method
+    inline RhpBoolean Handled_IN(void) const;
+    
+    // Error:
+    //## statechart_method
+    inline RhpBoolean Error_IN(void) const;
 
 protected :
 
@@ -421,11 +452,15 @@ protected :
 //#[ ignore
     enum Data_Storage_Enum {
         OMNonState = 0,
-        relaying_storm_data = 1,
-        polling_storm_data = 2,
-        idle = 3,
-        accepttimeevent_3 = 4,
-        accepttimeevent_2 = 5
+        MainBehavior = 1,
+        relaying_storm_data = 2,
+        polling_storm_data = 3,
+        idle = 4,
+        accepttimeevent_3 = 5,
+        accepttimeevent_2 = 6,
+        ErrorHandling = 7,
+        Handled = 8,
+        Error = 9
     };
 //#]
 
@@ -436,7 +471,11 @@ private :
     
     Data_Storage_Enum rootState_active;
     
-    IOxfTimeout* rootState_timeout;
+    Data_Storage_Enum MainBehavior_subState;
+    
+    IOxfTimeout* MainBehavior_timeout;
+    
+    Data_Storage_Enum ErrorHandling_subState;
 //#]
 };
 
@@ -457,6 +496,9 @@ public :
     void rootState_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void MainBehavior_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void relaying_storm_data_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
@@ -470,6 +512,15 @@ public :
     
     //## statechart_method
     void accepttimeevent_2_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void ErrorHandling_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Handled_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Error_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -478,24 +529,40 @@ inline RhpBoolean Data_Storage::rootState_IN(void) const {
     return true;
 }
 
+inline RhpBoolean Data_Storage::MainBehavior_IN(void) const {
+    return rootState_subState == MainBehavior;
+}
+
 inline RhpBoolean Data_Storage::relaying_storm_data_IN(void) const {
-    return rootState_subState == relaying_storm_data;
+    return MainBehavior_subState == relaying_storm_data;
 }
 
 inline RhpBoolean Data_Storage::polling_storm_data_IN(void) const {
-    return rootState_subState == polling_storm_data;
+    return MainBehavior_subState == polling_storm_data;
 }
 
 inline RhpBoolean Data_Storage::idle_IN(void) const {
-    return rootState_subState == idle;
+    return MainBehavior_subState == idle;
 }
 
 inline RhpBoolean Data_Storage::accepttimeevent_3_IN(void) const {
-    return rootState_subState == accepttimeevent_3;
+    return MainBehavior_subState == accepttimeevent_3;
 }
 
 inline RhpBoolean Data_Storage::accepttimeevent_2_IN(void) const {
-    return rootState_subState == accepttimeevent_2;
+    return MainBehavior_subState == accepttimeevent_2;
+}
+
+inline RhpBoolean Data_Storage::ErrorHandling_IN(void) const {
+    return rootState_subState == ErrorHandling;
+}
+
+inline RhpBoolean Data_Storage::Handled_IN(void) const {
+    return ErrorHandling_subState == Handled;
+}
+
+inline RhpBoolean Data_Storage::Error_IN(void) const {
+    return ErrorHandling_subState == Error;
 }
 
 #endif

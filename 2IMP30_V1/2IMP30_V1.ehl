@@ -1,3 +1,7 @@
 [Op Calls]
 [Events]
+itsSMSWTD->itsData_Storage->GEN(evErrorOccuredDS())`Architecture::Data_Storage
+itsSMSWTD->itsData_Storage->GEN(evRepairDS())`Architecture::Data_Storage
+itsSMSWTD->itsPrediction_Module->itsStorm_Prediction->GEN(evRepairStPred())`Architecture::Storm_Prediction
+itsSMSWTD->itsPrediction_Module->itsStorm_Prediction->GEN(evErrorOccuredSt())`Architecture::Storm_Prediction
 [Breakpoints]
