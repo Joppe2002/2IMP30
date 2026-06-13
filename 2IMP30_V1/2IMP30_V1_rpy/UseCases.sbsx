@@ -12,10 +12,10 @@
 			<_id type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCases</_name>
-			<_modifiedTimeWeak type="a">6.13.2026::9:19:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.13.2026::9:19:45</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.13.2026::9:28:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:40:9</_modifiedTime>
 			<_lastID type="a">32</_lastID>
-			<weakCGTime type="a">6.13.2026::9:19:45</weakCGTime>
+			<weakCGTime type="a">6.13.2026::9:28:10</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -8045,12 +8045,8 @@ Alternative Scenario%0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">UseCase_Table</_name>
-			<_modifiedTimeWeak type="a">6.13.2026::9:18:47</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.13.2026::9:18:47</_modifiedTime>
-			<TableElementTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</TableElementTypes>
+			<_modifiedTimeWeak type="a">6.13.2026::9:28:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:28:10</_modifiedTime>
 			<DataColumns type="c">
 				<IRPYRawContainer type="e">
 					<TableDataDefinition type="e">
@@ -8085,14 +8081,6 @@ Alternative Scenario%0D
 					
 				</IRPYRawContainer>
 			</DataColumns>
-			<TableFromElementTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</TableFromElementTypes>
-			<TableToElementTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</TableToElementTypes>
 		</ITableLayout>
 		<ITableInstance type="e">
 			<_id type="a">GUID 751dae3c-b3f9-4ff5-829d-f15e6e891a0c</_id>
@@ -8110,7 +8098,7 @@ Alternative Scenario%0D
 											<IRPYRawContainer type="e">
 												<IProperty type="e">
 													<_Name type="a">TableSortColumnState</_Name>
-													<_Value type="a">0,0</_Value>
+													<_Value type="a">1,1</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -8149,8 +8137,8 @@ Alternative Scenario%0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">UseCase_TableView</_name>
-			<_modifiedTimeWeak type="a">6.13.2026::9:19:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.13.2026::9:19:45</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.13.2026::9:22:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:22:54</_modifiedTime>
 			<LayoutHandle type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">ITableLayout</_hm2Class>

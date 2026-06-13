@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 10.0 
-	Login		: 20223834
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Sat, 13, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
 *********************************************************************/
 
@@ -66,6 +66,42 @@
 #define evMediumTsunami_UNSERIALIZE OM_NO_OP
 
 #define evMediumTsunami_CONSTRUCTOR evMediumTsunami()
+
+#define evErrorOccuredSt_SERIALIZE OM_NO_OP
+
+#define evErrorOccuredSt_UNSERIALIZE OM_NO_OP
+
+#define evErrorOccuredSt_CONSTRUCTOR evErrorOccuredSt()
+
+#define evErrorHandledSt_SERIALIZE OM_NO_OP
+
+#define evErrorHandledSt_UNSERIALIZE OM_NO_OP
+
+#define evErrorHandledSt_CONSTRUCTOR evErrorHandledSt()
+
+#define evErrorOccuredTs_SERIALIZE OM_NO_OP
+
+#define evErrorOccuredTs_UNSERIALIZE OM_NO_OP
+
+#define evErrorOccuredTs_CONSTRUCTOR evErrorOccuredTs()
+
+#define evErrorHandledTs_SERIALIZE OM_NO_OP
+
+#define evErrorHandledTs_UNSERIALIZE OM_NO_OP
+
+#define evErrorHandledTs_CONSTRUCTOR evErrorHandledTs()
+
+#define evRepairTsPred_SERIALIZE OM_NO_OP
+
+#define evRepairTsPred_UNSERIALIZE OM_NO_OP
+
+#define evRepairTsPred_CONSTRUCTOR evRepairTsPred()
+
+#define evRepairStPred_SERIALIZE OM_NO_OP
+
+#define evRepairStPred_UNSERIALIZE OM_NO_OP
+
+#define evRepairStPred_CONSTRUCTOR evRepairStPred()
 //#]
 
 //## package Architecture
@@ -263,6 +299,78 @@ const IOxfEvent::ID evMediumTsunami_Architecture_id(11206);
 //#]
 
 IMPLEMENT_META_EVENT_P(evMediumTsunami, Architecture, Architecture, evMediumTsunami())
+
+//## event evErrorOccuredSt()
+evErrorOccuredSt::evErrorOccuredSt(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorOccuredSt)
+    setId(evErrorOccuredSt_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorOccuredSt_Architecture_id(11207);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorOccuredSt, Architecture, Architecture, evErrorOccuredSt())
+
+//## event evErrorHandledSt()
+evErrorHandledSt::evErrorHandledSt(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorHandledSt)
+    setId(evErrorHandledSt_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorHandledSt_Architecture_id(11208);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorHandledSt, Architecture, Architecture, evErrorHandledSt())
+
+//## event evErrorOccuredTs()
+evErrorOccuredTs::evErrorOccuredTs(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorOccuredTs)
+    setId(evErrorOccuredTs_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorOccuredTs_Architecture_id(11209);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorOccuredTs, Architecture, Architecture, evErrorOccuredTs())
+
+//## event evErrorHandledTs()
+evErrorHandledTs::evErrorHandledTs(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorHandledTs)
+    setId(evErrorHandledTs_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorHandledTs_Architecture_id(11210);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorHandledTs, Architecture, Architecture, evErrorHandledTs())
+
+//## event evRepairTsPred()
+evRepairTsPred::evRepairTsPred(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evRepairTsPred)
+    setId(evRepairTsPred_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evRepairTsPred_Architecture_id(11211);
+//#]
+
+IMPLEMENT_META_EVENT_P(evRepairTsPred, Architecture, Architecture, evRepairTsPred())
+
+//## event evRepairStPred()
+evRepairStPred::evRepairStPred(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evRepairStPred)
+    setId(evRepairStPred_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evRepairStPred_Architecture_id(11212);
+//#]
+
+IMPLEMENT_META_EVENT_P(evRepairStPred, Architecture, Architecture, evRepairStPred())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp

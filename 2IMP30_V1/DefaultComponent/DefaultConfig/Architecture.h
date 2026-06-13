@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 10.0 
-	Login		: 20223834
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Sat, 13, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h
 *********************************************************************/
 
@@ -248,6 +248,174 @@ class OMAnimatedevMediumTsunami : virtual public AOMEvent {
 
 //#[ ignore
 extern const IOxfEvent::ID evMediumTsunami_Architecture_id;
+//#]
+
+//## event evErrorOccuredSt()
+class evErrorOccuredSt : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorOccuredSt;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorOccuredSt(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorOccuredSt : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorOccuredSt)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorOccuredSt_Architecture_id;
+//#]
+
+//## event evErrorHandledSt()
+class evErrorHandledSt : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorHandledSt;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorHandledSt(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorHandledSt : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorHandledSt)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorHandledSt_Architecture_id;
+//#]
+
+//## event evErrorOccuredTs()
+class evErrorOccuredTs : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorOccuredTs;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorOccuredTs(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorOccuredTs : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorOccuredTs)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorOccuredTs_Architecture_id;
+//#]
+
+//## event evErrorHandledTs()
+class evErrorHandledTs : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorHandledTs;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorHandledTs(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorHandledTs : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorHandledTs)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorHandledTs_Architecture_id;
+//#]
+
+//## event evRepairTsPred()
+class evRepairTsPred : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevRepairTsPred;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evRepairTsPred(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevRepairTsPred : virtual public AOMEvent {
+    DECLARE_META_EVENT(evRepairTsPred)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evRepairTsPred_Architecture_id;
+//#]
+
+//## event evRepairStPred()
+class evRepairStPred : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevRepairStPred;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evRepairStPred(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevRepairStPred : virtual public AOMEvent {
+    DECLARE_META_EVENT(evRepairStPred)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evRepairStPred_Architecture_id;
 //#]
 
 #endif

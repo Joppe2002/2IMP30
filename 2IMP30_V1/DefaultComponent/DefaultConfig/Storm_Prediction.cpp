@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 10.0 
-	Login		: 20223834
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Sat, 13, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.cpp
 *********************************************************************/
 
@@ -203,6 +203,7 @@ void Storm_Prediction::initStatechart(void) {
     state_6_subState = OMNonState;
     state_6_active = OMNonState;
     state_6_timeout = NULL;
+    ErrorHandling_subState = OMNonState;
 }
 
 void Storm_Prediction::cleanUpRelations(void) {
@@ -371,6 +372,23 @@ IOxfReactive::TakeEventStatus Storm_Prediction::normal_operation_processEvent(vo
                 {
                     res = eventConsumed;
                 }
+        }
+    if(res == eventNotConsumed)
+        {
+            res = normal_operation_handleEvent();
+        }
+    return res;
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::normal_operation_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorOccuredSt_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("12");
+            normal_operation_exit();
+            ErrorHandling_entDef();
+            NOTIFY_TRANSITION_TERMINATED("12");
+            res = eventConsumed;
         }
     
     return res;
@@ -587,6 +605,73 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_6_processEvent(void) {
     return res;
 }
 
+void Storm_Prediction::ErrorHandling_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling");
+    rootState_subState = ErrorHandling;
+    //#[ state ErrorHandling.(Entry) 
+    printf("Storm Prediction module not working");
+    //#]
+    NOTIFY_TRANSITION_STARTED("14");
+    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Error");
+    ErrorHandling_subState = Error;
+    rootState_active = Error;
+    NOTIFY_TRANSITION_TERMINATED("14");
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::ErrorHandling_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorHandledSt_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("13");
+            switch (ErrorHandling_subState) {
+                // State Error
+                case Error:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
+                }
+                break;
+                // State Handled
+                case Handled:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Handled");
+                }
+                break;
+                default:
+                    break;
+            }
+            ErrorHandling_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.ErrorHandling");
+            normal_operation_entDef();
+            NOTIFY_TRANSITION_TERMINATED("13");
+            res = eventConsumed;
+        }
+    
+    return res;
+}
+
+IOxfReactive::TakeEventStatus Storm_Prediction::Error_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evRepairStPred_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("15");
+            NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
+            NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Handled");
+            ErrorHandling_subState = Handled;
+            rootState_active = Handled;
+            //#[ state ErrorHandling.Handled.(Entry) 
+            GEN(evErrorHandledSt());
+            //#]
+            NOTIFY_TRANSITION_TERMINATED("15");
+            res = eventConsumed;
+        }
+    
+    if(res == eventNotConsumed)
+        {
+            res = ErrorHandling_handleEvent();
+        }
+    return res;
+}
+
 void Storm_Prediction::rootState_entDef(void) {
     {
         NOTIFY_STATE_ENTERED("ROOT");
@@ -598,11 +683,28 @@ void Storm_Prediction::rootState_entDef(void) {
 
 IOxfReactive::TakeEventStatus Storm_Prediction::rootState_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    // State normal_operation
-    if(rootState_active == normal_operation)
+    switch (rootState_active) {
+        // State normal_operation
+        case normal_operation:
         {
             res = normal_operation_processEvent();
         }
+        break;
+        // State Error
+        case Error:
+        {
+            res = Error_handleEvent();
+        }
+        break;
+        // State Handled
+        case Handled:
+        {
+            res = ErrorHandling_handleEvent();
+        }
+        break;
+        default:
+            break;
+    }
     return res;
 }
 
@@ -636,10 +738,20 @@ void OMAnimatedStorm_Prediction::serializeRelations(AOMSRelations* aomsRelations
 
 void OMAnimatedStorm_Prediction::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
-    if(myReal->rootState_subState == Storm_Prediction::normal_operation)
+    switch (myReal->rootState_subState) {
+        case Storm_Prediction::normal_operation:
         {
             normal_operation_serializeStates(aomsState);
         }
+        break;
+        case Storm_Prediction::ErrorHandling:
+        {
+            ErrorHandling_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
 }
 
 void OMAnimatedStorm_Prediction::normal_operation_serializeStates(AOMSState* aomsState) const {
@@ -716,6 +828,32 @@ void OMAnimatedStorm_Prediction::idle_serializeStates(AOMSState* aomsState) cons
 
 void OMAnimatedStorm_Prediction::accepttimeevent_2_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.normal_operation.state_6.accepttimeevent_2");
+}
+
+void OMAnimatedStorm_Prediction::ErrorHandling_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling");
+    switch (myReal->ErrorHandling_subState) {
+        case Storm_Prediction::Error:
+        {
+            Error_serializeStates(aomsState);
+        }
+        break;
+        case Storm_Prediction::Handled:
+        {
+            Handled_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedStorm_Prediction::Handled_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling.Handled");
+}
+
+void OMAnimatedStorm_Prediction::Error_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling.Error");
 }
 //#]
 

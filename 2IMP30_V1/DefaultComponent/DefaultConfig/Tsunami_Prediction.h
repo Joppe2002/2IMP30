@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 10.0 
-	Login		: 20223834
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Tsunami_Prediction
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Sat, 13, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Tsunami_Prediction.h
 *********************************************************************/
 
@@ -171,6 +171,9 @@ public :
     //## statechart_method
     IOxfReactive::TakeEventStatus state_0_processEvent(void);
     
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_0_handleEvent(void);
+    
     // state_2:
     //## statechart_method
     inline RhpBoolean state_2_IN(void) const;
@@ -214,6 +217,27 @@ public :
     // accepttimeevent_5:
     //## statechart_method
     inline RhpBoolean accepttimeevent_5_IN(void) const;
+    
+    // ErrorHandling:
+    //## statechart_method
+    inline RhpBoolean ErrorHandling_IN(void) const;
+    
+    //## statechart_method
+    void ErrorHandling_entDef(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus ErrorHandling_handleEvent(void);
+    
+    // Handled:
+    //## statechart_method
+    inline RhpBoolean Handled_IN(void) const;
+    
+    // Error:
+    //## statechart_method
+    inline RhpBoolean Error_IN(void) const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus Error_handleEvent(void);
 
 protected :
 
@@ -236,7 +260,10 @@ protected :
         state_1 = 6,
         prediction = 7,
         idle = 8,
-        accepttimeevent_5 = 9
+        accepttimeevent_5 = 9,
+        ErrorHandling = 10,
+        Handled = 11,
+        Error = 12
     };
 //#]
 
@@ -256,6 +283,8 @@ private :
     Tsunami_Prediction_Enum state_1_active;
     
     IOxfTimeout* state_1_timeout;
+    
+    Tsunami_Prediction_Enum ErrorHandling_subState;
 //#]
 };
 
@@ -301,6 +330,15 @@ public :
     
     //## statechart_method
     void accepttimeevent_5_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void ErrorHandling_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Handled_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Error_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -343,6 +381,18 @@ inline RhpBoolean Tsunami_Prediction::idle_IN(void) const {
 
 inline RhpBoolean Tsunami_Prediction::accepttimeevent_5_IN(void) const {
     return state_1_subState == accepttimeevent_5;
+}
+
+inline RhpBoolean Tsunami_Prediction::ErrorHandling_IN(void) const {
+    return rootState_subState == ErrorHandling;
+}
+
+inline RhpBoolean Tsunami_Prediction::Handled_IN(void) const {
+    return ErrorHandling_subState == Handled;
+}
+
+inline RhpBoolean Tsunami_Prediction::Error_IN(void) const {
+    return ErrorHandling_subState == Error;
 }
 
 #endif

@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 10.0 
-	Login		: 20223834
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Tsunami_Prediction
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Sat, 13, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Tsunami_Prediction.cpp
 *********************************************************************/
 
@@ -143,6 +143,7 @@ void Tsunami_Prediction::initStatechart(void) {
     state_1_subState = OMNonState;
     state_1_active = OMNonState;
     state_1_timeout = NULL;
+    ErrorHandling_subState = OMNonState;
 }
 
 void Tsunami_Prediction::cleanUpRelations(void) {
@@ -311,6 +312,23 @@ IOxfReactive::TakeEventStatus Tsunami_Prediction::state_0_processEvent(void) {
                 {
                     res = eventConsumed;
                 }
+        }
+    if(res == eventNotConsumed)
+        {
+            res = state_0_handleEvent();
+        }
+    return res;
+}
+
+IOxfReactive::TakeEventStatus Tsunami_Prediction::state_0_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorOccuredTs_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("12");
+            state_0_exit();
+            ErrorHandling_entDef();
+            NOTIFY_TRANSITION_TERMINATED("12");
+            res = eventConsumed;
         }
     
     return res;
@@ -502,8 +520,8 @@ IOxfReactive::TakeEventStatus Tsunami_Prediction::state_1_processEvent(void) {
                     state_1_subState = prediction;
                     state_1_active = prediction;
                     //#[ state state_0.state_1.prediction.(Entry) 
-                    pred_probability=(100-vibrations_distance)*vibrations_intensity*vibrations_intensity*0.00001;
-                    //if (pred_probability>1) pred_probability=1;
+                    pred_probability=(100-vibrations_distance)*vibrations_intensity*vibrations_intensity*0.000005;
+                    if (pred_probability>1) pred_probability=1;
                     GEN(evPredictionReadyTs);
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("2");
@@ -519,6 +537,73 @@ IOxfReactive::TakeEventStatus Tsunami_Prediction::state_1_processEvent(void) {
     return res;
 }
 
+void Tsunami_Prediction::ErrorHandling_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling");
+    rootState_subState = ErrorHandling;
+    //#[ state ErrorHandling.(Entry) 
+    printf("Tsunami Prediction Module not working");
+    //#]
+    NOTIFY_TRANSITION_STARTED("14");
+    NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Error");
+    ErrorHandling_subState = Error;
+    rootState_active = Error;
+    NOTIFY_TRANSITION_TERMINATED("14");
+}
+
+IOxfReactive::TakeEventStatus Tsunami_Prediction::ErrorHandling_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorHandledTs_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("13");
+            switch (ErrorHandling_subState) {
+                // State Error
+                case Error:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
+                }
+                break;
+                // State Handled
+                case Handled:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Handled");
+                }
+                break;
+                default:
+                    break;
+            }
+            ErrorHandling_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.ErrorHandling");
+            state_0_entDef();
+            NOTIFY_TRANSITION_TERMINATED("13");
+            res = eventConsumed;
+        }
+    
+    return res;
+}
+
+IOxfReactive::TakeEventStatus Tsunami_Prediction::Error_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evRepairTsPred_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("15");
+            NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
+            NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Handled");
+            ErrorHandling_subState = Handled;
+            rootState_active = Handled;
+            //#[ state ErrorHandling.Handled.(Entry) 
+            GEN(evErrorHandledTs());
+            //#]
+            NOTIFY_TRANSITION_TERMINATED("15");
+            res = eventConsumed;
+        }
+    
+    if(res == eventNotConsumed)
+        {
+            res = ErrorHandling_handleEvent();
+        }
+    return res;
+}
+
 void Tsunami_Prediction::rootState_entDef(void) {
     {
         NOTIFY_STATE_ENTERED("ROOT");
@@ -530,11 +615,28 @@ void Tsunami_Prediction::rootState_entDef(void) {
 
 IOxfReactive::TakeEventStatus Tsunami_Prediction::rootState_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    // State state_0
-    if(rootState_active == state_0)
+    switch (rootState_active) {
+        // State state_0
+        case state_0:
         {
             res = state_0_processEvent();
         }
+        break;
+        // State Error
+        case Error:
+        {
+            res = Error_handleEvent();
+        }
+        break;
+        // State Handled
+        case Handled:
+        {
+            res = ErrorHandling_handleEvent();
+        }
+        break;
+        default:
+            break;
+    }
     return res;
 }
 
@@ -562,10 +664,20 @@ void OMAnimatedTsunami_Prediction::serializeRelations(AOMSRelations* aomsRelatio
 
 void OMAnimatedTsunami_Prediction::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
-    if(myReal->rootState_subState == Tsunami_Prediction::state_0)
+    switch (myReal->rootState_subState) {
+        case Tsunami_Prediction::state_0:
         {
             state_0_serializeStates(aomsState);
         }
+        break;
+        case Tsunami_Prediction::ErrorHandling:
+        {
+            ErrorHandling_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
 }
 
 void OMAnimatedTsunami_Prediction::state_0_serializeStates(AOMSState* aomsState) const {
@@ -642,6 +754,32 @@ void OMAnimatedTsunami_Prediction::idle_serializeStates(AOMSState* aomsState) co
 
 void OMAnimatedTsunami_Prediction::accepttimeevent_5_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_0.state_1.accepttimeevent_5");
+}
+
+void OMAnimatedTsunami_Prediction::ErrorHandling_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling");
+    switch (myReal->ErrorHandling_subState) {
+        case Tsunami_Prediction::Error:
+        {
+            Error_serializeStates(aomsState);
+        }
+        break;
+        case Tsunami_Prediction::Handled:
+        {
+            Handled_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedTsunami_Prediction::Handled_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling.Handled");
+}
+
+void OMAnimatedTsunami_Prediction::Error_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ErrorHandling.Error");
 }
 //#]
 

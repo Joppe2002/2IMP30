@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 10.0 
-	Login		: 20223834
+	Login		: 20214193
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: bool_raw_wind_direction_ProxyFlowPropertyInterface
-//!	Generated Date	: Mon, 8, Jun 2026  
+//!	Generated Date	: Sat, 13, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\bool_raw_wind_direction_ProxyFlowPropertyInterface.h
 *********************************************************************/
 
