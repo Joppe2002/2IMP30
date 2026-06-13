@@ -69,6 +69,15 @@ void Storm_Prediction::relay_output_data(void) {
     //#]
 }
 
+const bool Storm_Prediction::getIsErrorHandling(void) const {
+    return isErrorHandling;
+}
+
+void Storm_Prediction::setIsErrorHandling(const bool p_isErrorHandling) {
+    isErrorHandling = p_isErrorHandling;
+    NOTIFY_SET_OPERATION;
+}
+
 const int Storm_Prediction::getPrecipitation_amount(void) const {
     return precipitation_amount;
 }
@@ -615,6 +624,9 @@ void Storm_Prediction::ErrorHandling_entDef(void) {
     NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Error");
     ErrorHandling_subState = Error;
     rootState_active = Error;
+    //#[ state ErrorHandling.Error.(Entry) 
+    isErrorHandling = true;
+    //#]
     NOTIFY_TRANSITION_TERMINATED("14");
 }
 
@@ -660,6 +672,8 @@ IOxfReactive::TakeEventStatus Storm_Prediction::Error_handleEvent(void) {
             rootState_active = Handled;
             //#[ state ErrorHandling.Handled.(Entry) 
             GEN(evErrorHandledSt());
+            
+            isErrorHandling = false;
             //#]
             NOTIFY_TRANSITION_TERMINATED("15");
             res = eventConsumed;
@@ -721,6 +735,7 @@ void OMAnimatedStorm_Prediction::serializeAttributes(AOMSAttributes* aomsAttribu
     aomsAttributes->addAttribute("pred_speed", x2String(myReal->pred_speed));
     aomsAttributes->addAttribute("storm_probability", x2String(myReal->storm_probability));
     aomsAttributes->addAttribute("warned", x2String(myReal->warned));
+    aomsAttributes->addAttribute("isErrorHandling", x2String(myReal->isErrorHandling));
 }
 
 void OMAnimatedStorm_Prediction::serializeRelations(AOMSRelations* aomsRelations) const {

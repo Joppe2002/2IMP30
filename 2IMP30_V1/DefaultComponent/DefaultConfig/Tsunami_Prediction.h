@@ -62,6 +62,12 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
+    const bool getIsErrorHandling(void) const;
+    
+    //## auto_generated
+    void setIsErrorHandling(const bool p_isErrorHandling);
+    
+    //## auto_generated
     const float getPred_probability(void) const;
     
     //## auto_generated
@@ -118,6 +124,8 @@ protected :
 
 private :
 
+    bool isErrorHandling;		//## attribute isErrorHandling
+    
     float pred_probability;		//## attribute pred_probability
     
     int vibrations_distance;		//## attribute vibrations_distance

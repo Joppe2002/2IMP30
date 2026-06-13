@@ -61,6 +61,15 @@ void Tsunami_Prediction::relay_output_data_ts(void) {
     //#]
 }
 
+const bool Tsunami_Prediction::getIsErrorHandling(void) const {
+    return isErrorHandling;
+}
+
+void Tsunami_Prediction::setIsErrorHandling(const bool p_isErrorHandling) {
+    isErrorHandling = p_isErrorHandling;
+    NOTIFY_SET_OPERATION;
+}
+
 const float Tsunami_Prediction::getPred_probability(void) const {
     return pred_probability;
 }
@@ -547,6 +556,9 @@ void Tsunami_Prediction::ErrorHandling_entDef(void) {
     NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Error");
     ErrorHandling_subState = Error;
     rootState_active = Error;
+    //#[ state ErrorHandling.Error.(Entry) 
+    isErrorHandling = true;
+    //#]
     NOTIFY_TRANSITION_TERMINATED("14");
 }
 
@@ -592,6 +604,8 @@ IOxfReactive::TakeEventStatus Tsunami_Prediction::Error_handleEvent(void) {
             rootState_active = Handled;
             //#[ state ErrorHandling.Handled.(Entry) 
             GEN(evErrorHandledTs());
+            
+            isErrorHandling = false;
             //#]
             NOTIFY_TRANSITION_TERMINATED("15");
             res = eventConsumed;
@@ -647,6 +661,7 @@ void OMAnimatedTsunami_Prediction::serializeAttributes(AOMSAttributes* aomsAttri
     aomsAttributes->addAttribute("vibrations_intensity", x2String(myReal->vibrations_intensity));
     aomsAttributes->addAttribute("vibrations_distance", x2String(myReal->vibrations_distance));
     aomsAttributes->addAttribute("warned", x2String(myReal->warned));
+    aomsAttributes->addAttribute("isErrorHandling", x2String(myReal->isErrorHandling));
 }
 
 void OMAnimatedTsunami_Prediction::serializeRelations(AOMSRelations* aomsRelations) const {
