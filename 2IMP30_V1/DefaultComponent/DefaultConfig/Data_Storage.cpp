@@ -500,12 +500,12 @@ void Data_Storage::_clearItsTsunami_Prediction(void) {
 void Data_Storage::MainBehavior_entDef(void) {
     NOTIFY_STATE_ENTERED("ROOT.MainBehavior");
     rootState_subState = MainBehavior;
-    NOTIFY_TRANSITION_STARTED("0");
+    NOTIFY_TRANSITION_STARTED("10");
     NOTIFY_STATE_ENTERED("ROOT.MainBehavior.idle");
     MainBehavior_subState = idle;
     rootState_active = idle;
     MainBehavior_timeout = scheduleTimeout(1000, "ROOT.MainBehavior.idle");
-    NOTIFY_TRANSITION_TERMINATED("0");
+    NOTIFY_TRANSITION_TERMINATED("10");
 }
 
 void Data_Storage::MainBehavior_exit(void) {
@@ -555,10 +555,10 @@ IOxfReactive::TakeEventStatus Data_Storage::MainBehavior_handleEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     if(IS_EVENT_TYPE_OF(evErrorOccuredDS_Architecture_id) == 1)
         {
-            NOTIFY_TRANSITION_STARTED("7");
+            NOTIFY_TRANSITION_STARTED("6");
             MainBehavior_exit();
             ErrorHandling_entDef();
-            NOTIFY_TRANSITION_TERMINATED("7");
+            NOTIFY_TRANSITION_TERMINATED("6");
             res = eventConsumed;
         }
     
@@ -571,18 +571,18 @@ void Data_Storage::ErrorHandling_entDef(void) {
     //#[ state ErrorHandling.(Entry) 
     printf("Data Storage not working");
     //#]
-    NOTIFY_TRANSITION_STARTED("9");
+    NOTIFY_TRANSITION_STARTED("8");
     NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Error");
     ErrorHandling_subState = Error;
     rootState_active = Error;
-    NOTIFY_TRANSITION_TERMINATED("9");
+    NOTIFY_TRANSITION_TERMINATED("8");
 }
 
 IOxfReactive::TakeEventStatus Data_Storage::ErrorHandling_handleEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     if(IS_EVENT_TYPE_OF(evErrorHandledDS_Architecture_id) == 1)
         {
-            NOTIFY_TRANSITION_STARTED("8");
+            NOTIFY_TRANSITION_STARTED("7");
             switch (ErrorHandling_subState) {
                 // State Error
                 case Error:
@@ -602,7 +602,7 @@ IOxfReactive::TakeEventStatus Data_Storage::ErrorHandling_handleEvent(void) {
             ErrorHandling_subState = OMNonState;
             NOTIFY_STATE_EXITED("ROOT.ErrorHandling");
             MainBehavior_entDef();
-            NOTIFY_TRANSITION_TERMINATED("8");
+            NOTIFY_TRANSITION_TERMINATED("7");
             res = eventConsumed;
         }
     
@@ -612,9 +612,9 @@ IOxfReactive::TakeEventStatus Data_Storage::ErrorHandling_handleEvent(void) {
 void Data_Storage::rootState_entDef(void) {
     {
         NOTIFY_STATE_ENTERED("ROOT");
-        NOTIFY_TRANSITION_STARTED("6");
+        NOTIFY_TRANSITION_STARTED("5");
         MainBehavior_entDef();
-        NOTIFY_TRANSITION_TERMINATED("6");
+        NOTIFY_TRANSITION_TERMINATED("5");
     }
 }
 
@@ -628,14 +628,14 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                 {
                     if(getCurrentEvent() == MainBehavior_timeout)
                         {
-                            NOTIFY_TRANSITION_STARTED("3");
+                            NOTIFY_TRANSITION_STARTED("2");
                             cancel(MainBehavior_timeout);
                             NOTIFY_STATE_EXITED("ROOT.MainBehavior.polling_storm_data");
                             NOTIFY_STATE_ENTERED("ROOT.MainBehavior.accepttimeevent_3");
                             pushNullTransition();
                             MainBehavior_subState = accepttimeevent_3;
                             rootState_active = accepttimeevent_3;
-                            NOTIFY_TRANSITION_TERMINATED("3");
+                            NOTIFY_TRANSITION_TERMINATED("2");
                             res = eventConsumed;
                         }
                 }
@@ -651,14 +651,14 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
-                    NOTIFY_TRANSITION_STARTED("5");
+                    NOTIFY_TRANSITION_STARTED("4");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.MainBehavior.relaying_storm_data");
                     NOTIFY_STATE_ENTERED("ROOT.MainBehavior.idle");
                     MainBehavior_subState = idle;
                     rootState_active = idle;
                     MainBehavior_timeout = scheduleTimeout(1000, "ROOT.MainBehavior.idle");
-                    NOTIFY_TRANSITION_TERMINATED("5");
+                    NOTIFY_TRANSITION_TERMINATED("4");
                     res = eventConsumed;
                 }
             
@@ -675,14 +675,14 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                 {
                     if(getCurrentEvent() == MainBehavior_timeout)
                         {
-                            NOTIFY_TRANSITION_STARTED("1");
+                            NOTIFY_TRANSITION_STARTED("0");
                             cancel(MainBehavior_timeout);
                             NOTIFY_STATE_EXITED("ROOT.MainBehavior.idle");
                             NOTIFY_STATE_ENTERED("ROOT.MainBehavior.accepttimeevent_2");
                             pushNullTransition();
                             MainBehavior_subState = accepttimeevent_2;
                             rootState_active = accepttimeevent_2;
-                            NOTIFY_TRANSITION_TERMINATED("1");
+                            NOTIFY_TRANSITION_TERMINATED("0");
                             res = eventConsumed;
                         }
                 }
@@ -697,7 +697,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
-                    NOTIFY_TRANSITION_STARTED("4");
+                    NOTIFY_TRANSITION_STARTED("3");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.MainBehavior.accepttimeevent_3");
                     NOTIFY_STATE_ENTERED("ROOT.MainBehavior.relaying_storm_data");
@@ -708,7 +708,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                     relay_storm_data();
                     relay_tsunami_data();
                     //#]
-                    NOTIFY_TRANSITION_TERMINATED("4");
+                    NOTIFY_TRANSITION_TERMINATED("3");
                     res = eventConsumed;
                 }
             
@@ -722,7 +722,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
                 {
-                    NOTIFY_TRANSITION_STARTED("2");
+                    NOTIFY_TRANSITION_STARTED("1");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.MainBehavior.accepttimeevent_2");
                     NOTIFY_STATE_ENTERED("ROOT.MainBehavior.polling_storm_data");
@@ -741,7 +741,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                     if(raw_precipitation_type == 3){stored_precipitation_type = precipitation_type_enum::snow;}
                     //#]
                     MainBehavior_timeout = scheduleTimeout(1000, "ROOT.MainBehavior.polling_storm_data");
-                    NOTIFY_TRANSITION_TERMINATED("2");
+                    NOTIFY_TRANSITION_TERMINATED("1");
                     res = eventConsumed;
                 }
             
@@ -756,7 +756,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
         {
             if(IS_EVENT_TYPE_OF(evRepairDS_Architecture_id) == 1)
                 {
-                    NOTIFY_TRANSITION_STARTED("10");
+                    NOTIFY_TRANSITION_STARTED("9");
                     NOTIFY_STATE_EXITED("ROOT.ErrorHandling.Error");
                     NOTIFY_STATE_ENTERED("ROOT.ErrorHandling.Handled");
                     ErrorHandling_subState = Handled;
@@ -764,7 +764,7 @@ IOxfReactive::TakeEventStatus Data_Storage::rootState_processEvent(void) {
                     //#[ state ErrorHandling.Handled.(Entry) 
                     GEN(evErrorHandledDS());
                     //#]
-                    NOTIFY_TRANSITION_TERMINATED("10");
+                    NOTIFY_TRANSITION_TERMINATED("9");
                     res = eventConsumed;
                 }
             

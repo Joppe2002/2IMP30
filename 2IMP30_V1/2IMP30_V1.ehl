@@ -1,5 +1,7 @@
 [Op Calls]
 [Events]
+itsData_Storage->GEN(evRepairDS())`Architecture::Data_Storage
+itsData_Storage->GEN(evErrorOccuredDS())`Architecture::Data_Storage
 itsSMSWTD->itsData_Storage->GEN(evErrorOccuredDS())`Architecture::Data_Storage
 itsSMSWTD->itsData_Storage->GEN(evRepairDS())`Architecture::Data_Storage
 itsSMSWTD->itsPrediction_Module->itsStorm_Prediction->GEN(evRepairStPred())`Architecture::Storm_Prediction
