@@ -12,10 +12,10 @@
 			<_id type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCases</_name>
-			<_modifiedTimeWeak type="a">6.8.2026::18:47:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2026::19:7:3</_modifiedTime>
-			<_lastID type="a">30</_lastID>
-			<weakCGTime type="a">6.8.2026::18:47:11</weakCGTime>
+			<_modifiedTimeWeak type="a">6.13.2026::9:19:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:19:45</_modifiedTime>
+			<_lastID type="a">32</_lastID>
+			<weakCGTime type="a">6.13.2026::9:19:45</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -41,6 +41,8 @@
 				<value>GUID d74d3156-c411-41bd-8dd6-e34ac738a86d</value>
 				<value>GUID c8a6b8cc-45e8-46d0-b480-14d46e2f5a8c</value>
 				<value>GUID 457eb4ac-8f92-4ace-bdd7-33c10348257a</value>
+				<value>GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</value>
+				<value>GUID 751dae3c-b3f9-4ff5-829d-f15e6e891a0c</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IUCDiagram type="e">
@@ -7960,6 +7962,216 @@ Alternative Scenario%0D
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<ITableLayout type="e">
+			<_id type="a">GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">TableHeaderMenuAlignment</_Name>
+													<_Value type="a">Right</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Left,Right</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableLayout</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">CollapseFirstColumn</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ContextPattern</_Name>
+													<_Value type="a">{pkg}Package*,{uc}UseCase</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ContextTableColumnNameFormat</_Name>
+													<_Value type="a">$(Property) in $(Context)</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ChangeSelectionOnEnterTo</_Name>
+													<_Value type="a">down</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">left, right, up, down</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">UseCase_Table</_name>
+			<_modifiedTimeWeak type="a">6.13.2026::9:18:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:18:47</_modifiedTime>
+			<TableElementTypes type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</TableElementTypes>
+			<DataColumns type="c">
+				<IRPYRawContainer type="e">
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">General.Name</TableDataDefinitionName>
+						<_columnName type="a">Name</_columnName>
+					</TableDataDefinition>
+					
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">General.Description</TableDataDefinitionName>
+						<_columnName type="a">Description</_columnName>
+					</TableDataDefinition>
+					
+				</IRPYRawContainer>
+			</DataColumns>
+			<TableFromElementTypes type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</TableFromElementTypes>
+			<TableToElementTypes type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</TableToElementTypes>
+		</ITableLayout>
+		<ITableInstance type="e">
+			<_id type="a">GUID 751dae3c-b3f9-4ff5-829d-f15e6e891a0c</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">TableSortColumnState</_Name>
+													<_Value type="a">0,0</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">UseOwnerScope</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">UseCase_TableView</_name>
+			<_modifiedTimeWeak type="a">6.13.2026::9:19:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:19:45</_modifiedTime>
+			<LayoutHandle type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITableLayout</_hm2Class>
+					<_hfilename type="a">$OMROOT\Settings\SysMLPerspectives\SysMLPerspectives.sbsx</_hfilename>
+					<_hsubsystem type="a">SysMLPerspectives</_hsubsystem>
+					<_hname type="a">UseCasesLayout</_hname>
+					<_hid type="a">GUID 2a67d7fc-cc30-4995-ace6-ff866e8e9a10</_hid>
+				</IHandle>
+			</LayoutHandle>
+			<ScopeHandles type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProject</_hm2Class>
+							<_hname type="a">2IMP30_V1</_hname>
+							<_hid type="a">GUID 98303639-6bdf-4c4f-922a-27dbf0e15605</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</ScopeHandles>
+		</ITableInstance>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">

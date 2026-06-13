@@ -64,8 +64,8 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	"DefaultComponent\\DefaultConfig\\Tsunami_Sensors.h" 6.8.2026::19:33:7
 	"DefaultComponent\\DefaultConfig\\Underwater_Sensors.cpp" 6.8.2026::8:9:15
 	"DefaultComponent\\DefaultConfig\\Underwater_Sensors.h" 6.8.2026::8:10:28
-	"DefaultComponent\\DefaultConfig\\UseCases.cpp" 6.8.2026::8:9:16
-	"DefaultComponent\\DefaultConfig\\UseCases.h" 6.8.2026::8:9:16
+	"DefaultComponent\\DefaultConfig\\UseCases.cpp" 6.13.2026::8:41:15
+	"DefaultComponent\\DefaultConfig\\UseCases.h" 6.13.2026::8:41:15
 	"DefaultComponent\\DefaultConfig\\User.cpp" 6.8.2026::8:9:15
 	"DefaultComponent\\DefaultConfig\\User.h" 6.8.2026::8:10:28
 	"DefaultComponent\\DefaultConfig\\Wheather_Prediction.cpp" 6.8.2026::8:9:16
@@ -98,42 +98,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	"GUID f3982d2a-a025-49c3-8420-66c1577c0878" "GUID 98303639-6bdf-4c4f-922a-27dbf0e15605"
 	
 }
-- size = 63;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID dd20874c-c4e5-4d40-9ed8-b6cd37de2d74;
-}
-- genTime = 6.8.2026::19:25:42;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 52db4e5b-5777-41ac-ab0d-1fb401955c58;
-}
-- genTime = 6.8.2026::19:26:10;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 63aa7688-4638-4794-a013-d2193326fbc2;
-}
-- genTime = 6.8.2026::19:33:7;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 7cc94fa2-e27b-4291-aad8-8cb3f14887a8;
-}
-- genTime = 6.8.2026::19:33:7;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID f2bb035a-124f-45c7-9575-4a3eb74d4878;
-}
-- genTime = 6.8.2026::19:33:7;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 9ec1fa16-26ae-473b-bda0-4dd4945601c7;
-}
-- genTime = 6.8.2026::19:26:10;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 8ab3933e-bd7f-49f4-afd9-1c92627abcc0;
-}
-- genTime = 6.8.2026::19:24:33;
+- size = 35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
@@ -159,11 +124,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 1825cbd1-17b7-4e99-ae34-9b3fd3545365;
-}
-- genTime = 6.8.2026::19:33:7;
-- hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
 	- _subsystem = "SystemContext";
@@ -172,26 +132,11 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 3b32a29d-2014-48ed-a209-13cea46feb28;
-}
-- genTime = 6.8.2026::19:26:10;
-- hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
 	- _subsystem = "SystemContext";
 	- _name = "News_Outlets";
 	- _id = GUID de0e1a9b-a4ee-4bf8-bc39-53303d415912;
-}
-- genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 81b65dae-a77c-4452-b1ab-e42283578148;
-}
-- genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 4846b1b2-3ffb-45a5-8211-392490188546;
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
@@ -202,11 +147,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _id = GUID c1a6639d-fa57-4446-bd4b-ddbdd6160d64;
 }
 - genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID ade4467f-2c8f-4799-af67-18c6177968fe;
-}
-- genTime = 6.8.2026::19:26:10;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
@@ -224,11 +164,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 }
 - genTime = 6.8.2026::19:33:7;
 - hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID f123a152-edf1-4194-9a11-80b284039498;
-}
-- genTime = 6.8.2026::19:25:42;
-- hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
 	- _subsystem = "SystemContext";
@@ -242,7 +177,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _name = "UseCases";
 	- _id = GUID 48259056-c01c-453c-ad12-bc652aa5cc88;
 }
-- genTime = 6.8.2026::19:24:33;
+- genTime = 6.13.2026::8:41:15;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
@@ -251,16 +186,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _id = GUID f41f605c-313c-4092-b3d8-22cd641350cf;
 }
 - genTime = 6.8.2026::19:26:10;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 5751d5cb-bb38-4800-ae0d-577219fc6b45;
-}
-- genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 945d4120-c5b3-40ad-acdb-8c5150f73bdc;
-}
-- genTime = 6.8.2026::19:25:42;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
@@ -275,11 +200,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _subsystem = "SystemContext";
 	- _name = "User";
 	- _id = GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88;
-}
-- genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID b9d3dec8-e8bd-4b9d-8341-278ba650d658;
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
@@ -298,11 +218,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _id = GUID d74d3156-c411-41bd-8dd6-e34ac738a86d;
 }
 - genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 81731898-63d2-4d30-be3a-e6539b262a87;
-}
-- genTime = 6.8.2026::19:33:7;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
@@ -336,36 +251,11 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 8fc53ba0-6818-44e6-88a5-42385f9c37e7;
-}
-- genTime = 6.8.2026::19:26:10;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID f140ff9a-1f7d-4598-97b2-d8dd32b9b0c4;
-}
-- genTime = 6.8.2026::19:25:42;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID a2f908f9-82f7-4db2-af9b-d9872f2baf1b;
-}
-- genTime = 6.8.2026::19:26:10;
-- hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\UseCases.sbsx";
 	- _subsystem = "UseCases";
 	- _name = "Civilians";
 	- _id = GUID c8a6b8cc-45e8-46d0-b480-14d46e2f5a8c;
-}
-- genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 061f62e7-41c8-41ce-9894-83b79bd635f3;
-}
-- genTime = 6.8.2026::19:25:42;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID b3164b62-a100-4112-920e-f1bd6ad84f49;
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
@@ -376,11 +266,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 }
 - genTime = 6.8.2026::19:46:15;
 - hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 64bb1227-78e8-4449-a967-e23aa3162037;
-}
-- genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";
 	- _subsystem = "Architecture";
@@ -388,11 +273,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _id = GUID 70c4b8f3-0233-4d32-b174-b26b7ea04db4;
 }
 - genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 2dd8b296-dc88-4159-b663-9266d219511a;
-}
-- genTime = 6.8.2026::19:25:42;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
@@ -457,21 +337,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 }
 - genTime = 6.8.2026::19:24:33;
 - hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID a6da7313-2b82-4940-bb5f-fd9341c7eb2e;
-}
-- genTime = 6.8.2026::19:25:42;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID fee1ac21-8dd0-40b1-8e9c-93e251b2718f;
-}
-- genTime = 6.8.2026::19:33:7;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 675bdb4b-c191-4ec8-b2ef-91702665afc8;
-}
-- genTime = 6.8.2026::19:33:7;
-- hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\SystemContext.sbsx";
 	- _name = "SystemContext";
@@ -502,11 +367,6 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _id = GUID c2206ceb-4dee-458c-b488-5a9fac5840c9;
 }
 - genTime = 6.8.2026::19:24:33;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 74266aed-5722-494f-bbf0-44a07f6d26db;
-}
-- genTime = 6.8.2026::19:26:10;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Behavior.sbsx";
