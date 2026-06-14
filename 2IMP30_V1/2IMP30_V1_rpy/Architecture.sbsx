@@ -12,10 +12,10 @@
 			<_id type="a">GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Architecture</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::11:6:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::11:6:45</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::11:12:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:30:12</_modifiedTime>
 			<_lastID type="a">24</_lastID>
-			<weakCGTime type="a">6.14.2026::11:6:45</weakCGTime>
+			<weakCGTime type="a">6.14.2026::11:12:19</weakCGTime>
 			<strongCGTime type="a">6.8.2026::18:51:48</strongCGTime>
 			<_defaultComposite type="s">GUID fc3fefa4-18f6-48a0-8974-90a7d87683bb</_defaultComposite>
 			<_eventsBaseID type="a">11201</_eventsBaseID>
@@ -6795,7 +6795,8 @@
 			<m_displayOption type="a">Public</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
-			<_itemValueOfFontPropertiesMapCount type="a">7</_itemValueOfFontPropertiesMapCount>
+			<_itemValueOfFontPropertiesMapCount type="a">8</_itemValueOfFontPropertiesMapCount>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
@@ -19904,16 +19905,16 @@ warned=true;</_body>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.14.2026::11:8:35</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.14.2026::11:15:8</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID d8d9cd5c-04f4-4eff-8409-ef7b0cd74f4c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.14.2026::11:6:45</_modifiedTime>
-			<_lastID type="a">11</_lastID>
-			<weakCGTime type="a">6.14.2026::11:8:35</weakCGTime>
+			<_modifiedTime type="a">6.14.2026::11:15:8</_modifiedTime>
+			<_lastID type="a">12</_lastID>
+			<weakCGTime type="a">6.14.2026::11:15:8</weakCGTime>
 			<strongCGTime type="a">6.8.2026::8:26:46</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -19941,6 +19942,7 @@ warned=true;</_body>
 				<value>GUID 3c4d2bad-212b-44ba-ac36-e3cba359b121</value>
 				<value>GUID 8215d6be-4e15-4b4d-8a3f-e1e71b0c0bb8</value>
 				<value>GUID 8c062d41-4a80-4361-91c0-c6396c68a675</value>
+				<value>GUID 352aa6ea-d7ea-4d1e-8ae9-e1833a7aaae9</value>
 				<value>GUID f10a08d4-6eac-415d-84a1-bc25165b4f12</value>
 				<value>GUID 131a5f90-5503-4777-af09-2069a966e2b2</value>
 				<value>GUID a0d7d637-e71f-4617-bf19-4455bf5d3ad7</value>
@@ -20453,14 +20455,47 @@ prev_warned=warned;</_bodyData>
 			<_isReferenceAttr type="a">0</_isReferenceAttr>
 			<_isConstant type="a">0</_isConstant>
 		</IAttribute>
+		<IAttribute type="e">
+			<_id type="a">GUID 352aa6ea-d7ea-4d1e-8ae9-e1833a7aaae9</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">isErrorHandling</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
+							<_hname type="a">ValueProperty</_hname>
+							<_hid type="a">GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.14.2026::11:15:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:15:8</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">bool</_hname>
+					<_hid type="a">GUID e6c263cc-4bc5-4a11-b32d-02148c93add0</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_isReferenceAttr type="a">0</_isReferenceAttr>
+			<_isConstant type="a">0</_isConstant>
+		</IAttribute>
 		<IStateChart type="e">
 			<_id type="a">GUID f10a08d4-6eac-415d-84a1-bc25165b4f12</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">statechart_0</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::11:8:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::11:8:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::11:13:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:13:58</_modifiedTime>
 			<_lastID type="a">48</_lastID>
-			<weakCGTime type="a">6.14.2026::11:8:35</weakCGTime>
+			<weakCGTime type="a">6.14.2026::11:13:58</weakCGTime>
 			<strongCGTime type="a">6.8.2026::8:26:46</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -20468,7 +20503,7 @@ prev_warned=warned;</_bodyData>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">22</_defNumber>
-			<_version type="a">6.14.2026::13:8:39</_version>
+			<_version type="a">6.14.2026::13:13:58</_version>
 			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID 23110202-b159-4357-baf1-82e2b1670be6</_diagram>
 			<AggregatesList type="e">
@@ -21620,32 +21655,38 @@ else {                                                   // no tsunami -&gt; sto
 		<IState type="e">
 			<_id type="a">GUID 1f53d9f1-cda2-4180-bf55-d61222dff3d5</_id>
 			<_name type="a">error</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::11:8:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::11:8:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::11:13:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:13:32</_modifiedTime>
 			<_parent type="s">GUID 2e532a04-eeac-4046-8143-0e1fa2fc39d1</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID 154f43a4-7a4f-4383-8d20-95754ec32dd2</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-				<_body type="a">warning_message = output_broken;</_body>
+				<_modifiedTimeWeak type="a">6.14.2026::11:13:32</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::11:13:32</_modifiedTime>
+				<_body type="a">warning_message = output_broken;%0D
+%0D
+isErrorHandling = true;</_body>
 			</IAction>
 			</_entryAction>
 		</IState>
 		<IState type="e">
 			<_id type="a">GUID 30910d12-2a17-4880-a95f-4b44f88acbcb</_id>
 			<_name type="a">handled</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::11:8:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::11:8:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::11:13:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:13:58</_modifiedTime>
 			<_parent type="s">GUID 2e532a04-eeac-4046-8143-0e1fa2fc39d1</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID f635e378-7158-4f61-8d58-c44741ba7740</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-				<_body type="a">GEN(evErrorHandledDS());</_body>
+				<_modifiedTimeWeak type="a">6.14.2026::11:13:58</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::11:13:58</_modifiedTime>
+				<_body type="a">isErrorHandling = false;%0D
+%0D
+GEN(evErrorHandledSO());%0D
+%0D
+</_body>
 			</IAction>
 			</_entryAction>
 		</IState>
@@ -21902,9 +21943,9 @@ else {                                                   // no tsunami -&gt; sto
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">statechartdiagram_0</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::11:4:39</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.14.2026::11:12:19</_modifiedTimeWeak>
 			<_modifiedTime type="a">6.14.2026::11:8:35</_modifiedTime>
-			<_lastModifiedTime type="a">6.14.2026::11:8:48</_lastModifiedTime>
+			<_lastModifiedTime type="a">6.14.2026::11:13:58</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>

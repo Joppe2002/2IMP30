@@ -338,7 +338,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202402122040
 	- _name = "DefaultComponent\\DefaultConfig";
 	- _id = GUID 926f8b93-cd52-48a8-b547-7e8c0629e1df;
 }
-- genTime = 6.14.2026::11:15:34;
+- genTime = 6.14.2026::11:38:45;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\2IMP30_V1_rpy\\Architecture.sbsx";

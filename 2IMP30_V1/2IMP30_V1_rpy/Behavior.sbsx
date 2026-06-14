@@ -12,10 +12,10 @@
 			<_id type="a">GUID dff28762-58c5-43a8-a425-3a7ea26979db</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Behavior</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::11:9:53</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::11:9:53</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::11:10:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:30:12</_modifiedTime>
 			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">6.14.2026::11:9:53</weakCGTime>
+			<weakCGTime type="a">6.14.2026::11:10:37</weakCGTime>
 			<strongCGTime type="a">5.31.2026::10:8:45</strongCGTime>
 			<_defaultComposite type="s">GUID f11e5d82-402e-4ff7-882c-a0fec2328fe3</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -255,8 +255,8 @@
 			</_properties>
 			<_name type="a">GUI</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::11:10:8</_modifiedTime>
-			<_lastModifiedTime type="a">6.14.2026::11:10:8</_lastModifiedTime>
+			<_modifiedTime type="a">6.14.2026::11:15:32</_modifiedTime>
+			<_lastModifiedTime type="a">6.14.2026::11:15:32</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3467,7 +3467,7 @@ Tsunami Pred.</m_csName>
 			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">pushbutton_6</m_str>
+					<m_str type="a">Generate SO error</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3489,7 +3489,7 @@ Tsunami Pred.</m_csName>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
 			<m_csModelObjPath type="a">Architecture.itsSystem_Output.evErrorOccuredSO</m_csModelObjPath>
-			<m_csName type="a">pushbutton_6</m_csName>
+			<m_csName type="a">Generate SO error</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					
@@ -3522,7 +3522,7 @@ Tsunami Pred.</m_csName>
 			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">pushbutton_7</m_str>
+					<m_str type="a">Repair SO</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3544,7 +3544,7 @@ Tsunami Pred.</m_csName>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
 			<m_csModelObjPath type="a">Architecture.itsSystem_Output.evRepairSO</m_csModelObjPath>
-			<m_csName type="a">pushbutton_7</m_csName>
+			<m_csName type="a">Repair SO</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					
@@ -3595,18 +3595,17 @@ Tsunami Pred.</m_csName>
 			<m_type type="a">219</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
-					<_hm2Class type="a">IState</_hm2Class>
+					<_hm2Class type="a">IAttribute</_hm2Class>
 					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
 					<_hsubsystem type="a">Architecture</_hsubsystem>
 					<_hclass type="a">System_Output</_hclass>
-					<_hname type="a">ROOT.error_handling</_hname>
-					<_hid type="a">GUID 2e532a04-eeac-4046-8143-0e1fa2fc39d1</_hid>
+					<_hname type="a">isErrorHandling</_hname>
+					<_hid type="a">GUID 352aa6ea-d7ea-4d1e-8ae9-e1833a7aaae9</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">led_5</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3627,17 +3626,17 @@ Tsunami Pred.</m_csName>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">Architecture.System_Output[0].statechart_0.error_handling</m_csModelObjPath>
-			<m_csName type="a">led_5</m_csName>
+			<m_csModelObjPath type="a">Architecture.itsSystem_Output.isErrorHandling</m_csModelObjPath>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					
 						<IHandle type="e">
-							<_hm2Class type="a">IClass</_hm2Class>
+							<_hm2Class type="a">IPart</_hm2Class>
 							<_hfilename type="a">.\Architecture.sbsx</_hfilename>
 							<_hsubsystem type="a">Architecture</_hsubsystem>
-							<_hname type="a">System_Output</_hname>
-							<_hid type="a">GUID 40d76145-c08a-4b4a-8520-870a399b0eea</_hid>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSystem_Output</_hname>
+							<_hid type="a">GUID 8ba14703-b044-4695-9573-9ff40f3e8857</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
@@ -3726,9 +3725,9 @@ Tsunami Pred.</m_csName>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.14.2026::9:29:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::9:29:22</_modifiedTime>
-			<_lastID type="a">15</_lastID>
+			<_modifiedTimeWeak type="a">6.14.2026::11:10:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:10:37</_modifiedTime>
+			<_lastID type="a">16</_lastID>
 			<_kind type="a">Enumeration</_kind>
 			<AggregatesList type="e">
 				<value>GUID 3ce9b80d-c740-4a5c-8e93-49ec7fe2e032</value>
@@ -3739,6 +3738,7 @@ Tsunami Pred.</m_csName>
 				<value>GUID 91296866-7595-4ad2-973c-38f177350f56</value>
 				<value>GUID 15dbf030-8115-4116-bdf4-91c86ba34aac</value>
 				<value>GUID c9ce2fcf-4845-4f87-a5bf-972d87a3c33a</value>
+				<value>GUID 79b8e2e1-6a47-46e0-8ca9-a923b6364917</value>
 			</AggregatesList>
 		</IType>
 		<IEnumerationLiteral type="e">
@@ -3820,6 +3820,12 @@ Tsunami Pred.</m_csName>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">6.14.2026::9:29:22</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 79b8e2e1-6a47-46e0-8ca9-a923b6364917</_id>
+			<_name type="a">output_broken</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::11:10:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::11:10:37</_modifiedTime>
 		</IEnumerationLiteral>
 		
 	</RHAPSODY-MODEL>
