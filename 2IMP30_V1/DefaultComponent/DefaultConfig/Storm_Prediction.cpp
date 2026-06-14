@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.cpp
 *********************************************************************/
 
@@ -327,32 +327,7 @@ void Storm_Prediction::normal_operation_exit(void) {
     }
     state_6_subState = OMNonState;
     NOTIFY_STATE_EXITED("ROOT.normal_operation.state_6");
-    switch (state_7_subState) {
-        // State waiting
-        case waiting:
-        {
-            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
-        }
-        break;
-        // State medium_risk
-        case medium_risk:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.medium_risk");
-        }
-        break;
-        // State high_risk
-        case high_risk:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.high_risk");
-        }
-        break;
-        default:
-            break;
-    }
-    state_7_subState = OMNonState;
-    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7");
+    state_7_exit();
     
     NOTIFY_STATE_EXITED("ROOT.normal_operation");
 }
@@ -412,6 +387,43 @@ void Storm_Prediction::state_7_entDef(void) {
     NOTIFY_TRANSITION_TERMINATED("8");
 }
 
+void Storm_Prediction::state_7_exit(void) {
+    switch (state_7_subState) {
+        // State waiting
+        case waiting:
+        {
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
+        }
+        break;
+        // State medium_risk
+        case medium_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.medium_risk");
+        }
+        break;
+        // State high_risk
+        case high_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.high_risk");
+        }
+        break;
+        // State low_risk
+        case low_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.low_risk");
+        }
+        break;
+        default:
+            break;
+    }
+    state_7_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7");
+}
+
 IOxfReactive::TakeEventStatus Storm_Prediction::state_7_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (state_7_active) {
@@ -447,12 +459,17 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_7_processEvent(void) {
                                     NOTIFY_TRANSITION_STARTED("5");
                                     NOTIFY_TRANSITION_STARTED("9");
                                     NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.waiting");
-                                    //#[ transition 9 
-                                    warned=false;
+                                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.low_risk");
+                                    pushNullTransition();
+                                    state_7_subState = low_risk;
+                                    state_7_active = low_risk;
+                                    //#[ state normal_operation.state_7.low_risk.(Entry) 
+                                    relay_output_data();
+                                    if (itsSystem_Output != NULL) {
+                                        itsSystem_Output->GEN(evLowRiskSt());
+                                    }
+                                    warned=true;
                                     //#]
-                                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.waiting");
-                                    state_7_subState = waiting;
-                                    state_7_active = waiting;
                                     NOTIFY_TRANSITION_TERMINATED("9");
                                     NOTIFY_TRANSITION_TERMINATED("5");
                                     res = eventConsumed;
@@ -511,6 +528,24 @@ IOxfReactive::TakeEventStatus Storm_Prediction::state_7_processEvent(void) {
                     state_7_subState = waiting;
                     state_7_active = waiting;
                     NOTIFY_TRANSITION_TERMINATED("7");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State low_risk
+        case low_risk:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("16");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.normal_operation.state_7.low_risk");
+                    NOTIFY_STATE_ENTERED("ROOT.normal_operation.state_7.waiting");
+                    state_7_subState = waiting;
+                    state_7_active = waiting;
+                    NOTIFY_TRANSITION_TERMINATED("16");
                     res = eventConsumed;
                 }
             
@@ -793,6 +828,11 @@ void OMAnimatedStorm_Prediction::state_7_serializeStates(AOMSState* aomsState) c
             high_risk_serializeStates(aomsState);
         }
         break;
+        case Storm_Prediction::low_risk:
+        {
+            low_risk_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
@@ -804,6 +844,10 @@ void OMAnimatedStorm_Prediction::waiting_serializeStates(AOMSState* aomsState) c
 
 void OMAnimatedStorm_Prediction::medium_risk_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.normal_operation.state_7.medium_risk");
+}
+
+void OMAnimatedStorm_Prediction::low_risk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.normal_operation.state_7.low_risk");
 }
 
 void OMAnimatedStorm_Prediction::high_risk_serializeStates(AOMSState* aomsState) const {

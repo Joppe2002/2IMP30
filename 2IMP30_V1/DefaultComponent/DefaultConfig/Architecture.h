@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h
 *********************************************************************/
 
@@ -500,6 +500,62 @@ class OMAnimatedevRepairDS : virtual public AOMEvent {
 
 //#[ ignore
 extern const IOxfEvent::ID evRepairDS_Architecture_id;
+//#]
+
+//## event evLowRiskTs()
+class evLowRiskTs : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevLowRiskTs;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evLowRiskTs(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevLowRiskTs : virtual public AOMEvent {
+    DECLARE_META_EVENT(evLowRiskTs)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evLowRiskTs_Architecture_id;
+//#]
+
+//## event evLowRiskSt()
+class evLowRiskSt : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevLowRiskSt;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evLowRiskSt(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevLowRiskSt : virtual public AOMEvent {
+    DECLARE_META_EVENT(evLowRiskSt)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evLowRiskSt_Architecture_id;
 //#]
 
 #endif

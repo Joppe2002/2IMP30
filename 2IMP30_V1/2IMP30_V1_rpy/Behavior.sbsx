@@ -12,10 +12,10 @@
 			<_id type="a">GUID dff28762-58c5-43a8-a425-3a7ea26979db</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Behavior</_name>
-			<_modifiedTimeWeak type="a">6.13.2026::14:18:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.13.2026::14:18:30</_modifiedTime>
-			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">6.13.2026::14:18:30</weakCGTime>
+			<_modifiedTimeWeak type="a">6.14.2026::9:29:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::9:34:45</_modifiedTime>
+			<_lastID type="a">3</_lastID>
+			<weakCGTime type="a">6.14.2026::9:29:22</weakCGTime>
 			<strongCGTime type="a">5.31.2026::10:8:45</strongCGTime>
 			<_defaultComposite type="s">GUID f11e5d82-402e-4ff7-882c-a0fec2328fe3</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -24,6 +24,7 @@
 				<value>GUID ef107205-c9a4-401e-b843-1d1e45b2ead4</value>
 				<value>GUID f11e5d82-402e-4ff7-882c-a0fec2328fe3</value>
 				<value>GUID b5ef8bf1-309c-4171-8256-a993c5b151e7</value>
+				<value>GUID 8c87a702-8a94-42dd-b9cb-6970973d5fc4</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IPanelDiagram type="e">
@@ -254,8 +255,8 @@
 			</_properties>
 			<_name type="a">GUI</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.13.2026::14:22:19</_modifiedTime>
-			<_lastModifiedTime type="a">6.13.2026::14:22:19</_lastModifiedTime>
+			<_modifiedTime type="a">6.14.2026::9:38:52</_modifiedTime>
+			<_lastModifiedTime type="a">6.14.2026::9:38:52</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -298,7 +299,7 @@
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">35</elementList>
+			<elementList type="a">36</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -346,6 +347,7 @@
 				<value>GUID 5ad9e93f-a225-4acc-8bbc-d608cfd32ca9</value>
 				<value>GUID cb09b1d8-892b-45a9-923d-2341e16386ce</value>
 				<value>GUID 058afbdc-297e-47a9-ab37-9d023eda0ff5</value>
+				<value>GUID aa973e0b-100b-4ba5-b502-1163cae5356d</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIBox type="e">
@@ -2729,7 +2731,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00157312 0 0 0.000278887 929 503.311 </m_transform>
+			<m_transform type="a">0.00157312 0 0 0.000278887 702 501.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3363,6 +3365,89 @@ Tsunami Pred.</m_csName>
 			</m_PartsArray>
 			<m_csButtonCaption type="a">Push</m_csButtonCaption>
 		</CGIMFCCtrl>
+		<CGIActiveX type="e">
+			<_id type="a">GUID aa973e0b-100b-4ba5-b502-1163cae5356d</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">MatrixDisplay</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">220</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hclass type="a">System_Output</_hclass>
+					<_hname type="a">warning_message</_hname>
+					<_hid type="a">GUID 8c062d41-4a80-4361-91c0-c6396c68a675</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 51382ee6-5055-4d38-9351-828c813b4bf0</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Warning Message</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.00448631 0 0 0.000278887 918 501.311 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Architecture.itsSystem_Output.warning_message</m_csModelObjPath>
+			<m_csName type="a">Warning Message</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+							<_hsubsystem type="a">Architecture</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSystem_Output</_hname>
+							<_hid type="a">GUID 8ba14703-b044-4695-9573-9ff40f3e8857</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
 		<IClass type="e">
 			<_id type="a">GUID f11e5d82-402e-4ff7-882c-a0fec2328fe3</_id>
 			<_myState type="a">40960</_myState>
@@ -3428,6 +3513,118 @@ Tsunami Pred.</m_csName>
 			<_name type="a">hail</_name>
 			<_modifiedTimeWeak type="a">6.4.2026::15:10:29</_modifiedTimeWeak>
 			<_modifiedTime type="a">6.4.2026::15:10:29</_modifiedTime>
+		</IEnumerationLiteral>
+		<IType type="e">
+			<_id type="a">GUID 8c87a702-8a94-42dd-b9cb-6970973d5fc4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">warning_message_enum</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
+							<_hname type="a">DataType</_hname>
+							<_hid type="a">GUID 39bf6572-6f61-4cbf-b651-64241e075688</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.14.2026::9:29:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::9:29:22</_modifiedTime>
+			<_lastID type="a">15</_lastID>
+			<_kind type="a">Enumeration</_kind>
+			<AggregatesList type="e">
+				<value>GUID 3ce9b80d-c740-4a5c-8e93-49ec7fe2e032</value>
+				<value>GUID 0d4d1d60-6e97-4dfa-ba70-9928efdd7274</value>
+				<value>GUID 1f1399d0-610f-491b-9889-32a2ff82a577</value>
+				<value>GUID 434dfd05-4dee-4f45-b51c-29305dba1312</value>
+				<value>GUID 69611ad7-905b-4642-a4b2-7c1013183e96</value>
+				<value>GUID 91296866-7595-4ad2-973c-38f177350f56</value>
+				<value>GUID 15dbf030-8115-4116-bdf4-91c86ba34aac</value>
+				<value>GUID c9ce2fcf-4845-4f87-a5bf-972d87a3c33a</value>
+			</AggregatesList>
+		</IType>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 3ce9b80d-c740-4a5c-8e93-49ec7fe2e032</_id>
+			<_name type="a">no_warning</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:25:13</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">threat passed, resume normal activity</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:25:13</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 0d4d1d60-6e97-4dfa-ba70-9928efdd7274</_id>
+			<_name type="a">stay_alert</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:24:45</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">monitor official updates</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:24:45</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 1f1399d0-610f-491b-9889-32a2ff82a577</_id>
+			<_name type="a">secure_and_prepare</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:24:39</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">secure property, stock supplies</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:24:39</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 434dfd05-4dee-4f45-b51c-29305dba1312</_id>
+			<_name type="a">prepare_to_evacuate</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:25:49</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">ready to leave, await instruction</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:25:49</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 69611ad7-905b-4642-a4b2-7c1013183e96</_id>
+			<_name type="a">take_shelter_now</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:26:2</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">storm, move indoors, interior room</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:26:2</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 91296866-7595-4ad2-973c-38f177350f56</_id>
+			<_name type="a">leave_the_coast</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:27:16</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">tsunami advisory, off beaches, out of the water</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:27:16</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID 15dbf030-8115-4116-bdf4-91c86ba34aac</_id>
+			<_name type="a">evacuate_to_high_ground</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:26:18</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">tsunami warning, move inland and uphill </_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:26:18</_modifiedTime>
+		</IEnumerationLiteral>
+		<IEnumerationLiteral type="e">
+			<_id type="a">GUID c9ce2fcf-4845-4f87-a5bf-972d87a3c33a</_id>
+			<_name type="a">pray_to_god</_name>
+			<_modifiedTimeWeak type="a">6.14.2026::9:29:22</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">the world is ending</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.14.2026::9:29:22</_modifiedTime>
 		</IEnumerationLiteral>
 		
 	</RHAPSODY-MODEL>

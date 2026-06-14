@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Tsunami_Prediction
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Tsunami_Prediction.cpp
 *********************************************************************/
 
@@ -267,32 +267,7 @@ void Tsunami_Prediction::state_0_exit(void) {
     }
     state_1_subState = OMNonState;
     NOTIFY_STATE_EXITED("ROOT.state_0.state_1");
-    switch (state_2_subState) {
-        // State waiting
-        case waiting:
-        {
-            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.waiting");
-        }
-        break;
-        // State medium_risk
-        case medium_risk:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.medium_risk");
-        }
-        break;
-        // State high_risk
-        case high_risk:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.high_risk");
-        }
-        break;
-        default:
-            break;
-    }
-    state_2_subState = OMNonState;
-    NOTIFY_STATE_EXITED("ROOT.state_0.state_2");
+    state_2_exit();
     
     NOTIFY_STATE_EXITED("ROOT.state_0");
 }
@@ -352,6 +327,43 @@ void Tsunami_Prediction::state_2_entDef(void) {
     NOTIFY_TRANSITION_TERMINATED("4");
 }
 
+void Tsunami_Prediction::state_2_exit(void) {
+    switch (state_2_subState) {
+        // State waiting
+        case waiting:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.waiting");
+        }
+        break;
+        // State medium_risk
+        case medium_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.medium_risk");
+        }
+        break;
+        // State high_risk
+        case high_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.high_risk");
+        }
+        break;
+        // State low_risk
+        case low_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.low_risk");
+        }
+        break;
+        default:
+            break;
+    }
+    state_2_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.state_0.state_2");
+}
+
 IOxfReactive::TakeEventStatus Tsunami_Prediction::state_2_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (state_2_active) {
@@ -366,12 +378,17 @@ IOxfReactive::TakeEventStatus Tsunami_Prediction::state_2_processEvent(void) {
                             NOTIFY_TRANSITION_STARTED("5");
                             NOTIFY_TRANSITION_STARTED("6");
                             NOTIFY_STATE_EXITED("ROOT.state_0.state_2.waiting");
-                            //#[ transition 6 
-                            warned=false;
+                            NOTIFY_STATE_ENTERED("ROOT.state_0.state_2.low_risk");
+                            pushNullTransition();
+                            state_2_subState = low_risk;
+                            state_2_active = low_risk;
+                            //#[ state state_0.state_2.low_risk.(Entry) 
+                            relay_output_data_ts();
+                            if (itsSystem_Output != NULL) {
+                                itsSystem_Output->GEN(evLowRiskTs());
+                            }
+                            warned=true;
                             //#]
-                            NOTIFY_STATE_ENTERED("ROOT.state_0.state_2.waiting");
-                            state_2_subState = waiting;
-                            state_2_active = waiting;
                             NOTIFY_TRANSITION_TERMINATED("6");
                             NOTIFY_TRANSITION_TERMINATED("5");
                             res = eventConsumed;
@@ -451,6 +468,24 @@ IOxfReactive::TakeEventStatus Tsunami_Prediction::state_2_processEvent(void) {
                     state_2_subState = waiting;
                     state_2_active = waiting;
                     NOTIFY_TRANSITION_TERMINATED("10");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State low_risk
+        case low_risk:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("16");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_0.state_2.low_risk");
+                    NOTIFY_STATE_ENTERED("ROOT.state_0.state_2.waiting");
+                    state_2_subState = waiting;
+                    state_2_active = waiting;
+                    NOTIFY_TRANSITION_TERMINATED("16");
                     res = eventConsumed;
                 }
             
@@ -719,6 +754,11 @@ void OMAnimatedTsunami_Prediction::state_2_serializeStates(AOMSState* aomsState)
             high_risk_serializeStates(aomsState);
         }
         break;
+        case Tsunami_Prediction::low_risk:
+        {
+            low_risk_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
@@ -730,6 +770,10 @@ void OMAnimatedTsunami_Prediction::waiting_serializeStates(AOMSState* aomsState)
 
 void OMAnimatedTsunami_Prediction::medium_risk_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_0.state_2.medium_risk");
+}
+
+void OMAnimatedTsunami_Prediction::low_risk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0.state_2.low_risk");
 }
 
 void OMAnimatedTsunami_Prediction::high_risk_serializeStates(AOMSState* aomsState) const {

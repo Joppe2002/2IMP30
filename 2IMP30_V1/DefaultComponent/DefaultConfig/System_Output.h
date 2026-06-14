@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: System_Output
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\System_Output.h
 *********************************************************************/
 
@@ -25,6 +25,8 @@
 #include <state.h>
 //## auto_generated
 #include <event.h>
+//## attribute warning_message
+#include "Behavior.h"
 //## link itsStorm_Prediction
 class Storm_Prediction;
 
@@ -74,6 +76,12 @@ public :
     void setPrev_warned_ts(const int p_prev_warned_ts);
     
     //## auto_generated
+    const bool getPrev_warning_ts_high(void) const;
+    
+    //## auto_generated
+    void setPrev_warning_ts_high(const bool p_prev_warning_ts_high);
+    
+    //## auto_generated
     const bool getPrev_warning_ts_medium(void) const;
     
     //## auto_generated
@@ -92,6 +100,12 @@ public :
     void setStorm_severity(const float p_storm_severity);
     
     //## auto_generated
+    const warning_message_enum getWarning_message(void) const;
+    
+    //## auto_generated
+    void setWarning_message(const warning_message_enum p_warning_message);
+    
+    //## auto_generated
     const Storm_Prediction* getItsStorm_Prediction(void) const;
     
     //## auto_generated
@@ -104,6 +118,9 @@ public :
     void setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami_Prediction);
     
     //## auto_generated
+    virtual bool cancelTimeout(const IOxfTimeout* arg);
+    
+    //## auto_generated
     virtual bool startBehavior(void);
 
 protected :
@@ -114,6 +131,9 @@ protected :
     //## auto_generated
     void cleanUpRelations(void);
     
+    //## auto_generated
+    void cancelTimeouts(void);
+    
     ////    Attributes    ////
 
 private :
@@ -122,11 +142,15 @@ private :
     
     int prev_warned_ts;		//## attribute prev_warned_ts
     
+    bool prev_warning_ts_high;		//## attribute prev_warning_ts_high
+    
     bool prev_warning_ts_medium;		//## attribute prev_warning_ts_medium
     
     int prev_warning_type;		//## attribute prev_warning_type
     
     float storm_severity;		//## attribute storm_severity
+    
+    warning_message_enum warning_message;		//## attribute warning_message
     
     ////    Relations and components    ////
     
@@ -181,11 +205,18 @@ public :
     void state_2_entDef(void);
     
     //## statechart_method
+    void state_2_exit(void);
+    
+    //## statechart_method
     IOxfReactive::TakeEventStatus state_2_processEvent(void);
     
     // medium_risk_tsunami:
     //## statechart_method
     inline RhpBoolean medium_risk_tsunami_IN(void) const;
+    
+    // state_2_low_risk:
+    //## statechart_method
+    inline RhpBoolean state_2_low_risk_IN(void) const;
     
     // idle_tsunami:
     //## statechart_method
@@ -194,6 +225,24 @@ public :
     // high_risk_tsunami:
     //## statechart_method
     inline RhpBoolean high_risk_tsunami_IN(void) const;
+    
+    // state_16:
+    //## statechart_method
+    inline RhpBoolean state_16_IN(void) const;
+    
+    //## statechart_method
+    void state_16_entDef(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_16_processEvent(void);
+    
+    // update_warning:
+    //## statechart_method
+    inline RhpBoolean update_warning_IN(void) const;
+    
+    // accepttimeevent_18:
+    //## statechart_method
+    inline RhpBoolean accepttimeevent_18_IN(void) const;
     
     // state_1:
     //## statechart_method
@@ -215,6 +264,10 @@ public :
     // medium_risk:
     //## statechart_method
     inline RhpBoolean medium_risk_IN(void) const;
+    
+    // low_risk:
+    //## statechart_method
+    inline RhpBoolean low_risk_IN(void) const;
     
     // idle_storm:
     //## statechart_method
@@ -247,14 +300,19 @@ protected :
         state_0 = 1,
         state_2 = 2,
         medium_risk_tsunami = 3,
-        idle_tsunami = 4,
-        high_risk_tsunami = 5,
-        state_1 = 6,
-        medium_risk_severe = 7,
-        medium_risk = 8,
-        idle_storm = 9,
-        high_risk_severe = 10,
-        high_risk = 11
+        state_2_low_risk = 4,
+        idle_tsunami = 5,
+        high_risk_tsunami = 6,
+        state_16 = 7,
+        update_warning = 8,
+        accepttimeevent_18 = 9,
+        state_1 = 10,
+        medium_risk_severe = 11,
+        medium_risk = 12,
+        low_risk = 13,
+        idle_storm = 14,
+        high_risk_severe = 15,
+        high_risk = 16
     };
 //#]
 
@@ -268,6 +326,12 @@ private :
     System_Output_Enum state_2_subState;
     
     System_Output_Enum state_2_active;
+    
+    System_Output_Enum state_16_subState;
+    
+    System_Output_Enum state_16_active;
+    
+    IOxfTimeout* state_16_timeout;
     
     System_Output_Enum state_1_subState;
     
@@ -301,10 +365,22 @@ public :
     void medium_risk_tsunami_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void state_2_low_risk_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void idle_tsunami_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void high_risk_tsunami_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_16_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void update_warning_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void accepttimeevent_18_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void state_1_serializeStates(AOMSState* aomsState) const;
@@ -314,6 +390,9 @@ public :
     
     //## statechart_method
     void medium_risk_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void low_risk_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void idle_storm_serializeStates(AOMSState* aomsState) const;
@@ -343,12 +422,28 @@ inline RhpBoolean System_Output::medium_risk_tsunami_IN(void) const {
     return state_2_subState == medium_risk_tsunami;
 }
 
+inline RhpBoolean System_Output::state_2_low_risk_IN(void) const {
+    return state_2_subState == state_2_low_risk;
+}
+
 inline RhpBoolean System_Output::idle_tsunami_IN(void) const {
     return state_2_subState == idle_tsunami;
 }
 
 inline RhpBoolean System_Output::high_risk_tsunami_IN(void) const {
     return state_2_subState == high_risk_tsunami;
+}
+
+inline RhpBoolean System_Output::state_16_IN(void) const {
+    return state_0_IN();
+}
+
+inline RhpBoolean System_Output::update_warning_IN(void) const {
+    return state_16_subState == update_warning;
+}
+
+inline RhpBoolean System_Output::accepttimeevent_18_IN(void) const {
+    return state_16_subState == accepttimeevent_18;
 }
 
 inline RhpBoolean System_Output::state_1_IN(void) const {
@@ -361,6 +456,10 @@ inline RhpBoolean System_Output::medium_risk_severe_IN(void) const {
 
 inline RhpBoolean System_Output::medium_risk_IN(void) const {
     return state_1_subState == medium_risk;
+}
+
+inline RhpBoolean System_Output::low_risk_IN(void) const {
+    return state_1_subState == low_risk;
 }
 
 inline RhpBoolean System_Output::idle_storm_IN(void) const {

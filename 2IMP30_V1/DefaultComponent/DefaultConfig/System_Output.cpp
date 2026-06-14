@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: System_Output
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\System_Output.cpp
 *********************************************************************/
 
@@ -41,6 +41,7 @@ System_Output::System_Output(IOxfActive* const theActiveContext) : OMReactive(),
 System_Output::~System_Output(void) {
     NOTIFY_DESTRUCTOR(~System_Output, true);
     cleanUpRelations();
+    cancelTimeouts();
 }
 
 void System_Output::get_storm_relay_data(float severity, bool warned) {
@@ -74,6 +75,14 @@ void System_Output::setPrev_warned_ts(const int p_prev_warned_ts) {
     prev_warned_ts = p_prev_warned_ts;
 }
 
+const bool System_Output::getPrev_warning_ts_high(void) const {
+    return prev_warning_ts_high;
+}
+
+void System_Output::setPrev_warning_ts_high(const bool p_prev_warning_ts_high) {
+    prev_warning_ts_high = p_prev_warning_ts_high;
+}
+
 const bool System_Output::getPrev_warning_ts_medium(void) const {
     return prev_warning_ts_medium;
 }
@@ -96,6 +105,15 @@ const float System_Output::getStorm_severity(void) const {
 
 void System_Output::setStorm_severity(const float p_storm_severity) {
     storm_severity = p_storm_severity;
+}
+
+const warning_message_enum System_Output::getWarning_message(void) const {
+    return warning_message;
+}
+
+void System_Output::setWarning_message(const warning_message_enum p_warning_message) {
+    warning_message = p_warning_message;
+    NOTIFY_SET_OPERATION;
 }
 
 const Storm_Prediction* System_Output::getItsStorm_Prediction(void) const {
@@ -122,6 +140,16 @@ void System_Output::setItsTsunami_Prediction(Tsunami_Prediction* const p_Tsunami
     _setItsTsunami_Prediction(p_Tsunami_Prediction);
 }
 
+bool System_Output::cancelTimeout(const IOxfTimeout* arg) {
+    bool res = false;
+    if(state_16_timeout == arg)
+        {
+            state_16_timeout = NULL;
+            res = true;
+        }
+    return res;
+}
+
 bool System_Output::startBehavior(void) {
     bool done = false;
     done = OMReactive::startBehavior();
@@ -133,6 +161,9 @@ void System_Output::initStatechart(void) {
     rootState_active = OMNonState;
     state_2_subState = OMNonState;
     state_2_active = OMNonState;
+    state_16_subState = OMNonState;
+    state_16_active = OMNonState;
+    state_16_timeout = NULL;
     state_1_subState = OMNonState;
     state_1_active = OMNonState;
 }
@@ -158,6 +189,10 @@ void System_Output::cleanUpRelations(void) {
                 }
             itsTsunami_Prediction = NULL;
         }
+}
+
+void System_Output::cancelTimeouts(void) {
+    cancel(state_16_timeout);
 }
 
 void System_Output::__setItsStorm_Prediction(Storm_Prediction* const p_Storm_Prediction) {
@@ -216,36 +251,31 @@ void System_Output::state_0_entDef(void) {
     rootState_active = state_0;
     state_1_entDef();
     state_2_entDef();
+    state_16_entDef();
 }
 
 void System_Output::state_0_exit(void) {
     state_1_exit();
-    switch (state_2_subState) {
-        // State idle_tsunami
-        case idle_tsunami:
+    state_2_exit();
+    switch (state_16_subState) {
+        // State update_warning
+        case update_warning:
         {
-            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.idle_tsunami");
+            cancel(state_16_timeout);
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_16.update_warning");
         }
         break;
-        // State high_risk_tsunami
-        case high_risk_tsunami:
+        case accepttimeevent_18:
         {
             popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.high_risk_tsunami");
-        }
-        break;
-        // State medium_risk_tsunami
-        case medium_risk_tsunami:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.medium_risk_tsunami");
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_16.accepttimeevent_18");
         }
         break;
         default:
             break;
     }
-    state_2_subState = OMNonState;
-    NOTIFY_STATE_EXITED("ROOT.state_0.state_2");
+    state_16_subState = OMNonState;
+    NOTIFY_STATE_EXITED("ROOT.state_0.state_16");
     
     NOTIFY_STATE_EXITED("ROOT.state_0");
 }
@@ -273,6 +303,19 @@ IOxfReactive::TakeEventStatus System_Output::state_0_processEvent(void) {
             if(omComponentStatus != eventNotConsumed)
                 {
                     res = eventConsumed;
+                    if(IS_IN(state_0) == false)
+                        {
+                            dispatchDone = true;
+                        }
+                }
+        }
+    if(!dispatchDone)
+        {
+            // State state_16
+            omComponentStatus = state_16_processEvent();
+            if(omComponentStatus != eventNotConsumed)
+                {
+                    res = eventConsumed;
                 }
         }
     
@@ -286,6 +329,43 @@ void System_Output::state_2_entDef(void) {
     state_2_subState = idle_tsunami;
     state_2_active = idle_tsunami;
     NOTIFY_TRANSITION_TERMINATED("12");
+}
+
+void System_Output::state_2_exit(void) {
+    switch (state_2_subState) {
+        // State idle_tsunami
+        case idle_tsunami:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.idle_tsunami");
+        }
+        break;
+        // State high_risk_tsunami
+        case high_risk_tsunami:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.high_risk_tsunami");
+        }
+        break;
+        // State medium_risk_tsunami
+        case medium_risk_tsunami:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.medium_risk_tsunami");
+        }
+        break;
+        // State low_risk
+        case state_2_low_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.low_risk");
+        }
+        break;
+        default:
+            break;
+    }
+    state_2_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.state_0.state_2");
 }
 
 IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
@@ -306,6 +386,8 @@ IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
                     if(!prev_warned_ts||prev_warning_ts_medium){
                     	printf("High Tsunami\n");
                     	prev_warning_ts_medium=false;
+                    	prev_warning_ts_high=true;
+                    	prev_warned_ts=true;
                     }
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("13");
@@ -321,14 +403,36 @@ IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
                         state_2_subState = medium_risk_tsunami;
                         state_2_active = medium_risk_tsunami;
                         //#[ state state_0.state_2.medium_risk_tsunami.(Entry) 
-                        if(!prev_warned_ts){
+                        if(!prev_warned_ts||prev_warning_ts_high){
                         	printf("Medium Tsunami\n");
                         	prev_warning_ts_medium=true;
+                        	prev_warning_ts_high=false;
+                        	prev_warned_ts=true;
                         }
                         //#]
                         NOTIFY_TRANSITION_TERMINATED("14");
                         res = eventConsumed;
                     }
+                else {
+                    if(IS_EVENT_TYPE_OF(evLowRiskTs_Architecture_id) == 1)
+                        {
+                            NOTIFY_TRANSITION_STARTED("20");
+                            NOTIFY_STATE_EXITED("ROOT.state_0.state_2.idle_tsunami");
+                            NOTIFY_STATE_ENTERED("ROOT.state_0.state_2.low_risk");
+                            pushNullTransition();
+                            state_2_subState = state_2_low_risk;
+                            state_2_active = state_2_low_risk;
+                            //#[ state state_0.state_2.low_risk.(Entry) 
+                            prev_warning_ts_medium=false;
+                            prev_warning_ts_high=false;
+                            prev_warned_ts=false;
+                            
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("20");
+                            res = eventConsumed;
+                        }
+                    }
+                    
                 }
                 
             
@@ -365,6 +469,105 @@ IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
                     state_2_subState = idle_tsunami;
                     state_2_active = idle_tsunami;
                     NOTIFY_TRANSITION_TERMINATED("15");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State low_risk
+        case state_2_low_risk:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("21");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_0.state_2.low_risk");
+                    NOTIFY_STATE_ENTERED("ROOT.state_0.state_2.idle_tsunami");
+                    state_2_subState = idle_tsunami;
+                    state_2_active = idle_tsunami;
+                    NOTIFY_TRANSITION_TERMINATED("21");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        default:
+            break;
+    }
+    return res;
+}
+
+void System_Output::state_16_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.state_0.state_16");
+    NOTIFY_TRANSITION_STARTED("24");
+    NOTIFY_STATE_ENTERED("ROOT.state_0.state_16.update_warning");
+    state_16_subState = update_warning;
+    state_16_active = update_warning;
+    //#[ state state_0.state_16.update_warning.(Entry) 
+                                                 // no tsunami -> storm-only ladder
+    switch (prev_warning_type) {
+        case 0: warning_message = no_warning;          break;
+        case 1: warning_message = stay_alert;          break;
+        case 2: warning_message = secure_and_prepare;  break;
+        case 3: warning_message = prepare_to_evacuate; break;
+        case 4: warning_message = take_shelter_now;    break;
+    }
+    
+    //#]
+    state_16_timeout = scheduleTimeout(500, "ROOT.state_0.state_16.update_warning");
+    NOTIFY_TRANSITION_TERMINATED("24");
+}
+
+IOxfReactive::TakeEventStatus System_Output::state_16_processEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (state_16_active) {
+        // State update_warning
+        case update_warning:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
+                {
+                    if(getCurrentEvent() == state_16_timeout)
+                        {
+                            NOTIFY_TRANSITION_STARTED("22");
+                            cancel(state_16_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.state_0.state_16.update_warning");
+                            NOTIFY_STATE_ENTERED("ROOT.state_0.state_16.accepttimeevent_18");
+                            pushNullTransition();
+                            state_16_subState = accepttimeevent_18;
+                            state_16_active = accepttimeevent_18;
+                            NOTIFY_TRANSITION_TERMINATED("22");
+                            res = eventConsumed;
+                        }
+                }
+            
+            
+        }
+        break;
+        case accepttimeevent_18:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("23");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_0.state_16.accepttimeevent_18");
+                    NOTIFY_STATE_ENTERED("ROOT.state_0.state_16.update_warning");
+                    state_16_subState = update_warning;
+                    state_16_active = update_warning;
+                    //#[ state state_0.state_16.update_warning.(Entry) 
+                                                                 // no tsunami -> storm-only ladder
+                    switch (prev_warning_type) {
+                        case 0: warning_message = no_warning;          break;
+                        case 1: warning_message = stay_alert;          break;
+                        case 2: warning_message = secure_and_prepare;  break;
+                        case 3: warning_message = prepare_to_evacuate; break;
+                        case 4: warning_message = take_shelter_now;    break;
+                    }
+                    
+                    //#]
+                    state_16_timeout = scheduleTimeout(500, "ROOT.state_0.state_16.update_warning");
+                    NOTIFY_TRANSITION_TERMINATED("23");
                     res = eventConsumed;
                 }
             
@@ -420,6 +623,13 @@ void System_Output::state_1_exit(void) {
         {
             popNullTransition();
             NOTIFY_STATE_EXITED("ROOT.state_0.state_1.high_risk_severe");
+        }
+        break;
+        // State low_risk
+        case low_risk:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_0.state_1.low_risk");
         }
         break;
         default:
@@ -511,6 +721,24 @@ IOxfReactive::TakeEventStatus System_Output::state_1_processEvent(void) {
             
         }
         break;
+        // State low_risk
+        case low_risk:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("19");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_0.state_1.low_risk");
+                    NOTIFY_STATE_ENTERED("ROOT.state_0.state_1.idle_storm");
+                    state_1_subState = idle_storm;
+                    state_1_active = idle_storm;
+                    NOTIFY_TRANSITION_TERMINATED("19");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
         default:
             break;
     }
@@ -532,9 +760,10 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
                     state_1_subState = high_risk_severe;
                     state_1_active = high_risk_severe;
                     //#[ state state_0.state_1.high_risk_severe.(Entry) 
-                    if(!prev_warned || prev_warning_type<3){
+                    if(!prev_warned || prev_warning_type<4){
                     	printf("High severe storm, with severity %.1f\n", storm_severity);
-                    	prev_warning_type=3;
+                    	prev_warning_type=4;
+                    	prev_warned=true;
                     }
                     
                     //#]
@@ -552,9 +781,10 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
                     state_1_subState = high_risk;
                     state_1_active = high_risk;
                     //#[ state state_0.state_1.high_risk.(Entry) 
-                    if(!prev_warned || prev_warning_type<2){
+                    if(!prev_warned || prev_warning_type<3 || prev_warning_type>3){
                     	printf("High storm, with severity %.1f\n", storm_severity);
-                    	prev_warning_type=2;
+                    	prev_warning_type=3;
+                    	prev_warned=true;
                     }
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("5");
@@ -576,9 +806,10 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
                         state_1_subState = medium_risk_severe;
                         state_1_active = medium_risk_severe;
                         //#[ state state_0.state_1.medium_risk_severe.(Entry) 
-                        if(!prev_warned || prev_warning_type==0 || prev_warning_type==2){
+                        if(!prev_warned || prev_warning_type<2 || prev_warning_type>2){
                         	printf("Medium severe storm, with severity %.1f\n", storm_severity);
-                        	prev_warning_type=1;
+                        	prev_warning_type=2;
+                        	prev_warned=true;
                         }
                         
                         //#]
@@ -596,9 +827,10 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
                         state_1_subState = medium_risk;
                         state_1_active = medium_risk;
                         //#[ state state_0.state_1.medium_risk.(Entry) 
-                        if(!prev_warned){
+                        if(!prev_warned || prev_warning_type>1 ){
                         	printf("Medium storm, with severity %.1f\n", storm_severity);
-                        	prev_warning_type=0;
+                        	prev_warning_type=1;
+                        	prev_warned=true;
                         }
                         //#]
                         NOTIFY_TRANSITION_TERMINATED("7");
@@ -606,6 +838,25 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
                         res = eventConsumed;
                     }
             }
+        else {
+            if(IS_EVENT_TYPE_OF(evLowRiskSt_Architecture_id) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("18");
+                    NOTIFY_STATE_EXITED("ROOT.state_0.state_1.idle_storm");
+                    NOTIFY_STATE_ENTERED("ROOT.state_0.state_1.low_risk");
+                    pushNullTransition();
+                    state_1_subState = low_risk;
+                    state_1_active = low_risk;
+                    //#[ state state_0.state_1.low_risk.(Entry) 
+                    prev_warning_type 	= 0;
+                    prev_warned 		= false;
+                    
+                    //#]
+                    NOTIFY_TRANSITION_TERMINATED("18");
+                    res = eventConsumed;
+                }
+            }
+            
         }
         
     
@@ -640,6 +891,8 @@ void OMAnimatedSystem_Output::serializeAttributes(AOMSAttributes* aomsAttributes
     aomsAttributes->addAttribute("prev_warned", x2String(myReal->prev_warned));
     aomsAttributes->addAttribute("prev_warned_ts", x2String(myReal->prev_warned_ts));
     aomsAttributes->addAttribute("prev_warning_ts_medium", x2String(myReal->prev_warning_ts_medium));
+    aomsAttributes->addAttribute("prev_warning_ts_high", x2String(myReal->prev_warning_ts_high));
+    aomsAttributes->addAttribute("warning_message", x2String((int)myReal->warning_message));
 }
 
 void OMAnimatedSystem_Output::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -667,6 +920,7 @@ void OMAnimatedSystem_Output::state_0_serializeStates(AOMSState* aomsState) cons
     aomsState->addState("ROOT.state_0");
     state_1_serializeStates(aomsState);
     state_2_serializeStates(aomsState);
+    state_16_serializeStates(aomsState);
 }
 
 void OMAnimatedSystem_Output::state_2_serializeStates(AOMSState* aomsState) const {
@@ -687,6 +941,11 @@ void OMAnimatedSystem_Output::state_2_serializeStates(AOMSState* aomsState) cons
             medium_risk_tsunami_serializeStates(aomsState);
         }
         break;
+        case System_Output::state_2_low_risk:
+        {
+            state_2_low_risk_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
@@ -696,12 +955,42 @@ void OMAnimatedSystem_Output::medium_risk_tsunami_serializeStates(AOMSState* aom
     aomsState->addState("ROOT.state_0.state_2.medium_risk_tsunami");
 }
 
+void OMAnimatedSystem_Output::state_2_low_risk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0.state_2.low_risk");
+}
+
 void OMAnimatedSystem_Output::idle_tsunami_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_0.state_2.idle_tsunami");
 }
 
 void OMAnimatedSystem_Output::high_risk_tsunami_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_0.state_2.high_risk_tsunami");
+}
+
+void OMAnimatedSystem_Output::state_16_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0.state_16");
+    switch (myReal->state_16_subState) {
+        case System_Output::update_warning:
+        {
+            update_warning_serializeStates(aomsState);
+        }
+        break;
+        case System_Output::accepttimeevent_18:
+        {
+            accepttimeevent_18_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedSystem_Output::update_warning_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0.state_16.update_warning");
+}
+
+void OMAnimatedSystem_Output::accepttimeevent_18_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0.state_16.accepttimeevent_18");
 }
 
 void OMAnimatedSystem_Output::state_1_serializeStates(AOMSState* aomsState) const {
@@ -732,6 +1021,11 @@ void OMAnimatedSystem_Output::state_1_serializeStates(AOMSState* aomsState) cons
             high_risk_severe_serializeStates(aomsState);
         }
         break;
+        case System_Output::low_risk:
+        {
+            low_risk_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
@@ -743,6 +1037,10 @@ void OMAnimatedSystem_Output::medium_risk_severe_serializeStates(AOMSState* aoms
 
 void OMAnimatedSystem_Output::medium_risk_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_0.state_1.medium_risk");
+}
+
+void OMAnimatedSystem_Output::low_risk_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0.state_1.low_risk");
 }
 
 void OMAnimatedSystem_Output::idle_storm_serializeStates(AOMSState* aomsState) const {

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Architecture
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
 *********************************************************************/
 
@@ -120,6 +120,18 @@
 #define evRepairDS_UNSERIALIZE OM_NO_OP
 
 #define evRepairDS_CONSTRUCTOR evRepairDS()
+
+#define evLowRiskTs_SERIALIZE OM_NO_OP
+
+#define evLowRiskTs_UNSERIALIZE OM_NO_OP
+
+#define evLowRiskTs_CONSTRUCTOR evLowRiskTs()
+
+#define evLowRiskSt_SERIALIZE OM_NO_OP
+
+#define evLowRiskSt_UNSERIALIZE OM_NO_OP
+
+#define evLowRiskSt_CONSTRUCTOR evLowRiskSt()
 //#]
 
 //## package Architecture
@@ -425,6 +437,30 @@ const IOxfEvent::ID evRepairDS_Architecture_id(11215);
 //#]
 
 IMPLEMENT_META_EVENT_P(evRepairDS, Architecture, Architecture, evRepairDS())
+
+//## event evLowRiskTs()
+evLowRiskTs::evLowRiskTs(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evLowRiskTs)
+    setId(evLowRiskTs_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evLowRiskTs_Architecture_id(11216);
+//#]
+
+IMPLEMENT_META_EVENT_P(evLowRiskTs, Architecture, Architecture, evLowRiskTs())
+
+//## event evLowRiskSt()
+evLowRiskSt::evLowRiskSt(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evLowRiskSt)
+    setId(evLowRiskSt_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evLowRiskSt_Architecture_id(11217);
+//#]
+
+IMPLEMENT_META_EVENT_P(evLowRiskSt, Architecture, Architecture, evLowRiskSt())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp

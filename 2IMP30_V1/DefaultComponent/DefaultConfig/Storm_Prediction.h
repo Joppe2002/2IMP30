@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Storm_Prediction
-//!	Generated Date	: Sat, 13, Jun 2026  
+//!	Generated Date	: Sun, 14, Jun 2026  
 	File Path	: DefaultComponent\DefaultConfig\Storm_Prediction.h
 *********************************************************************/
 
@@ -244,6 +244,9 @@ public :
     void state_7_entDef(void);
     
     //## statechart_method
+    void state_7_exit(void);
+    
+    //## statechart_method
     IOxfReactive::TakeEventStatus state_7_processEvent(void);
     
     // waiting:
@@ -253,6 +256,10 @@ public :
     // medium_risk:
     //## statechart_method
     inline RhpBoolean medium_risk_IN(void) const;
+    
+    // low_risk:
+    //## statechart_method
+    inline RhpBoolean low_risk_IN(void) const;
     
     // high_risk:
     //## statechart_method
@@ -318,14 +325,15 @@ protected :
         state_7 = 2,
         waiting = 3,
         medium_risk = 4,
-        high_risk = 5,
-        state_6 = 6,
-        prediction = 7,
-        idle = 8,
-        accepttimeevent_2 = 9,
-        ErrorHandling = 10,
-        Handled = 11,
-        Error = 12
+        low_risk = 5,
+        high_risk = 6,
+        state_6 = 7,
+        prediction = 8,
+        idle = 9,
+        accepttimeevent_2 = 10,
+        ErrorHandling = 11,
+        Handled = 12,
+        Error = 13
     };
 //#]
 
@@ -383,6 +391,9 @@ public :
     void medium_risk_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void low_risk_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void high_risk_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
@@ -427,6 +438,10 @@ inline RhpBoolean Storm_Prediction::waiting_IN(void) const {
 
 inline RhpBoolean Storm_Prediction::medium_risk_IN(void) const {
     return state_7_subState == medium_risk;
+}
+
+inline RhpBoolean Storm_Prediction::low_risk_IN(void) const {
+    return state_7_subState == low_risk;
 }
 
 inline RhpBoolean Storm_Prediction::high_risk_IN(void) const {

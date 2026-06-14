@@ -1,5 +1,7 @@
 [Op Calls]
 [Events]
+itsSystem_Output->GEN(evLowRiskSt())`Architecture::System_Output
+itsSystem_Output->GEN(evMediumStorm())`Architecture::System_Output
 itsData_Storage->GEN(evRepairDS())`Architecture::Data_Storage
 itsData_Storage->GEN(evErrorOccuredDS())`Architecture::Data_Storage
 itsSMSWTD->itsData_Storage->GEN(evErrorOccuredDS())`Architecture::Data_Storage
