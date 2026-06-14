@@ -59,6 +59,15 @@ void System_Output::get_tsunami_relay_data(bool warned) {
     //#]
 }
 
+const bool System_Output::getIsErrorHandling(void) const {
+    return isErrorHandling;
+}
+
+void System_Output::setIsErrorHandling(const bool p_isErrorHandling) {
+    isErrorHandling = p_isErrorHandling;
+    NOTIFY_SET_OPERATION;
+}
+
 const bool System_Output::getPrev_warned(void) const {
     return prev_warned;
 }
@@ -166,6 +175,7 @@ void System_Output::initStatechart(void) {
     state_16_timeout = NULL;
     state_1_subState = OMNonState;
     state_1_active = OMNonState;
+    error_handling_subState = OMNonState;
 }
 
 void System_Output::cleanUpRelations(void) {
@@ -317,6 +327,23 @@ IOxfReactive::TakeEventStatus System_Output::state_0_processEvent(void) {
                 {
                     res = eventConsumed;
                 }
+        }
+    if(res == eventNotConsumed)
+        {
+            res = state_0_handleEvent();
+        }
+    return res;
+}
+
+IOxfReactive::TakeEventStatus System_Output::state_0_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorOccuredSO_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("25");
+            state_0_exit();
+            error_handling_entDef();
+            NOTIFY_TRANSITION_TERMINATED("25");
+            res = eventConsumed;
         }
     
     return res;
@@ -895,6 +922,94 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
     return res;
 }
 
+void System_Output::error_handling_entDef(void) {
+    NOTIFY_STATE_ENTERED("ROOT.error_handling");
+    rootState_subState = error_handling;
+    //#[ state error_handling.(Entry) 
+    printf("System Output module not working");
+    //#]
+    NOTIFY_TRANSITION_STARTED("28");
+    NOTIFY_STATE_ENTERED("ROOT.error_handling.error");
+    error_handling_subState = error;
+    rootState_active = error;
+    //#[ state error_handling.error.(Entry) 
+    warning_message = output_broken;
+    
+    isErrorHandling = true;
+    //#]
+    NOTIFY_TRANSITION_TERMINATED("28");
+}
+
+IOxfReactive::TakeEventStatus System_Output::error_handlingTakeevErrorHandledSO(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    NOTIFY_TRANSITION_STARTED("26");
+    switch (error_handling_subState) {
+        // State error
+        case error:
+        {
+            NOTIFY_STATE_EXITED("ROOT.error_handling.error");
+        }
+        break;
+        // State handled
+        case handled:
+        {
+            NOTIFY_STATE_EXITED("ROOT.error_handling.handled");
+        }
+        break;
+        default:
+            break;
+    }
+    error_handling_subState = OMNonState;
+    NOTIFY_STATE_EXITED("ROOT.error_handling");
+    state_0_entDef();
+    NOTIFY_TRANSITION_TERMINATED("26");
+    res = eventConsumed;
+    return res;
+}
+
+IOxfReactive::TakeEventStatus System_Output::error_handling_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evErrorHandledSO_Architecture_id) == 1)
+        {
+            res = error_handlingTakeevErrorHandledSO();
+        }
+    
+    return res;
+}
+
+IOxfReactive::TakeEventStatus System_Output::handled_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    res = error_handling_handleEvent();
+    return res;
+}
+
+IOxfReactive::TakeEventStatus System_Output::error_handleEvent(void) {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(evRepairSO_Architecture_id) == 1)
+        {
+            NOTIFY_TRANSITION_STARTED("27");
+            NOTIFY_STATE_EXITED("ROOT.error_handling.error");
+            NOTIFY_STATE_ENTERED("ROOT.error_handling.handled");
+            error_handling_subState = handled;
+            rootState_active = handled;
+            //#[ state error_handling.handled.(Entry) 
+            isErrorHandling = false;
+            
+            GEN(evErrorHandledSO());
+            
+            
+            //#]
+            NOTIFY_TRANSITION_TERMINATED("27");
+            res = eventConsumed;
+        }
+    
+    if(res == eventNotConsumed)
+        {
+            res = error_handling_handleEvent();
+        }
+    return res;
+}
+
 void System_Output::rootState_entDef(void) {
     {
         NOTIFY_STATE_ENTERED("ROOT");
@@ -906,11 +1021,28 @@ void System_Output::rootState_entDef(void) {
 
 IOxfReactive::TakeEventStatus System_Output::rootState_processEvent(void) {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    // State state_0
-    if(rootState_active == state_0)
+    switch (rootState_active) {
+        // State state_0
+        case state_0:
         {
             res = state_0_processEvent();
         }
+        break;
+        // State error
+        case error:
+        {
+            res = error_handleEvent();
+        }
+        break;
+        // State handled
+        case handled:
+        {
+            res = handled_handleEvent();
+        }
+        break;
+        default:
+            break;
+    }
     return res;
 }
 
@@ -924,6 +1056,7 @@ void OMAnimatedSystem_Output::serializeAttributes(AOMSAttributes* aomsAttributes
     aomsAttributes->addAttribute("prev_warning_ts_medium", x2String(myReal->prev_warning_ts_medium));
     aomsAttributes->addAttribute("prev_warning_ts_high", x2String(myReal->prev_warning_ts_high));
     aomsAttributes->addAttribute("warning_message", x2String((int)myReal->warning_message));
+    aomsAttributes->addAttribute("isErrorHandling", x2String(myReal->isErrorHandling));
 }
 
 void OMAnimatedSystem_Output::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -941,10 +1074,20 @@ void OMAnimatedSystem_Output::serializeRelations(AOMSRelations* aomsRelations) c
 
 void OMAnimatedSystem_Output::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
-    if(myReal->rootState_subState == System_Output::state_0)
+    switch (myReal->rootState_subState) {
+        case System_Output::state_0:
         {
             state_0_serializeStates(aomsState);
         }
+        break;
+        case System_Output::error_handling:
+        {
+            error_handling_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
 }
 
 void OMAnimatedSystem_Output::state_0_serializeStates(AOMSState* aomsState) const {
@@ -1084,6 +1227,32 @@ void OMAnimatedSystem_Output::high_risk_severe_serializeStates(AOMSState* aomsSt
 
 void OMAnimatedSystem_Output::high_risk_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_0.state_1.high_risk");
+}
+
+void OMAnimatedSystem_Output::error_handling_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.error_handling");
+    switch (myReal->error_handling_subState) {
+        case System_Output::error:
+        {
+            error_serializeStates(aomsState);
+        }
+        break;
+        case System_Output::handled:
+        {
+            handled_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedSystem_Output::handled_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.error_handling.handled");
+}
+
+void OMAnimatedSystem_Output::error_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.error_handling.error");
 }
 //#]
 

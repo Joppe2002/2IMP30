@@ -558,6 +558,90 @@ class OMAnimatedevLowRiskSt : virtual public AOMEvent {
 extern const IOxfEvent::ID evLowRiskSt_Architecture_id;
 //#]
 
+//## event evErrorOccuredSO()
+class evErrorOccuredSO : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorOccuredSO;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorOccuredSO(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorOccuredSO : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorOccuredSO)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorOccuredSO_Architecture_id;
+//#]
+
+//## event evErrorHandledSO()
+class evErrorHandledSO : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevErrorHandledSO;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evErrorHandledSO(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevErrorHandledSO : virtual public AOMEvent {
+    DECLARE_META_EVENT(evErrorHandledSO)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evErrorHandledSO_Architecture_id;
+//#]
+
+//## event evRepairSO()
+class evRepairSO : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevRepairSO;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evRepairSO(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevRepairSO : virtual public AOMEvent {
+    DECLARE_META_EVENT(evRepairSO)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evRepairSO_Architecture_id;
+//#]
+
 #endif
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.h

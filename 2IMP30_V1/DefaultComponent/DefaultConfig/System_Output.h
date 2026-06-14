@@ -64,6 +64,12 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
+    const bool getIsErrorHandling(void) const;
+    
+    //## auto_generated
+    void setIsErrorHandling(const bool p_isErrorHandling);
+    
+    //## auto_generated
     const bool getPrev_warned(void) const;
     
     //## auto_generated
@@ -138,6 +144,8 @@ protected :
 
 private :
 
+    bool isErrorHandling;		//## attribute isErrorHandling
+    
     bool prev_warned;		//## attribute prev_warned
     
     int prev_warned_ts;		//## attribute prev_warned_ts
@@ -196,6 +204,9 @@ public :
     
     //## statechart_method
     IOxfReactive::TakeEventStatus state_0_processEvent(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_0_handleEvent(void);
     
     // state_2:
     //## statechart_method
@@ -283,6 +294,33 @@ public :
     // high_risk:
     //## statechart_method
     inline RhpBoolean high_risk_IN(void) const;
+    
+    // error_handling:
+    //## statechart_method
+    inline RhpBoolean error_handling_IN(void) const;
+    
+    //## statechart_method
+    void error_handling_entDef(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus error_handlingTakeevErrorHandledSO(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus error_handling_handleEvent(void);
+    
+    // handled:
+    //## statechart_method
+    inline RhpBoolean handled_IN(void) const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus handled_handleEvent(void);
+    
+    // error:
+    //## statechart_method
+    inline RhpBoolean error_IN(void) const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus error_handleEvent(void);
 
 protected :
 
@@ -312,7 +350,10 @@ protected :
         low_risk = 13,
         idle_storm = 14,
         high_risk_severe = 15,
-        high_risk = 16
+        high_risk = 16,
+        error_handling = 17,
+        handled = 18,
+        error = 19
     };
 //#]
 
@@ -336,6 +377,8 @@ private :
     System_Output_Enum state_1_subState;
     
     System_Output_Enum state_1_active;
+    
+    System_Output_Enum error_handling_subState;
 //#]
 };
 
@@ -402,6 +445,15 @@ public :
     
     //## statechart_method
     void high_risk_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void error_handling_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void handled_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void error_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -472,6 +524,18 @@ inline RhpBoolean System_Output::high_risk_severe_IN(void) const {
 
 inline RhpBoolean System_Output::high_risk_IN(void) const {
     return state_1_subState == high_risk;
+}
+
+inline RhpBoolean System_Output::error_handling_IN(void) const {
+    return rootState_subState == error_handling;
+}
+
+inline RhpBoolean System_Output::handled_IN(void) const {
+    return error_handling_subState == handled;
+}
+
+inline RhpBoolean System_Output::error_IN(void) const {
+    return error_handling_subState == error;
 }
 
 #endif

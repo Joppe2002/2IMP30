@@ -35,7 +35,8 @@ enum warning_message_enum {
     take_shelter_now, // storm, move indoors, interior room
     leave_the_coast, // tsunami advisory, off beaches, out of the water
     evacuate_to_high_ground, // tsunami warning, move inland and uphill 
-    pray_to_god // the world is ending
+    pray_to_god, // the world is ending
+    output_broken
 };
 
 #endif

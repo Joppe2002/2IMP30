@@ -132,6 +132,24 @@
 #define evLowRiskSt_UNSERIALIZE OM_NO_OP
 
 #define evLowRiskSt_CONSTRUCTOR evLowRiskSt()
+
+#define evErrorOccuredSO_SERIALIZE OM_NO_OP
+
+#define evErrorOccuredSO_UNSERIALIZE OM_NO_OP
+
+#define evErrorOccuredSO_CONSTRUCTOR evErrorOccuredSO()
+
+#define evErrorHandledSO_SERIALIZE OM_NO_OP
+
+#define evErrorHandledSO_UNSERIALIZE OM_NO_OP
+
+#define evErrorHandledSO_CONSTRUCTOR evErrorHandledSO()
+
+#define evRepairSO_SERIALIZE OM_NO_OP
+
+#define evRepairSO_UNSERIALIZE OM_NO_OP
+
+#define evRepairSO_CONSTRUCTOR evRepairSO()
 //#]
 
 //## package Architecture
@@ -461,6 +479,42 @@ const IOxfEvent::ID evLowRiskSt_Architecture_id(11217);
 //#]
 
 IMPLEMENT_META_EVENT_P(evLowRiskSt, Architecture, Architecture, evLowRiskSt())
+
+//## event evErrorOccuredSO()
+evErrorOccuredSO::evErrorOccuredSO(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorOccuredSO)
+    setId(evErrorOccuredSO_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorOccuredSO_Architecture_id(11218);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorOccuredSO, Architecture, Architecture, evErrorOccuredSO())
+
+//## event evErrorHandledSO()
+evErrorHandledSO::evErrorHandledSO(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evErrorHandledSO)
+    setId(evErrorHandledSO_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evErrorHandledSO_Architecture_id(11219);
+//#]
+
+IMPLEMENT_META_EVENT_P(evErrorHandledSO, Architecture, Architecture, evErrorHandledSO())
+
+//## event evRepairSO()
+evRepairSO::evRepairSO(void) : OMEvent() {
+    NOTIFY_EVENT_CONSTRUCTOR(evRepairSO)
+    setId(evRepairSO_Architecture_id);
+}
+
+//#[ ignore
+const IOxfEvent::ID evRepairSO_Architecture_id(11220);
+//#]
+
+IMPLEMENT_META_EVENT_P(evRepairSO, Architecture, Architecture, evRepairSO())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Architecture.cpp
