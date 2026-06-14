@@ -385,10 +385,14 @@ IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
                     //#[ state state_0.state_2.high_risk_tsunami.(Entry) 
                     if(!prev_warned_ts||prev_warning_ts_medium){
                     	printf("High Tsunami\n");
-                    	prev_warning_ts_medium=false;
-                    	prev_warning_ts_high=true;
-                    	prev_warned_ts=true;
+                    	prev_warning_ts_medium	=false;
+                    	prev_warning_ts_high	=true;
+                    	prev_warned_ts			=true;
                     }
+                    
+                    prev_warning_ts_medium	=false;
+                    prev_warning_ts_high	=true;
+                    prev_warned_ts			=true;
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("13");
                     res = eventConsumed;
@@ -405,10 +409,16 @@ IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
                         //#[ state state_0.state_2.medium_risk_tsunami.(Entry) 
                         if(!prev_warned_ts||prev_warning_ts_high){
                         	printf("Medium Tsunami\n");
-                        	prev_warning_ts_medium=true;
-                        	prev_warning_ts_high=false;
-                        	prev_warned_ts=true;
+                        	prev_warning_ts_medium	=true;
+                        	prev_warning_ts_high	=false;
+                        	
+                        	prev_warned_ts			=true;
                         }
+                        
+                        prev_warning_ts_medium	=true;
+                        prev_warning_ts_high	=false;
+                        
+                        prev_warned_ts			=true;
                         //#]
                         NOTIFY_TRANSITION_TERMINATED("14");
                         res = eventConsumed;
@@ -423,9 +433,10 @@ IOxfReactive::TakeEventStatus System_Output::state_2_processEvent(void) {
                             state_2_subState = state_2_low_risk;
                             state_2_active = state_2_low_risk;
                             //#[ state state_0.state_2.low_risk.(Entry) 
-                            prev_warning_ts_medium=false;
-                            prev_warning_ts_high=false;
-                            prev_warned_ts=false;
+                            prev_warning_ts_medium	=false;
+                            prev_warning_ts_high	=false;
+                            
+                            prev_warned_ts			=false;
                             
                             //#]
                             NOTIFY_TRANSITION_TERMINATED("20");
@@ -506,15 +517,25 @@ void System_Output::state_16_entDef(void) {
     state_16_subState = update_warning;
     state_16_active = update_warning;
     //#[ state state_0.state_16.update_warning.(Entry) 
-                                                 // no tsunami -> storm-only ladder
-    switch (prev_warning_type) {
-        case 0: warning_message = no_warning;          break;
-        case 1: warning_message = stay_alert;          break;
-        case 2: warning_message = secure_and_prepare;  break;
-        case 3: warning_message = prepare_to_evacuate; break;
-        case 4: warning_message = take_shelter_now;    break;
+    if (prev_warning_ts_high && prev_warning_type == 4) {
+        warning_message = pray_to_god;                       
     }
-    
+    else if (prev_warning_ts_high) {
+        warning_message = evacuate_to_high_ground;           // tsunami warning dominates
+    }
+    else if (prev_warning_ts_medium) {                       // tsunami advisory
+        if (prev_warning_type >= 3) warning_message = evacuate_to_high_ground;
+        else                        warning_message = leave_the_coast;
+    }
+    else {                                                   // no tsunami -> storm-only
+        switch (prev_warning_type) {
+            case 0: warning_message = no_warning;          break;
+            case 1: warning_message = stay_alert;          break;
+            case 2: warning_message = secure_and_prepare;  break;
+            case 3: warning_message = prepare_to_evacuate; break;
+            case 4: warning_message = take_shelter_now;    break;
+        }
+    }
     //#]
     state_16_timeout = scheduleTimeout(500, "ROOT.state_0.state_16.update_warning");
     NOTIFY_TRANSITION_TERMINATED("24");
@@ -556,15 +577,25 @@ IOxfReactive::TakeEventStatus System_Output::state_16_processEvent(void) {
                     state_16_subState = update_warning;
                     state_16_active = update_warning;
                     //#[ state state_0.state_16.update_warning.(Entry) 
-                                                                 // no tsunami -> storm-only ladder
-                    switch (prev_warning_type) {
-                        case 0: warning_message = no_warning;          break;
-                        case 1: warning_message = stay_alert;          break;
-                        case 2: warning_message = secure_and_prepare;  break;
-                        case 3: warning_message = prepare_to_evacuate; break;
-                        case 4: warning_message = take_shelter_now;    break;
+                    if (prev_warning_ts_high && prev_warning_type == 4) {
+                        warning_message = pray_to_god;                       
                     }
-                    
+                    else if (prev_warning_ts_high) {
+                        warning_message = evacuate_to_high_ground;           // tsunami warning dominates
+                    }
+                    else if (prev_warning_ts_medium) {                       // tsunami advisory
+                        if (prev_warning_type >= 3) warning_message = evacuate_to_high_ground;
+                        else                        warning_message = leave_the_coast;
+                    }
+                    else {                                                   // no tsunami -> storm-only
+                        switch (prev_warning_type) {
+                            case 0: warning_message = no_warning;          break;
+                            case 1: warning_message = stay_alert;          break;
+                            case 2: warning_message = secure_and_prepare;  break;
+                            case 3: warning_message = prepare_to_evacuate; break;
+                            case 4: warning_message = take_shelter_now;    break;
+                        }
+                    }
                     //#]
                     state_16_timeout = scheduleTimeout(500, "ROOT.state_0.state_16.update_warning");
                     NOTIFY_TRANSITION_TERMINATED("23");
@@ -849,8 +880,8 @@ IOxfReactive::TakeEventStatus System_Output::idle_storm_handleEvent(void) {
                     state_1_active = low_risk;
                     //#[ state state_0.state_1.low_risk.(Entry) 
                     prev_warning_type 	= 0;
-                    prev_warned 		= false;
                     
+                    prev_warned 		= false;
                     //#]
                     NOTIFY_TRANSITION_TERMINATED("18");
                     res = eventConsumed;

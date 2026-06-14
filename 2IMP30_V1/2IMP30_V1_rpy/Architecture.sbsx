@@ -12,10 +12,10 @@
 			<_id type="a">GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Architecture</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::10:14:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::10:7:57</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:24:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:37:2</_modifiedTime>
 			<_lastID type="a">24</_lastID>
-			<weakCGTime type="a">6.14.2026::10:14:25</weakCGTime>
+			<weakCGTime type="a">6.14.2026::10:24:47</weakCGTime>
 			<strongCGTime type="a">6.8.2026::18:51:48</strongCGTime>
 			<_defaultComposite type="s">GUID fc3fefa4-18f6-48a0-8974-90a7d87683bb</_defaultComposite>
 			<_eventsBaseID type="a">11201</_eventsBaseID>
@@ -12458,7 +12458,7 @@ itsSystem_Output-&gt;get_tsunami_relay_data(warned);%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">statechart_1</_name>
 			<_modifiedTimeWeak type="a">6.14.2026::10:15:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::10:15:38</_modifiedTime>
+			<_modifiedTime type="a">6.14.2026::10:32:1</_modifiedTime>
 			<_lastID type="a">21</_lastID>
 			<weakCGTime type="a">6.14.2026::10:15:38</weakCGTime>
 			<strongCGTime type="a">6.8.2026::10:59:25</strongCGTime>
@@ -12468,7 +12468,7 @@ itsSystem_Output-&gt;get_tsunami_relay_data(warned);%0D
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">13</_defNumber>
-			<_version type="a">6.14.2026::12:15:38</_version>
+			<_version type="a">6.14.2026::12:32:1</_version>
 			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID 1e2f3691-234f-4014-b793-7913ba82b940</_diagram>
 			<AggregatesList type="e">
@@ -19898,7 +19898,7 @@ warned=true;</_body>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.14.2026::10:2:15</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.14.2026::10:36:44</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -19907,7 +19907,7 @@ warned=true;</_body>
 			</_theMainDiagram>
 			<_modifiedTime type="a">6.14.2026::9:35:5</_modifiedTime>
 			<_lastID type="a">11</_lastID>
-			<weakCGTime type="a">6.14.2026::10:2:15</weakCGTime>
+			<weakCGTime type="a">6.14.2026::10:36:44</weakCGTime>
 			<strongCGTime type="a">6.8.2026::8:26:46</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -20397,10 +20397,10 @@ prev_warned=warned;</_bodyData>
 			<_id type="a">GUID f10a08d4-6eac-415d-84a1-bc25165b4f12</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">statechart_0</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::10:2:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::10:2:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:36:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:36:44</_modifiedTime>
 			<_lastID type="a">44</_lastID>
-			<weakCGTime type="a">6.14.2026::10:2:15</weakCGTime>
+			<weakCGTime type="a">6.14.2026::10:36:44</weakCGTime>
 			<strongCGTime type="a">6.8.2026::8:26:46</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -20408,7 +20408,7 @@ prev_warned=warned;</_bodyData>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">19</_defNumber>
-			<_version type="a">6.14.2026::12:2:15</_version>
+			<_version type="a">6.14.2026::12:36:44</_version>
 			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID 23110202-b159-4357-baf1-82e2b1670be6</_diagram>
 			<AggregatesList type="e">
@@ -21266,78 +21266,89 @@ prev_warned=warned;</_bodyData>
 		<IState type="e">
 			<_id type="a">GUID d93159d4-85eb-45a4-9c93-ee6459ecef2c</_id>
 			<_name type="a">high_risk_tsunami</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::9:9:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::9:9:8</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:35:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:35:1</_modifiedTime>
 			<_parent type="s">GUID 9586f98b-0ad8-4f9c-a155-02d093cacf14</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID f5ca0d62-8855-452e-8fa1-21e0532eb0d3</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">6.14.2026::9:9:8</_modifiedTimeWeak>
-				<_modifiedTime type="a">6.14.2026::9:9:8</_modifiedTime>
+				<_modifiedTimeWeak type="a">6.14.2026::10:35:1</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::10:35:1</_modifiedTime>
 				<_body type="a">if(!prev_warned_ts||prev_warning_ts_medium){%0D
 	printf(&quot;High Tsunami\n&quot;);%0D
-	prev_warning_ts_medium=false;%0D
-	prev_warning_ts_high=true;%0D
-	prev_warned_ts=true;%0D
-}</_body>
+	prev_warning_ts_medium	=false;%0D
+	prev_warning_ts_high	=true;%0D
+	prev_warned_ts			=true;%0D
+}%0D
+%0D
+prev_warning_ts_medium	=false;%0D
+prev_warning_ts_high	=true;%0D
+prev_warned_ts			=true;</_body>
 			</IAction>
 			</_entryAction>
 		</IState>
 		<IState type="e">
 			<_id type="a">GUID 93738ecc-f97d-4e2b-a30d-1ddb12d595d1</_id>
 			<_name type="a">medium_risk_tsunami</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::9:8:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::9:8:45</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:34:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:34:44</_modifiedTime>
 			<_parent type="s">GUID 9586f98b-0ad8-4f9c-a155-02d093cacf14</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID c68a68c8-3b23-49d2-905a-46c9050e0867</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">6.14.2026::9:8:45</_modifiedTimeWeak>
-				<_modifiedTime type="a">6.14.2026::9:8:45</_modifiedTime>
+				<_modifiedTimeWeak type="a">6.14.2026::10:34:44</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::10:34:44</_modifiedTime>
 				<_body type="a">if(!prev_warned_ts||prev_warning_ts_high){%0D
 	printf(&quot;Medium Tsunami\n&quot;);%0D
-	prev_warning_ts_medium=true;%0D
-	prev_warning_ts_high=false;%0D
-	prev_warned_ts=true;%0D
-}</_body>
+	prev_warning_ts_medium	=true;%0D
+	prev_warning_ts_high	=false;%0D
+	%0D
+	prev_warned_ts			=true;%0D
+}%0D
+%0D
+prev_warning_ts_medium	=true;%0D
+prev_warning_ts_high	=false;%0D
+%0D
+prev_warned_ts			=true;</_body>
 			</IAction>
 			</_entryAction>
 		</IState>
 		<IState type="e">
 			<_id type="a">GUID 0537b24f-05b5-4a1d-9dbc-c02df03f301e</_id>
 			<_name type="a">low_risk</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::9:43:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::9:43:50</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:33:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:33:53</_modifiedTime>
 			<_parent type="s">GUID ff601500-131c-4214-9620-9afc960b8228</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID 4308e9b4-6da3-4d21-957f-d128651ebb3f</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">6.14.2026::9:43:50</_modifiedTimeWeak>
-				<_modifiedTime type="a">6.14.2026::9:43:50</_modifiedTime>
+				<_modifiedTimeWeak type="a">6.14.2026::10:33:53</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::10:33:53</_modifiedTime>
 				<_body type="a">prev_warning_type 	= 0;%0D
-prev_warned 		= false;%0D
-</_body>
+%0D
+prev_warned 		= false;</_body>
 			</IAction>
 			</_entryAction>
 		</IState>
 		<IState type="e">
 			<_id type="a">GUID c8a6c559-d39a-4878-8ffe-ceaababa252b</_id>
 			<_name type="a">low_risk</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::9:40:42</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::9:40:42</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:33:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:33:46</_modifiedTime>
 			<_parent type="s">GUID 9586f98b-0ad8-4f9c-a155-02d093cacf14</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID 21489405-e72c-4993-b96c-63993f0c6173</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">6.14.2026::9:40:42</_modifiedTimeWeak>
-				<_modifiedTime type="a">6.14.2026::9:40:42</_modifiedTime>
-				<_body type="a">prev_warning_ts_medium=false;%0D
-prev_warning_ts_high=false;%0D
-prev_warned_ts=false;%0D
+				<_modifiedTimeWeak type="a">6.14.2026::10:33:46</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::10:33:46</_modifiedTime>
+				<_body type="a">prev_warning_ts_medium	=false;%0D
+prev_warning_ts_high	=false;%0D
+%0D
+prev_warned_ts			=false;%0D
 </_body>
 			</IAction>
 			</_entryAction>
@@ -21354,24 +21365,34 @@ prev_warned_ts=false;%0D
 		<IState type="e">
 			<_id type="a">GUID 45939c9a-68f5-41a2-8d1f-0be22d33086b</_id>
 			<_name type="a">update_warning</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::9:56:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.14.2026::9:56:24</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.14.2026::10:36:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.14.2026::10:36:44</_modifiedTime>
 			<_parent type="s">GUID 925a3239-7bca-47e2-8de3-f92b8a3e4cc8</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_entryAction type="p"><IAction type="e">
 				<_id type="a">GUID 594dac89-f3b9-4538-9ec9-934d96592170</_id>
 				<_myState type="a">4096</_myState>
-				<_modifiedTimeWeak type="a">6.14.2026::9:56:24</_modifiedTimeWeak>
-				<_modifiedTime type="a">6.14.2026::9:56:24</_modifiedTime>
-				<_body type="a">                                             // no tsunami -&gt; storm-only ladder%0D
-switch (prev_warning_type) {%0D
-    case 0: warning_message = no_warning;          break;%0D
-    case 1: warning_message = stay_alert;          break;%0D
-    case 2: warning_message = secure_and_prepare;  break;%0D
-    case 3: warning_message = prepare_to_evacuate; break;%0D
-    case 4: warning_message = take_shelter_now;    break;%0D
+				<_modifiedTimeWeak type="a">6.14.2026::10:36:44</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.14.2026::10:36:44</_modifiedTime>
+				<_body type="a">if (prev_warning_ts_high &amp;&amp; prev_warning_type == 4) {%0D
+    warning_message = pray_to_god;                       %0D
 }%0D
-</_body>
+else if (prev_warning_ts_high) {%0D
+    warning_message = evacuate_to_high_ground;           // tsunami warning dominates%0D
+}%0D
+else if (prev_warning_ts_medium) {                       // tsunami advisory%0D
+    if (prev_warning_type &gt;= 3) warning_message = evacuate_to_high_ground;%0D
+    else                        warning_message = leave_the_coast;%0D
+}%0D
+else {                                                   // no tsunami -&gt; storm-only%0D
+    switch (prev_warning_type) {%0D
+        case 0: warning_message = no_warning;          break;%0D
+        case 1: warning_message = stay_alert;          break;%0D
+        case 2: warning_message = secure_and_prepare;  break;%0D
+        case 3: warning_message = prepare_to_evacuate; break;%0D
+        case 4: warning_message = take_shelter_now;    break;%0D
+    }%0D
+}</_body>
 			</IAction>
 			</_entryAction>
 		</IState>
@@ -21639,9 +21660,9 @@ switch (prev_warning_type) {%0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">statechartdiagram_0</_name>
-			<_modifiedTimeWeak type="a">6.14.2026::9:56:24</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.14.2026::10:24:47</_modifiedTimeWeak>
 			<_modifiedTime type="a">6.14.2026::9:35:40</_modifiedTime>
-			<_lastModifiedTime type="a">6.14.2026::10:2:15</_lastModifiedTime>
+			<_lastModifiedTime type="a">6.14.2026::10:36:44</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
