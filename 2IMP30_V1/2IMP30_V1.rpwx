@@ -44,8 +44,8 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 40 </_UpLeft>
-						<_DownRight type="a">1288 654 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<_DownRight type="a">1374 695 </_DownRight>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -75,9 +75,9 @@
 								<_hid type="a">GUID 97b5f118-83a5-4b28-ac10-1e9539378c18</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">545 0 </_UpLeft>
-						<_DownRight type="a">1833 614 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<_UpLeft type="a">208 0 </_UpLeft>
+						<_DownRight type="a">1496 614 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -107,9 +107,9 @@
 								<_hid type="a">GUID 9efcb34f-b718-47f6-ac47-bce909896738</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 238 </_UpLeft>
-						<_DownRight type="a">1226 823 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_UpLeft type="a">0 192 </_UpLeft>
+						<_DownRight type="a">1226 777 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -141,13 +141,13 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1717 818 </_DownRight>
-						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\neppo\Documents\2IMP30\2IMP30\2IMP30_V1\2IMP30_V1</_fullName>
+			<_fullName type="a">C:\Users\neppo\Documents\2IMP30\Backup\2IMP30_V1</_fullName>
 			<_selectedPerspective type="a">Advanced</_selectedPerspective>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
@@ -174,7 +174,7 @@
 				<name type="a">GUI</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IPanelDiagram&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\2IMP30\\2IMP30_V1\\2IMP30_V1_rpy\\Behavior.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\Backup\\2IMP30_V1_rpy\\Behavior.sbsx&quot;#hndSem#
 	- _subsystem = &quot;Behavior&quot;#hndSem#
 	- _name = &quot;GUI&quot;#hndSem#
 	- _id = GUID ef107205-c9a4-401e-b843-1d1e45b2ead4#hndSem#
@@ -186,7 +186,7 @@
 				<name type="a">StatechartDiagram</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IStateChartDiagram&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\2IMP30\\2IMP30_V1\\2IMP30_V1_rpy\\Architecture.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\Backup\\2IMP30_V1_rpy\\Architecture.sbsx&quot;#hndSem#
 	- _subsystem = &quot;Architecture&quot;#hndSem#
 	- _class = &quot;Actionable_Information_Generator&quot;#hndSem#
 	- _name = &quot;StatechartDiagram&quot;#hndSem#

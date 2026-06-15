@@ -54,9 +54,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2026::9:44:48</_modifiedTime>
-			<_lastID type="a">4</_lastID>
+			<_modifiedTimeWeak type="a">6.15.2026::13:53:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.15.2026::13:53:34</_modifiedTime>
+			<_lastID type="a">6</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<value>16777215</value>
@@ -95,7 +95,7 @@
 				<IRPYRawContainer type="e">
 					<IMultiplicityItem type="e">
 						<_name type="a">1</_name>
-						<_count type="a">-1</_count>
+						<_count type="a">10</_count>
 					</IMultiplicityItem>
 					
 					<IMultiplicityItem type="e">
@@ -111,6 +111,11 @@
 					<IMultiplicityItem type="e">
 						<_name type="a">1..*</_name>
 						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">2</_name>
+						<_count type="a">0</_count>
 					</IMultiplicityItem>
 					
 				</IRPYRawContainer>
@@ -132,11 +137,13 @@
 				<value>GUID d9689b73-885e-44c4-896b-de43defa0a33</value>
 				<value>GUID 5717d983-7bb5-4aba-bdc8-41bcb977f568</value>
 				<value>GUID ab285915-0966-4322-a029-ffac3e6ef3df</value>
+				<value>GUID 32013db5-c81b-4dbc-b5f6-6cf800a9009c</value>
 				<value>GUID 9cc53d72-19ca-4127-8a20-6c84594ca402</value>
 				<value>GUID f3982d2a-a025-49c3-8420-66c1577c0878</value>
 				<value>GUID 84040192-3a92-4d09-bf4b-782d7f4ee2a0</value>
 				<value>GUID 48259056-c01c-453c-ad12-bc652aa5cc88</value>
 				<value>GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</value>
+				<value>GUID dff28762-58c5-43a8-a425-3a7ea26979db</value>
 				<value>GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620</value>
 			</AggregatesList>
 		</IProject>
@@ -157,6 +164,10 @@
 			<_persistAs type="a">$OMROOT\Settings\SysMLPerspectives</_persistAs>
 			<_id type="a">GUID ab285915-0966-4322-a029-ffac3e6ef3df</_id>
 			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IProfile type="e">
+			<fileName type="a">CGCompatibilityPre100Cpp</fileName>
+			<_id type="a">GUID 32013db5-c81b-4dbc-b5f6-6cf800a9009c</_id>
 		</IProfile>
 		<IDependency type="e">
 			<_id type="a">GUID 9cc53d72-19ca-4127-8a20-6c84594ca402</_id>
@@ -206,6 +217,10 @@
 		<ISubsystem type="e">
 			<fileName type="a">Requirements</fileName>
 			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Behavior</fileName>
+			<_id type="a">GUID dff28762-58c5-43a8-a425-3a7ea26979db</_id>
 		</ISubsystem>
 		<IComponent type="e">
 			<fileName type="a">DefaultComponent</fileName>

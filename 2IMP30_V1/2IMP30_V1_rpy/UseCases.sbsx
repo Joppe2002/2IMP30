@@ -12,14 +12,14 @@
 			<_id type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCases</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.27.2026::12:3:24</_modifiedTime>
-			<_lastID type="a">30</_lastID>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<_modifiedTimeWeak type="a">6.15.2026::19:48:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.15.2026::19:48:55</_modifiedTime>
+			<_lastID type="a">32</_lastID>
+			<weakCGTime type="a">6.15.2026::19:48:55</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID e0943032-4ba9-4a3f-b899-7b04eacebd15</value>
 				<value>GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</value>
@@ -41,6 +41,8 @@
 				<value>GUID d74d3156-c411-41bd-8dd6-e34ac738a86d</value>
 				<value>GUID c8a6b8cc-45e8-46d0-b480-14d46e2f5a8c</value>
 				<value>GUID 457eb4ac-8f92-4ace-bdd7-33c10348257a</value>
+				<value>GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</value>
+				<value>GUID 751dae3c-b3f9-4ff5-829d-f15e6e891a0c</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IUCDiagram type="e">
@@ -377,8 +379,8 @@
 			</_properties>
 			<_name type="a">UseCase_Diagram1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.27.2026::12:3:49</_modifiedTime>
-			<_lastModifiedTime type="a">5.28.2026::7:24:8</_lastModifiedTime>
+			<_modifiedTime type="a">6.15.2026::19:48:55</_modifiedTime>
+			<_lastModifiedTime type="a">6.15.2026::19:48:55</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -421,7 +423,7 @@
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">68</elementList>
+			<elementList type="a">57</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -437,8 +439,6 @@
 				<value>GUID 06449718-7eaa-4123-8520-0e50934dbd00</value>
 				<value>GUID 18d70e5b-250c-4dcb-9b4d-11e0eb214184</value>
 				<value>GUID db0132a4-0686-48ec-81cc-081eeeaa802c</value>
-				<value>GUID d19c1da5-b4b3-45d6-9e2c-7474a0cb1226</value>
-				<value>GUID 3e1b70b1-9a4e-45e2-8ddc-13e01f6e1cd2</value>
 				<value>GUID 5b4b7566-35b9-41a2-a021-f5118f6b7be1</value>
 				<value>GUID 909298e3-4959-451c-800c-251f0859ef72</value>
 				<value>GUID 06d60e72-2a10-425a-b5b2-856b11b598bc</value>
@@ -451,19 +451,10 @@
 				<value>GUID f7fdffa8-63b1-4f83-a911-1738afa63df5</value>
 				<value>GUID 49d0197c-129a-4f59-92f1-a85e851c2b73</value>
 				<value>GUID 4fba0c81-7d55-437a-8273-2c8f0f3d3322</value>
-				<value>GUID 1c541590-4e14-4b59-9f39-70a394f62730</value>
-				<value>GUID e40875d6-bfcb-4a1b-bc54-b32b17d33d1d</value>
-				<value>GUID 3fbe4333-bdec-4085-8df3-127e2bbba6cb</value>
-				<value>GUID beed3d90-a87c-4d9b-bdd4-c98810d1542a</value>
-				<value>GUID 32073932-8757-4f92-8067-4ef0abae5f9d</value>
 				<value>GUID e7b3ce0a-b057-43c8-bd0b-fbaf862ad494</value>
-				<value>GUID bec377f9-9093-4243-9403-72133058bcab</value>
 				<value>GUID 80189eb2-e41b-43fd-b4dd-d8e694e99ebe</value>
-				<value>GUID 37de913b-8e6c-4f6a-af01-10af2d66f0ad</value>
 				<value>GUID 03c5a8c6-29ce-4bb6-bbd8-fb17ed8cfec2</value>
-				<value>GUID 038314e4-dc62-48a0-9c5e-68bc6bf41309</value>
 				<value>GUID f091e42b-79f8-4d05-9dbb-2530f35c647d</value>
-				<value>GUID bb771d74-f42d-4940-ae22-eb9ed4d01a47</value>
 				<value>GUID 7e843926-35fd-4f69-a88d-4bb483eda323</value>
 				<value>GUID ebaf2418-1252-4897-9a97-67acd340cf02</value>
 				<value>GUID 026eb266-125b-4fb5-94b0-62ad1173d1ec</value>
@@ -698,112 +689,6 @@
 				</IRPYRawContainer>
 			</Operations>
 		</CGIClass>
-		<CGIBasicClass type="e">
-			<_id type="a">GUID d19c1da5-b4b3-45d6-9e2c-7474a0cb1226</_id>
-			<m_type type="a">124</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IActor</_hm2Class>
-					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
-					<_hsubsystem type="a">SystemContext</_hsubsystem>
-					<_hname type="a">User</_hname>
-					<_hid type="a">GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID 06449718-7eaa-4123-8520-0e50934dbd00</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">SystemContext::User</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.0489381 0 0 0.124343 73.3869 357.665 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_AdditionalLabel type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_AdditionalLabel>
-			<m_polygon type="a">4 176 252  176 1394  1259 1394  1259 252  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-		</CGIBasicClass>
-		<CGIBasicClass type="e">
-			<_id type="a">GUID 3e1b70b1-9a4e-45e2-8ddc-13e01f6e1cd2</_id>
-			<m_type type="a">124</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IActor</_hm2Class>
-					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
-					<_hsubsystem type="a">SystemContext</_hsubsystem>
-					<_hname type="a">Stakeholders</_hname>
-					<_hid type="a">GUID 88748a4e-91bb-4333-8684-d33dd0115aaa</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID 06449718-7eaa-4123-8520-0e50934dbd00</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">SystemContext::Stakeholders</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.0489381 0 0 0.124343 86.387 136.665 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_AdditionalLabel type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_AdditionalLabel>
-			<m_polygon type="a">4 176 252  176 1394  1259 1394  1259 252  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-		</CGIBasicClass>
 		<CGIInheritance type="e">
 			<_id type="a">GUID 5b4b7566-35b9-41a2-a021-f5118f6b7be1</_id>
 			<m_type type="a">128</m_type>
@@ -1803,441 +1688,6 @@
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
 		</CGIBasicClass>
-		<CGIInheritance type="e">
-			<_id type="a">GUID 1c541590-4e14-4b59-9f39-70a394f62730</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<IPropertySubject type="e">
-							<_Name type="a">General</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<IPropertyMetaclass type="e">
-										<_Name type="a">Graphics</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<IProperty type="e">
-													<_Name type="a">TreeStyle</_Name>
-													<_Value type="a">True</_Value>
-													<_Type type="a">Bool</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">103</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IGeneralization</_hm2Class>
-					<_hid type="a">GUID fea02ce4-2f36-49ca-ba60-b4ed7816c6f2</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID fb3f6347-8d24-4f2a-b0bf-4c48721a8d57</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID 3e1b70b1-9a4e-45e2-8ddc-13e01f6e1cd2</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_arrow type="a">2 250 314  250 222  </m_arrow>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">176 558 </m_SourcePort>
-			<m_TargetPort type="a">1259 686 </m_TargetPort>
-			<m_ShowName type="a">0</m_ShowName>
-			<m_ShowStereotype type="a">1</m_ShowStereotype>
-		</CGIInheritance>
-		<CGIInheritance type="e">
-			<_id type="a">GUID e40875d6-bfcb-4a1b-bc54-b32b17d33d1d</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<IPropertySubject type="e">
-							<_Name type="a">General</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<IPropertyMetaclass type="e">
-										<_Name type="a">Graphics</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<IProperty type="e">
-													<_Name type="a">TreeStyle</_Name>
-													<_Value type="a">True</_Value>
-													<_Type type="a">Bool</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">103</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IGeneralization</_hm2Class>
-					<_hid type="a">GUID 7c0b917e-9c7c-4791-848a-a403a99bc384</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID 06d60e72-2a10-425a-b5b2-856b11b598bc</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID 3e1b70b1-9a4e-45e2-8ddc-13e01f6e1cd2</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_arrow type="a">2 243 171  243 222  </m_arrow>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">299 493 </m_SourcePort>
-			<m_TargetPort type="a">1259 686 </m_TargetPort>
-			<m_ShowName type="a">0</m_ShowName>
-			<m_ShowStereotype type="a">1</m_ShowStereotype>
-		</CGIInheritance>
-		<CGIInheritance type="e">
-			<_id type="a">GUID 3fbe4333-bdec-4085-8df3-127e2bbba6cb</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<IPropertySubject type="e">
-							<_Name type="a">General</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<IPropertyMetaclass type="e">
-										<_Name type="a">Graphics</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<IProperty type="e">
-													<_Name type="a">TreeStyle</_Name>
-													<_Value type="a">True</_Value>
-													<_Type type="a">Bool</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">103</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IGeneralization</_hm2Class>
-					<_hid type="a">GUID b6f9eb89-e168-4a32-975a-5b922802245a</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID 909298e3-4959-451c-800c-251f0859ef72</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID 3e1b70b1-9a4e-45e2-8ddc-13e01f6e1cd2</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_arrow type="a">2 250 105  250 222  </m_arrow>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">176 775 </m_SourcePort>
-			<m_TargetPort type="a">1259 686 </m_TargetPort>
-			<m_ShowName type="a">0</m_ShowName>
-			<m_ShowStereotype type="a">1</m_ShowStereotype>
-		</CGIInheritance>
-		<CGIInheritance type="e">
-			<_id type="a">GUID beed3d90-a87c-4d9b-bdd4-c98810d1542a</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<IPropertySubject type="e">
-							<_Name type="a">General</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<IPropertyMetaclass type="e">
-										<_Name type="a">Graphics</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<IProperty type="e">
-													<_Name type="a">TreeStyle</_Name>
-													<_Value type="a">True</_Value>
-													<_Type type="a">Bool</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">103</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IGeneralization</_hm2Class>
-					<_hid type="a">GUID 155bdd5b-ac53-476f-bc7c-a1e425173776</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID 40f46e34-aed5-41c6-ac7b-d05e4505dcf0</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID d19c1da5-b4b3-45d6-9e2c-7474a0cb1226</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_arrow type="a">2 278 574  278 482  </m_arrow>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">176 823 </m_SourcePort>
-			<m_TargetPort type="a">1239 1000 </m_TargetPort>
-			<m_ShowName type="a">0</m_ShowName>
-			<m_ShowStereotype type="a">1</m_ShowStereotype>
-		</CGIInheritance>
-		<CGIInheritance type="e">
-			<_id type="a">GUID 32073932-8757-4f92-8067-4ef0abae5f9d</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<IPropertySubject type="e">
-							<_Name type="a">General</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<IPropertyMetaclass type="e">
-										<_Name type="a">Graphics</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<IProperty type="e">
-													<_Name type="a">TreeStyle</_Name>
-													<_Value type="a">True</_Value>
-													<_Type type="a">Bool</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">103</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IGeneralization</_hm2Class>
-					<_hid type="a">GUID a8e150d9-9f3c-4c1b-8438-1ef0fbd7f904</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID 4fba0c81-7d55-437a-8273-2c8f0f3d3322</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID d19c1da5-b4b3-45d6-9e2c-7474a0cb1226</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_arrow type="a">2 239 452  239 482  </m_arrow>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">176 815 </m_SourcePort>
-			<m_TargetPort type="a">1239 1000 </m_TargetPort>
-			<m_ShowName type="a">0</m_ShowName>
-			<m_ShowStereotype type="a">1</m_ShowStereotype>
-		</CGIInheritance>
 		<CGIClass type="e">
 			<_id type="a">GUID e7b3ce0a-b057-43c8-bd0b-fbaf862ad494</_id>
 			<m_type type="a">87</m_type>
@@ -2300,187 +1750,6 @@
 				</IRPYRawContainer>
 			</Operations>
 		</CGIClass>
-		<CGIAssociationEnd type="e">
-			<_id type="a">GUID bec377f9-9093-4243-9403-72133058bcab</_id>
-			<m_type type="a">92</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
-					<_hsubsystem type="a">Architecture</_hsubsystem>
-					<_hclass type="a">SMSWTD</_hclass>
-					<_hname type="a">itsSatellite_Imagery</_hname>
-					<_hid type="a">GUID 7fd9666c-0983-481e-bfd7-d9e43ba6012b</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID db0132a4-0686-48ec-81cc-081eeeaa802c</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID e7b3ce0a-b057-43c8-bd0b-fbaf862ad494</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">531 890 </m_SourcePort>
-			<m_TargetPort type="a">528 890 </m_TargetPort>
-			<m_pInverseModelObject type="r">
-				<IAssociationEndHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
-					<_hsubsystem type="a">SystemContext</_hsubsystem>
-					<_hclass type="a">Satellite_Imagery</_hclass>
-					<_hname type="a">itsSMSWTD</_hname>
-					<_hid type="a">GUID 24ebf3d3-d197-45be-ac31-2c644f491827</_hid>
-				</IAssociationEndHandle>
-			</m_pInverseModelObject>
-			<m_pInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInstance>
-			<m_pInverseInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInverseInstance>
-			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
-			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
-			<m_bShowLinkName type="a">1</m_bShowLinkName>
-			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
-			<m_bInstance type="a">0</m_bInstance>
-			<m_bShowQualifier1 type="a">0</m_bShowQualifier1>
-			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
-			<m_sourceRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">2</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceRole>
-			<m_targetRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">3</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetRole>
-			<m_sourceMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">4</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceMultiplicity>
-			<m_targetMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">5</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetMultiplicity>
-			<m_sourceQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">6</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_sourceQualifier>
-			<m_targetQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">7</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_targetQualifier>
-			<m_specificType type="a">symmetric_type</m_specificType>
-		</CGIAssociationEnd>
 		<CGIClass type="e">
 			<_id type="a">GUID 80189eb2-e41b-43fd-b4dd-d8e694e99ebe</_id>
 			<m_type type="a">87</m_type>
@@ -2543,187 +1812,6 @@
 				</IRPYRawContainer>
 			</Operations>
 		</CGIClass>
-		<CGIAssociationEnd type="e">
-			<_id type="a">GUID 37de913b-8e6c-4f6a-af01-10af2d66f0ad</_id>
-			<m_type type="a">92</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
-					<_hsubsystem type="a">Architecture</_hsubsystem>
-					<_hclass type="a">SMSWTD</_hclass>
-					<_hname type="a">itsAircraft_Sensors</_hname>
-					<_hid type="a">GUID 057cc3e0-dd0e-4554-93ee-5c68d31c6283</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID db0132a4-0686-48ec-81cc-081eeeaa802c</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID 80189eb2-e41b-43fd-b4dd-d8e694e99ebe</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">1061 995 </m_SourcePort>
-			<m_TargetPort type="a">-6 1148 </m_TargetPort>
-			<m_pInverseModelObject type="r">
-				<IAssociationEndHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
-					<_hsubsystem type="a">SystemContext</_hsubsystem>
-					<_hclass type="a">Aircraft_Sensors</_hclass>
-					<_hname type="a">itsSMSWTD</_hname>
-					<_hid type="a">GUID fb5610c7-3d91-439e-9deb-d59df488b933</_hid>
-				</IAssociationEndHandle>
-			</m_pInverseModelObject>
-			<m_pInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInstance>
-			<m_pInverseInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInverseInstance>
-			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
-			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
-			<m_bShowLinkName type="a">1</m_bShowLinkName>
-			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
-			<m_bInstance type="a">0</m_bInstance>
-			<m_bShowQualifier1 type="a">0</m_bShowQualifier1>
-			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
-			<m_sourceRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">2</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceRole>
-			<m_targetRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">3</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetRole>
-			<m_sourceMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">4</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceMultiplicity>
-			<m_targetMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">5</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetMultiplicity>
-			<m_sourceQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">6</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_sourceQualifier>
-			<m_targetQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">7</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_targetQualifier>
-			<m_specificType type="a">symmetric_type</m_specificType>
-		</CGIAssociationEnd>
 		<CGIClass type="e">
 			<_id type="a">GUID 03c5a8c6-29ce-4bb6-bbd8-fb17ed8cfec2</_id>
 			<m_type type="a">87</m_type>
@@ -2786,187 +1874,6 @@
 				</IRPYRawContainer>
 			</Operations>
 		</CGIClass>
-		<CGIAssociationEnd type="e">
-			<_id type="a">GUID 038314e4-dc62-48a0-9c5e-68bc6bf41309</_id>
-			<m_type type="a">92</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
-					<_hsubsystem type="a">Architecture</_hsubsystem>
-					<_hclass type="a">SMSWTD</_hclass>
-					<_hname type="a">itsSeabed_Sensors</_hname>
-					<_hid type="a">GUID f8030004-fe1d-4a3d-b985-ebfee57b4f6d</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID db0132a4-0686-48ec-81cc-081eeeaa802c</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID 03c5a8c6-29ce-4bb6-bbd8-fb17ed8cfec2</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">1061 1324 </m_SourcePort>
-			<m_TargetPort type="a">-6 958 </m_TargetPort>
-			<m_pInverseModelObject type="r">
-				<IAssociationEndHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
-					<_hsubsystem type="a">SystemContext</_hsubsystem>
-					<_hclass type="a">Seabed_Sensors</_hclass>
-					<_hname type="a">itsSMSWTD</_hname>
-					<_hid type="a">GUID 8422e91a-53ac-4495-819d-9be870c42e25</_hid>
-				</IAssociationEndHandle>
-			</m_pInverseModelObject>
-			<m_pInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInstance>
-			<m_pInverseInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInverseInstance>
-			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
-			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
-			<m_bShowLinkName type="a">1</m_bShowLinkName>
-			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
-			<m_bInstance type="a">0</m_bInstance>
-			<m_bShowQualifier1 type="a">0</m_bShowQualifier1>
-			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
-			<m_sourceRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">2</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceRole>
-			<m_targetRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">3</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetRole>
-			<m_sourceMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">4</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceMultiplicity>
-			<m_targetMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">5</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetMultiplicity>
-			<m_sourceQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">6</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_sourceQualifier>
-			<m_targetQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">7</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_targetQualifier>
-			<m_specificType type="a">symmetric_type</m_specificType>
-		</CGIAssociationEnd>
 		<CGIClass type="e">
 			<_id type="a">GUID f091e42b-79f8-4d05-9dbb-2530f35c647d</_id>
 			<m_type type="a">87</m_type>
@@ -3029,187 +1936,6 @@
 				</IRPYRawContainer>
 			</Operations>
 		</CGIClass>
-		<CGIAssociationEnd type="e">
-			<_id type="a">GUID bb771d74-f42d-4940-ae22-eb9ed4d01a47</_id>
-			<m_type type="a">92</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
-					<_hsubsystem type="a">Architecture</_hsubsystem>
-					<_hclass type="a">SMSWTD</_hclass>
-					<_hname type="a">itsUnderwater_Sensors</_hname>
-					<_hid type="a">GUID 52c10908-d374-4350-a6db-2c41062d1339</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s"></m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID db0132a4-0686-48ec-81cc-081eeeaa802c</m_pSource>
-			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID f091e42b-79f8-4d05-9dbb-2530f35c647d</m_pTarget>
-			<m_targetType type="a">'T'</m_targetType>
-			<m_direction type="a">' '</m_direction>
-			<m_rpn type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_rpn>
-			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
-			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">1061 1334 </m_SourcePort>
-			<m_TargetPort type="a">-5 723 </m_TargetPort>
-			<m_pInverseModelObject type="r">
-				<IAssociationEndHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
-					<_hsubsystem type="a">SystemContext</_hsubsystem>
-					<_hclass type="a">Underwater_Sensors</_hclass>
-					<_hname type="a">itsSMSWTD</_hname>
-					<_hid type="a">GUID 5226b35c-beb1-429a-b78b-7cbca6382544</_hid>
-				</IAssociationEndHandle>
-			</m_pInverseModelObject>
-			<m_pInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInstance>
-			<m_pInverseInstance type="r">
-				<IObjectLinkHandle type="e">
-				</IObjectLinkHandle>
-			</m_pInverseInstance>
-			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
-			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
-			<m_bShowLinkName type="a">1</m_bShowLinkName>
-			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
-			<m_bInstance type="a">0</m_bInstance>
-			<m_bShowQualifier1 type="a">0</m_bShowQualifier1>
-			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
-			<m_sourceRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">2</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceRole>
-			<m_targetRole type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">3</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetRole>
-			<m_sourceMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">4</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_sourceMultiplicity>
-			<m_targetMultiplicity type="p">
-				<CGIText type="e">
-					<m_str type="a">1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">5</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-				</CGIText>
-			</m_targetMultiplicity>
-			<m_sourceQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">6</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_sourceQualifier>
-			<m_targetQualifier type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">7</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_targetQualifier>
-			<m_specificType type="a">symmetric_type</m_specificType>
-		</CGIAssociationEnd>
 		<CGIAssociationEnd type="e">
 			<_id type="a">GUID 7e843926-35fd-4f69-a88d-4bb483eda323</_id>
 			<m_type type="a">94</m_type>
@@ -7091,31 +5817,28 @@
 			<_name type="a">Relay_Storm_Info</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The Predict_strom_scenario predicts a storm with over 60%25 probability\b\par%0D
-\par%0D
-Post-Condition\par%0D
-\b0 1) The Governments of the affected areas are informed about the strom\par%0D
-2) The Emergency Responders and News Outlets of the affected areas are informed about the storm if the probability is over 90%25\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system determines that a storm occurs with over 60%25 probability in a certain region\par%0D
-2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas\par%0D
-3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.\par%0D
-4) The message is send by Email to the relevant Governments\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If an actor is already informed about the storm, no new Email is send\par%0D
-2) If the actor is not available by email, an SMS will be send\par%0D
-3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated\par%0D
-4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed\par%0D
-\b\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) The Predict_strom_scenario predicts a storm with over 60%25 probability%0D
+%0D
+Post-Condition%0D
+1) The Governments of the affected areas are informed about the strom%0D
+2) The Emergency Responders and News Outlets of the affected areas are informed about the storm if the probability is over 90%25%0D
+%0D
+Main Scenario%0D
+1) The system determines that a storm occurs with over 60%25 probability in a certain region%0D
+2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas%0D
+3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.%0D
+4) The message is send by Email to the relevant Governments%0D
+%0D
+Alternative Scenario%0D
+1) If an actor is already informed about the storm, no new Email is send%0D
+2) If the actor is not available by email, an SMS will be send%0D
+3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated%0D
+4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.27.2026::12:9:42</_modifiedTime>
@@ -7241,29 +5964,26 @@ Alternative Scenario\par%0D
 			<_name type="a">Relay_Weather_Info</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) A new weather forecast has been generated\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Generate_Weather_Forecast has generated a new forecast\par%0D
-2) A researcher requests weather forecast data\b\par%0D
-\par%0D
-Post-Condition\par%0D
-\b0 1) The weather forecast is available via a website and an app\par%0D
-2) More extensive data is send to a researcher if requested\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system has produced a new weather forecast\par%0D
-2) The website and app are updated based on the new data\par%0D
-3) When a Civilian or News Outlets access the app or website the local weather forecast is shown in the local language and local standard units.\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If a researcher requests data, the relevant data is send per email to the researcher in the requested language\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) A new weather forecast has been generated%0D
+%0D
+Trigger%0D
+1) Generate_Weather_Forecast has generated a new forecast%0D
+2) A researcher requests weather forecast data%0D
+%0D
+Post-Condition%0D
+1) The weather forecast is available via a website and an app%0D
+2) More extensive data is send to a researcher if requested%0D
+%0D
+Main Scenario%0D
+1) The system has produced a new weather forecast%0D
+2) The website and app are updated based on the new data%0D
+3) When a Civilian or News Outlets access the app or website the local weather forecast is shown in the local language and local standard units.%0D
+%0D
+Alternative Scenario%0D
+1) If a researcher requests data, the relevant data is send per email to the researcher in the requested language%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:18:2</_modifiedTime>
@@ -7389,31 +6109,28 @@ Alternative Scenario\par%0D
 			<_name type="a">Relay_Evacuation_Info</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The Predict_strom_scenario predicts a storm with severity over 4 with over 60%25 probability\par%0D
-2) Predict_Tsunami_Risk predicts a tsunami with over 60%25 probability\b\par%0D
-\par%0D
-Post-Condition\par%0D
-\b0 1) The Governments of the affected areas are informed about the strom or tsunami\par%0D
-2) The Emergency Responders and News Outlets of the affected areas are informed about the storm or tsunami if the probability is over 90%25\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system determines that a storm with severity over 4 or a tsunami occurs with over 60%25 probability in a certain region\par%0D
-2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas\par%0D
-3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.\par%0D
-4) The message is send by Email to the relevant Governments\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If an actor is already informed about the storm or tsunami, no new Email is send\par%0D
-2) If the actor is not available by email, an SMS will be send\par%0D
-3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated\par%0D
-4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) The Predict_strom_scenario predicts a storm with severity over 4 with over 60%25 probability%0D
+2) Predict_Tsunami_Risk predicts a tsunami with over 60%25 probability%0D
+%0D
+Post-Condition%0D
+1) The Governments of the affected areas are informed about the strom or tsunami%0D
+2) The Emergency Responders and News Outlets of the affected areas are informed about the storm or tsunami if the probability is over 90%25%0D
+%0D
+Main Scenario%0D
+1) The system determines that a storm with severity over 4 or a tsunami occurs with over 60%25 probability in a certain region%0D
+2) It is determined which News Outlets, Government and Emergency Responders correspond to the affected areas%0D
+3) A message is generated containing the forecast, risks and referal to the provided Weather info to remain up-to-date, in the relevant language.%0D
+4) The message is send by Email to the relevant Governments%0D
+%0D
+Alternative Scenario%0D
+1) If an actor is already informed about the storm or tsunami, no new Email is send%0D
+2) If the actor is not available by email, an SMS will be send%0D
+3) If there are no News Outlets, Government or Emergency Responders which correspond to the affected areas, noone will be informed, and no message is generated%0D
+4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.27.2026::12:9:3</_modifiedTime>
@@ -7594,30 +6311,27 @@ Alternative Scenario\par%0D
 			<_name type="a">Predict_storm_scenario</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) New sensor data since the last prediction is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The predictions are made periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) If a storm is predicted, the associated data is send to Relay_Storm_Info and Relay_Evacuation_Info\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New sensor data is read from the data storage\par%0D
-2) Using a machine learning algrorithm, the location, probability and severity of storms are calculated\par%0D
-3) If a storm is predicted with over 60%25 probability the relevant data is send to Relay_Storm_Info and Relay_Evacuation\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no storm is predicted with over 60%25 probability, the system does not output anything\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) New sensor data since the last prediction is available in the data storage%0D
+%0D
+Trigger%0D
+1) The predictions are made periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) If a storm is predicted, the associated data is send to Relay_Storm_Info and Relay_Evacuation_Info%0D
+%0D
+Main Scenario%0D
+1) New sensor data is read from the data storage%0D
+2) Using a machine learning algrorithm, the location, probability and severity of storms are calculated%0D
+3) If a storm is predicted with over 60%25 probability the relevant data is send to Relay_Storm_Info and Relay_Evacuation%0D
+%0D
+Alternative Scenario%0D
+1) If no storm is predicted with over 60%25 probability, the system does not output anything%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:25:11</_modifiedTime>
@@ -7678,35 +6392,32 @@ Alternative Scenario\par%0D
 			</OwnedDependencies>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:36:44</_modifiedTime>
@@ -7771,36 +6482,33 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:36:56</_modifiedTime>
@@ -7861,36 +6569,33 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\b\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:37:10</_modifiedTime>
@@ -7921,7 +6626,7 @@ Alternative Scenario\par%0D
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbsx</_hfilename>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
 							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
 							<_hname type="a">refine</_hname>
 							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
@@ -7956,7 +6661,7 @@ Alternative Scenario\par%0D
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbsx</_hfilename>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
 							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
 							<_hname type="a">refine</_hname>
 							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
@@ -8023,31 +6728,28 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) New sensor data since the last prediction is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The predictions are made periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) If a tsunami is predicted, the associated data is send to Relay_Evacuation_Info\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New sensor data is read from the data storage\par%0D
-2) Using a machine learning algrorithm, the location, probability and severity of tsunamis are calculated\par%0D
-3) If a tsunami is predicted with over 60%25 probability the relevant data is send to Relay_Evacuation\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no tsunami is predicted with over 60%25 probability, the system does not output anything\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) New sensor data since the last prediction is available in the data storage%0D
+%0D
+Trigger%0D
+1) The predictions are made periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) If a tsunami is predicted, the associated data is send to Relay_Evacuation_Info%0D
+%0D
+Main Scenario%0D
+1) New sensor data is read from the data storage%0D
+2) Using a machine learning algrorithm, the location, probability and severity of tsunamis are calculated%0D
+3) If a tsunami is predicted with over 60%25 probability the relevant data is send to Relay_Evacuation%0D
+%0D
+Alternative Scenario%0D
+1) If no tsunami is predicted with over 60%25 probability, the system does not output anything%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:25:39</_modifiedTime>
@@ -8110,32 +6812,29 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) New sensor data since the last prediction is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) The predictions are made periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The new weather forecast is send to Relay_Weather_Info\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New sensor data is read from the data storage\par%0D
-2) Using a machine learning algrorithm the weather for the entire planet is predicted.\par%0D
-3) The prediction is send to Relay_Weather_Info\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) -\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) New sensor data since the last prediction is available in the data storage%0D
+%0D
+Trigger%0D
+1) The predictions are made periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The new weather forecast is send to Relay_Weather_Info%0D
+%0D
+Main Scenario%0D
+1) New sensor data is read from the data storage%0D
+2) Using a machine learning algrorithm the weather for the entire planet is predicted.%0D
+3) The prediction is send to Relay_Weather_Info%0D
+%0D
+Alternative Scenario%0D
+1) -%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:27:16</_modifiedTime>
@@ -8230,29 +6929,26 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) Sensor data is available in the data storage\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) A researcher requests data\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The requested data is send to a researcher\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) A researcher requests sensor data \par%0D
-2) The requested data is pulled from the data storage\par%0D
-3) The requested data is send to the requesting researcher per email in the requested language\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If not all data is available in the data storage, only the available part is send and the researcher is informed that the rest is not available\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) Sensor data is available in the data storage%0D
+%0D
+Trigger%0D
+1) A researcher requests data%0D
+%0D
+Post-Condition%0D
+1) The requested data is send to a researcher%0D
+%0D
+Main Scenario%0D
+1) A researcher requests sensor data %0D
+2) The requested data is pulled from the data storage%0D
+3) The requested data is send to the requesting researcher per email in the requested language%0D
+%0D
+Alternative Scenario%0D
+1) If not all data is available in the data storage, only the available part is send and the researcher is informed that the rest is not available%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:20:17</_modifiedTime>
@@ -8338,33 +7034,30 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) Data storage contains sensor data\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is requested \b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The requested data is received by the requester\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) Data is requested\par%0D
-2) The data is located in the data storage\par%0D
-3) The requested data is send to the requester\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If the requested data is not available in the data storage, a notification is send to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) Data storage contains sensor data%0D
+%0D
+Trigger%0D
+1) Data is requested %0D
+%0D
+Post-Condition%0D
+1) The requested data is received by the requester%0D
+%0D
+Main Scenario%0D
+1) Data is requested%0D
+2) The data is located in the data storage%0D
+3) The requested data is send to the requester%0D
+%0D
+Alternative Scenario%0D
+1) If the requested data is not available in the data storage, a notification is send to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.26.2026::12:34:12</_modifiedTime>
@@ -8527,36 +7220,33 @@ Alternative Scenario\par%0D
 				</IHandle>
 			</_theMainDiagram>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) -\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) Data is polled periodically with a period of 1 minute\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The collected data is stored in data storage\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) New data is requested from the sensors\par%0D
-2) The sensors read new data\par%0D
-3) The data is send to the data storage\par%0D
-4) The data is saved in the data storage\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) If no connection can be established with the sensor, a connection error is raised to a maintance worker\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\b\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) -%0D
+%0D
+Trigger%0D
+1) Data is polled periodically with a period of 1 minute%0D
+%0D
+Post-Condition%0D
+1) The collected data is stored in data storage%0D
+%0D
+Main Scenario%0D
+1) New data is requested from the sensors%0D
+2) The sensors read new data%0D
+3) The data is send to the data storage%0D
+4) The data is saved in the data storage%0D
+%0D
+Alternative Scenario%0D
+1) If no connection can be established with the sensor, a connection error is raised to a maintance worker%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.24.2026::15:31:27</_modifiedTime>
@@ -8611,34 +7301,31 @@ Alternative Scenario\par%0D
 			<_name type="a">Relay_Connection_Error</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
-				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\b\fs20 Pre-Condition\par%0D
-\b0 1) ?\par%0D
-\par%0D
-\b Trigger\par%0D
-\b0 1) A connection cannot be established with a sensor\b\par%0D
-\par%0D
-Post-Condition\b0\par%0D
-1) The system has raised an error\par%0D
-\b\par%0D
-Main Scenario\par%0D
-\b0 1) The system raises an error\b\par%0D
-\par%0D
-Alternative Scenario\par%0D
-\b0 1) ?\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-\par%0D
-}%0D
-</_textRTF>
+				<_text type="a">Pre-Condition%0D
+1) ?%0D
+%0D
+Trigger%0D
+1) A connection cannot be established with a sensor%0D
+%0D
+Post-Condition%0D
+1) The system has raised an error%0D
+%0D
+Main Scenario%0D
+1) The system raises an error%0D
+%0D
+Alternative Scenario%0D
+1) ?%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+%0D
+</_text>
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">5.21.2026::13:23:52</_modifiedTime>
@@ -8789,9 +7476,18 @@ Alternative Scenario\par%0D
 			<_id type="a">GUID 836f35f4-05b6-4d04-8af4-fc38e4400936</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Government</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.27.2026::12:3:35</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<_modifiedTimeWeak type="a">5.31.2026::10:13:14</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Actors_bdd</_hname>
+					<_hid type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.31.2026::10:13:14</_modifiedTime>
+			<weakCGTime type="a">5.31.2026::10:13:14</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -8891,9 +7587,18 @@ Alternative Scenario\par%0D
 			<_id type="a">GUID a216dd2f-6e5b-49bc-a875-d29450b3a547</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Emergency_Responders</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.24.2026::13:3:32</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<_modifiedTimeWeak type="a">5.31.2026::10:13:1</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Actors_bdd</_hname>
+					<_hid type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.31.2026::10:13:1</_modifiedTime>
+			<weakCGTime type="a">5.31.2026::10:13:1</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -8970,9 +7675,18 @@ Alternative Scenario\par%0D
 			<_id type="a">GUID d74d3156-c411-41bd-8dd6-e34ac738a86d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Researchers</_name>
-			<_modifiedTimeWeak type="a">5.21.2026::11:53:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::11:53:13</_modifiedTime>
-			<weakCGTime type="a">5.21.2026::11:53:13</weakCGTime>
+			<_modifiedTimeWeak type="a">5.31.2026::10:13:32</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Actors_bdd</_hname>
+					<_hid type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.31.2026::10:13:32</_modifiedTime>
+			<weakCGTime type="a">5.31.2026::10:13:32</weakCGTime>
 			<strongCGTime type="a">5.20.2026::12:38:50</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -9049,9 +7763,18 @@ Alternative Scenario\par%0D
 			<_id type="a">GUID c8a6b8cc-45e8-46d0-b480-14d46e2f5a8c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Civilians</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:0:51</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<_modifiedTimeWeak type="a">5.31.2026::10:12:58</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Actors_bdd</_hname>
+					<_hid type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.31.2026::10:12:58</_modifiedTime>
+			<weakCGTime type="a">5.31.2026::10:12:58</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -9132,9 +7855,18 @@ Alternative Scenario\par%0D
 			<_id type="a">GUID 457eb4ac-8f92-4ace-bdd7-33c10348257a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">News_Outlets</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::12:18:2</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<_modifiedTimeWeak type="a">5.31.2026::10:13:22</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SystemContext.sbsx</_hfilename>
+					<_hsubsystem type="a">SystemContext</_hsubsystem>
+					<_hname type="a">Actors_bdd</_hname>
+					<_hid type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.31.2026::10:13:22</_modifiedTime>
+			<weakCGTime type="a">5.31.2026::10:13:22</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -9230,6 +7962,204 @@ Alternative Scenario\par%0D
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<ITableLayout type="e">
+			<_id type="a">GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">TableHeaderMenuAlignment</_Name>
+													<_Value type="a">Right</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Left,Right</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableLayout</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">CollapseFirstColumn</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ContextPattern</_Name>
+													<_Value type="a">{pkg}Package*,{uc}UseCase</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ContextTableColumnNameFormat</_Name>
+													<_Value type="a">$(Property) in $(Context)</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ChangeSelectionOnEnterTo</_Name>
+													<_Value type="a">down</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">left, right, up, down</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">UseCase_Table</_name>
+			<_modifiedTimeWeak type="a">6.13.2026::9:28:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:28:10</_modifiedTime>
+			<DataColumns type="c">
+				<IRPYRawContainer type="e">
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">General.Name</TableDataDefinitionName>
+						<_columnName type="a">Name</_columnName>
+					</TableDataDefinition>
+					
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 0218ff69-bf9e-4c4d-95bb-2fd3f9f4a28b</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">General.Description</TableDataDefinitionName>
+						<_columnName type="a">Description</_columnName>
+					</TableDataDefinition>
+					
+				</IRPYRawContainer>
+			</DataColumns>
+		</ITableLayout>
+		<ITableInstance type="e">
+			<_id type="a">GUID 751dae3c-b3f9-4ff5-829d-f15e6e891a0c</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">TableSortColumnState</_Name>
+													<_Value type="a">1,1</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">UseOwnerScope</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">UseCase_TableView</_name>
+			<_modifiedTimeWeak type="a">6.13.2026::9:22:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.13.2026::9:22:54</_modifiedTime>
+			<LayoutHandle type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITableLayout</_hm2Class>
+					<_hfilename type="a">$OMROOT\Settings\SysMLPerspectives\SysMLPerspectives.sbsx</_hfilename>
+					<_hsubsystem type="a">SysMLPerspectives</_hsubsystem>
+					<_hname type="a">UseCasesLayout</_hname>
+					<_hid type="a">GUID 2a67d7fc-cc30-4995-ace6-ff866e8e9a10</_hid>
+				</IHandle>
+			</LayoutHandle>
+			<ScopeHandles type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProject</_hm2Class>
+							<_hname type="a">2IMP30_V1</_hname>
+							<_hid type="a">GUID 98303639-6bdf-4c4f-922a-27dbf0e15605</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</ScopeHandles>
+		</ITableInstance>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">
