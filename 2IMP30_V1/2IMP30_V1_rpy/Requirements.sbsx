@@ -12,10 +12,23 @@
 			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::12:33:48</_modifiedTime>
-			<_lastID type="a">52</_lastID>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<OwnedDependencies type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</OwnedDependencies>
+			<_modifiedTimeWeak type="a">6.16.2026::9:20:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ProjectContext.sbsx</_hfilename>
+					<_hsubsystem type="a">ProjectContext</_hsubsystem>
+					<_hname type="a">package diagram_1</_hname>
+					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.16.2026::9:20:44</_modifiedTime>
+			<_lastID type="a">53</_lastID>
+			<weakCGTime type="a">6.16.2026::9:20:44</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 57a83d9c-cc18-4f9a-b944-913420659258</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
