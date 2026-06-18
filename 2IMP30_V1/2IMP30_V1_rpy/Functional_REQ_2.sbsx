@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>110.0.1</version>
+	<lang>C++</lang>
+	<BuildNo>202408271326</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 41cc643f-c9b8-485e-842f-67dc18884f5d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Functional_REQ</_name>
+			<_modifiedTimeWeak type="a">6.18.2026::9:10:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:10:12</_modifiedTime>
+			<weakCGTime type="a">6.18.2026::9:10:12</weakCGTime>
+			<strongCGTime type="a">6.18.2026::9:0:17</strongCGTime>
+			<_defaultComposite type="s">GUID ba49edc0-c40b-4c60-a508-d0e8c8d1fe37</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 5af2423d-c916-4589-98a0-22ad635bada2</value>
+				<value>GUID ce5f161c-83e4-4160-850d-e12005c38a71</value>
+				<value>GUID 4238e03c-b648-40b4-b090-9a52133132d4</value>
+				<value>GUID da25bbdf-399d-44ff-bd75-b9aecab54073</value>
+				<value>GUID ba49edc0-c40b-4c60-a508-d0e8c8d1fe37</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 5af2423d-c916-4589-98a0-22ad635bada2</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:9:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:9:22</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect environmental data from satellite, airborne, and underwater sensor platforms.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01</reqID>
+			<AggregatesList type="e">
+				<value>GUID d1beb461-e086-4987-bc8b-53f1afc9fa15</value>
+				<value>GUID 0eef0e73-f493-435f-b47b-98403176b88c</value>
+				<value>GUID f1ccdb22-70b7-4f4c-a240-8f308fbd8ce4</value>
+				<value>GUID ea21744f-eda1-48e3-88f6-2594ad6d7720</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID d1beb461-e086-4987-bc8b-53f1afc9fa15</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Data_Storage</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Allocation</_hsubsystem>
+							<_hname type="a">allocate</_hname>
+							<_hid type="a">GUID 71e4a680-c847-499c-8160-bc05f6a1f2eb</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:9:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:9:22</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hname type="a">Data_Storage</_hname>
+					<_hid type="a">GUID f41f605c-313c-4092-b3d8-22cd641350cf</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 5af2423d-c916-4589-98a0-22ad635bada2</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 0eef0e73-f493-435f-b47b-98403176b88c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">AtmosphericDataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::8:45:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::8:45:43</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 (UPDATED)\par%0D
+The system shall use satellite imagery and aircraft-based sensors to monitor storm events.\par%0D
+\par%0D
+The system shall collect atmospheric conditions associated with storm events.\par%0D
+\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.01</reqID>
+			<AggregatesList type="e">
+				<value>GUID 94d0a882-b208-4429-9296-f86afe6a9082</value>
+				<value>GUID a2a76f0f-1df7-4b2d-a4f0-6c1542929841</value>
+				<value>GUID a3c85bdf-df22-43bc-9ab4-4928cfa2bb38</value>
+			</AggregatesList>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 94d0a882-b208-4429-9296-f86afe6a9082</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">StormPositionCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::8:45:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::8:45:43</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 (UNSATISFIED)\par%0D
+The system shall collect storm position including latitude, longitude, diameter, and altitude.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.01.01</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID a2a76f0f-1df7-4b2d-a4f0-6c1542929841</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">PrecipitationDataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::8:33:20</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect precipitation type and amount.\par%0D
+\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.01.03</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID a3c85bdf-df22-43bc-9ab4-4928cfa2bb38</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">WindDataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::8:33:12</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect wind speed and wind direction.\par%0D
+\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.01.02</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID f1ccdb22-70b7-4f4c-a240-8f308fbd8ce4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">SeismicDataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::8:46:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::8:46:52</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect data on seismic activity on the ocean floor.\par%0D
+\par%0D
+The data consists of tectonic shifts beneath the ocean bed, in the form of vibrations. And the location of these vibrations.\par%0D
+\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.02</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID ea21744f-eda1-48e3-88f6-2594ad6d7720</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">OceanicDataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::8:47:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::8:47:13</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\lang1043\f0\fs17 (UNSATISFIED)\par%0D
+\lang1033\f1\fs20 The system shall collect data on ocean water behaviour.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.03</reqID>
+			<AggregatesList type="e">
+				<value>GUID 6a7dec04-2768-4970-b48f-a5bb300e9ce9</value>
+				<value>GUID d2ec2434-3540-43a2-913c-a231095f94ad</value>
+			</AggregatesList>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 6a7dec04-2768-4970-b48f-a5bb300e9ce9</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">WaterPressureCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::8:33:32</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect data on ocean water pressure.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.03.01</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID d2ec2434-3540-43a2-913c-a231095f94ad</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">WaterFlowCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::8:33:39</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect data on ocean water flow direction.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.01.03.02</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID ce5f161c-83e4-4160-850d-e12005c38a71</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DataStorage_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:10:12</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">The system shall store collected sensor data</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.18.2026::9:10:12</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\lang1043\f0\fs17 (UNSATISFIED)\par%0D
+\lang1033\f1\fs20 The system shall store all collected sensor data for subsequent processing and retrieval.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.03</reqID>
+			<AggregatesList type="e">
+				<value>GUID de82a1db-bc8e-4396-a4cf-eae526b04fd7</value>
+				<value>GUID ce3d19d7-3cd9-41dc-8ef9-a6e5bf1cc5b2</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID de82a1db-bc8e-4396-a4cf-eae526b04fd7</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">DataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::8:32:33</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 5af2423d-c916-4589-98a0-22ad635bada2</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID ce5f161c-83e4-4160-850d-e12005c38a71</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID ce3d19d7-3cd9-41dc-8ef9-a6e5bf1cc5b2</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Data_Storage</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Allocation</_hsubsystem>
+							<_hname type="a">allocate</_hname>
+							<_hid type="a">GUID 71e4a680-c847-499c-8160-bc05f6a1f2eb</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:10:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:10:12</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hname type="a">Data_Storage</_hname>
+					<_hid type="a">GUID f41f605c-313c-4092-b3d8-22cd641350cf</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID ce5f161c-83e4-4160-850d-e12005c38a71</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DataSource_Connectivity_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<Annotations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Annotations>
+			<_modifiedTimeWeak type="a">6.18.2026::9:8:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:8:21</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\lang1043\f0\fs17 (NO NONFUNC)\par%0D
+\lang1033\f1\fs20 The system shall attempt to connect to each external sensor platform, and shall continue operating on available data sources in the event that a connection to one or more platforms cannot be established.\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req.02</reqID>
+			<AggregatesList type="e">
+				<value>GUID c193865c-e6af-466c-9503-c68171e400fc</value>
+				<value>GUID 134f7a6e-ed76-4207-8596-c302e55faf4e</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c193865c-e6af-466c-9503-c68171e400fc</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">DataCollection_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.26.2026::8:32:33</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 5af2423d-c916-4589-98a0-22ad635bada2</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 134f7a6e-ed76-4207-8596-c302e55faf4e</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Data_Storage</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Allocation</_hsubsystem>
+							<_hname type="a">allocate</_hname>
+							<_hid type="a">GUID 71e4a680-c847-499c-8160-bc05f6a1f2eb</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:8:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:8:21</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hname type="a">Data_Storage</_hname>
+					<_hid type="a">GUID f41f605c-313c-4092-b3d8-22cd641350cf</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID da25bbdf-399d-44ff-bd75-b9aecab54073</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Data_Storage_Maintenance_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Func_REQ</_hname>
+							<_hid type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:8:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:8:26</_modifiedTime>
+			<_lastID type="a">3</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 (UPDATED)\par%0D
+If an error is detected, a notification shall be sent to maintenance.\par%0D
+\par%0D
+If data is not available in the storage a notification shall be send to a maintenance worker\par%0D
+}%0D
+</_body>
+			<reqID type="a">Req_04</reqID>
+			<AggregatesList type="e">
+				<value>GUID 2bd46271-3748-4494-bf6d-916d66410a10</value>
+				<value>GUID 0850772f-0197-42ec-bae4-2ef5b55eb012</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 2bd46271-3748-4494-bf6d-916d66410a10</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">DataSource_Connectivity_REQ</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:0:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:0:28</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID da25bbdf-399d-44ff-bd75-b9aecab54073</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 0850772f-0197-42ec-bae4-2ef5b55eb012</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Data_Storage</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Allocation</_hsubsystem>
+							<_hname type="a">allocate</_hname>
+							<_hid type="a">GUID 71e4a680-c847-499c-8160-bc05f6a1f2eb</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.18.2026::9:8:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::9:8:26</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hname type="a">Data_Storage</_hname>
+					<_hid type="a">GUID f41f605c-313c-4092-b3d8-22cd641350cf</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID da25bbdf-399d-44ff-bd75-b9aecab54073</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IClass type="e">
+			<_id type="a">GUID ba49edc0-c40b-4c60-a508-d0e8c8d1fe37</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
