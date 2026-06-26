@@ -12,13 +12,22 @@
 			<_id type="a">GUID af08001a-4ddb-4593-a474-adde2ca5744b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Functional_REQ</_name>
-			<_modifiedTimeWeak type="a">6.18.2026::10:1:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::10:1:43</_modifiedTime>
-			<weakCGTime type="a">6.18.2026::10:1:43</weakCGTime>
+			<_modifiedTimeWeak type="a">6.25.2026::8:46:47</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ProjectContext.sbsx</_hfilename>
+					<_hsubsystem type="a">ProjectContext</_hsubsystem>
+					<_hname type="a">package diagram_1</_hname>
+					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.25.2026::8:46:47</_modifiedTime>
+			<weakCGTime type="a">6.25.2026::8:46:47</weakCGTime>
 			<strongCGTime type="a">6.18.2026::10:1:38</strongCGTime>
 			<_defaultComposite type="s">GUID d1c5c1cf-2dda-409b-8426-938f9e55a3c0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 006b1de4-8592-449c-884d-c0def67899d6</value>
 				<value>GUID 12949088-8949-4ca0-bd4d-115dfda809c3</value>
@@ -436,7 +445,7 @@ This information could be used to potentially prepare measures against possible 
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

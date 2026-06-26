@@ -10,15 +10,23 @@
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
 			<_id type="a">GUID 4926da3e-ff29-4887-b750-50b30a5c8b71</_id>
-			<_myState type="a">8192</_myState>
 			<_name type="a">Functional_REQ</_name>
-			<_modifiedTimeWeak type="a">6.18.2026::9:37:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:37:50</_modifiedTime>
-			<weakCGTime type="a">6.18.2026::9:37:50</weakCGTime>
+			<_modifiedTimeWeak type="a">6.25.2026::8:46:33</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ProjectContext.sbsx</_hfilename>
+					<_hsubsystem type="a">ProjectContext</_hsubsystem>
+					<_hname type="a">package diagram_1</_hname>
+					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.25.2026::8:46:33</_modifiedTime>
+			<weakCGTime type="a">6.25.2026::8:46:33</weakCGTime>
 			<strongCGTime type="a">6.18.2026::7:40:47</strongCGTime>
 			<_defaultComposite type="s">GUID b7c661a0-a315-48f7-92da-24efd5804ee7</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID c098e9e3-3731-4c34-b140-86208ac07d91</value>
 				<value>GUID 10373da1-f899-479d-be09-ea8e350e8bea</value>
@@ -459,7 +467,7 @@ Emergency rations recommendations\par%0D
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

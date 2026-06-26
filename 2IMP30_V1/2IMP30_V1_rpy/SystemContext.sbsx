@@ -12,7 +12,11 @@
 			<_id type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">SystemContext</_name>
-			<_modifiedTimeWeak type="a">6.16.2026::20:33:45</_modifiedTimeWeak>
+			<OwnedDependencies type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</OwnedDependencies>
+			<_modifiedTimeWeak type="a">6.24.2026::20:13:43</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -22,16 +26,14 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.16.2026::20:33:45</_modifiedTime>
-			<_lastID type="a">37</_lastID>
-			<weakCGTime type="a">6.16.2026::20:33:45</weakCGTime>
-			<strongCGTime type="a">6.16.2026::9:21:17</strongCGTime>
+			<_modifiedTime type="a">6.24.2026::20:13:43</_modifiedTime>
+			<_lastID type="a">39</_lastID>
+			<weakCGTime type="a">6.24.2026::20:13:43</weakCGTime>
+			<strongCGTime type="a">6.24.2026::19:59:34</strongCGTime>
 			<_defaultComposite type="s">GUID 2f0b20e0-0698-4a1b-ae07-6af4217bfcad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">6.16.2026::20:31:32</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">6.24.2026::20:4:42</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID 59a0e627-2093-4f72-a523-15cab2a63516</value>
-				<value>GUID e83da7fe-672d-4d33-bb0e-5a140fd0262c</value>
 				<value>GUID 1262a735-6698-44a7-bacb-0898afc79ac8</value>
 				<value>GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</value>
 				<value>GUID 2f0b20e0-0698-4a1b-ae07-6af4217bfcad</value>
@@ -50,52 +52,11 @@
 				<value>GUID de0e1a9b-a4ee-4bf8-bc39-53303d415912</value>
 				<value>GUID 6045db08-1ae3-4648-80ca-e958da038be1</value>
 				<value>GUID ac77ec64-0d16-44ca-8ea1-74f32873285f</value>
+				<value>GUID 60999429-3a4e-46a5-af94-9a1a328b9c93</value>
 				<value>GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88</value>
 				<value>GUID 88748a4e-91bb-4333-8684-d33dd0115aaa</value>
 			</AggregatesList>
 		</ISubsystem>
-		<IDependency type="e">
-			<_id type="a">GUID 59a0e627-2093-4f72-a523-15cab2a63516</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">6.16.2026::9:21:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::9:21:13</_modifiedTime>
-			<_dependsOn type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
-					<_hname type="a">Requirements</_hname>
-					<_hid type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_hid>
-				</INObjectHandle>
-			</_dependsOn>
-			<_dependent type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hid type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_hid>
-				</INObjectHandle>
-			</_dependent>
-		</IDependency>
-		<IDependency type="e">
-			<_id type="a">GUID e83da7fe-672d-4d33-bb0e-5a140fd0262c</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">UseCases</_name>
-			<_modifiedTimeWeak type="a">6.16.2026::9:21:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::9:21:17</_modifiedTime>
-			<_dependsOn type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
-					<_hname type="a">UseCases</_hname>
-					<_hid type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_hid>
-				</INObjectHandle>
-			</_dependsOn>
-			<_dependent type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hid type="a">GUID f3982d2a-a025-49c3-8420-66c1577c0878</_hid>
-				</INObjectHandle>
-			</_dependent>
-		</IDependency>
 		<IDiagram type="e">
 			<_id type="a">GUID 1262a735-6698-44a7-bacb-0898afc79ac8</_id>
 			<_myState type="a">8192</_myState>
@@ -355,8 +316,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:29:34</_modifiedTime>
-			<_lastModifiedTime type="a">6.16.2026::20:29:34</_lastModifiedTime>
+			<_modifiedTime type="a">6.24.2026::20:13:43</_modifiedTime>
+			<_lastModifiedTime type="a">6.24.2026::20:13:43</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -399,7 +360,7 @@
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">37</elementList>
+			<elementList type="a">39</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -449,6 +410,8 @@
 				<value>GUID 8256b4ab-ff64-406d-a1e2-ec8afde77e5d</value>
 				<value>GUID 67252ee6-eb19-4883-8112-0b31cfe45bdf</value>
 				<value>GUID 516ace73-12d6-4e62-ad25-58aa5fb13956</value>
+				<value>GUID 9343c2bc-b53f-4239-9e07-5ddc30be368a</value>
+				<value>GUID 443bb55f-6e35-4a98-9e3d-aef8e0343154</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIClass type="e">
@@ -831,7 +794,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.299339 0 0 0.0995017 749.401 465.264 </m_transform>
+			<m_transform type="a">0.299339 0 0 0.0995017 948.401 465.264 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1577,7 +1540,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
 			<m_SourcePort type="a">523 329 </m_SourcePort>
-			<m_TargetPort type="a">526 1451 </m_TargetPort>
+			<m_TargetPort type="a">1026 1451 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
@@ -4375,6 +4338,151 @@
 			</m_targetQualifier>
 			<m_specificType type="a">symmetric_type</m_specificType>
 		</CGIAssociationEnd>
+		<CGIClass type="e">
+			<_id type="a">GUID 9343c2bc-b53f-4239-9e07-5ddc30be368a</_id>
+			<m_type type="a">87</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 60999429-3a4e-46a5-af94-9a1a328b9c93</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID a529aa0e-7ec8-4e3e-a3ef-bfecf194c899</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">EmergencyResponder_Channels</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">2056</m_drawBehavior>
+			<m_transform type="a">0.225685 0 0 0.101604 642.549 541.572 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_AdditionalLabel type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_AdditionalLabel>
+			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<frameset type="a">&lt;frameset rows=50%25,50%25&gt;
+&lt;frame name=AttributeListCompartment&gt;
+&lt;frame name=OperationListCompartment&gt;</frameset>
+			<Attrs type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Attrs>
+			<Operations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Operations>
+			<AggregatesList type="e">
+				<value>GUID 9ccb9dfd-eb58-4830-b0b4-138c611b04ea</value>
+				<value>GUID 3121ede4-5019-4446-8add-598dd4306e91</value>
+			</AggregatesList>
+		</CGIClass>
+		<CGICompartment type="e">
+			<_id type="a">GUID 9ccb9dfd-eb58-4830-b0b4-138c611b04ea</_id>
+			<m_name type="a">Attribute</m_name>
+			<m_displayOption type="a">Explicit</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+			<Items type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Items>
+		</CGICompartment>
+		<CGICompartment type="e">
+			<_id type="a">GUID 3121ede4-5019-4446-8add-598dd4306e91</_id>
+			<m_name type="a">Operation</m_name>
+			<m_displayOption type="a">Explicit</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+			<Items type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Items>
+		</CGICompartment>
+		<CGIInheritance type="e">
+			<_id type="a">GUID 443bb55f-6e35-4a98-9e3d-aef8e0343154</_id>
+			<m_type type="a">103</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IGeneralization</_hm2Class>
+					<_hid type="a">GUID bc1669bd-2f61-4afd-862f-1008e3743b4e</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s"></m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4104</m_drawBehavior>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_pSource type="s">GUID 9343c2bc-b53f-4239-9e07-5ddc30be368a</m_pSource>
+			<m_sourceType type="a">'F'</m_sourceType>
+			<m_pTarget type="s">GUID d1827274-f535-458c-87e9-6745490d26e4</m_pTarget>
+			<m_targetType type="a">'T'</m_targetType>
+			<m_direction type="a">' '</m_direction>
+			<m_rpn type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_rpn>
+			<m_arrow type="a">2 754 512  391 512  </m_arrow>
+			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
+			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
+			<m_line_style type="a">2</m_line_style>
+			<m_SourcePort type="a">494 329 </m_SourcePort>
+			<m_TargetPort type="a">556 1451 </m_TargetPort>
+			<m_ShowName type="a">0</m_ShowName>
+			<m_ShowStereotype type="a">1</m_ShowStereotype>
+		</CGIInheritance>
 		<IDiagram type="e">
 			<_id type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_id>
 			<_myState type="a">8192</_myState>
@@ -4578,8 +4686,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::10:13:42</_modifiedTime>
-			<_lastModifiedTime type="a">5.31.2026::10:13:42</_lastModifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
+			<_lastModifiedTime type="a">6.24.2026::19:51:43</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -5293,14 +5401,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCases</_hsubsystem>
-					<_hname type="a">News_Outlets</_hname>
+					<_hname type="a">News_Channels</_hname>
 					<_hid type="a">GUID 457eb4ac-8f92-4ace-bdd7-33c10348257a</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 599e80b1-74e8-4cbd-b470-a00c3a5d3a65</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCases::News_Outlets</m_str>
+					<m_str type="a">UseCases::News_Channels</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5375,7 +5483,7 @@
 					<_hm2Class type="a">IGeneralization</_hm2Class>
 					<_hfilename type="a">.\UseCases.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCases</_hsubsystem>
-					<_hclass type="a">News_Outlets</_hclass>
+					<_hclass type="a">News_Channels</_hclass>
 					<_hname type="a">User</_hname>
 					<_hid type="a">GUID a8e150d9-9f3c-4c1b-8438-1ef0fbd7f904</_hid>
 				</IHandle>
@@ -5577,9 +5685,9 @@
 			<_id type="a">GUID 2f0b20e0-0698-4a1b-ae07-6af4217bfcad</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">6.15.2026::19:56:7</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2026::19:56:7</_modifiedTime>
-			<weakCGTime type="a">6.15.2026::19:56:7</weakCGTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:59:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:59:34</_modifiedTime>
+			<weakCGTime type="a">6.24.2026::19:59:34</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -5595,6 +5703,7 @@
 				<value>GUID c124879f-e2a7-4078-a694-3b4081b5d046</value>
 				<value>GUID 92c286d0-bda4-489c-bbc5-305a18a0a90a</value>
 				<value>GUID 16b09263-1ae1-4451-a90e-8e26a2f9ea2f</value>
+				<value>GUID e102d02f-82cc-48ba-a1f8-29d0c7280d93</value>
 			</AggregatesList>
 		</IClass>
 		<IPart type="e">
@@ -5818,6 +5927,64 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IPort</_hm2Class>
 					<_hid type="a">GUID 374b6c39-9617-49e5-9811-5a18355a72a5</_hid>
+				</IHandle>
+			</_fromPort>
+		</IObjectLink>
+		<IObjectLink type="e">
+			<_id type="a">GUID e102d02f-82cc-48ba-a1f8-29d0c7280d93</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsNews_Outlets_itsSMSWTD</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
+							<_hname type="a">connector</_hname>
+							<_hid type="a">GUID af0f57c0-ca41-456e-87cc-be8bf10a1c55</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.24.2026::19:59:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:59:34</_modifiedTime>
+			<_toLink type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IPart</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hclass type="a">TopLevel</_hclass>
+					<_hname type="a">itsSMSWTD</_hname>
+					<_hid type="a">GUID 6e2e3bad-24e2-46a0-92d3-f83322f682ed</_hid>
+				</IHandle>
+			</_toLink>
+			<_fromLink type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IPart</_hm2Class>
+					<_hid type="a">GUID 400eb550-4e07-49bc-a01a-8c804cb275f4</_hid>
+				</IHandle>
+			</_fromLink>
+			<_instantiates type="r">
+				<IMetaLinkHandle type="e">
+				</IMetaLinkHandle>
+			</_instantiates>
+			<_end1Multiplicity type="a">1</_end1Multiplicity>
+			<_end2Multiplicity type="a">1</_end2Multiplicity>
+			<_toPort type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IPort</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hclass type="a">SMSWTD</_hclass>
+					<_hname type="a">p_Tsunami_Output</_hname>
+					<_hid type="a">GUID ea489a1f-752a-46a9-9565-4e2051d241dd</_hid>
+				</IHandle>
+			</_toPort>
+			<_fromPort type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IPort</_hm2Class>
+					<_hid type="a">GUID 6223b29a-b09c-4153-91bc-160f336cef8f</_hid>
 				</IHandle>
 			</_fromPort>
 		</IObjectLink>
@@ -6454,21 +6621,17 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:34:8</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.24.2026::19:58:22</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 1262a735-6698-44a7-bacb-0898afc79ac8</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.16.2026::20:34:8</_modifiedTime>
-			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">6.16.2026::20:34:8</weakCGTime>
+			<_modifiedTime type="a">6.24.2026::19:58:22</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">6.24.2026::19:58:22</weakCGTime>
 			<strongCGTime type="a">5.15.2026::9:0:32</strongCGTime>
-			<Operations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Operations>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -6476,15 +6639,16 @@ Identify potential tsunami triggers</_text>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 905b63d3-1580-4e09-bd53-5e729695615c</value>
-				<value>GUID f540253e-0ee1-4a4b-bf52-c7c09bd9c77b</value>
-				<value>GUID bd4bc088-2502-46cd-9110-4ba4450c1018</value>
-				<value>GUID 50b5ad74-0785-4d47-8631-2dc487d78d1d</value>
+				<value>GUID 562bdbeb-80c1-462c-a27d-8039d884df38</value>
+				<value>GUID fd98335a-1309-4668-b7bc-10480aee38d2</value>
+				<value>GUID 28fb78da-98bc-4308-8249-45fefae8d6cd</value>
 				<value>GUID d276b91a-3ee3-4ace-ab79-e25fe86f6355</value>
 				<value>GUID bade4e8b-0e88-4cd7-a1fb-69cb033ea144</value>
 				<value>GUID 9f72cc4f-8510-4e38-ad45-ea1d77c94097</value>
 				<value>GUID 6b88b618-9a6f-4d93-874d-4bc867cec3d4</value>
 				<value>GUID 95f1c9c6-5bdd-4910-910e-6798fa65ca9a</value>
 				<value>GUID a2369eab-be92-47ff-9fc1-d071e7b896b3</value>
+				<value>GUID 599af167-e1e2-4928-a518-aa0c21c624dc</value>
 				<value>GUID 85b074cf-3e67-4816-a0f0-bb68d63825ba</value>
 			</AggregatesList>
 		</IClass>
@@ -6505,7 +6669,7 @@ Identify potential tsunami triggers</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2026::19:47:28</_modifiedTime>
+			<_modifiedTime type="a">6.18.2026::19:14:34</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAttribute</_hm2Class>
@@ -6531,8 +6695,8 @@ Identify potential tsunami triggers</_text>
 			<_id type="a">GUID fb63fe2c-ecaf-400e-a0f1-8b81ce9d8d9d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">TargetContext</_name>
-			<_modifiedTimeWeak type="a">6.15.2026::19:47:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2026::19:47:28</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.18.2026::19:14:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::19:14:34</_modifiedTime>
 			<_multiplicity type="a">*</_multiplicity>
 			<_isOrdered type="a">0</_isOrdered>
 			<_base type="r">
@@ -6546,21 +6710,9 @@ Identify potential tsunami triggers</_text>
 				</IHandle>
 			</_base>
 			<AggregatesList type="e">
-				<value>GUID 0b1aa77b-af39-4e4c-9f0b-9b84b1fba105</value>
 				<value>GUID 578444b9-81d9-4db3-89bb-6f8221cb2190</value>
 			</AggregatesList>
 		</ITag>
-		<IInstanceValue type="e">
-			<_id type="a">GUID 0b1aa77b-af39-4e4c-9f0b-9b84b1fba105</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IPort</_hm2Class>
-					<_hid type="a">GUID f540253e-0ee1-4a4b-bf52-c7c09bd9c77b</_hid>
-				</IHandle>
-			</_value>
-		</IInstanceValue>
 		<IType type="e">
 			<_id type="a">GUID 578444b9-81d9-4db3-89bb-6f8221cb2190</_id>
 			<_myState type="a">8192</_myState>
@@ -6570,9 +6722,9 @@ Identify potential tsunami triggers</_text>
 			<_kind type="a">Language</_kind>
 		</IType>
 		<IPort type="e">
-			<_id type="a">GUID f540253e-0ee1-4a4b-bf52-c7c09bd9c77b</_id>
+			<_id type="a">GUID 562bdbeb-80c1-462c-a27d-8039d884df38</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">p_Warning_Input</_name>
+			<_name type="a">p_Government_Networks</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -6586,8 +6738,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:33:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:33:45</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:53:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:53:30</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -6605,7 +6757,7 @@ Identify potential tsunami triggers</_text>
 			<_behavioral type="a">1</_behavioral>
 		</IPort>
 		<IPort type="e">
-			<_id type="a">GUID bd4bc088-2502-46cd-9110-4ba4450c1018</_id>
+			<_id type="a">GUID fd98335a-1309-4668-b7bc-10480aee38d2</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">p_Storm_Input</_name>
 			<Stereotypes type="c">
@@ -6621,8 +6773,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:33:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:33:57</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:55:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:55:54</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -6641,9 +6793,9 @@ Identify potential tsunami triggers</_text>
 			<_behavioral type="a">1</_behavioral>
 		</IPort>
 		<IPort type="e">
-			<_id type="a">GUID 50b5ad74-0785-4d47-8631-2dc487d78d1d</_id>
+			<_id type="a">GUID 28fb78da-98bc-4308-8249-45fefae8d6cd</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">p_Tsunami_Input</_name>
+			<_name type="a">p_Tsunami_Storm</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -6657,8 +6809,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:34:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:34:8</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:58:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:58:22</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -6698,7 +6850,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -6770,7 +6922,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">bool</_hname>
 					<_hid type="a">GUID e6c263cc-4bc5-4a11-b32d-02148c93add0</_hid>
 				</IHandle>
@@ -6842,7 +6994,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -6914,7 +7066,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -6986,7 +7138,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -7058,7 +7210,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -7108,6 +7260,78 @@ Identify potential tsunami triggers</_text>
 			<_modifiedTime type="a">6.16.2026::13:47:3</_modifiedTime>
 			<_value type="a">In</_value>
 		</ILiteralSpecification>
+		<IAttribute type="e">
+			<_id type="a">GUID 599af167-e1e2-4928-a518-aa0c21c624dc</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">pred_probability_ts</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+							<_hname type="a">flowProperty</_hname>
+							<_hid type="a">GUID eab7d550-8820-4016-84c4-5f9d822752a1</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.24.2026::19:52:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:52:19</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">float</_hname>
+					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_isReferenceAttr type="a">0</_isReferenceAttr>
+			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID 57c7f41a-84b6-46b2-bb29-0d57a4ae791f</value>
+			</AggregatesList>
+		</IAttribute>
+		<ITag type="e">
+			<_id type="a">GUID 57c7f41a-84b6-46b2-bb29-0d57a4ae791f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">direction</_name>
+			<_modifiedTimeWeak type="a">6.24.2026::19:52:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:52:19</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+					<_hname type="a">FlowDirection</_hname>
+					<_hid type="a">GUID a03711f4-fb72-4f76-9470-618a1ee3394f</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+					<_hclass type="a">flowProperty</_hclass>
+					<_hname type="a">direction</_hname>
+					<_hid type="a">GUID cc62d98a-dc8a-4c6d-87b9-a6fc4d62bb79</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 32828d11-c171-4e11-b882-46f40c35480a</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 32828d11-c171-4e11-b882-46f40c35480a</_id>
+			<_modifiedTimeWeak type="a">6.24.2026::19:52:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:52:19</_modifiedTime>
+			<_value type="a">In</_value>
+		</ILiteralSpecification>
 		<IGeneralization type="e">
 			<_id type="a">GUID 85b074cf-3e67-4816-a0f0-bb68d63825ba</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
@@ -7149,10 +7373,6 @@ Identify potential tsunami triggers</_text>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">6.16.2026::20:35:14</weakCGTime>
 			<strongCGTime type="a">5.15.2026::9:0:37</strongCGTime>
-			<Operations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Operations>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -7221,7 +7441,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -7312,10 +7532,6 @@ Identify potential tsunami triggers</_text>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">6.16.2026::20:35:0</weakCGTime>
 			<strongCGTime type="a">5.15.2026::9:0:47</strongCGTime>
-			<Operations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Operations>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -7384,7 +7600,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -7464,43 +7680,40 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:34:44</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.24.2026::19:59:51</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 1262a735-6698-44a7-bacb-0898afc79ac8</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.16.2026::20:34:44</_modifiedTime>
-			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">6.16.2026::20:34:44</weakCGTime>
+			<_modifiedTime type="a">6.24.2026::19:59:51</_modifiedTime>
+			<_lastID type="a">3</_lastID>
+			<weakCGTime type="a">6.24.2026::19:59:51</weakCGTime>
 			<strongCGTime type="a">5.15.2026::9:0:53</strongCGTime>
-			<Operations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Operations>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
-				<value>GUID 3a1ec6f9-e22f-4808-a5f7-aa1156856cd4</value>
-				<value>GUID 4a3e7ad4-f05c-49d9-9cea-e58253984db9</value>
-				<value>GUID 44778571-27c4-4d33-a990-b0518bafb99f</value>
+				<value>GUID 37cbea6d-c418-4b25-9646-74274cf52fd2</value>
+				<value>GUID 6c787767-fc37-4b29-8031-3bde86e9c998</value>
+				<value>GUID 6223b29a-b09c-4153-91bc-160f336cef8f</value>
 				<value>GUID f3ab8089-8414-4a5c-87f4-1a546da060bd</value>
 				<value>GUID f12c421a-8e8b-4d14-8045-f9fb51edd570</value>
 				<value>GUID 6bd2b62d-d627-4f34-b14f-bdbb943963d2</value>
 				<value>GUID 1164fbee-d023-464d-99e5-2e820d6ad67b</value>
 				<value>GUID 8c88c217-93df-429e-b7af-5ab7af605444</value>
 				<value>GUID dbcc7f7d-3875-4e5e-9454-fa30c4d78711</value>
+				<value>GUID 6110f436-8c13-4fe1-ba15-2cd1d1e8ccd3</value>
 				<value>GUID 0b9518b8-5773-4f6c-ae60-8a5223d9fa8c</value>
 			</AggregatesList>
 		</IClass>
 		<IPort type="e">
-			<_id type="a">GUID 3a1ec6f9-e22f-4808-a5f7-aa1156856cd4</_id>
+			<_id type="a">GUID 37cbea6d-c418-4b25-9646-74274cf52fd2</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">p_Warning_Input</_name>
+			<_name type="a">p_News_Outlets</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -7514,8 +7727,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:34:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:34:22</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:54:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:54:22</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7533,7 +7746,7 @@ Identify potential tsunami triggers</_text>
 			<_behavioral type="a">1</_behavioral>
 		</IPort>
 		<IPort type="e">
-			<_id type="a">GUID 4a3e7ad4-f05c-49d9-9cea-e58253984db9</_id>
+			<_id type="a">GUID 6c787767-fc37-4b29-8031-3bde86e9c998</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">p_Storm_Input</_name>
 			<Stereotypes type="c">
@@ -7549,8 +7762,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:34:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:34:32</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:58:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:58:30</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7569,7 +7782,7 @@ Identify potential tsunami triggers</_text>
 			<_behavioral type="a">1</_behavioral>
 		</IPort>
 		<IPort type="e">
-			<_id type="a">GUID 44778571-27c4-4d33-a990-b0518bafb99f</_id>
+			<_id type="a">GUID 6223b29a-b09c-4153-91bc-160f336cef8f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">p_Tsunami_Input</_name>
 			<Stereotypes type="c">
@@ -7585,8 +7798,8 @@ Identify potential tsunami triggers</_text>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.16.2026::20:34:44</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:34:44</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.24.2026::19:59:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:59:51</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7626,7 +7839,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -7698,7 +7911,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">bool</_hname>
 					<_hid type="a">GUID e6c263cc-4bc5-4a11-b32d-02148c93add0</_hid>
 				</IHandle>
@@ -7770,7 +7983,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -7842,7 +8055,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -7914,7 +8127,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -7986,7 +8199,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">float</_hname>
 					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
 				</IHandle>
@@ -8036,6 +8249,78 @@ Identify potential tsunami triggers</_text>
 			<_modifiedTime type="a">6.16.2026::13:47:21</_modifiedTime>
 			<_value type="a">In</_value>
 		</ILiteralSpecification>
+		<IAttribute type="e">
+			<_id type="a">GUID 6110f436-8c13-4fe1-ba15-2cd1d1e8ccd3</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">pred_probability_ts</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+							<_hname type="a">flowProperty</_hname>
+							<_hid type="a">GUID eab7d550-8820-4016-84c4-5f9d822752a1</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.24.2026::19:52:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:52:33</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">float</_hname>
+					<_hid type="a">GUID 49a1890b-9064-409b-bd56-859d88083577</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_isReferenceAttr type="a">0</_isReferenceAttr>
+			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID bb515d0d-abae-49e8-a1be-c0885e38216f</value>
+			</AggregatesList>
+		</IAttribute>
+		<ITag type="e">
+			<_id type="a">GUID bb515d0d-abae-49e8-a1be-c0885e38216f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">direction</_name>
+			<_modifiedTimeWeak type="a">6.24.2026::19:52:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:52:33</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+					<_hname type="a">FlowDirection</_hname>
+					<_hid type="a">GUID a03711f4-fb72-4f76-9470-618a1ee3394f</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+					<_hclass type="a">flowProperty</_hclass>
+					<_hname type="a">direction</_hname>
+					<_hid type="a">GUID cc62d98a-dc8a-4c6d-87b9-a6fc4d62bb79</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 2af789f6-3c00-4a26-88bc-385e6e064cbd</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 2af789f6-3c00-4a26-88bc-385e6e064cbd</_id>
+			<_modifiedTimeWeak type="a">6.24.2026::19:52:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::19:52:33</_modifiedTime>
+			<_value type="a">In</_value>
+		</ILiteralSpecification>
 		<IGeneralization type="e">
 			<_id type="a">GUID 0b9518b8-5773-4f6c-ae60-8a5223d9fa8c</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
@@ -8080,10 +8365,6 @@ Identify potential tsunami triggers</_text>
 			<_lastID type="a">20</_lastID>
 			<weakCGTime type="a">6.4.2026::14:25:46</weakCGTime>
 			<strongCGTime type="a">6.4.2026::14:16:20</strongCGTime>
-			<Operations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Operations>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8483,7 +8764,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -8555,7 +8836,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">bool</_hname>
 					<_hid type="a">GUID e6c263cc-4bc5-4a11-b32d-02148c93add0</_hid>
 				</IHandle>
@@ -8627,7 +8908,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -8699,7 +8980,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -8806,10 +9087,6 @@ Identify potential tsunami triggers</_text>
 			<_lastID type="a">6</_lastID>
 			<weakCGTime type="a">6.8.2026::18:55:43</weakCGTime>
 			<strongCGTime type="a">5.31.2026::11:51:15</strongCGTime>
-			<Operations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Operations>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8879,7 +9156,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -8912,7 +9189,7 @@ Identify potential tsunami triggers</_text>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
 					<_hname type="a">int</_hname>
 					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
 				</IHandle>
@@ -8952,6 +9229,164 @@ Identify potential tsunami triggers</_text>
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 60999429-3a4e-46a5-af94-9a1a328b9c93</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">EmergencyResponder_Channels</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
+							<_hname type="a">Block</_hname>
+							<_hid type="a">GUID f685432f-691e-4ff1-be70-4d09d19457e1</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.24.2026::20:3:53</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hid type="a">GUID 1262a735-6698-44a7-bacb-0898afc79ac8</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.24.2026::20:3:53</_modifiedTime>
+			<weakCGTime type="a">6.24.2026::20:3:53</weakCGTime>
+			<strongCGTime type="a">6.24.2026::20:1:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 0ba98602-9871-4db8-9d5f-43086cf45662</value>
+				<value>GUID 2b67cb91-4564-4f87-998f-9bc386f195b6</value>
+				<value>GUID bc1669bd-2f61-4afd-862f-1008e3743b4e</value>
+			</AggregatesList>
+		</IClass>
+		<IPort type="e">
+			<_id type="a">GUID 0ba98602-9871-4db8-9d5f-43086cf45662</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">p_EmergencyResponder_Channels</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+							<_hname type="a">proxyPort</_hname>
+							<_hid type="a">GUID b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.24.2026::20:3:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::20:3:53</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Architecture.sbsx</_hfilename>
+					<_hsubsystem type="a">Architecture</_hsubsystem>
+					<_hname type="a">IB_Warning</_hname>
+					<_hid type="a">GUID df51987f-5cc9-4391-8ab2-043f765ff3fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_behavioral type="a">1</_behavioral>
+		</IPort>
+		<IAttribute type="e">
+			<_id type="a">GUID 2b67cb91-4564-4f87-998f-9bc386f195b6</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">warning_type</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+							<_hname type="a">flowProperty</_hname>
+							<_hid type="a">GUID eab7d550-8820-4016-84c4-5f9d822752a1</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.16.2026::13:33:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::20:3:38</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">int</_hname>
+					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_isReferenceAttr type="a">0</_isReferenceAttr>
+			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID 9a245306-fb70-41fc-bc71-7bb84273134f</value>
+			</AggregatesList>
+		</IAttribute>
+		<ITag type="e">
+			<_id type="a">GUID 9a245306-fb70-41fc-bc71-7bb84273134f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">direction</_name>
+			<_modifiedTimeWeak type="a">6.16.2026::13:33:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.24.2026::20:3:38</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+					<_hname type="a">FlowDirection</_hname>
+					<_hid type="a">GUID a03711f4-fb72-4f76-9470-618a1ee3394f</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+					<_hclass type="a">flowProperty</_hclass>
+					<_hname type="a">direction</_hname>
+					<_hid type="a">GUID cc62d98a-dc8a-4c6d-87b9-a6fc4d62bb79</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 7ac351e0-deac-44b3-8849-adf425b94b6c</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 7ac351e0-deac-44b3-8849-adf425b94b6c</_id>
+			<_modifiedTimeWeak type="a">6.16.2026::13:33:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2026::13:33:50</_modifiedTime>
+			<_value type="a">In</_value>
+		</ILiteralSpecification>
+		<IGeneralization type="e">
+			<_id type="a">GUID bc1669bd-2f61-4afd-862f-1008e3743b4e</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID dcda1887-30ee-47b0-ad76-8484747d39ff</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+		</IGeneralization>
 		<IActor type="e">
 			<_id type="a">GUID da50aaf6-09c1-44c4-9bdf-6af23f4dbe88</_id>
 			<_myState type="a">8192</_myState>

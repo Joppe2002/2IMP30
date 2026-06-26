@@ -12,7 +12,11 @@
 			<_id type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCases</_name>
-			<_modifiedTimeWeak type="a">6.16.2026::20:26:12</_modifiedTimeWeak>
+			<OwnedDependencies type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</OwnedDependencies>
+			<_modifiedTimeWeak type="a">6.24.2026::20:13:43</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -22,15 +26,14 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.16.2026::20:26:12</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::20:13:43</_modifiedTime>
 			<_lastID type="a">33</_lastID>
-			<weakCGTime type="a">6.16.2026::20:26:12</weakCGTime>
+			<weakCGTime type="a">6.24.2026::20:13:43</weakCGTime>
 			<strongCGTime type="a">6.16.2026::9:20:47</strongCGTime>
 			<_defaultComposite type="s">GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID a171635f-ad59-447e-b58d-7985f4ebea73</value>
 				<value>GUID e0943032-4ba9-4a3f-b899-7b04eacebd15</value>
 				<value>GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</value>
 				<value>GUID 520a8701-539c-4b3c-bae1-0b809c0357f9</value>
@@ -55,27 +58,6 @@
 				<value>GUID 751dae3c-b3f9-4ff5-829d-f15e6e891a0c</value>
 			</AggregatesList>
 		</ISubsystem>
-		<IDependency type="e">
-			<_id type="a">GUID a171635f-ad59-447e-b58d-7985f4ebea73</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">6.16.2026::9:20:47</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::9:20:47</_modifiedTime>
-			<_dependsOn type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
-					<_hname type="a">Requirements</_hname>
-					<_hid type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_hid>
-				</INObjectHandle>
-			</_dependsOn>
-			<_dependent type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hid type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_hid>
-				</INObjectHandle>
-			</_dependent>
-		</IDependency>
 		<IUCDiagram type="e">
 			<_id type="a">GUID e0943032-4ba9-4a3f-b899-7b04eacebd15</_id>
 			<_myState type="a">8192</_myState>
@@ -410,8 +392,8 @@
 			</_properties>
 			<_name type="a">UseCase_Diagram1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.16.2026::20:28:21</_modifiedTime>
-			<_lastModifiedTime type="a">6.16.2026::20:28:21</_lastModifiedTime>
+			<_modifiedTime type="a">6.24.2026::20:13:43</_modifiedTime>
+			<_lastModifiedTime type="a">6.24.2026::20:13:43</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1681,7 +1663,7 @@
 			<m_pParent type="s">GUID 06449718-7eaa-4123-8520-0e50934dbd00</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">News_Outlets</m_str>
+					<m_str type="a">News_Channels</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5872,7 +5854,7 @@ Alternative Scenario%0D
 </_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">5.27.2026::12:9:42</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_lastID type="a">4</_lastID>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -5926,9 +5908,9 @@ Alternative Scenario%0D
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 19a61e49-38b8-4601-a1b6-bbc1211e7df5</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsNews_Outlets</_name>
+			<_name type="a">itsNews_Channels</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:2:14</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -6017,7 +5999,7 @@ Alternative Scenario%0D
 </_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">5.26.2026::12:18:2</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -6115,9 +6097,9 @@ Alternative Scenario%0D
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 835e0b80-06d5-4efc-871d-2b50c4afaec6</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsNews_Outlets</_name>
+			<_name type="a">itsNews_Channels</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::12:18:2</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -6164,7 +6146,7 @@ Alternative Scenario%0D
 4) If the probability is over 90%25, the relevant Emergency responders and News Outlets are also informed</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">5.27.2026::12:9:3</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_lastID type="a">5</_lastID>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -6295,9 +6277,9 @@ Alternative Scenario%0D
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 2576da36-63c5-47c6-bd0f-90c0284980b2</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsNews_Outlets</_name>
+			<_name type="a">itsNews_Channels</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:1:4</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -6670,8 +6652,8 @@ Alternative Scenario%0D
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
-					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
-					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hfilename type="a">.\Functional_REQ_2.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements::Sensing::Functional_REQ</_hsubsystem>
 					<_hname type="a">SeismicDataCollection_REQ</_hname>
 					<_hid type="a">GUID f1ccdb22-70b7-4f4c-a240-8f308fbd8ce4</_hid>
 				</INObjectHandle>
@@ -6705,8 +6687,8 @@ Alternative Scenario%0D
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
-					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
-					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hfilename type="a">.\Functional_REQ_2.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements::Sensing::Functional_REQ</_hsubsystem>
 					<_hname type="a">OceanicDataCollection_REQ</_hname>
 					<_hid type="a">GUID ea21744f-eda1-48e3-88f6-2594ad6d7720</_hid>
 				</INObjectHandle>
@@ -7885,8 +7867,8 @@ Alternative Scenario%0D
 		<IActor type="e">
 			<_id type="a">GUID 457eb4ac-8f92-4ace-bdd7-33c10348257a</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">News_Outlets</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::10:13:22</_modifiedTimeWeak>
+			<_name type="a">News_Channels</_name>
+			<_modifiedTimeWeak type="a">6.24.2026::19:51:43</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -7896,9 +7878,9 @@ Alternative Scenario%0D
 					<_hid type="a">GUID b80f92f9-6dc6-4df1-90ca-6ad97b46bf3c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.31.2026::10:13:22</_modifiedTime>
-			<weakCGTime type="a">5.31.2026::10:13:22</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
+			<weakCGTime type="a">6.24.2026::19:51:43</weakCGTime>
+			<strongCGTime type="a">6.24.2026::19:51:43</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -7932,7 +7914,7 @@ Alternative Scenario%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsRelay_Evacuation_Info_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:1:4</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7954,7 +7936,7 @@ Alternative Scenario%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsRelay_Storm_Info_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2026::12:2:14</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7976,7 +7958,7 @@ Alternative Scenario%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsRelay_Weather_Info_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::12:18:2</_modifiedTime>
+			<_modifiedTime type="a">6.24.2026::19:51:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">

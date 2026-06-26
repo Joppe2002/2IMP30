@@ -29,22 +29,21 @@
 								<m_nLeft type="a">5</m_nLeft>
 								<m_nTop type="a">27</m_nTop>
 								<m_nRight type="a">1191</m_nRight>
-								<m_nBottom type="a">662</m_nBottom>
+								<m_nBottom type="a">776</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
-								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hm2Class type="a">IDiagram</_hm2Class>
 								<_hfilename type="a">.\2IMP30_V1_rpy\Architecture.sbsx</_hfilename>
 								<_hsubsystem type="a">Architecture</_hsubsystem>
-								<_hclass type="a">Storm_Prediction</_hclass>
-								<_hname type="a">StatechartDiagram</_hname>
-								<_hid type="a">GUID 22733e41-0612-4756-8dfc-1da2cf4117e5</_hid>
+								<_hname type="a">ExternalConnections_bdd</_hname>
+								<_hid type="a">GUID 97b5f118-83a5-4b28-ac10-1e9539378c18</_hid>
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">1165 614 </_DownRight>
+						<_DownRight type="a">1165 728 </_DownRight>
 						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
@@ -62,22 +61,21 @@
 								<m_nLeft type="a">5</m_nLeft>
 								<m_nTop type="a">27</m_nTop>
 								<m_nRight type="a">1191</m_nRight>
-								<m_nBottom type="a">662</m_nBottom>
+								<m_nBottom type="a">776</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
-								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hm2Class type="a">IDiagram</_hm2Class>
 								<_hfilename type="a">.\2IMP30_V1_rpy\Architecture.sbsx</_hfilename>
 								<_hsubsystem type="a">Architecture</_hsubsystem>
-								<_hclass type="a">Tsunami_Prediction</_hclass>
-								<_hname type="a">StatechartDiagram</_hname>
-								<_hid type="a">GUID 1e2f3691-234f-4014-b793-7913ba82b940</_hid>
+								<_hname type="a">Logical_Architecture_bdd</_hname>
+								<_hid type="a">GUID d8d9cd5c-04f4-4eff-8409-ef7b0cd74f4c</_hid>
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">1165 614 </_DownRight>
+						<_DownRight type="a">1553 970 </_DownRight>
 						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
@@ -95,23 +93,23 @@
 								<m_nLeft type="a">5</m_nLeft>
 								<m_nTop type="a">27</m_nTop>
 								<m_nRight type="a">1191</m_nRight>
-								<m_nBottom type="a">662</m_nBottom>
+								<m_nBottom type="a">776</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
 								<_hm2Class type="a">IDiagram</_hm2Class>
-								<_hfilename type="a">.\2IMP30_V1_rpy\Communication.sbsx</_hfilename>
-								<_hsubsystem type="a">Requirements::Communication</_hsubsystem>
-								<_hname type="a">Communication_REQ</_hname>
-								<_hid type="a">GUID 9d109576-3c78-4c67-9eb1-056feb7b2562</_hid>
+								<_hfilename type="a">.\2IMP30_V1_rpy\ProjectContext.sbsx</_hfilename>
+								<_hsubsystem type="a">ProjectContext</_hsubsystem>
+								<_hname type="a">package diagram_1</_hname>
+								<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">2118 1116 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<_DownRight type="a">1569 981 </_DownRight>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -127,28 +125,28 @@
 								<m_nLeft type="a">5</m_nLeft>
 								<m_nTop type="a">27</m_nTop>
 								<m_nRight type="a">1191</m_nRight>
-								<m_nBottom type="a">662</m_nBottom>
+								<m_nBottom type="a">776</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
 								<_hm2Class type="a">IDiagram</_hm2Class>
-								<_hfilename type="a">.\2IMP30_V1_rpy\Logic.sbsx</_hfilename>
-								<_hsubsystem type="a">Requirements::Logic</_hsubsystem>
-								<_hname type="a">Logic_REQ</_hname>
-								<_hid type="a">GUID 19aa2e8f-0d79-47b5-86cc-35e9b042058f</_hid>
+								<_hfilename type="a">.\2IMP30_V1_rpy\Sensing.sbsx</_hfilename>
+								<_hsubsystem type="a">Requirements::Sensing</_hsubsystem>
+								<_hname type="a">Sensing_REQ</_hname>
+								<_hid type="a">GUID fd04fdde-b2b7-4362-a0f4-778274792ee4</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 80 </_UpLeft>
-						<_DownRight type="a">1553 898 </_DownRight>
-						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
-						<m_bIsActiveView type="a">0</m_bIsActiveView>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1165 728 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\neppo\Documents\2IMP30\2IMP30\2IMP30_V1\2IMP30_V1</_fullName>
+			<_fullName type="a">C:\Users\neppo\Documents\2IMP30\Test\2IMP30_V1</_fullName>
 			<_selectedPerspective type="a">Advanced</_selectedPerspective>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
@@ -175,7 +173,7 @@
 				<name type="a">GUI</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IPanelDiagram&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\2IMP30\\2IMP30_V1\\2IMP30_V1_rpy\\Behavior.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\Test\\2IMP30_V1_rpy\\Behavior.sbsx&quot;#hndSem#
 	- _subsystem = &quot;Behavior&quot;#hndSem#
 	- _name = &quot;GUI&quot;#hndSem#
 	- _id = GUID ef107205-c9a4-401e-b843-1d1e45b2ead4#hndSem#
@@ -184,23 +182,10 @@
 			
 			<favoritesItem type="e">
 				<generation type="a">1</generation>
-				<name type="a">StatechartDiagram</name>
-				<idOrFolder type="a">#startHnd# INObjectHandle 
-	- _m2Class = &quot;IStateChartDiagram&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\2IMP30\\2IMP30_V1\\2IMP30_V1_rpy\\Architecture.sbsx&quot;#hndSem#
-	- _subsystem = &quot;Architecture&quot;#hndSem#
-	- _class = &quot;Actionable_Information_Generator&quot;#hndSem#
-	- _name = &quot;StatechartDiagram&quot;#hndSem#
-	- _id = GUID 23110202-b159-4357-baf1-82e2b1670be6#hndSem#
-#endHnd#</idOrFolder>
-			</favoritesItem>
-			
-			<favoritesItem type="e">
-				<generation type="a">1</generation>
 				<name type="a">Communication_REQ</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IDiagram&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\2IMP30\\2IMP30_V1\\2IMP30_V1_rpy\\Communication.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\neppo\\Documents\\2IMP30\\Test\\2IMP30_V1_rpy\\Communication.sbsx&quot;#hndSem#
 	- _subsystem = &quot;Requirements::Communication&quot;#hndSem#
 	- _name = &quot;Communication_REQ&quot;#hndSem#
 	- _id = GUID 9d109576-3c78-4c67-9eb1-056feb7b2562#hndSem#

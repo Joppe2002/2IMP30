@@ -12,8 +12,8 @@
 			<_id type="a">GUID 5dc6e16f-fc09-4049-8dce-fb875a4ff620</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">DefaultComponent</_name>
-			<_modifiedTimeWeak type="a">5.31.2026::11:45:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.31.2026::11:45:14</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.18.2026::19:11:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.18.2026::19:11:48</_modifiedTime>
 			<m_buildType type="a">Executable</m_buildType>
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
@@ -45,6 +45,14 @@
 							<_hfilename type="a">$OMROOT\Settings\SysMLPerspectives\SysMLPerspectives.sbsx</_hfilename>
 							<_hname type="a">SysMLPerspectives</_hname>
 							<_hid type="a">GUID ab285915-0966-4322-a029-ffac3e6ef3df</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProfile</_hm2Class>
+							<_hfilename type="a">.\CGCompatibilityPre100Cpp.sbsx</_hfilename>
+							<_hname type="a">CGCompatibilityPre100Cpp</_hname>
+							<_hid type="a">GUID 32013db5-c81b-4dbc-b5f6-6cf800a9009c</_hid>
 						</IHandle>
 					
 					
@@ -82,6 +90,87 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Communication.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Communication</_hname>
+							<_hid type="a">GUID fc4594e8-dfc1-46cc-80f2-d4a0e213c293</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Functional_REQ.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements::Communication</_hsubsystem>
+							<_hname type="a">Functional_REQ</_hname>
+							<_hid type="a">GUID af08001a-4ddb-4593-a474-adde2ca5744b</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\NonFunctional_REQ.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements::Communication</_hsubsystem>
+							<_hname type="a">NonFunctional_REQ</_hname>
+							<_hid type="a">GUID ec9c3bcd-7174-4241-97ea-a77a9f6c61ab</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Logic.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Logic</_hname>
+							<_hid type="a">GUID 8b2b3257-948a-4be7-813e-a08a77fa207a</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Functional_REQ_1.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements::Logic</_hsubsystem>
+							<_hname type="a">Functional_REQ</_hname>
+							<_hid type="a">GUID 4926da3e-ff29-4887-b750-50b30a5c8b71</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\NonFunctional_REQ_1.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements::Logic</_hsubsystem>
+							<_hname type="a">NonFunctional_REQ</_hname>
+							<_hid type="a">GUID 6fc54703-ed35-4591-b55e-eb7060d65c73</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Sensing.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements</_hsubsystem>
+							<_hname type="a">Sensing</_hname>
+							<_hid type="a">GUID e9f3c96a-0f9b-45f4-8370-eaca36db2587</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Functional_REQ_2.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements::Sensing</_hsubsystem>
+							<_hname type="a">Functional_REQ</_hname>
+							<_hid type="a">GUID 41cc643f-c9b8-485e-842f-67dc18884f5d</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\NonFunctional_REQ_2.sbsx</_hfilename>
+							<_hsubsystem type="a">Requirements::Sensing</_hsubsystem>
+							<_hname type="a">NonFunctional_REQ</_hname>
+							<_hid type="a">GUID 7cfc01a2-3488-4504-adaa-03c08f989b64</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
 							<_hfilename type="a">.\Behavior.sbsx</_hfilename>
 							<_hname type="a">Behavior</_hname>
 							<_hid type="a">GUID dff28762-58c5-43a8-a425-3a7ea26979db</_hid>
@@ -89,10 +178,10 @@
 					
 					
 						<IHandle type="e">
-							<_hm2Class type="a">IProfile</_hm2Class>
-							<_hfilename type="a">.\CGCompatibilityPre100Cpp.sbsx</_hfilename>
-							<_hname type="a">CGCompatibilityPre100Cpp</_hname>
-							<_hid type="a">GUID 32013db5-c81b-4dbc-b5f6-6cf800a9009c</_hid>
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\ProjectContext.sbsx</_hfilename>
+							<_hname type="a">ProjectContext</_hname>
+							<_hid type="a">GUID ec3c29f6-f559-46ba-8baa-1e6e54ed3b56</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
@@ -105,8 +194,8 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</SelectedVariants>
-			<weakCGTime type="a">5.31.2026::11:45:14</weakCGTime>
-			<strongCGTime type="a">5.31.2026::11:45:14</strongCGTime>
+			<weakCGTime type="a">6.18.2026::19:11:48</weakCGTime>
+			<strongCGTime type="a">6.18.2026::19:11:48</strongCGTime>
 			<AggregatesList type="e">
 				<value>GUID f64d390f-b8b9-4f69-8ed7-1d96366e32c0</value>
 				<value>GUID 926f8b93-cd52-48a8-b547-7e8c0629e1df</value>
