@@ -11,7 +11,7 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 41cc643f-c9b8-485e-842f-67dc18884f5d</_id>
 			<_name type="a">Functional_REQ</_name>
-			<_modifiedTimeWeak type="a">6.25.2026::8:46:13</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:54</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -21,8 +21,8 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.25.2026::8:46:13</_modifiedTime>
-			<weakCGTime type="a">6.25.2026::8:46:13</weakCGTime>
+			<_modifiedTime type="a">6.25.2026::18:40:54</_modifiedTime>
+			<weakCGTime type="a">6.25.2026::18:40:54</weakCGTime>
 			<strongCGTime type="a">6.18.2026::9:0:17</strongCGTime>
 			<_defaultComposite type="s">GUID ba49edc0-c40b-4c60-a508-d0e8c8d1fe37</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -52,8 +52,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:9:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:9:22</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:36</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect environmental data from satellite, airborne, and underwater sensor platforms.\par%0D
@@ -65,6 +65,7 @@
 				<value>GUID 0eef0e73-f493-435f-b47b-98403176b88c</value>
 				<value>GUID f1ccdb22-70b7-4f4c-a240-8f308fbd8ce4</value>
 				<value>GUID ea21744f-eda1-48e3-88f6-2594ad6d7720</value>
+				<value>GUID 9a0edd24-ed17-42db-b1cb-de13be0cbee5</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -119,13 +120,11 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::8:45:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::8:45:43</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:14</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 (UPDATED)\par%0D
-The system shall use satellite imagery and aircraft-based sensors to monitor storm events.\par%0D
+\viewkind4\uc1\pard\fs20 The system shall use satellite imagery and aircraft-based sensors to monitor storm events.\par%0D
 \par%0D
-The system shall collect atmospheric conditions associated with storm events.\par%0D
 \par%0D
 }%0D
 </_body>
@@ -134,6 +133,7 @@ The system shall collect atmospheric conditions associated with storm events.\pa
 				<value>GUID 94d0a882-b208-4429-9296-f86afe6a9082</value>
 				<value>GUID a2a76f0f-1df7-4b2d-a4f0-6c1542929841</value>
 				<value>GUID a3c85bdf-df22-43bc-9ab4-4928cfa2bb38</value>
+				<value>GUID b3ed7c30-3768-4126-899f-efa1458cf2df</value>
 			</AggregatesList>
 		</IRequirement>
 		<IRequirement type="e">
@@ -153,16 +153,53 @@ The system shall collect atmospheric conditions associated with storm events.\pa
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::8:45:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::8:45:43</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:58</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 (UNSATISFIED)\par%0D
-The system shall collect storm position including latitude, longitude, diameter, and altitude.\par%0D
+\viewkind4\uc1\pard\fs20 The system shall collect storm position including latitude, longitude, diameter, and altitude.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.01.01</reqID>
+			<AggregatesList type="e">
+				<value>GUID 991c3b0a-404b-4854-a73a-d8c4aecfc81c</value>
+			</AggregatesList>
 		</IRequirement>
+		<ITag type="e">
+			<_id type="a">GUID 991c3b0a-404b-4854-a73a-d8c4aecfc81c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:53</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 5aaf0d79-4ccd-4ba6-bf3b-25e52a94227e</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 5aaf0d79-4ccd-4ba6-bf3b-25e52a94227e</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:53</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID a2a76f0f-1df7-4b2d-a4f0-6c1542929841</_id>
 			<_myState type="a">8192</_myState>
@@ -180,15 +217,53 @@ The system shall collect storm position including latitude, longitude, diameter,
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::8:33:20</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:14</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect precipitation type and amount.\par%0D
 \par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.01.03</reqID>
+			<AggregatesList type="e">
+				<value>GUID 72e35180-e68b-4aad-a114-eef4e84dc1ba</value>
+			</AggregatesList>
 		</IRequirement>
+		<ITag type="e">
+			<_id type="a">GUID 72e35180-e68b-4aad-a114-eef4e84dc1ba</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:14</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 34b7db11-a5f4-4be4-b028-7ff15ed2dccb</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 34b7db11-a5f4-4be4-b028-7ff15ed2dccb</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:14</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID a3c85bdf-df22-43bc-9ab4-4928cfa2bb38</_id>
 			<_myState type="a">8192</_myState>
@@ -206,15 +281,88 @@ The system shall collect storm position including latitude, longitude, diameter,
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::8:33:12</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:9</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect wind speed and wind direction.\par%0D
 \par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.01.02</reqID>
+			<AggregatesList type="e">
+				<value>GUID f9bd86a7-c74a-4da5-9604-658b1f4d9f6e</value>
+			</AggregatesList>
 		</IRequirement>
+		<ITag type="e">
+			<_id type="a">GUID f9bd86a7-c74a-4da5-9604-658b1f4d9f6e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:9</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID fb770df9-d2bb-4d77-b050-0b63e7ba5c1c</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID fb770df9-d2bb-4d77-b050-0b63e7ba5c1c</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:9</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID b3ed7c30-3768-4126-899f-efa1458cf2df</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:44</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 51576c8a-8ed3-40bf-8fd4-254586a9bc2f</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 51576c8a-8ed3-40bf-8fd4-254586a9bc2f</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:44</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID f1ccdb22-70b7-4f4c-a240-8f308fbd8ce4</_id>
 			<_myState type="a">8192</_myState>
@@ -232,8 +380,8 @@ The system shall collect storm position including latitude, longitude, diameter,
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::8:46:52</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::8:46:52</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:56</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect data on seismic activity on the ocean floor.\par%0D
 \par%0D
@@ -242,7 +390,45 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 }%0D
 </_body>
 			<reqID type="a">Req.01.02</reqID>
+			<AggregatesList type="e">
+				<value>GUID 99590285-aa60-4511-ba01-cdafd9466921</value>
+			</AggregatesList>
 		</IRequirement>
+		<ITag type="e">
+			<_id type="a">GUID 99590285-aa60-4511-ba01-cdafd9466921</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:56</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID c3537491-b3e8-4078-9554-613d3ece2743</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID c3537491-b3e8-4078-9554-613d3ece2743</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:39:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:39:56</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID ea21744f-eda1-48e3-88f6-2594ad6d7720</_id>
 			<_myState type="a">8192</_myState>
@@ -260,17 +446,17 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::8:47:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::8:47:13</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\lang1043\f0\fs17 (UNSATISFIED)\par%0D
-\lang1033\f1\fs20 The system shall collect data on ocean water behaviour.\par%0D
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:36</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall collect data on ocean water behaviour.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.03</reqID>
 			<AggregatesList type="e">
 				<value>GUID 6a7dec04-2768-4970-b48f-a5bb300e9ce9</value>
 				<value>GUID d2ec2434-3540-43a2-913c-a231095f94ad</value>
+				<value>GUID 947a5c28-2eec-42cd-9e05-b5fdac26d973</value>
 			</AggregatesList>
 		</IRequirement>
 		<IRequirement type="e">
@@ -290,14 +476,52 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::8:33:32</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:27</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect data on ocean water pressure.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.03.01</reqID>
+			<AggregatesList type="e">
+				<value>GUID 7ae6dac9-6fc8-41a2-81c4-c5410406c4c5</value>
+			</AggregatesList>
 		</IRequirement>
+		<ITag type="e">
+			<_id type="a">GUID 7ae6dac9-6fc8-41a2-81c4-c5410406c4c5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:27</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 50b6dd7d-c540-419d-8f2a-b3436afd79aa</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 50b6dd7d-c540-419d-8f2a-b3436afd79aa</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:27</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID d2ec2434-3540-43a2-913c-a231095f94ad</_id>
 			<_myState type="a">8192</_myState>
@@ -315,14 +539,122 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.26.2026::8:33:39</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:36</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall collect data on ocean water flow direction.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.01.03.02</reqID>
+			<AggregatesList type="e">
+				<value>GUID 828a5747-a98e-41c9-b74f-5b5d8c5ba228</value>
+			</AggregatesList>
 		</IRequirement>
+		<ITag type="e">
+			<_id type="a">GUID 828a5747-a98e-41c9-b74f-5b5d8c5ba228</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:36</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 88a4a932-0ac6-4921-b2de-9ea4fa1f6ebd</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 88a4a932-0ac6-4921-b2de-9ea4fa1f6ebd</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:36</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 947a5c28-2eec-42cd-9e05-b5fdac26d973</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:10</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID c6f49634-a081-4d00-b379-826c2625db6d</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID c6f49634-a081-4d00-b379-826c2625db6d</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:10</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 9a0edd24-ed17-42db-b1cb-de13be0cbee5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:36:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:36:15</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 3a3c2a34-c5ad-4ae3-975d-f5a944f27502</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 3a3c2a34-c5ad-4ae3-975d-f5a944f27502</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:36:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:36:15</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID ce5f161c-83e4-4160-850d-e12005c38a71</_id>
 			<_myState type="a">8192</_myState>
@@ -340,22 +672,22 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:10:12</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:54</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
 				<_text type="a">The system shall store collected sensor data</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">6.18.2026::9:10:12</_modifiedTime>
+			<_modifiedTime type="a">6.25.2026::18:40:54</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\lang1043\f0\fs17 (UNSATISFIED)\par%0D
-\lang1033\f1\fs20 The system shall store all collected sensor data for subsequent processing and retrieval.\par%0D
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall store all collected sensor data for subsequent processing and retrieval.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.03</reqID>
 			<AggregatesList type="e">
 				<value>GUID de82a1db-bc8e-4396-a4cf-eae526b04fd7</value>
 				<value>GUID ce3d19d7-3cd9-41dc-8ef9-a6e5bf1cc5b2</value>
+				<value>GUID 0793653e-0776-48e9-8cc1-ec5ee1fb4e49</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -424,6 +756,41 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 0793653e-0776-48e9-8cc1-ec5ee1fb4e49</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:50</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 8a105015-9ac7-44eb-977f-cff51e00aa34</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 8a105015-9ac7-44eb-977f-cff51e00aa34</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:40:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:40:50</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID 4238e03c-b648-40b4-b090-9a52133132d4</_id>
 			<_myState type="a">8192</_myState>
@@ -441,18 +808,18 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:8:21</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:8:21</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:36:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:36:4</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\lang1043\f0\fs17 (NO NONFUNC)\par%0D
-\lang1033\f1\fs20 The system shall attempt to connect to each external sensor platform, and shall continue operating on available data sources in the event that a connection to one or more platforms cannot be established.\par%0D
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall attempt to connect to each external sensor platform, and shall continue operating on available data sources in the event that a connection to one or more platforms cannot be established.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req.02</reqID>
 			<AggregatesList type="e">
 				<value>GUID c193865c-e6af-466c-9503-c68171e400fc</value>
 				<value>GUID 134f7a6e-ed76-4207-8596-c302e55faf4e</value>
+				<value>GUID fdf59436-bbc4-4d13-843e-9294aff2bdde</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -521,6 +888,41 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID fdf59436-bbc4-4d13-843e-9294aff2bdde</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:36:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:36:4</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID d00c27fe-56c8-4cd7-a4ab-083beef3b80d</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID d00c27fe-56c8-4cd7-a4ab-083beef3b80d</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:36:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:36:4</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID da25bbdf-399d-44ff-bd75-b9aecab54073</_id>
 			<_myState type="a">8192</_myState>
@@ -538,20 +940,18 @@ The data consists of tectonic shifts beneath the ocean bed, in the form of vibra
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:8:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:8:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:37:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:37:50</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 (UPDATED)\par%0D
-If an error is detected, a notification shall be sent to maintenance.\par%0D
-\par%0D
-If data is not available in the storage a notification shall be send to a maintenance worker\par%0D
+\viewkind4\uc1\pard\fs20 If an error is detected, a notification shall be sent to maintenance.\par%0D
 }%0D
 </_body>
 			<reqID type="a">Req_04</reqID>
 			<AggregatesList type="e">
 				<value>GUID 2bd46271-3748-4494-bf6d-916d66410a10</value>
 				<value>GUID 0850772f-0197-42ec-bae4-2ef5b55eb012</value>
+				<value>GUID a8f25f0a-b142-404b-a2da-806483105e94</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -620,6 +1020,41 @@ If data is not available in the storage a notification shall be send to a mainte
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID a8f25f0a-b142-404b-a2da-806483105e94</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:37:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:37:50</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID ef4c2183-b261-43ca-9afc-4d5b2b83ab07</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID ef4c2183-b261-43ca-9afc-4d5b2b83ab07</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:37:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:37:50</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IClass type="e">
 			<_id type="a">GUID ba49edc0-c40b-4c60-a508-d0e8c8d1fe37</_id>
 			<_myState type="a">40960</_myState>

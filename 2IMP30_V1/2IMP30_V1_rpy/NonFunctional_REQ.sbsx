@@ -12,7 +12,7 @@
 			<_id type="a">GUID ec9c3bcd-7174-4241-97ea-a77a9f6c61ab</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NonFunctional_REQ</_name>
-			<_modifiedTimeWeak type="a">6.25.2026::8:46:47</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:38</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -22,8 +22,8 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.25.2026::8:46:47</_modifiedTime>
-			<weakCGTime type="a">6.25.2026::8:46:47</weakCGTime>
+			<_modifiedTime type="a">6.25.2026::18:49:38</_modifiedTime>
+			<weakCGTime type="a">6.25.2026::18:49:38</weakCGTime>
 			<strongCGTime type="a">6.18.2026::7:40:19</strongCGTime>
 			<_defaultComposite type="s">GUID 2e714692-2695-4da1-ab10-8f29a857afec</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -58,8 +58,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:55:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:55:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:29</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:29</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Emergency Responders shall be informed when there is a 90%25 chance of disaster in their respective region.\par%0D
@@ -68,6 +68,7 @@
 			<reqID type="a">NFReq.08.04</reqID>
 			<AggregatesList type="e">
 				<value>GUID 81ad7601-5d2b-4d6e-9517-29a1575900ff</value>
+				<value>GUID 7671af1b-1032-4960-b818-11f464930ff3</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -104,6 +105,41 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 7671af1b-1032-4960-b818-11f464930ff3</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:29</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:29</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 79a97ee3-f816-4ee5-ba02-1664fce5403e</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 79a97ee3-f816-4ee5-ba02-1664fce5403e</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:29</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:29</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID e993a4c7-9104-4364-bff4-37262c4309d0</_id>
 			<_myState type="a">8192</_myState>
@@ -121,8 +157,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:54:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:54:11</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:46:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:46:57</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Information shall be relayed to the government when there is a 60%25 chance of disaster in their respective region.\par%0D
@@ -131,6 +167,7 @@
 			<reqID type="a">NFReq.08.01</reqID>
 			<AggregatesList type="e">
 				<value>GUID fa44fbd5-ffd8-4e13-a9ee-9a4c1ea794cb</value>
+				<value>GUID f91b3d26-3ea6-4af8-b923-f03d0b47a646</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -167,6 +204,41 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID f91b3d26-3ea6-4af8-b923-f03d0b47a646</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:46:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:46:57</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 2c982091-261c-4353-8175-9bdd8e4ad1ff</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 2c982091-261c-4353-8175-9bdd8e4ad1ff</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:46:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:46:57</_modifiedTime>
+			<_value type="a">Satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID 0577ab10-550e-4910-a96e-c0c84ef3d8c6</_id>
 			<_myState type="a">8192</_myState>
@@ -184,17 +256,17 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:55:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:55:29</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:38</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\lang1043\f0\fs17 (UNSATISFIED)\par%0D
-\lang1033\f1\fs20 The news outlets shall receive weather data on a daily base.\par%0D
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The news outlets shall receive weather data on a daily base.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NFReq.08.05</reqID>
 			<AggregatesList type="e">
 				<value>GUID e84f994f-73f4-4edd-b963-91c9e6473fd3</value>
+				<value>GUID d90feb27-e6f1-438b-9941-0435c717104f</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -231,6 +303,41 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID d90feb27-e6f1-438b-9941-0435c717104f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:35</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 59ee7ccb-3ed1-47f2-8df6-4b71cc989d3f</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 59ee7ccb-3ed1-47f2-8df6-4b71cc989d3f</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:35</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID f1b5ff33-05de-4a6b-ae96-caace4ba1e44</_id>
 			<_myState type="a">8192</_myState>
@@ -248,17 +355,17 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:54:39</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:54:39</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:47:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:47:8</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\f0\fs17 (UNSATISFIED)\par%0D
-\f1\fs20 Normal weather updates shall be relayed to users every 15 minutes.\par%0D
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Normal weather updates shall be relayed to users every 15 minutes.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NFReq.08.02</reqID>
 			<AggregatesList type="e">
 				<value>GUID 2de681b0-f772-4351-9239-099fa9a64e90</value>
+				<value>GUID ad3ef6c5-7d88-4d69-ad24-48053d5532ca</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -295,6 +402,41 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID ad3ef6c5-7d88-4d69-ad24-48053d5532ca</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:47:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:47:8</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID df8639a7-4889-454c-b5ef-4dc88bea5b1c</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID df8639a7-4889-454c-b5ef-4dc88bea5b1c</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:47:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:47:8</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID f870b657-8384-4e55-95b5-7fb32540b198</_id>
 			<_myState type="a">8192</_myState>
@@ -312,17 +454,17 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:54:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:54:57</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:20</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}{\f1\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\f0\fs17 (UNSATISFIED)\par%0D
-\f1\fs20 General information shall be relayed to researchers on demand.\par%0D
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 General information shall be relayed to researchers on demand.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NFReq.08.03</reqID>
 			<AggregatesList type="e">
 				<value>GUID ea6c0238-a379-4653-adb5-b26a7e24c8e4</value>
+				<value>GUID 673e1183-6514-4ec1-8bce-2a198c10490a</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -359,6 +501,41 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 673e1183-6514-4ec1-8bce-2a198c10490a</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:16</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 8f6064bd-b09d-4f0d-816e-3234c383d3f9</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 8f6064bd-b09d-4f0d-816e-3234c383d3f9</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:48:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:48:16</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID 3d18939e-f249-46ab-893a-8e47512c5061</_id>
 			<_myState type="a">8192</_myState>
@@ -376,12 +553,11 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:51:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:51:31</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:45:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:45:15</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 (UNSATISFIED)\par%0D
-Different stakeholders shall have different message priorities conform:\par%0D
+\viewkind4\uc1\pard\fs20 Different stakeholders shall have different message priorities conform:\par%0D
 \par%0D
 1. Emergency Responders\par%0D
 2. Government\par%0D
@@ -394,6 +570,7 @@ Different stakeholders shall have different message priorities conform:\par%0D
 			<reqID type="a">NFReq.08</reqID>
 			<AggregatesList type="e">
 				<value>GUID 4f3f4765-d3d2-42c8-b7ac-4f729e93643a</value>
+				<value>GUID 39c46375-6177-458c-b25d-0823db6f9a21</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -430,6 +607,41 @@ Different stakeholders shall have different message priorities conform:\par%0D
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 39c46375-6177-458c-b25d-0823db6f9a21</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:45:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:45:11</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID bf9a39d4-b6a2-413c-a865-c10f74698d1c</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID bf9a39d4-b6a2-413c-a865-c10f74698d1c</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:45:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:45:11</_modifiedTime>
+			<_value type="a">Unsatisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID 28bfca12-2e67-4fc3-9e80-89141b08f270</_id>
 			<_myState type="a">8192</_myState>
@@ -447,8 +659,8 @@ Different stakeholders shall have different message priorities conform:\par%0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:59:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:59:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:11</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Alerts sent via all channels shall be easily understood by the people in the affected region,\par%0D
@@ -458,6 +670,7 @@ taking into account the diverse populations.\par%0D
 			<reqID type="a">NFReq.09.01</reqID>
 			<AggregatesList type="e">
 				<value>GUID 19c71b7e-22ae-4c40-880b-e1d5cd4d77b7</value>
+				<value>GUID f51eabfb-d185-49ce-8c08-2b1ba3bbeec5</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -494,6 +707,41 @@ taking into account the diverse populations.\par%0D
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID f51eabfb-d185-49ce-8c08-2b1ba3bbeec5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:11</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID dac63339-9d8b-4c77-8920-8cbe74f75cc4</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID dac63339-9d8b-4c77-8920-8cbe74f75cc4</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:11</_modifiedTime>
+			<_value type="a">Partially satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID 582ccc18-e2b8-487b-9cc1-f9b37363b4e5</_id>
 			<_myState type="a">8192</_myState>
@@ -511,8 +759,8 @@ taking into account the diverse populations.\par%0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:59:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:59:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:26</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Remote areas that may have limited connectivity shall be taken into account when sending alerts.\par%0D
@@ -523,6 +771,7 @@ Examples could be limited electrical power, limited regional connectivity infras
 			<reqID type="a">NFReq.09.02</reqID>
 			<AggregatesList type="e">
 				<value>GUID 0c7e224b-efcd-4dae-be74-97f21fe4d50c</value>
+				<value>GUID 8878131c-cd9e-45fc-bdc3-e3b79f00d001</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -559,6 +808,41 @@ Examples could be limited electrical power, limited regional connectivity infras
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 8878131c-cd9e-45fc-bdc3-e3b79f00d001</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:26</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID c29f3b6b-9550-427d-b871-54aab476c2bf</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID c29f3b6b-9550-427d-b871-54aab476c2bf</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:26</_modifiedTime>
+			<_value type="a">Partially satisfied</_value>
+		</ILiteralSpecification>
 		<IRequirement type="e">
 			<_id type="a">GUID 61be4e5f-cb5c-4b28-9ac7-0aff5a865758</_id>
 			<_myState type="a">8192</_myState>
@@ -576,8 +860,8 @@ Examples could be limited electrical power, limited regional connectivity infras
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.18.2026::9:59:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:59:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:38</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Underserved areas with limited individual connectivity shall be taken into account when sending alerts.\par%0D
@@ -588,6 +872,7 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 			<reqID type="a">NFReq.09.03</reqID>
 			<AggregatesList type="e">
 				<value>GUID 7f16c5c3-5d35-47a2-99af-b44ed9091fab</value>
+				<value>GUID 84bc2be9-89ef-4991-bfde-cfeb3915d8c7</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -624,6 +909,41 @@ Examples are lack of widespread phones or individual internet connections.\par%0
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 84bc2be9-89ef-4991-bfde-cfeb3915d8c7</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:38</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\Requirements.sbsx</_hfilename>
+					<_hsubsystem type="a">Requirements</_hsubsystem>
+					<_hclass type="a">Non_Func_REQ</_hclass>
+					<_hname type="a">Status</_hname>
+					<_hid type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 5ba7172d-800d-46b5-abed-ef38e500aa43</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 5ba7172d-800d-46b5-abed-ef38e500aa43</_id>
+			<_modifiedTimeWeak type="a">6.25.2026::18:49:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:49:38</_modifiedTime>
+			<_value type="a">Partially satisfied</_value>
+		</ILiteralSpecification>
 		<IClass type="e">
 			<_id type="a">GUID 2e714692-2695-4da1-ab10-8f29a857afec</_id>
 			<_myState type="a">40960</_myState>

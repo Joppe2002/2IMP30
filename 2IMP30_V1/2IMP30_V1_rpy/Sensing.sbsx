@@ -12,11 +12,7 @@
 			<_id type="a">GUID e9f3c96a-0f9b-45f4-8370-eaca36db2587</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Sensing</_name>
-			<Annotations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Annotations>
-			<_modifiedTimeWeak type="a">6.18.2026::9:12:2</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:37</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -26,9 +22,9 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.18.2026::9:12:2</_modifiedTime>
+			<_modifiedTime type="a">6.25.2026::18:38:37</_modifiedTime>
 			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">6.18.2026::9:12:2</weakCGTime>
+			<weakCGTime type="a">6.25.2026::18:38:37</weakCGTime>
 			<strongCGTime type="a">6.18.2026::9:0:17</strongCGTime>
 			<_defaultComposite type="s">GUID 923ce6b2-10d9-4e16-8238-4df4e5c9b062</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -453,8 +449,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2026::9:12:2</_modifiedTime>
-			<_lastModifiedTime type="a">6.18.2026::9:12:2</_lastModifiedTime>
+			<_modifiedTime type="a">6.25.2026::18:41:8</_modifiedTime>
+			<_lastModifiedTime type="a">6.25.2026::18:41:8</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -2131,10 +2127,11 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_AdditionalLabel>
+			<m_bFramesetModified type="a">1</m_bFramesetModified>
 			<m_polygon type="a">4 0 3  0 1095  1084 1095  1084 3  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=50%25,50%25&gt;
+			<frameset type="a">&lt;frameset rows=28%25,72%25&gt;
 &lt;frame name=IDTextCompartment&gt;
 &lt;frame name=SpecificationTextCompartment&gt;</frameset>
 			<_iTempdisplayTextFlag type="a">1</_iTempdisplayTextFlag>
@@ -3837,10 +3834,11 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_AdditionalLabel>
+			<m_bFramesetModified type="a">1</m_bFramesetModified>
 			<m_polygon type="a">4 0 3  0 1095  1084 1095  1084 3  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=40%25,60%25&gt;
+			<frameset type="a">&lt;frameset rows=33%25,67%25&gt;
 &lt;frame name=IDTextCompartment&gt;
 &lt;frame name=SpecificationTextCompartment&gt;</frameset>
 			<_iTempdisplayTextFlag type="a">1</_iTempdisplayTextFlag>
@@ -4482,7 +4480,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">6.18.2026::9:0:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">6.18.2026::9:0:17</weakCGTime>
 			<strongCGTime type="a">6.18.2026::9:0:17</strongCGTime>
 			<_itsStateChart type="r">

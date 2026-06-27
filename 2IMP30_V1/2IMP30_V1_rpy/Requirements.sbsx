@@ -12,7 +12,7 @@
 			<_id type="a">GUID 5946ba5b-515a-4fa2-aec2-7883b6233b29</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Requirements</_name>
-			<_modifiedTimeWeak type="a">6.18.2026::7:38:51</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.25.2026::18:53:45</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -22,9 +22,9 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.18.2026::7:38:51</_modifiedTime>
-			<_lastID type="a">58</_lastID>
-			<weakCGTime type="a">6.18.2026::7:38:51</weakCGTime>
+			<_modifiedTime type="a">6.25.2026::18:53:45</_modifiedTime>
+			<_lastID type="a">60</_lastID>
+			<weakCGTime type="a">6.25.2026::18:53:45</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 57a83d9c-cc18-4f9a-b944-913420659258</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -36,33 +36,72 @@
 				<value>GUID 8b2b3257-948a-4be7-813e-a08a77fa207a</value>
 				<value>GUID e9f3c96a-0f9b-45f4-8370-eaca36db2587</value>
 				<value>GUID 57a83d9c-cc18-4f9a-b944-913420659258</value>
-				<value>GUID bdc62e7e-91ff-4ddf-a624-5a4bf191d064</value>
+				<value>GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</value>
+				<value>GUID 589032c2-f8a0-4d62-9e8c-40076886ac9d</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IStereotype type="e">
 			<_id type="a">GUID 54a9ae9a-b260-4285-ab32-b1a2d1b568d8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Func_REQ</_name>
-			<_modifiedTimeWeak type="a">5.18.2026::7:19:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2026::7:19:31</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:33:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:33:11</_modifiedTime>
 			<_m2Classes type="c">
 				<IRPYRawContainer type="e">
 					<value>Requirement</value>
 				</IRPYRawContainer>
 			</_m2Classes>
+			<AggregatesList type="e">
+				<value>GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</value>
+			</AggregatesList>
 		</IStereotype>
+		<ITag type="e">
+			<_id type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:33:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:33:11</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+		</ITag>
 		<IStereotype type="e">
 			<_id type="a">GUID aa7169a1-00cc-4815-9b38-64c2ee558b2a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Non_Func_REQ</_name>
-			<_modifiedTimeWeak type="a">5.18.2026::7:28:53</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2026::7:28:53</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:1</_modifiedTime>
 			<_m2Classes type="c">
 				<IRPYRawContainer type="e">
 					<value>Requirement</value>
 				</IRPYRawContainer>
 			</_m2Classes>
+			<AggregatesList type="e">
+				<value>GUID 17327263-bcae-42e8-8365-7f914c71095e</value>
+			</AggregatesList>
 		</IStereotype>
+		<ITag type="e">
+			<_id type="a">GUID 17327263-bcae-42e8-8365-7f914c71095e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Status</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:38:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:38:1</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+		</ITag>
 		<ISubsystem type="e">
 			<fileName type="a">Communication</fileName>
 			<_id type="a">GUID fc4594e8-dfc1-46cc-80f2-d4a0e213c293</_id>
@@ -89,32 +128,230 @@
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 		</IClass>
-		<ITableInstance type="e">
-			<_id type="a">GUID bdc62e7e-91ff-4ddf-a624-5a4bf191d064</_id>
+		<ITableLayout type="e">
+			<_id type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">requirementstable</_name>
-			<Stereotypes type="c">
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">TableHeaderMenuAlignment</_Name>
+													<_Value type="a">Right</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Left,Right</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableLayout</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">CollapseFirstColumn</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ContextTableColumnNameFormat</_Name>
+													<_Value type="a">$(Property) in $(Context)</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">EnableCriteriaCheck</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">QueryContextPattern</_Name>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ChangeSelectionOnEnterTo</_Name>
+													<_Value type="a">down</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">left, right, up, down</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">Requirements_Layout</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:53:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:53:26</_modifiedTime>
+			<TableElementTypes type="c">
 				<IRPYRawContainer type="e">
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
-							<_hname type="a">RequirementsTable</_hname>
-							<_hid type="a">GUID ac8ca999-c415-4942-b5eb-99bb8da2415c</_hid>
-						</IHandle>
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">Requirement</TableDataDefinitionName>
+						<_DataType type="a">120</_DataType>
+					</TableDataDefinition>
 					
 				</IRPYRawContainer>
-			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.16.2026::11:29:37</_modifiedTime>
+			</TableElementTypes>
+			<DataColumns type="c">
+				<IRPYRawContainer type="e">
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">Requirement.ID</TableDataDefinitionName>
+						<_columnName type="a">ID</_columnName>
+					</TableDataDefinition>
+					
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">General.Name</TableDataDefinitionName>
+						<_columnName type="a">Name</_columnName>
+					</TableDataDefinition>
+					
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">Requirement.Specification</TableDataDefinitionName>
+						<_columnName type="a">Specification</_columnName>
+					</TableDataDefinition>
+					
+					<TableDataDefinition type="e">
+						<_myTable type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITableLayout</_hm2Class>
+								<_hid type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_hid>
+							</IHandle>
+						</_myTable>
+						<_modelElement type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">ITag</_hm2Class>
+								<_hid type="a">GUID 09a49595-3cf1-4f6e-b776-3dbce13a8dfb</_hid>
+							</IHandle>
+						</_modelElement>
+						<TableDataDefinitionName type="a">Status</TableDataDefinitionName>
+						<_DataType type="a">4</_DataType>
+						<_columnName type="a">Status</_columnName>
+					</TableDataDefinition>
+					
+				</IRPYRawContainer>
+			</DataColumns>
+			<TableFromElementTypes type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</TableFromElementTypes>
+			<TableToElementTypes type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</TableToElementTypes>
+		</ITableLayout>
+		<ITableInstance type="e">
+			<_id type="a">GUID 589032c2-f8a0-4d62-9e8c-40076886ac9d</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">TableView</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">TableSortColumnState</_Name>
+													<_Value type="a">1,0,0,0</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">Requirements_Table</_name>
+			<_modifiedTimeWeak type="a">6.25.2026::18:53:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.25.2026::18:53:45</_modifiedTime>
 			<LayoutHandle type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">ITableLayout</_hm2Class>
-					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-					<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
-					<_hname type="a">ReqTableLayout</_hname>
-					<_hid type="a">GUID 8f1f7467-b093-4abe-9871-3462587c6bc8</_hid>
+					<_hid type="a">GUID 7a4422c4-be39-4217-a1e7-a894bfb6d982</_hid>
 				</IHandle>
 			</LayoutHandle>
 			<ScopeHandles type="c">

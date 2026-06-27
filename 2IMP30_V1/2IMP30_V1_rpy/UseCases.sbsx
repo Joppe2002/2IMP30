@@ -12,11 +12,7 @@
 			<_id type="a">GUID 48259056-c01c-453c-ad12-bc652aa5cc88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCases</_name>
-			<OwnedDependencies type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</OwnedDependencies>
-			<_modifiedTimeWeak type="a">6.24.2026::20:13:43</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.25.2026::19:34:52</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -26,9 +22,9 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.24.2026::20:13:43</_modifiedTime>
+			<_modifiedTime type="a">6.25.2026::19:34:52</_modifiedTime>
 			<_lastID type="a">33</_lastID>
-			<weakCGTime type="a">6.24.2026::20:13:43</weakCGTime>
+			<weakCGTime type="a">6.25.2026::19:34:52</weakCGTime>
 			<strongCGTime type="a">6.16.2026::9:20:47</strongCGTime>
 			<_defaultComposite type="s">GUID 0885c741-0401-42d3-9f5c-3603fb2c42ad</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -392,8 +388,8 @@
 			</_properties>
 			<_name type="a">UseCase_Diagram1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.24.2026::20:13:43</_modifiedTime>
-			<_lastModifiedTime type="a">6.24.2026::20:13:43</_lastModifiedTime>
+			<_modifiedTime type="a">6.25.2026::19:34:52</_modifiedTime>
+			<_lastModifiedTime type="a">6.25.2026::19:34:52</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
