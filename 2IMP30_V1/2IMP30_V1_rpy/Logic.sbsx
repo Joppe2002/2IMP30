@@ -12,7 +12,7 @@
 			<_id type="a">GUID 8b2b3257-948a-4be7-813e-a08a77fa207a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Logic</_name>
-			<_modifiedTimeWeak type="a">6.25.2026::18:41:25</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.27.2026::14:28:12</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -22,9 +22,9 @@
 					<_hid type="a">GUID 58af88d5-12a5-4750-bcd8-b4725c43951e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.25.2026::18:41:25</_modifiedTime>
+			<_modifiedTime type="a">6.27.2026::14:28:12</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">6.25.2026::18:41:25</weakCGTime>
+			<weakCGTime type="a">6.27.2026::14:28:12</weakCGTime>
 			<strongCGTime type="a">6.18.2026::7:33:39</strongCGTime>
 			<_defaultComposite type="s">GUID f4445234-ecea-4e3b-98f2-7d5575c7ddd6</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -449,8 +449,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.25.2026::18:44:30</_modifiedTime>
-			<_lastModifiedTime type="a">6.25.2026::18:44:30</_lastModifiedTime>
+			<_modifiedTime type="a">6.27.2026::14:28:13</_modifiedTime>
+			<_lastModifiedTime type="a">6.27.2026::14:28:13</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -631,7 +631,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">6.36574 0 0 7.23485 20 20 </m_transform>
+			<m_transform type="a">6.08796 0 0 7.24242 20 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -713,7 +713,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.238007 0 0 0.148352 912 40.5549 </m_transform>
+			<m_transform type="a">0.238007 0 0 0.148352 852 41.5549 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -819,7 +819,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.214022 0 0 0.148352 639 39.5549 </m_transform>
+			<m_transform type="a">0.214022 0 0 0.148352 579 40.5549 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -925,7 +925,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.151099 363 39.5467 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.151099 303 40.5467 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1093,7 +1093,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.150183 362 558.549 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.150183 302 559.549 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1186,7 +1186,7 @@
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 476 493  755 493  </m_arrow>
+			<m_arrow type="a">2 416 494  695 494  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
@@ -1224,7 +1224,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.150183 638 557.549 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.150183 578 558.549 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1380,7 +1380,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">0 900 </m_SourcePort>
+			<m_SourcePort type="a">-4 900 </m_SourcePort>
 			<m_TargetPort type="a">1084 906 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -1416,7 +1416,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.150183 1147 559.549 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.150183 1087 560.549 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1492,7 +1492,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.153846 638 786.538 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.153846 578 787.538 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1631,7 +1631,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.152015 1147 787.544 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.152015 1087 788.544 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1785,7 +1785,7 @@
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 1261 492  755 492  </m_arrow>
+			<m_arrow type="a">2 1201 493  695 493  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
@@ -1823,7 +1823,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.124004 0 0 0.0644258 1219.25 378.064 </m_transform>
+			<m_transform type="a">0.124004 0 0 0.0644258 1159.25 379.064 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1939,7 +1939,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.124004 0 0 0.0606909 118.248 503.061 </m_transform>
+			<m_transform type="a">0.124004 0 0 0.0606909 58.248 504.061 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -2020,7 +2020,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
 			<m_SourcePort type="a">925 938 </m_SourcePort>
-			<m_TargetPort type="a">0 422 </m_TargetPort>
+			<m_TargetPort type="a">-5 416 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -2055,7 +2055,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.124004 0 0 0.0644258 905.248 629.064 </m_transform>
+			<m_transform type="a">0.124004 0 0 0.0644258 845.248 630.064 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -2135,7 +2135,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">-2 542 </m_SourcePort>
+			<m_SourcePort type="a">-10 527 </m_SourcePort>
 			<m_TargetPort type="a">542 542 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -2295,7 +2295,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.153846 362 786.538 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.153846 302 787.538 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -2531,7 +2531,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.276846 0 0 0.0366812 374.169 251.279 </m_transform>
+			<m_transform type="a">0.276846 0 0 0.0366812 314.169 252.279 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -2648,7 +2648,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
 			<m_SourcePort type="a">552 1095 </m_SourcePort>
-			<m_TargetPort type="a">599 837 </m_TargetPort>
+			<m_TargetPort type="a">599 838 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -2712,7 +2712,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.238007 0 0 0.106989 912 233.847 </m_transform>
+			<m_transform type="a">0.238007 0 0 0.106989 852 234.847 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -2885,7 +2885,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.334732 0 0 0.102183 333.996 293.921 </m_transform>
+			<m_transform type="a">0.334732 0 0 0.102183 273.996 294.921 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -3037,7 +3037,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.153846 118 786.538 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.153846 58 787.538 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -3176,7 +3176,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.210332 0 0 0.153846 889 786.538 </m_transform>
+			<m_transform type="a">0.210332 0 0 0.153846 829 787.538 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
